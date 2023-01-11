@@ -1,0 +1,20 @@
+show version
+show clock
+show running-config
+show interfaces stats
+show interfaces description
+show interfaces trunk
+show etherchannel summary
+show port-channel
+show ip interface brief
+show cdp neighbors
+show span summary
+show vlan brief
+show vtp status
+show vpc br
+show inventory
+show ip arp
+show processes memory sorted
+show processes memory platfrom
+show processes cpu sorted
+show processes cpu platform
