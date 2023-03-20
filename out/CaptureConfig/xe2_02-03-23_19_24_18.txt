@@ -1,0 +1,183 @@
+Building configuration...
+
+Current configuration : 2503 bytes
+!
+! Last configuration change at 12:18:18 UTC Thu Mar 2 2023 by cisco
+!
+version 17.3
+service timestamps debug datetime msec
+service timestamps log datetime msec
+service call-home
+platform qfp utilization monitor load 80
+platform punt-keepalive disable-kernel-core
+platform console virtual
+!
+hostname xe2
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no logging console
+enable secret 9 $9$wFmh0nnUdruym.$.wNoejic9yGLM7/4T3bSpZZ7hEvZc.ofaRge/2p.w1.
+!
+no aaa new-model
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+login on-success log
+!
+!
+!
+!
+!
+!
+!
+subscriber templating
+! 
+! 
+! 
+! 
+!
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+crypto pki trustpoint TP-self-signed-188877094
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-188877094
+ revocation-check none
+ rsakeypair TP-self-signed-188877094
+!
+!
+crypto pki certificate chain TP-self-signed-188877094
+!
+license udi pid CSR1000V sn 93HP7YX6HKX
+license boot level ax
+diagnostic bootup level minimal
+memory free low-watermark processor 71477
+!
+!
+spanning-tree extend system-id
+!
+username megawati secret 9 $9$xBT98yc8n9ZA0k$06uhX8Nrfyu9Fnd.L732sP0ih4WKubLT9jzVzaDtUd.
+username cisco secret 9 $9$MF0gdI5omW0aN.$9Iq7tmw6XPZ7D4C8CqTU64Rljvr05NaR0NZfnTvcOfI
+username helena privilege 15 secret 9 $9$hoBKTbUYA4Kk.U$9qU7bwmbRvH.6S92jTzmsixuWxYbGdI1yTJO9BmKHP6
+!
+redundancy
+!
+!
+!
+!
+!
+!
+cdp run
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+! 
+! 
+!
+!
+interface GigabitEthernet1
+ ip address 198.18.0.122 255.255.255.0
+ negotiation auto
+ cdp enable
+ no mop enabled
+ no mop sysid
+!
+interface GigabitEthernet2
+ no ip address
+ shutdown
+ negotiation auto
+ no mop enabled
+ no mop sysid
+!
+interface GigabitEthernet3
+ no ip address
+ shutdown
+ negotiation auto
+ no mop enabled
+ no mop sysid
+!
+router ospf 1
+ network 0.0.0.0 255.255.255.255 area 0
+!
+ip forward-protocol nd
+ip http server
+ip http authentication local
+ip http secure-server
+!
+ip route 0.0.0.0 0.0.0.0 198.18.0.1
+ip ssh rsa keypair-name ssh-key
+ip ssh version 2
+!
+!
+!
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+line con 0
+ exec-timeout 0 0
+ stopbits 1
+line vty 0 4
+ exec-timeout 0 0
+ login local
+ transport input ssh
+line vty 5 15
+ login local
+ transport input ssh
+!
+call-home
+ ! If contact email address in call-home is configured as sch-smart-licensing@cisco.com
+ ! the email address configured in Cisco Smart License Portal will be used as contact email address to send SCH notifications.
+ contact-email-addr sch-smart-licensing@cisco.com
+ profile "CiscoTAC-1"
+  active
+  destination transport-method http
+!
+!
+!
+!
+!
+end

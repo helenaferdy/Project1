@@ -1,5 +1,11 @@
-from lib.Apps import MainMenu
-import pyinputplus as pyip
+# from lib.config.createTestbed import File,generateDeviceList
+import sys
+import pandas as pd
+from lib.apps import init,MainMenu
 
+############ Program Start here ############
 if __name__ == '__main__':
-    MainMenu()
+    if init() != False:
+        MainMenu()
+    else:
+        sys.exit()

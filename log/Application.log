@@ -1,0 +1,109 @@
+INFO 2023-03-02 12:14:46,693 [apps.py:init:76] ---Starting the Application---
+INFO 2023-03-02 12:14:46,709 [apps.py:init:79] ---Initialize testbed file---
+INFO 2023-03-02 12:14:46,712 [apps.py:init:87] ---testbed file ready---
+INFO 2023-03-02 12:14:48,096 [apps.py:init:93] ---Opening Main Menu Application---
+INFO 2023-03-02 12:14:50,322 [apps.py:MainMenu:103] ---Get Configuration Device---
+INFO 2023-03-02 12:16:38,287 [apps.py:init:76] ---Starting the Application---
+INFO 2023-03-02 12:16:38,307 [apps.py:init:79] ---Initialize testbed file---
+INFO 2023-03-02 12:16:38,311 [apps.py:init:87] ---testbed file ready---
+INFO 2023-03-02 12:16:39,798 [apps.py:init:93] ---Opening Main Menu Application---
+INFO 2023-03-02 12:16:41,354 [apps.py:MainMenu:103] ---Get Configuration Device---
+INFO 2023-03-02 12:21:04,333 [apps.py:init:76] ---Starting the Application---
+INFO 2023-03-02 12:21:04,349 [apps.py:init:79] ---Initialize testbed file---
+INFO 2023-03-02 12:21:04,352 [apps.py:init:87] ---testbed file ready---
+INFO 2023-03-02 12:21:06,007 [apps.py:init:93] ---Opening Main Menu Application---
+INFO 2023-03-02 12:21:09,067 [apps.py:MainMenu:103] ---Get Configuration Device---
+INFO 2023-03-02 12:27:17,641 [apps.py:init:76] ---Starting the Application---
+INFO 2023-03-02 12:27:17,659 [apps.py:init:79] ---Initialize testbed file---
+INFO 2023-03-02 12:27:17,663 [apps.py:init:87] ---testbed file ready---
+INFO 2023-03-02 12:27:19,432 [apps.py:init:93] ---Opening Main Menu Application---
+INFO 2023-03-02 12:27:21,749 [apps.py:MainMenu:103] ---Get Configuration Device---
+INFO 2023-03-02 12:38:04,133 [apps.py:init:79] ---Starting the Application---
+INFO 2023-03-02 12:38:04,159 [apps.py:init:82] ---Initialize testbed file---
+INFO 2023-03-02 12:38:04,163 [apps.py:init:90] ---testbed file ready---
+INFO 2023-03-02 12:38:05,665 [apps.py:init:96] ---Opening Main Menu Application---
+INFO 2023-03-02 12:38:07,855 [apps.py:MainMenu:118] ---Get Memmory Utilization---
+INFO 2023-03-02 12:43:18,833 [apps.py:init:80] ---Starting the Application---
+INFO 2023-03-02 12:43:18,845 [apps.py:init:83] ---Initialize testbed file---
+INFO 2023-03-02 12:43:18,847 [apps.py:init:91] ---testbed file ready---
+INFO 2023-03-02 12:43:20,636 [apps.py:init:97] ---Opening Main Menu Application---
+INFO 2023-03-02 12:43:22,813 [apps.py:MainMenu:125] ---Get CPU Utilization---
+INFO 2023-03-02 12:43:47,694 [apps.py:init:80] ---Starting the Application---
+INFO 2023-03-02 12:43:47,713 [apps.py:init:83] ---Initialize testbed file---
+INFO 2023-03-02 12:43:47,717 [apps.py:init:91] ---testbed file ready---
+INFO 2023-03-02 12:43:49,360 [apps.py:init:97] ---Opening Main Menu Application---
+INFO 2023-03-02 12:43:51,383 [apps.py:MainMenu:125] ---Get CPU Utilization---
+INFO 2023-03-02 12:44:22,234 [apps.py:init:80] ---Starting the Application---
+INFO 2023-03-02 12:44:22,249 [apps.py:init:83] ---Initialize testbed file---
+INFO 2023-03-02 12:44:22,251 [apps.py:init:91] ---testbed file ready---
+INFO 2023-03-02 12:44:23,793 [apps.py:init:97] ---Opening Main Menu Application---
+INFO 2023-03-02 12:44:25,282 [apps.py:MainMenu:125] ---Get CPU Utilization---
+INFO 2023-03-02 12:44:29,479 [apps.py:init:80] ---Starting the Application---
+INFO 2023-03-02 12:44:29,493 [apps.py:init:83] ---Initialize testbed file---
+INFO 2023-03-02 12:44:29,495 [apps.py:init:91] ---testbed file ready---
+INFO 2023-03-02 12:46:41,189 [apps.py:init:80] ---Starting the Application---
+INFO 2023-03-02 12:46:41,206 [apps.py:init:83] ---Initialize testbed file---
+INFO 2023-03-02 12:46:41,208 [apps.py:init:91] ---testbed file ready---
+INFO 2023-03-02 12:46:42,413 [apps.py:init:97] ---Opening Main Menu Application---
+INFO 2023-03-02 12:46:44,347 [apps.py:MainMenu:125] ---Get CPU Utilization---
+INFO 2023-03-02 12:46:50,482 [apps.py:init:80] ---Starting the Application---
+INFO 2023-03-02 12:46:50,498 [apps.py:init:83] ---Initialize testbed file---
+INFO 2023-03-02 12:46:50,501 [apps.py:init:91] ---testbed file ready---
+INFO 2023-03-02 12:47:35,343 [apps.py:init:80] ---Starting the Application---
+INFO 2023-03-02 12:47:35,375 [apps.py:init:83] ---Initialize testbed file---
+INFO 2023-03-02 12:47:35,381 [apps.py:init:91] ---testbed file ready---
+INFO 2023-03-02 12:47:36,602 [apps.py:init:97] ---Opening Main Menu Application---
+INFO 2023-03-02 12:47:38,069 [apps.py:MainMenu:125] ---Get CPU Utilization---
+INFO 2023-03-02 12:47:42,317 [apps.py:init:80] ---Starting the Application---
+INFO 2023-03-02 12:47:42,331 [apps.py:init:83] ---Initialize testbed file---
+INFO 2023-03-02 12:47:42,334 [apps.py:init:91] ---testbed file ready---
+INFO 2023-03-02 12:47:47,554 [apps.py:init:97] ---Opening Main Menu Application---
+INFO 2023-03-02 12:47:50,309 [apps.py:MainMenu:140] ---Closing Application---
+INFO 2023-03-02 12:49:16,353 [apps.py:init:80] ---Starting the Application---
+INFO 2023-03-02 12:49:16,369 [apps.py:init:83] ---Initialize testbed file---
+INFO 2023-03-02 12:49:16,371 [apps.py:init:91] ---testbed file ready---
+INFO 2023-03-02 12:49:18,001 [apps.py:init:97] ---Opening Main Menu Application---
+INFO 2023-03-02 12:49:37,962 [apps.py:MainMenu:125] ---Get CPU Utilization---
+INFO 2023-03-02 12:50:06,529 [apps.py:MainMenu:140] ---Closing Application---
+INFO 2023-03-02 13:08:56,118 [apps.py:init:80] ---Starting the Application---
+INFO 2023-03-02 13:08:56,132 [apps.py:init:83] ---Initialize testbed file---
+INFO 2023-03-02 13:08:56,134 [apps.py:init:91] ---testbed file ready---
+INFO 2023-03-02 13:08:57,934 [apps.py:init:97] ---Opening Main Menu Application---
+INFO 2023-03-02 13:09:02,243 [apps.py:MainMenu:125] ---Get CPU Utilization---
+INFO 2023-03-02 19:19:38,916 [apps.py:init:80] ---Starting the Application---
+INFO 2023-03-02 19:19:38,931 [apps.py:init:83] ---Initialize testbed file---
+INFO 2023-03-02 19:19:38,935 [apps.py:init:91] ---testbed file ready---
+INFO 2023-03-02 19:20:02,549 [apps.py:init:80] ---Starting the Application---
+INFO 2023-03-02 19:20:02,570 [apps.py:init:83] ---Initialize testbed file---
+WARNING 2023-03-02 19:20:02,572 [apps.py:init:85] ---System can't find testbed file---
+INFO 2023-03-02 19:20:17,386 [apps.py:init:80] ---Starting the Application---
+INFO 2023-03-02 19:20:17,408 [apps.py:init:83] ---Initialize testbed file---
+WARNING 2023-03-02 19:20:17,411 [apps.py:init:85] ---System can't find testbed file---
+INFO 2023-03-02 19:23:59,525 [apps.py:create:62] Importing file...env.csv
+INFO 2023-03-02 19:24:00,635 [apps.py:create:66] Success: Testbed file generated: 
+import/env.csv -> testbed/device.yaml
+INFO 2023-03-02 19:24:00,643 [apps.py:create:67] ---testbed file ready---
+INFO 2023-03-02 19:24:12,376 [apps.py:MainMenu:107] ---Get Configuration Device---
+INFO 2023-03-02 19:26:00,633 [apps.py:init:80] ---Starting the Application---
+INFO 2023-03-02 19:26:00,650 [apps.py:init:83] ---Initialize testbed file---
+INFO 2023-03-02 19:26:00,652 [apps.py:init:91] ---testbed file ready---
+INFO 2023-03-02 19:26:16,767 [apps.py:init:80] ---Starting the Application---
+INFO 2023-03-02 19:26:16,785 [apps.py:init:83] ---Initialize testbed file---
+INFO 2023-03-02 19:26:16,789 [apps.py:init:91] ---testbed file ready---
+INFO 2023-03-02 19:26:19,333 [apps.py:init:97] ---Opening Main Menu Application---
+INFO 2023-03-02 19:26:22,712 [apps.py:MainMenu:113] ---Get Inventory Device---
+INFO 2023-03-02 19:26:27,970 [apps.py:init:80] ---Starting the Application---
+INFO 2023-03-02 19:26:27,991 [apps.py:init:83] ---Initialize testbed file---
+INFO 2023-03-02 19:26:27,994 [apps.py:init:91] ---testbed file ready---
+INFO 2023-03-02 19:26:30,260 [apps.py:init:97] ---Opening Main Menu Application---
+INFO 2023-03-02 19:26:40,686 [apps.py:MainMenu:125] ---Get CPU Utilization---
+INFO 2023-03-02 19:28:01,022 [apps.py:init:80] ---Starting the Application---
+INFO 2023-03-02 19:28:01,036 [apps.py:init:83] ---Initialize testbed file---
+INFO 2023-03-02 19:28:01,039 [apps.py:init:91] ---testbed file ready---
+INFO 2023-03-02 19:28:03,949 [apps.py:init:97] ---Opening Main Menu Application---
+INFO 2023-03-02 19:28:08,937 [apps.py:MainMenu:119] ---Get Memmory Utilization---
+INFO 2023-03-02 19:33:36,432 [apps.py:init:81] ---Starting the Application---
+INFO 2023-03-02 19:33:36,457 [apps.py:init:84] ---Initialize testbed file---
+INFO 2023-03-02 19:33:36,460 [apps.py:init:92] ---testbed file ready---
+INFO 2023-03-02 19:33:37,841 [apps.py:init:98] ---Opening Main Menu Application---
+INFO 2023-03-02 19:33:43,280 [apps.py:MainMenu:133] ---Get Logging device---

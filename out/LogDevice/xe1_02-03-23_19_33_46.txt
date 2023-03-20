@@ -1,0 +1,237 @@
+Syslog logging: enabled (0 messages dropped, 3 messages rate-limited, 0 flushes, 0 overruns, xml disabled, filtering disabled)
+
+No Active Message Discriminator.
+
+
+
+No Inactive Message Discriminator.
+
+
+    Console logging: disabled
+    Monitor logging: level debugging, 0 messages logged, xml disabled,
+                     filtering disabled
+    Buffer logging:  level debugging, 206 messages logged, xml disabled,
+                    filtering disabled
+    Exception Logging: size (4096 bytes)
+    Count and timestamp logging messages: disabled
+    Persistent logging: disabled
+
+No active filter modules.
+
+    Trap logging: level informational, 206 message lines logged
+        Logging Source-Interface:       VRF Name:
+    TLS Profiles: 
+
+Log Buffer (131072 bytes):
+
+*Mar  2 05:09:21.608: %VUDI-6-EVENT: [serial number: 99QQK0GW1PC], [vUDI: ], vUDI is successfully retrieved from license file
+*Mar  2 05:09:21.915: %SMART_LIC-6-EXPORT_CONTROLLED: Usage of export controlled features is not allowed
+*Mar  2 05:09:31.812: VXE-CSL-DBG:Unable to open the postFR backup file/file not present 
+
+*Mar  2 05:09:32.990: %SMART_LIC-6-AGENT_READY: Smart Agent for Licensing is initialized
+*Mar  2 05:09:32.991: %SMART_LIC-6-AGENT_ENABLED: Smart Agent for Licensing is enabled 
+*Mar  2 05:09:32.993: %SMART_LIC-6-EXPORT_CONTROLLED: Usage of export controlled features is not allowed
+*Mar  2 05:09:33.082: %VXE_THROUGHPUT-6-LEVEL: Throughput level has been set to 1000 kbps
+*Mar  2 05:09:36.138: %VUDI-6-EVENT: [serial number: 99QQK0GW1PC], [vUDI: CSR1000V:99QQK0GW1PC], vUDI initialization is now complete
+*Mar  2 05:09:36.509: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1, changed state to down
+*Mar  2 05:09:36.556: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet2, changed state to down
+*Mar  2 05:09:36.610: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet3, changed state to down
+*Mar  2 05:09:37.246: BFD: brace register success
+*Mar  2 05:09:46.057: %SPANTREE-5-EXTENDED_SYSID: Extended SysId enabled for type vlan
+*Mar  2 05:09:46.678: %CRYPTO_ENGINE-4-CSDL_COMPLIANCE_DISABLED: Cisco PSB security compliance has been disabled
+*Mar  2 05:09:46.872: %CUBE-3-LICENSING:  SIP trunking (CUBE) licensing is now based on dynamic sessions counting, static license capacity configuration through 'mode border-element license capacity' would be ignored.
+*Mar  2 05:09:46.879: %SIP-5-LICENSING: CUBE license reporting period has been set to the minimum value of 8 hours.
+*Mar  2 05:09:46.882: %VOICE_HA-7-STATUS: CUBE HA-supported platform detected.
+*Mar  2 05:09:49.587: %LINK-3-UPDOWN: Interface Lsmpi0, changed state to up
+*Mar  2 05:09:52.317: %PNP-6-PNP_DISCOVERY_STARTED: PnP Discovery started
+*Mar  2 05:06:19.299: %BOOT-5-OPMODE_LOG: R0/0: binos: System booted in AUTONOMOUS mode
+*Mar  2 05:09:52.738: %SMART_LIC-6-HA_ROLE_CHANGED: Smart Agent HA role changed to Active.
+*Mar  2 05:09:59.388: %LINK-3-UPDOWN: Interface EOBC0, changed state to up
+*Mar  2 05:09:59.390: %LINEPROTO-5-UPDOWN: Line protocol on Interface LI-Null0, changed state to up
+*Mar  2 05:09:59.391: %LINEPROTO-5-UPDOWN: Line protocol on Interface VoIP-Null0, changed state to up
+*Mar  2 05:09:59.393: %LINK-3-UPDOWN: Interface LIIN0, changed state to up
+*Mar  2 05:09:59.394: %LINK-3-UPDOWN: Interface GigabitEthernet1, changed state to down
+*Mar  2 05:09:59.408: %LINK-3-UPDOWN: Interface GigabitEthernet2, changed state to down
+*Mar  2 05:09:59.417: %LINK-3-UPDOWN: Interface GigabitEthernet3, changed state to down
+*Mar  2 05:09:59.433: %LINEPROTO-5-UPDOWN: Line protocol on Interface Lsmpi0, changed state to up
+*Mar  2 05:10:00.484: %LINEPROTO-5-UPDOWN: Line protocol on Interface EOBC0, changed state to up
+*Mar  2 05:10:00.484: %LINEPROTO-5-UPDOWN: Line protocol on Interface LIIN0, changed state to up
+*Mar  2 05:10:00.485: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1, changed state to up
+*Mar  2 05:10:00.486: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet2, changed state to up
+*Mar  2 05:10:00.486: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet3, changed state to up
+*Mar  2 05:10:01.306: %CVAC-4-PROPERTY_IGNORED: Property (key 'enable-sdwan.1', value 'False') ignored: unrecognized key
+*Mar  2 05:10:01.314: %CVAC-4-FILE_IGNORED: Configuration file varied:/ovf-env.xml is ignored: checksum unchanged since last inspected
+*Mar  2 05:10:01.315: %CVAC-4-FILE_IGNORED: Configuration file cdrom1:/ovf-env.xml is ignored: already found varied:/ovf-env.xml earlier
+*Mar  2 05:10:01.354: %SYS-7-NVRAM_INIT_WAIT_TIME: Waited 0 seconds for NVRAM to be available
+*Mar  2 05:10:02.176: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named ssh-key has been generated or imported by crypto config
+*Mar  2 05:10:02.246: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named TP-self-signed-3392182368 has been generated or imported by crypto config
+*Mar  2 05:10:02.879: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named xe1.helena.gg has been generated or imported by crypto config
+*Mar  2 05:10:03.026: %PKI-6-TRUSTPOINT_CREATE: Trustpoint: TP-self-signed-3392182368 created succesfully
+*Mar  2 05:10:03.031: %PKI-6-TRUSTPOINT_CREATE: Trustpoint: SLA-TrustPoint created succesfully
+*Mar  2 05:10:03.382: %OSPF-6-DFT_OPT: Protocol timers for fast convergence are Enabled.
+*Mar  2 05:10:03.431: %LINK-5-CHANGED: Interface GigabitEthernet3, changed state to administratively down
+*Mar  2 05:10:03.438: %LINK-5-CHANGED: Interface GigabitEthernet2, changed state to administratively down
+*Mar  2 05:10:03.487: %SSH-5-DISABLED: SSH 1.99 has been disabled
+*Mar  2 05:10:03.628: %SYS-5-CONFIG_I: Configured from memory by console
+*Mar  2 05:10:04.796: %IOSXE_OIR-6-INSCARD: Card (fp) inserted in slot F0
+*Mar  2 05:10:04.797: %IOSXE_OIR-6-ONLINECARD: Card (fp) online in slot F0
+*Mar  2 05:10:05.531: %LINK-3-UPDOWN: Interface GigabitEthernet1, changed state to up
+*Mar  2 05:10:05.579: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet3, changed state to down
+*Mar  2 05:10:05.580: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet2, changed state to down
+*Mar  2 05:10:06.456: %SYS-5-RESTART: System restarted --
+Cisco IOS Software [Amsterdam], Virtual XE Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 17.3.5, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2022 by Cisco Systems, Inc.
+Compiled Wed 09-Feb-22 10:35 by mcpre
+*Mar  2 05:10:06.500: %SSH-5-ENABLED: SSH 2.0 has been enabled
+*Mar  2 05:10:06.829: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is OFF
+*Mar  2 05:10:06.829: %CRYPTO-6-GDOI_ON_OFF: GDOI is OFF
+*Mar  2 05:10:06.833: %CVAC-4-FILE_IGNORED: Configuration file varied:/ovf-env.xml is ignored: already found varied:/ovf-env.xml earlier
+*Mar  2 05:10:06.834: %CVAC-4-FILE_IGNORED: Configuration file cdrom1:/ovf-env.xml is ignored: already found varied:/ovf-env.xml earlier
+*Mar  2 05:10:06.945: %PKI-2-NON_AUTHORITATIVE_CLOCK: PKI functions can not be initialized until an authoritative time source, like NTP, can be obtained.
+*Mar  2 05:10:07.782: %SMART_LIC-6-EXPORT_CONTROLLED: Usage of export controlled features is not allowed
+*Mar  2 05:10:07.783: %CALL_HOME-6-CALL_HOME_ENABLED: Call-home is enabled by Smart Agent for Licensing.
+*Mar  2 05:10:12.664: %PNP-6-PNP_BEST_UDI_UPDATE: Best UDI [PID:CSR1000V,VID:V00,SN:99QQK0GW1PC] identified via (entity-mibs)
+*Mar  2 05:10:12.665: %PNP-6-PNP_CDP_UPDATE: Device UDI [PID:CSR1000V,VID:V00,SN:99QQK0GW1PC] identified for CDP
+*Mar  2 05:10:12.670: %PNP-6-PNP_DISCOVERY_STOPPED: PnP Discovery stopped (Startup Config Present)
+*Mar  2 05:10:12.875: %ONEP_BASE-6-SS_ENABLED: ONEP: Service set Base was enabled by Default
+*Mar  2 05:10:12.885: %OSPF-5-ADJCHG: Process 1, Nbr 198.18.0.123 on GigabitEthernet1 from LOADING to FULL, Loading Done
+*Mar  2 05:10:16.068: %OSPF-5-ADJCHG: Process 1, Nbr 198.18.0.131 on GigabitEthernet1 from LOADING to FULL, Loading Done
+*Mar  2 05:10:28.549: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named ssh-key.server has been generated or imported by crypto-engine
+*Mar  2 05:10:38.918: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.98] [localport: 22] at 05:10:38 UTC Thu Mar 2 2023
+*Mar  2 05:10:42.895: %SYS-5-LOG_CONFIG_CHANGE: Console logging disabled
+*Mar  2 05:10:43.196: %SYS-5-CONFIG_I: Configured from console by cisco on vty0 (10.16.36.98)
+*Mar  2 05:10:49.165: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 05:10:49 UTC Thu Mar 2 2023
+*Mar  2 05:11:36.877: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 05:11:36 UTC Thu Mar 2 2023
+*Mar  2 05:12:38.851: %SYS-6-LOGOUT: User cisco has exited tty session 3(10.16.36.99)
+*Mar  2 05:12:51.077: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 05:12:51 UTC Thu Mar 2 2023
+*Mar  2 05:12:53.612: %SYS-6-LOGOUT: User cisco has exited tty session 1(10.16.36.98)
+*Mar  2 05:13:27.028: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 05:13:27 UTC Thu Mar 2 2023
+*Mar  2 05:14:01.135: %SYS-6-LOGOUT: User cisco has exited tty session 1(10.16.36.99)
+*Mar  2 05:14:41.725: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 05:14:41 UTC Thu Mar 2 2023
+*Mar  2 05:15:05.928: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.98] [localport: 22] at 05:15:05 UTC Thu Mar 2 2023
+*Mar  2 05:15:07.548: %SYS-5-CONFIG_I: Configured from console by cisco on vty2 (10.16.36.98)
+*Mar  2 05:15:21.981: %SYS-6-LOGOUT: User cisco has exited tty session 1(10.16.36.99)
+*Mar  2 05:15:55.433: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 05:15:55 UTC Thu Mar 2 2023
+*Mar  2 05:15:57.590: %SYS-6-LOGOUT: User cisco has exited tty session 1(10.16.36.99)
+*Mar  2 05:16:04.839: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 05:16:04 UTC Thu Mar 2 2023
+*Mar  2 05:16:39.807: %SYS-6-LOGOUT: User cisco has exited tty session 4(10.16.36.99)
+*Mar  2 05:17:04.869: %SYS-6-LOGOUT: User cisco has exited tty session 3(10.16.36.98)
+*Mar  2 05:17:57.370: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 05:17:57 UTC Thu Mar 2 2023
+*Mar  2 05:18:31.447: %SYS-6-LOGOUT: User cisco has exited tty session 1(10.16.36.99)
+*Mar  2 05:19:44.610: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 05:19:44 UTC Thu Mar 2 2023
+*Mar  2 05:20:36.847: %SYS-6-LOGOUT: User cisco has exited tty session 1(10.16.36.99)
+*Mar  2 05:21:18.675: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.98] [localport: 22] at 05:21:18 UTC Thu Mar 2 2023
+*Mar  2 05:21:20.395: %SYS-5-CONFIG_I: Configured from console by cisco on vty0 (10.16.36.98)
+*Mar  2 05:22:08.581: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 05:22:08 UTC Thu Mar 2 2023
+*Mar  2 05:22:42.497: %SYS-6-LOGOUT: User cisco has exited tty session 3(10.16.36.99)
+*Mar  2 05:23:15.553: %SYS-6-LOGOUT: User cisco has exited tty session 1(10.16.36.98)
+*Mar  2 05:24:21.747: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 05:24:21 UTC Thu Mar 2 2023
+*Mar  2 05:24:54.328: %SYS-6-LOGOUT: User cisco has exited tty session 1(10.16.36.99)
+*Mar  2 05:24:56.784: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 05:24:56 UTC Thu Mar 2 2023
+*Mar  2 05:25:30.694: %SYS-6-LOGOUT: User cisco has exited tty session 1(10.16.36.99)
+*Mar  2 05:25:33.673: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 05:25:33 UTC Thu Mar 2 2023
+*Mar  2 05:26:07.523: %SYS-6-LOGOUT: User cisco has exited tty session 1(10.16.36.99)
+*Mar  2 05:30:06.251: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 05:30:06 UTC Thu Mar 2 2023
+*Mar  2 05:30:40.058: %SYS-6-LOGOUT: User cisco has exited tty session 1(10.16.36.99)
+*Mar  2 05:32:09.615: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.98] [localport: 22] at 05:32:09 UTC Thu Mar 2 2023
+*Mar  2 05:32:38.341: %SYS-6-LOGOUT: User cisco has exited tty session 1(10.16.36.98)
+*Mar  2 05:38:22.207: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.98] [localport: 22] at 05:38:22 UTC Thu Mar 2 2023
+*Mar  2 05:40:13.218: %SYS-6-LOGOUT: User cisco has exited tty session 1(10.16.36.98)
+*Mar  2 05:40:43.320: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.98] [localport: 22] at 05:40:43 UTC Thu Mar 2 2023
+*Mar  2 05:41:16.457: %SYS-6-LOGOUT: User cisco has exited tty session 1(10.16.36.98)
+*Mar  2 05:41:34.966: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.98] [localport: 22] at 05:41:34 UTC Thu Mar 2 2023
+*Mar  2 05:41:48.158: %SYS-6-LOGOUT: User cisco has exited tty session 1(10.16.36.98)
+*Mar  2 05:43:34.926: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.98] [localport: 22] at 05:43:34 UTC Thu Mar 2 2023
+*Mar  2 05:44:04.497: %SYS-6-LOGOUT: User cisco has exited tty session 1(10.16.36.98)
+*Mar  2 06:02:59.096: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.98] [localport: 22] at 06:02:59 UTC Thu Mar 2 2023
+*Mar  2 06:03:05.479: %SYS-6-LOGOUT: User cisco has exited tty session 1(10.16.36.98)
+*Mar  2 06:15:42.371: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 06:15:42 UTC Thu Mar 2 2023
+*Mar  2 06:15:55.248: %SYS-6-LOGOUT: User cisco has exited tty session 1(10.16.36.99)
+*Mar  2 06:17:59.535: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 06:17:59 UTC Thu Mar 2 2023
+*Mar  2 06:18:10.933: %SYS-6-LOGOUT: User cisco has exited tty session 1(10.16.36.99)
+*Mar  2 06:18:50.030: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 06:18:50 UTC Thu Mar 2 2023
+*Mar  2 06:19:00.684: %SYS-6-LOGOUT: User cisco has exited tty session 1(10.16.36.99)
+*Mar  2 06:57:42.835: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 06:57:42 UTC Thu Mar 2 2023
+*Mar  2 06:58:05.054: %SYS-6-LOGOUT: User cisco has exited tty session 1(10.16.36.99)
+*Mar  2 06:58:17.740: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 06:58:17 UTC Thu Mar 2 2023
+*Mar  2 06:58:40.806: %SYS-6-LOGOUT: User cisco has exited tty session 1(10.16.36.99)
+*Mar  2 06:58:42.861: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 06:58:42 UTC Thu Mar 2 2023
+*Mar  2 06:59:06.373: %SYS-6-LOGOUT: User cisco has exited tty session 1(10.16.36.99)
+*Mar  2 06:59:38.332: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 06:59:38 UTC Thu Mar 2 2023
+*Mar  2 07:00:02.324: %SYS-6-LOGOUT: User cisco has exited tty session 1(10.16.36.99)
+*Mar  2 07:00:41.094: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 07:00:41 UTC Thu Mar 2 2023
+*Mar  2 07:01:09.512: %SYS-6-LOGOUT: User cisco has exited tty session 1(10.16.36.99)
+*Mar  2 07:13:30.035: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 07:13:30 UTC Thu Mar 2 2023
+*Mar  2 07:13:32.098: %SYS-6-LOGOUT: User cisco has exited tty session 1(10.16.36.99)
+*Mar  2 07:13:39.037: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 07:13:39 UTC Thu Mar 2 2023
+*Mar  2 07:28:25.226: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 07:28:25 UTC Thu Mar 2 2023
+*Mar  2 07:28:27.002: %SYS-6-LOGOUT: User cisco has exited tty session 1(10.16.36.99)
+*Mar  2 07:28:44.119: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 07:28:44 UTC Thu Mar 2 2023
+*Mar  2 07:28:51.577: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 07:28:51 UTC Thu Mar 2 2023
+*Mar  2 07:28:53.386: %SYS-6-LOGOUT: User cisco has exited tty session 3(10.16.36.99)
+*Mar  2 07:29:14.635: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 07:29:14 UTC Thu Mar 2 2023
+*Mar  2 07:29:16.483: %SYS-6-LOGOUT: User cisco has exited tty session 3(10.16.36.99)
+*Mar  2 07:29:30.013: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 07:29:30 UTC Thu Mar 2 2023
+*Mar  2 07:30:04.672: %SYS-6-LOGOUT: User cisco has exited tty session 3(10.16.36.99)
+*Mar  2 07:42:56.288: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.100] [localport: 22] at 07:42:56 UTC Thu Mar 2 2023
+*Mar  2 07:43:09.457: %SYS-6-LOGOUT: User cisco has exited tty session 3(10.16.36.100)
+*Mar  2 07:43:23.959: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.100] [localport: 22] at 07:43:23 UTC Thu Mar 2 2023
+*Mar  2 07:43:35.929: %SYS-6-LOGOUT: User cisco has exited tty session 3(10.16.36.100)
+*Mar  2 07:48:12.012: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 07:48:12 UTC Thu Mar 2 2023
+*Mar  2 07:48:13.898: %SYS-6-LOGOUT: User cisco has exited tty session 3(10.16.36.99)
+*Mar  2 07:48:43.461: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 07:48:43 UTC Thu Mar 2 2023
+*Mar  2 07:49:02.637: %SYS-6-LOGOUT: User cisco has exited tty session 3(10.16.36.99)
+*Mar  2 07:49:29.322: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 07:49:29 UTC Thu Mar 2 2023
+*Mar  2 07:50:05.402: %OSPF-5-ADJCHG: Process 1, Nbr 198.18.0.133 on GigabitEthernet1 from 2WAY to DOWN, Neighbor Down: Dead timer expired
+*Mar  2 07:50:33.021: %SYS-6-LOGOUT: User cisco has exited tty session 3(10.16.36.99)
+*Mar  2 07:51:09.830: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 07:51:09 UTC Thu Mar 2 2023
+*Mar  2 07:51:10.343: %SYS-6-LOGOUT: User cisco has exited tty session 3(10.16.36.99)
+*Mar  2 07:51:15.441: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 07:51:15 UTC Thu Mar 2 2023
+*Mar  2 07:52:24.063: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 07:52:24 UTC Thu Mar 2 2023
+*Mar  2 07:52:24.726: %SYS-6-LOGOUT: User cisco has exited tty session 3(10.16.36.99)
+*Mar  2 07:53:11.586: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 07:53:11 UTC Thu Mar 2 2023
+*Mar  2 07:53:13.373: %SYS-6-LOGOUT: User cisco has exited tty session 3(10.16.36.99)
+*Mar  2 07:53:25.121: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 07:53:25 UTC Thu Mar 2 2023
+*Mar  2 07:53:25.621: %SYS-6-LOGOUT: User cisco has exited tty session 3(10.16.36.99)
+*Mar  2 07:53:58.690: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 07:53:58 UTC Thu Mar 2 2023
+*Mar  2 07:53:59.246: %SYS-6-LOGOUT: User cisco has exited tty session 3(10.16.36.99)
+*Mar  2 07:54:05.798: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 07:54:05 UTC Thu Mar 2 2023
+*Mar  2 07:54:20.915: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 07:54:20 UTC Thu Mar 2 2023
+*Mar  2 07:54:22.601: %SYS-6-LOGOUT: User cisco has exited tty session 3(10.16.36.99)
+*Mar  2 07:55:15.535: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 07:55:15 UTC Thu Mar 2 2023
+*Mar  2 07:55:17.251: %SYS-6-LOGOUT: User cisco has exited tty session 3(10.16.36.99)
+*Mar  2 07:56:02.615: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 07:56:02 UTC Thu Mar 2 2023
+*Mar  2 07:56:04.397: %SYS-6-LOGOUT: User cisco has exited tty session 3(10.16.36.99)
+*Mar  2 07:56:26.535: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 07:56:26 UTC Thu Mar 2 2023
+*Mar  2 07:56:46.298: %SYS-6-LOGOUT: User cisco has exited tty session 3(10.16.36.99)
+*Mar  2 08:06:42.291: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 08:06:42 UTC Thu Mar 2 2023
+*Mar  2 08:07:10.621: %SYS-6-LOGOUT: User cisco has exited tty session 3(10.16.36.99)
+*Mar  2 08:08:27.897: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 08:08:27 UTC Thu Mar 2 2023
+*Mar  2 08:09:35.008: %SYS-6-LOGOUT: User cisco has exited tty session 3(10.16.36.99)
+*Mar  2 08:09:48.834: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 08:09:48 UTC Thu Mar 2 2023
+*Mar  2 08:10:31.746: %SYS-6-LOGOUT: User cisco has exited tty session 3(10.16.36.99)
+*Mar  2 08:11:29.095: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 08:11:29 UTC Thu Mar 2 2023
+*Mar  2 08:11:53.664: %SYS-6-LOGOUT: User cisco has exited tty session 3(10.16.36.99)
+*Mar  2 08:12:25.329: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 08:12:25 UTC Thu Mar 2 2023
+*Mar  2 08:12:46.735: %SYS-6-LOGOUT: User cisco has exited tty session 3(10.16.36.99)
+*Mar  2 08:13:01.032: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 08:13:01 UTC Thu Mar 2 2023
+*Mar  2 08:13:22.472: %SYS-6-LOGOUT: User cisco has exited tty session 3(10.16.36.99)
+*Mar  2 08:15:43.653: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 08:15:43 UTC Thu Mar 2 2023
+*Mar  2 08:19:53.327: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.99] [localport: 22] at 08:19:53 UTC Thu Mar 2 2023
+*Mar  2 08:20:06.361: %SYS-6-LOGOUT: User cisco has exited tty session 4(10.16.36.99)
+*Mar  2 12:18:10.053: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.101] [localport: 22] at 12:18:10 UTC Thu Mar 2 2023
+*Mar  2 12:18:12.114: %SYS-5-CONFIG_I: Configured from console by cisco on vty3 (10.16.36.101)
+*Mar  2 12:18:47.383: %SYS-6-LOGOUT: User cisco has exited tty session 4(10.16.36.101)
+*Mar  2 12:20:27.019: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 198.18.0.120] [localport: 22] at 12:20:27 UTC Thu Mar 2 2023
+*Mar  2 12:20:27.440: %SYS-6-LOGOUT: User cisco has exited tty session 4(198.18.0.120)
+*Mar  2 12:20:35.419: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 198.18.0.120] [localport: 22] at 12:20:35 UTC Thu Mar 2 2023
+*Mar  2 12:20:38.169: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.101] [localport: 22] at 12:20:38 UTC Thu Mar 2 2023
+*Mar  2 12:20:40.984: %SYS-6-LOGOUT: User cisco has exited tty session 4(198.18.0.120)
+*Mar  2 12:22:06.463: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.101] [localport: 22] at 12:22:06 UTC Thu Mar 2 2023
+*Mar  2 12:22:14.415: %SYS-6-LOGOUT: User cisco has exited tty session 4(10.16.36.101)
+*Mar  2 12:23:58.782: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 198.18.0.120] [localport: 22] at 12:23:58 UTC Thu Mar 2 2023
+*Mar  2 12:24:02.194: %SYS-6-LOGOUT: User cisco has exited tty session 4(198.18.0.120)
+*Mar  2 12:24:59.965: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 198.18.0.120] [localport: 22] at 12:24:59 UTC Thu Mar 2 2023
+*Mar  2 12:25:03.321: %SYS-6-LOGOUT: User cisco has exited tty session 4(198.18.0.120)
+*Mar  2 12:27:40.789: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 10.16.36.101] [localport: 22] at 12:27:40 UTC Thu Mar 2 2023

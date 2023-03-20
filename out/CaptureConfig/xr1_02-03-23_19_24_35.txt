@@ -1,0 +1,78 @@
+Thu Mar  2 12:18:29.909 UTC
+Building configuration...
+!! IOS XR Configuration 7.5.2
+!! Last configuration change at Thu Mar  2 12:18:28 2023 by cisco
+!
+hostname xr1
+logging console disable
+username cisco
+ group root-lr
+ group cisco-support
+ secret 10 $6$HCwZ3/1TNFLK23/.$GP7wnbechxU.12moJLtdG9bQp8LkwSRqHiLT6wpQlG.adjy.mg4vwt9QrcSpyA8dJhf4W4EeJEACS.0NsnQP40
+!
+username helena
+ group root-lr
+ secret 10 $6$Yl1V8/wEcG2e28/.$aGU0AMPIJSgb..Jb808qnUZGO1efzcv2xBCHMWQfXg3/5CHQWHF/3VwUZoj0rYvyZFeaEWc7qXh9ly8rSoHSY0
+!
+cdp
+cdp advertise v1
+line console
+ exec-timeout 0 0
+ absolute-timeout 0
+ session-timeout 0
+!
+line default
+ exec-timeout 0 0
+ absolute-timeout 0
+ session-timeout 0
+!
+call-home
+ service active
+ contact smart-licensing
+ profile CiscoTAC-1
+  active
+  destination transport-method email disable
+  destination transport-method http
+ !
+!
+interface MgmtEth0/RP0/CPU0/0
+ shutdown
+!
+interface GigabitEthernet0/0/0/0
+ cdp
+ ipv4 address 198.18.0.131 255.255.255.0
+!
+interface GigabitEthernet0/0/0/1
+ shutdown
+!
+interface GigabitEthernet0/0/0/2
+ shutdown
+!
+interface GigabitEthernet0/0/0/3
+ shutdown
+!
+interface GigabitEthernet0/0/0/4
+ shutdown
+!
+interface GigabitEthernet0/0/0/5
+ shutdown
+!
+interface GigabitEthernet0/0/0/6
+ shutdown
+!
+router static
+ address-family ipv4 unicast
+  0.0.0.0/0 198.18.0.1
+ !
+!
+router ospf 1
+ address-family ipv4 unicast
+ area 0
+  interface GigabitEthernet0/0/0/0
+  !
+ !
+!
+crypto key generate dsa 1024
+crypto key generate rsa the_default general-keys 2048
+ssh server v2
+end

@@ -1,0 +1,746 @@
+Thu Mar  2 12:27:55.527 UTC
+Syslog logging: enabled (0 messages dropped, 0 flushes, 0 overruns)
+    Console logging: Disabled
+    Monitor logging: level debugging, 0 messages logged
+    Trap logging: level informational, 0 messages logged
+    Buffer logging: level debugging, 737 messages logged
+
+Log Buffer (2097152 bytes):
+
+0/RP0/ADMIN0:Feb 18 08:41:22.431 UTC: inst_agent[3201]: %INFRA-INSTAGENT-4-XR_PART_PREP_REQ : Received SDR/XR partition request. Looking for available matching partition. If not found, new one will be created after copying relevant image and RPMs  
+RP/0/RP0/CPU0:Feb 18 08:41:19.801 UTC: syslogd[154]: %SECURITY-XR_SSL-6-INFO : XR SSL info: Setting fips register 
+RP/0/RP0/CPU0:Feb 18 08:41:19.910 UTC: spp[116]: Initialized socket RX node
+RP/0/RP0/CPU0:Feb 18 08:41:19.910 UTC: spp[116]: Initialized socket TX node
+RP/0/RP0/CPU0:Feb 18 08:41:19.910 UTC: spp[116]: Registered socket plugin
+RP/0/RP0/CPU0:Feb 18 08:41:19.955 UTC: spp[116]: Initialized punt classification node
+RP/0/RP0/CPU0:Feb 18 08:41:19.955 UTC: spp[116]: Initialized client inject node
+RP/0/RP0/CPU0:Feb 18 08:41:19.955 UTC: spp[116]: Registered XRv9k SPP plugin
+RP/0/RP0/CPU0:Feb 18 08:41:20.592 UTC: platform_packet_partner[429]: Pakman memory region 0x10000000 .. 0x18000000, size 128Mb (32 scale)
+RP/0/RP0/CPU0:Feb 18 08:41:21.562 UTC: spp[116]: Opened UDP socket at 172.0.0.1:9920 (Punt/Inject crucial)
+RP/0/RP0/CPU0:Feb 18 08:41:21.562 UTC: spp[116]: Opened UDP socket at 172.0.0.1:9921 (Punt/Inject high)
+RP/0/RP0/CPU0:Feb 18 08:41:21.562 UTC: spp[116]: Opened UDP socket at 172.0.0.1:9922 (Punt/Inject medium)
+RP/0/RP0/CPU0:Feb 18 08:41:21.563 UTC: spp[116]: Opened UDP socket at 172.0.0.1:9923 (Punt/Inject low)
+RP/0/RP0/CPU0:Feb 18 08:41:21.569 UTC: spp[116]: Opened raw socket on eth0 (Management)
+RP/0/RP0/CPU0:Feb 18 08:41:21.569 UTC: spp[116]: Successfully initialized socket devices
+RP/0/RP0/CPU0:Feb 18 08:41:37.357 UTC: iedged[149]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is not ready. Reason: [V4 Subscriber infra process(es) is unavailable]. 
+RP/0/RP0/CPU0:Feb 18 08:41:37.357 UTC: iedged[149]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is not ready. Reason: [V6 Subscriber infra process(es) is unavailable]. 
+RP/0/RP0/CPU0:Feb 18 08:41:38.875 UTC: iedged[149]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is ready. Reason: [V4 Subscriber infra process(es) is available]. 
+RP/0/RP0/CPU0:Feb 18 08:41:38.875 UTC: iedged[149]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is ready. Reason: [V6 Subscriber infra process(es) is available]. 
+RP/0/RP0/CPU0:Feb 18 08:42:12.038 UTC: iedged[149]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is not ready. Reason: [V4 Subscriber infra process(es) is unavailable]. 
+RP/0/RP0/CPU0:Feb 18 08:42:13.583 UTC: netio[439]: FINT (IFH 00000008) interface specification received
+RP/0/RP0/CPU0:Feb 18 08:42:13.583 UTC: netio[439]: Attached to IFH 00000008 IDB (FINT0_RP0_CPU0)
+RP/0/RP0/CPU0:Feb 18 08:42:19.747 UTC: iedged[149]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is not ready. Reason: [V6 Subscriber infra process(es) is unavailable]. 
+RP/0/RP0/CPU0:Feb 18 08:42:19.813 UTC: cepki[272]: %SECURITY-PKI-6-LOG_INFO_DETAIL : FIPS POST Successful for  cepki 
+RP/0/RP0/CPU0:Feb 18 08:42:20.695 UTC: cfgmgr-rp[427]: %MGBL-CONFIG-6-STARTUP_ALTERNATE : Configuration Manager can not find any configuration to apply from the alternate source '/mnt/fuse/rdsfs/cfs/cfg/alt_cfg/router.cfg'. Default configuration will be applied. 
+RP/0/RP0/CPU0:Feb 18 08:42:23.264 UTC: ipsub_ma[125]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is not ready. Reason: [V4 Subscriber infra process(es) is unavailable]. 
+RP/0/RP0/CPU0:Feb 18 08:42:23.264 UTC: ipsub_ma[125]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is not ready. Reason: [V6 Subscriber infra process(es) is unavailable]. 
+RP/0/RP0/CPU0:Feb 18 08:42:23.866 UTC: ipsub_ma[125]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is ready. Reason: [V6 Subscriber infra process(es) is available]. 
+RP/0/RP0/CPU0:Feb 18 08:42:23.866 UTC: iedged[149]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is ready. Reason: [V6 Subscriber infra process(es) is available]. 
+RP/0/RP0/CPU0:Feb 18 08:42:24.257 UTC: iedged[149]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is not ready. Reason: [V6 Subscriber infra process(es) is unavailable]. 
+RP/0/RP0/CPU0:Feb 18 08:42:24.258 UTC: ipsub_ma[125]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is not ready. Reason: [V6 Subscriber infra process(es) is unavailable]. 
+RP/0/RP0/CPU0:Feb 18 08:42:26.277 UTC: pppoe_ma[398]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is not ready. Reason: [V4 Subscriber infra process(es) is unavailable]. 
+RP/0/RP0/CPU0:Feb 18 08:42:26.278 UTC: pppoe_ma[398]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is not ready. Reason: [V6 Subscriber infra process(es) is unavailable]. 
+RP/0/RP0/CPU0:Feb 18 08:42:27.348 UTC: ipsec_mp[358]: %SECURITY-IMP-6-PROC_READY : Process ipsec_mp is ready 
+RP/0/RP0/CPU0:Feb 18 08:42:29.988 UTC: cepki[272]: %SECURITY-CEPKI-6-KEY_INFO : No Host Keypairs found. Auto-generating all supported Host Keypairs. 
+RP/0/RP0/CPU0:Feb 18 08:42:30.180 UTC: pim6[1258]: %ROUTING-PIM-5-HA_NOTICE : NSR not ready 
+RP/0/RP0/CPU0:Feb 18 08:42:30.387 UTC: pim[1257]: %ROUTING-PIM-5-HA_NOTICE : NSR not ready 
+RP/0/RP0/CPU0:Feb 18 08:42:31.430 UTC: cepki[272]: %SECURITY-CEPKI-6-KEY_INFO : crypto key RSA generated, label:the_default, modBits:2048 
+RP/0/RP0/CPU0:Feb 18 08:42:31.490 UTC: cepki[272]: %SECURITY-CEPKI-6-INFO : key database updated successfully 
+RP/0/RP0/CPU0:Feb 18 08:42:31.516 UTC: cepki[272]: %SECURITY-CEPKI-6-KEY_INFO : crypto key DSA generated, label:the_default, modBits:1024 
+RP/0/RP0/CPU0:Feb 18 08:42:31.535 UTC: cepki[272]: %SECURITY-CEPKI-6-KEY_INFO : crypto key ED25519 generated, label:the_default, modBits:256 
+RP/0/RP0/CPU0:Feb 18 08:42:32.203 UTC: cepki[272]: %SECURITY-CEPKI-6-KEY_INFO : crypto key ECDSA_NISTP256 generated, label:the_default, modBits:256 
+RP/0/RP0/CPU0:Feb 18 08:42:32.222 UTC: cepki[272]: %SECURITY-CEPKI-6-KEY_INFO : crypto key ECDSA_NISTP384 generated, label:the_default, modBits:384 
+RP/0/RP0/CPU0:Feb 18 08:42:32.251 UTC: cepki[272]: %SECURITY-CEPKI-6-KEY_INFO : crypto key ECDSA_NISTP521 generated, label:the_default, modBits:521 
+RP/0/RP0/CPU0:Feb 18 08:42:32.259 UTC: cepki[272]: %SECURITY-CEPKI-6-KEY_INFO : Generated keypairs for: rsa dsa ed25519 ecdsa-nistp256 ecdsa-nistp384 ecdsa-nistp521 
+RP/0/RP0/CPU0:Feb 18 08:42:32.596 UTC: cepki[272]: %SECURITY-CEPKI-6-INFO : certificate database updated 
+RP/0/RP0/CPU0:Feb 18 08:42:43.346 UTC: smartlicserver[402]: %LICENSE-SMART_LIC-6-EXPORT_CONTROLLED : Usage of export controlled features is not allowed 
+RP/0/RP0/CPU0:Feb 18 08:42:43.446 UTC: smartlicserver[402]: %LICENSE-SMART_LIC-6-AGENT_READY : Smart Agent for Licensing is initialized 
+RP/0/RP0/CPU0:Feb 18 08:42:43.446 UTC: smartlicserver[402]: %LICENSE-SMART_LIC-6-AGENT_ENABLED : Smart Agent for Licensing is enabled  
+RP/0/RP0/CPU0:Feb 18 08:42:43.446 UTC: smartlicserver[402]: %LICENSE-SMART_LIC-6-EXPORT_CONTROLLED : Usage of export controlled features is not allowed 
+RP/0/RP0/CPU0:Feb 18 08:42:50.145 UTC: script_agent_main[162]: %OS-SCRIPT_MGMT-6-PROCESS_START : ScriptAgent: Start :: Mode: Active 
+RP/0/RP0/CPU0:Feb 18 08:42:50.764 UTC: script_watcher_main[350]: %OS-SCRIPT_MGMT-6-PROCESS_START : ScriptWatcher: Start :: Mode: Active 
+RP/0/RP0/CPU0:Feb 18 08:43:00.724 UTC: sys_rec[1286]: %SECURITY-SYSTEM_RECOVERY-6-DISABLED : System recovery disabled 
+RP/0/RP0/CPU0:Feb 18 08:43:01.947 UTC: pyztp2[274]: %INFRA-ZTP-6-START : ZTP has started. Interfaces might be brought up if they are shutdown 
+RP/0/RP0/CPU0:Feb 18 08:43:06.045 UTC: pppoe_ma[398]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is ready. Reason: [V4 Subscriber infra process(es) is available]. 
+RP/0/RP0/CPU0:Feb 18 08:43:06.045 UTC: pppoe_ma[398]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is ready. Reason: [V6 Subscriber infra process(es) is available]. 
+RP/0/RP0/CPU0:Feb 18 08:43:06.045 UTC: ipsub_ma[125]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is ready. Reason: [V4 Subscriber infra process(es) is available]. 
+RP/0/RP0/CPU0:Feb 18 08:43:06.045 UTC: ipsub_ma[125]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is ready. Reason: [V6 Subscriber infra process(es) is available]. 
+RP/0/RP0/CPU0:Feb 18 08:43:06.046 UTC: iedged[149]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is ready. Reason: [V4 Subscriber infra process(es) is available]. 
+RP/0/RP0/CPU0:Feb 18 08:43:06.046 UTC: iedged[149]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is ready. Reason: [V6 Subscriber infra process(es) is available]. 
+RP/0/RP0/CPU0:Feb 18 08:43:06.049 UTC: ipsub_ma[125]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is not ready. Reason: [V6 Subscriber infra process(es) is unavailable]. 
+RP/0/RP0/CPU0:Feb 18 08:43:06.049 UTC: iedged[149]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is not ready. Reason: [V6 Subscriber infra process(es) is unavailable]. 
+RP/0/RP0/CPU0:Feb 18 08:43:06.050 UTC: pppoe_ma[398]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is not ready. Reason: [V6 Subscriber infra process(es) is unavailable]. 
+RP/0/RP0/CPU0:Feb 18 08:43:06.888 UTC: smartlicserver[402]: %LICENSE-SMART_LIC-6-EXPORT_CONTROLLED : Usage of export controlled features is not allowed 
+RP/0/RP0/CPU0:Feb 18 08:43:06.925 UTC: ifmgr[393]: %PKT_INFRA-LINK-5-CHANGED : Interface MgmtEth0/RP0/CPU0/0, changed state to Administratively Down 
+RP/0/RP0/CPU0:Feb 18 08:43:06.929 UTC: cfgmgr-rp[427]: %MGBL-CONFIG-6-OIR_RESTORE : Configuration for node '0/RP0/CPU0' has been restored. 
+RP/0/RP0/CPU0:Feb 18 08:43:08.056 UTC: pppoe_ma[398]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is ready. Reason: [V6 Subscriber infra process(es) is available]. 
+RP/0/RP0/CPU0:Feb 18 08:43:08.056 UTC: ipsub_ma[125]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is ready. Reason: [V6 Subscriber infra process(es) is available]. 
+RP/0/RP0/CPU0:Feb 18 08:43:08.056 UTC: iedged[149]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is ready. Reason: [V6 Subscriber infra process(es) is available]. 
+RP/0/RP0/CPU0:Feb 18 08:43:08.864 UTC: call_home[399]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'root'. Use 'show configuration commit changes 1000000001' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 08:43:13.964 UTC: plat_sl_client[388]: %LICENSE-PLAT_CLIENT-6-STATE_CHANGE : Licensing platform state changing from UNKNOWN to UNREGISTERED 
+RP/0/RP0/CPU0:Feb 18 08:43:18.178 UTC: smartlicserver[402]: %LICENSE-SMART_LIC-5-EVAL_START : Entering evaluation period 
+RP/0/RP0/CPU0:Feb 18 08:43:35.385 UTC: pyztp2[274]: %INFRA-ZTP-6-DISCOVERY_COMPLETED : Discovery successful on MgmtDhcp4Fetcher. Will proceed with fetching. 
+RP/0/RP0/CPU0:Feb 18 08:43:40.501 UTC: ifmgr[393]: %PKT_INFRA-LINK-3-UPDOWN : Interface MgmtEth0/RP0/CPU0/0, changed state to Down 
+RP/0/RP0/CPU0:Feb 18 08:43:40.501 UTC: ifmgr[393]: %PKT_INFRA-LINEPROTO-5-UPDOWN : Line protocol on Interface MgmtEth0/RP0/CPU0/0, changed state to Down 
+RP/0/RP0/CPU0:Feb 18 08:43:40.506 UTC: ifmgr[393]: %PKT_INFRA-LINK-3-UPDOWN : Interface MgmtEth0/RP0/CPU0/0, changed state to Up 
+RP/0/RP0/CPU0:Feb 18 08:43:40.510 UTC: ifmgr[393]: %PKT_INFRA-LINEPROTO-5-UPDOWN : Line protocol on Interface MgmtEth0/RP0/CPU0/0, changed state to Up 
+RP/0/RP0/CPU0:Feb 18 08:43:45.632 UTC: config[67204]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000002' to view the changes. 
+0/RP0/ADMIN0:Feb 18 08:44:02.082 UTC: inst_agent[3201]: %INFRA-INSTAGENT-4-XR_PART_PREP_IMG : SDR/XR image baking in progress  
+RP/0/RP0/CPU0:Feb 18 08:44:20.310 UTC: pyztp2[274]: %INFRA-ZTP-3-FETCHING_FAILED : Fetching failed. ZTP will retry. 
+RP/0/RP0/CPU0:Feb 18 08:44:24.684 UTC: config[68349]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000003' to view the changes. 
+0/RP0/ADMIN0:Feb 18 08:45:42.121 UTC: wdmon[3252]: %INFRA-WDMON-3-PM_HEARTBEAT_MISS : No heartbeat from process manager  
+RP/0/RP0/CPU0:Feb 18 08:45:42.205 UTC: appmgr[275]: %INFRA-APPMGR-2-DOCKER_DAEMON_STOP_FAILED : Unable to stop Docker daemon. 
+RP/0/RP0/CPU0:Feb 18 08:46:00.004 UTC: pyztp2[274]: %INFRA-ZTP-6-DISCOVERY_FAILED : Discovery failed on MgmtDhcp6Fetcher. ZTP will retry. 
+RP/0/RP0/CPU0:Feb 18 08:46:55.044 UTC: pyztp2[274]: %INFRA-ZTP-6-RUNNINGIN_BACKGROUND : ZTP is running in backgroud, create a username to disable ZTP 
+0/RP0/ADMIN0:Feb 18 08:48:19.030 UTC: pm[3088]: %INFRA-Process_Manager-6-PROCESS_LIVENESS_FAILED : Liveness failure for pam_manager (IID: 0), missed heartbeat messages  
+RP/0/RP0/CPU0:Feb 18 08:48:26.330 UTC: config[65992]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000004' to view the changes. 
+0/RP0/ADMIN0:Feb 18 08:48:42.348 UTC: pm[3088]: %INFRA-Process_Manager-3-PROCESS_RESTART : Process pam_manager (IID: 0) restarted  
+RP/0/RP0/CPU0:Feb 18 08:49:45.995 UTC: config[66720]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000005' to view the changes. 
+0/RP0/ADMIN0:Feb 18 08:50:36.415 UTC: inst_agent[3201]: %INFRA-INSTAGENT-4-XR_PART_PREP_RPM : SDR/XR additional RPM installation is in progress  
+RP/0/RP0/CPU0:Feb 18 08:51:55.302 UTC: config[67847]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000006' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 08:52:35.833 UTC: config[68482]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000007' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 08:54:39.284 UTC: config[65586]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000008' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 08:55:15.422 UTC: config[66250]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000009' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 08:57:33.663 UTC: config[67589]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000010' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 08:58:09.107 UTC: config[68222]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000011' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 08:59:57.005 UTC: config[69334]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000012' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:00:33.598 UTC: config[65881]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000013' to view the changes. 
+0/RP0/ADMIN0:Feb 18 09:01:17.350 UTC: inst_agent[3201]: %INFRA-INSTAGENT-4-XR_PART_PREP_RESP : SDR/XR partition preparation completed successfully  
+0/RP0/ADMIN0:Feb 18 09:01:49.152 UTC: vm_manager[3243]: %INFRA-VM_MANAGER-4-INFO : Info: vm_manager started VM default-sdr--2  
+RP/0/RP0/CPU0:Feb 18 09:02:28.536 UTC: config[66989]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000014' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:03:05.284 UTC: config[67698]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000015' to view the changes. 
+LC/0/0/CPU0:Feb 18 09:04:00.394 UTC: platform_packet_partner[180]: Pakman memory region 0x10000000 .. 0x20000000, size 256Mb (64 scale)
+LC/0/0/CPU0:Feb 18 09:04:00.562 UTC: spp[114]: Initialized socket RX node
+LC/0/0/CPU0:Feb 18 09:04:00.562 UTC: spp[114]: Initialized socket TX node
+LC/0/0/CPU0:Feb 18 09:04:00.562 UTC: spp[114]: Registered socket plugin
+LC/0/0/CPU0:Feb 18 09:04:01.045 UTC: spp[114]: Initialized punt classification node
+LC/0/0/CPU0:Feb 18 09:04:01.045 UTC: spp[114]: Initialized client inject node
+LC/0/0/CPU0:Feb 18 09:04:01.045 UTC: spp[114]: Registered XRv9k SPP plugin
+LC/0/0/CPU0:Feb 18 09:04:01.299 UTC: spp[114]: Opened UDP socket at 172.0.0.17:9920 (Punt/Inject crucial)
+LC/0/0/CPU0:Feb 18 09:04:01.300 UTC: spp[114]: Opened UDP socket at 172.0.0.17:9921 (Punt/Inject high)
+LC/0/0/CPU0:Feb 18 09:04:01.300 UTC: spp[114]: Opened UDP socket at 172.0.0.17:9922 (Punt/Inject medium)
+LC/0/0/CPU0:Feb 18 09:04:01.300 UTC: spp[114]: Opened UDP socket at 172.0.0.17:9923 (Punt/Inject low)
+LC/0/0/CPU0:Feb 18 09:04:01.300 UTC: spp[114]: Successfully initialized socket devices
+LC/0/0/CPU0:Feb 18 09:04:07.620 UTC: fsm[315]: fsm_fsmidb_mutex_init - Creating mutex...
+LC/0/0/CPU0:Feb 18 09:04:07.620 UTC: fsm[315]: fsm_fsmidb_mutex_init - mutex created...
+LC/0/0/CPU0:Feb 18 09:04:07.643 UTC: fsm[315]: main - L2VNP stats init
+LC/0/0/CPU0:Feb 18 09:04:09.950 UTC: dpc_rm_svr[218]: %OS-MMAP_PEER-7-CONNECT : Connect from process 4032 to 4644 skipped: Connection refused 
+LC/0/0/CPU0:Feb 18 09:04:09.966 UTC: processmgr[51]: sunstone_intf_ea(1) (jid 122) (pid 4644) (fail_count 1) abnormally terminated, restart scheduled 
+LC/0/0/CPU0:Feb 18 09:04:09.966 UTC: processmgr[51]: %OS-SYSMGR-3-ERROR : sunstone_intf_ea(1) (jid 122) exited, will be respawned with a delay (slow-restart)   
+LC/0/0/CPU0:Feb 18 09:04:09.966 UTC: processmgr[51]: %OS-SYSMGR-3-ERROR : sunstone_intf_ea(122) (fail count 1) will be respawned in 10 seconds  
+LC/0/0/CPU0:Feb 18 09:04:09.970 UTC: processmgr[51]: %OS-SYSMGR-7-DEBUG : sunstone_intf_ea(1) (jid 122) did not signal end of initialization   
+LC/0/0/CPU0:Feb 18 09:04:11.381 UTC: iedged[174]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is not ready. Reason: [V4 Subscriber infra process(es) is unavailable]. 
+LC/0/0/CPU0:Feb 18 09:04:11.381 UTC: iedged[174]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is not ready. Reason: [V6 Subscriber infra process(es) is unavailable]. 
+LC/0/0/CPU0:Feb 18 09:04:13.147 UTC: iedged[174]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is ready. Reason: [V4 Subscriber infra process(es) is available]. 
+LC/0/0/CPU0:Feb 18 09:04:13.147 UTC: iedged[174]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is ready. Reason: [V6 Subscriber infra process(es) is available]. 
+LC/0/0/CPU0:Feb 18 09:04:14.982 UTC: ipv4_io[301]: vkg_ip_ea_uidb_init : uidb init succeeded
+LC/0/0/CPU0:Feb 18 09:04:17.877 UTC: iedged[174]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is not ready. Reason: [V4 Subscriber infra process(es) is unavailable]. 
+LC/0/0/CPU0:Feb 18 09:04:19.880 UTC: iedged[174]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is ready. Reason: [V4 Subscriber infra process(es) is available]. 
+LC/0/0/CPU0:Feb 18 09:04:20.018 UTC: fib_mgr[172]: %PLATFORM-XRV9K_FIB-6-EVENT_INFO : notifying HW programming connection up 
+LC/0/0/CPU0:Feb 18 09:04:20.373 UTC: iedged[174]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is not ready. Reason: [V6 Subscriber infra process(es) is unavailable]. 
+LC/0/0/CPU0:Feb 18 09:04:20.481 UTC: fib_mgr[172]: %PLATFORM-XRV9K_FIB-6-EVENT_INFO : notifying HW programming connection down 
+LC/0/0/CPU0:Feb 18 09:04:21.488 UTC: fib_mgr[172]: %PLATFORM-XRV9K_FIB-6-EVENT_INFO : notifying HW programming connection up 
+LC/0/0/CPU0:Feb 18 09:04:22.664 UTC: netio[215]: FINT (IFH 01000008) interface specification received
+LC/0/0/CPU0:Feb 18 09:04:22.664 UTC: netio[215]: Attached to IFH 01000008 IDB (FINT0_0_CPU0)
+LC/0/0/CPU0:Feb 18 09:04:23.036 UTC: mpls_io_ea[194]: vkg_mpls_ea_platform_init : uidb init succeeded
+LC/0/0/CPU0:Feb 18 09:04:23.848 UTC: netio[215]: SINT (IFH 01000010) interface specification received
+LC/0/0/CPU0:Feb 18 09:04:23.848 UTC: netio[215]: Attached to IFH 01000010 IDB (SINT0_0_0)
+LC/0/0/CPU0:Feb 18 09:04:24.308 UTC: iedged[174]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is not ready. Reason: [V4 Subscriber infra process(es) is unavailable]. 
+LC/0/0/CPU0:Feb 18 09:04:26.309 UTC: iedged[174]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is ready. Reason: [V4 Subscriber infra process(es) is available]. 
+LC/0/0/CPU0:Feb 18 09:04:26.309 UTC: iedged[174]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is ready. Reason: [V6 Subscriber infra process(es) is available]. 
+LC/0/0/CPU0:Feb 18 09:04:35.746 UTC: iedged[174]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is not ready. Reason: [V4 Subscriber infra process(es) is unavailable]. 
+LC/0/0/CPU0:Feb 18 09:04:35.746 UTC: iedged[174]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is not ready. Reason: [V6 Subscriber infra process(es) is unavailable]. 
+LC/0/0/CPU0:Feb 18 09:04:38.145 UTC: iedged[174]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is ready. Reason: [V6 Subscriber infra process(es) is available]. 
+LC/0/0/CPU0:Feb 18 09:04:40.030 UTC: iedged[174]: %SUBSCRIBER-SUB_UTIL-5-SESSION_THROTTLE : Subscriber Infra is ready. Reason: [V4 Subscriber infra process(es) is available]. 
+0/RP0/ADMIN0:Feb 18 09:04:40.618 UTC: shelf_mgr[3235]: %INFRA-SHELF_MGR-5-CARD_INSERTION : Location: 0/0, Serial #: 06B08130FB9  
+0/RP0/ADMIN0:Feb 18 09:04:40.619 UTC: shelf_mgr[3235]: %INFRA-SHELF_MGR-6-HW_EVENT : Rcvd HW event HW_EVENT_OK, event_reason_str 'HW is Operational' for card 0/0  
+0/RP0/ADMIN0:Feb 18 09:04:40.619 UTC: shelf_mgr[3235]: %INFRA-SHELF_MGR-6-CARD_HW_OPERATIONAL : Card: 0/0 hardware state going to Operational  
+LC/0/0/CPU0:Feb 18 09:04:46.361 UTC: eth_intf_ea[240]: vether ea error trace init completed 
+LC/0/0/CPU0:Feb 18 09:04:50.463 UTC: netio[215]: Port 0 (IFH 01000018) interface specification received
+LC/0/0/CPU0:Feb 18 09:04:50.463 UTC: netio[215]: Attached to IFH 01000018 IDB (GigabitEthernet0_0_0_0)
+LC/0/0/CPU0:Feb 18 09:04:50.463 UTC: netio[215]: Port 6 (IFH 01000020) interface specification received
+LC/0/0/CPU0:Feb 18 09:04:50.463 UTC: netio[215]: Attached to IFH 01000020 IDB (GigabitEthernet0_0_0_6)
+LC/0/0/CPU0:Feb 18 09:04:50.463 UTC: netio[215]: Port 5 (IFH 01000028) interface specification received
+LC/0/0/CPU0:Feb 18 09:04:50.463 UTC: netio[215]: Attached to IFH 01000028 IDB (GigabitEthernet0_0_0_5)
+LC/0/0/CPU0:Feb 18 09:04:50.463 UTC: netio[215]: Port 4 (IFH 01000030) interface specification received
+LC/0/0/CPU0:Feb 18 09:04:50.463 UTC: netio[215]: Attached to IFH 01000030 IDB (GigabitEthernet0_0_0_4)
+LC/0/0/CPU0:Feb 18 09:04:50.463 UTC: netio[215]: Port 3 (IFH 01000038) interface specification received
+LC/0/0/CPU0:Feb 18 09:04:50.463 UTC: netio[215]: Attached to IFH 01000038 IDB (GigabitEthernet0_0_0_3)
+LC/0/0/CPU0:Feb 18 09:04:50.463 UTC: netio[215]: Port 2 (IFH 01000040) interface specification received
+LC/0/0/CPU0:Feb 18 09:04:50.463 UTC: netio[215]: Attached to IFH 01000040 IDB (GigabitEthernet0_0_0_2)
+LC/0/0/CPU0:Feb 18 09:04:50.463 UTC: netio[215]: Port 1 (IFH 01000048) interface specification received
+LC/0/0/CPU0:Feb 18 09:04:50.463 UTC: netio[215]: Attached to IFH 01000048 IDB (GigabitEthernet0_0_0_1)
+RP/0/RP0/CPU0:Feb 18 09:04:59.210 UTC: config[68862]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000016' to view the changes. 
+LC/0/0/CPU0:Feb 18 09:05:02.380 UTC: ifmgr[329]: %PKT_INFRA-LINK-5-CHANGED : Interface GigabitEthernet0/0/0/0, changed state to Administratively Down 
+LC/0/0/CPU0:Feb 18 09:05:02.380 UTC: ifmgr[329]: %PKT_INFRA-LINK-5-CHANGED : Interface GigabitEthernet0/0/0/1, changed state to Administratively Down 
+LC/0/0/CPU0:Feb 18 09:05:02.380 UTC: ifmgr[329]: %PKT_INFRA-LINK-5-CHANGED : Interface GigabitEthernet0/0/0/2, changed state to Administratively Down 
+LC/0/0/CPU0:Feb 18 09:05:02.380 UTC: ifmgr[329]: %PKT_INFRA-LINK-5-CHANGED : Interface GigabitEthernet0/0/0/3, changed state to Administratively Down 
+LC/0/0/CPU0:Feb 18 09:05:02.380 UTC: ifmgr[329]: %PKT_INFRA-LINK-5-CHANGED : Interface GigabitEthernet0/0/0/4, changed state to Administratively Down 
+LC/0/0/CPU0:Feb 18 09:05:02.380 UTC: ifmgr[329]: %PKT_INFRA-LINK-5-CHANGED : Interface GigabitEthernet0/0/0/5, changed state to Administratively Down 
+LC/0/0/CPU0:Feb 18 09:05:02.380 UTC: ifmgr[329]: %PKT_INFRA-LINK-5-CHANGED : Interface GigabitEthernet0/0/0/6, changed state to Administratively Down 
+RP/0/RP0/CPU0:Feb 18 09:05:34.850 UTC: config[69608]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000017' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:07:36.019 UTC: config[66751]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000018' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:08:11.510 UTC: config[67384]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000019' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:10:28.839 UTC: config[68733]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000020' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:11:04.659 UTC: config[69366]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000021' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:12:51.591 UTC: config[66372]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000022' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:13:27.202 UTC: config[67011]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000023' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:15:16.661 UTC: config[68181]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000024' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:15:52.405 UTC: config[68799]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000025' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:17:27.637 UTC: pyztp2[274]: %INFRA-ZTP-6-RUNNINGIN_BACKGROUND : ZTP is running in backgroud, create a username to disable ZTP 
+RP/0/RP0/CPU0:Feb 18 09:17:45.552 UTC: config[66270]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000026' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:18:21.246 UTC: config[66896]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000027' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:19:56.324 UTC: pyztp2[274]: %INFRA-ZTP-6-RUNNINGIN_BACKGROUND : ZTP is running in backgroud, create a username to disable ZTP 
+RP/0/RP0/CPU0:Feb 18 09:20:22.368 UTC: config[68158]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000028' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:20:58.005 UTC: config[68780]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000029' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:23:14.700 UTC: config[67115]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000030' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:23:50.262 UTC: config[68044]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000031' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:25:37.151 UTC: config[66470]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000032' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:26:12.783 UTC: config[67192]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000033' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:28:01.721 UTC: config[68368]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000034' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:28:37.334 UTC: config[68979]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000035' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:30:30.388 UTC: config[66094]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000036' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:31:06.053 UTC: config[66729]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000037' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:33:07.244 UTC: config[67946]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000038' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:33:43.082 UTC: config[68557]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000039' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:36:00.240 UTC: config[65808]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000040' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:36:35.922 UTC: config[66465]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000041' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:38:22.785 UTC: config[67604]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000042' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:38:58.544 UTC: config[68222]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000043' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:40:47.954 UTC: config[69398]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000044' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:41:23.596 UTC: config[65938]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000045' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:43:16.522 UTC: config[67091]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000046' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:43:52.098 UTC: config[67709]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000047' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:45:47.650 UTC: pyztp2[274]: %INFRA-ZTP-6-DISCOVERY_COMPLETED : Discovery successful on MgmtDhcp4Fetcher. Will proceed with fetching. 
+RP/0/RP0/CPU0:Feb 18 09:45:53.423 UTC: config[68959]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000048' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:46:24.802 UTC: pyztp2[274]: %INFRA-ZTP-3-FETCHING_FAILED : Fetching failed. ZTP will retry. 
+RP/0/RP0/CPU0:Feb 18 09:46:24.802 UTC: pyztp2[274]: %INFRA-ZTP-3-FETCHING_FAILED : Fetching failed. ZTP will retry. 
+RP/0/RP0/CPU0:Feb 18 09:46:29.058 UTC: config[65593]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000049' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:47:53.835 UTC: pyztp2[274]: %INFRA-ZTP-6-DISCOVERY_FAILED : Discovery failed on MgmtDhcp6Fetcher. ZTP will retry. 
+RP/0/RP0/CPU0:Feb 18 09:48:40.179 UTC: pyztp2[274]: %INFRA-ZTP-6-DISCOVERY_COMPLETED : Discovery successful on MgmtDhcp4Fetcher. Will proceed with fetching. 
+RP/0/RP0/CPU0:Feb 18 09:48:45.903 UTC: config[66991]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000050' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:49:21.569 UTC: config[67617]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000051' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:50:46.343 UTC: pyztp2[274]: %INFRA-ZTP-6-DISCOVERY_FAILED : Discovery failed on MgmtDhcp6Fetcher. ZTP will retry. 
+RP/0/RP0/CPU0:Feb 18 09:50:56.632 UTC: pyztp2[274]: %INFRA-ZTP-6-RUNNINGIN_BACKGROUND : ZTP is running in backgroud, create a username to disable ZTP 
+RP/0/RP0/CPU0:Feb 18 09:51:08.729 UTC: config[68775]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000052' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:51:44.175 UTC: config[69386]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000053' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:53:19.235 UTC: pyztp2[274]: %INFRA-ZTP-6-RUNNINGIN_BACKGROUND : ZTP is running in backgroud, create a username to disable ZTP 
+RP/0/RP0/CPU0:Feb 18 09:53:33.104 UTC: config[66438]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000054' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:54:08.717 UTC: config[67070]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000055' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:56:01.989 UTC: config[68264]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000056' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:56:37.582 UTC: config[68899]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000057' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:58:38.847 UTC: config[66320]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000058' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 09:59:14.319 UTC: config[66953]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000059' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:01:31.614 UTC: config[68320]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000060' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:02:07.203 UTC: config[68952]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000061' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:03:54.066 UTC: config[67063]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000062' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:04:29.705 UTC: config[67925]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000063' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:06:18.727 UTC: config[66489]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000064' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:06:54.455 UTC: config[67174]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000065' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:08:47.012 UTC: config[68361]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000066' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:09:22.669 UTC: config[68987]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000067' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:11:23.828 UTC: config[66166]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000068' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:11:59.350 UTC: config[66776]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000069' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:14:16.494 UTC: config[68107]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000070' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:14:52.160 UTC: config[68726]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000071' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:16:39.092 UTC: config[65874]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000072' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:17:14.757 UTC: config[66506]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000073' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:19:03.852 UTC: config[67630]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000074' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:19:39.482 UTC: config[68266]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000075' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:21:32.282 UTC: config[69461]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000076' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:22:07.908 UTC: config[65997]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000077' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:23:42.916 UTC: pyztp2[274]: %INFRA-ZTP-6-RUNNINGIN_BACKGROUND : ZTP is running in backgroud, create a username to disable ZTP 
+RP/0/RP0/CPU0:Feb 18 10:24:09.222 UTC: config[67210]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000078' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:24:44.793 UTC: config[67822]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000079' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:26:19.787 UTC: pyztp2[274]: %INFRA-ZTP-6-RUNNINGIN_BACKGROUND : ZTP is running in backgroud, create a username to disable ZTP 
+RP/0/RP0/CPU0:Feb 18 10:27:02.172 UTC: config[69195]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000080' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:27:37.859 UTC: config[65735]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000081' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:29:24.565 UTC: config[66866]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000082' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:30:00.244 UTC: config[67474]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000083' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:31:49.397 UTC: config[68650]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000084' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:32:28.095 UTC: config[69295]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000085' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:34:21.113 UTC: config[66430]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000086' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:34:56.774 UTC: config[67048]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000087' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:36:58.106 UTC: config[68319]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000088' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:37:33.896 UTC: config[68954]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000089' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:39:51.321 UTC: config[66473]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000090' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:40:26.974 UTC: config[67141]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000091' to view the changes. 
+0/RP0/ADMIN0:Feb 18 10:41:12.820 UTC: aaad[3192]: %MGBL-AAAD-7-DEBUG : User creating cisco   
+RP/0/RP0/CPU0:Feb 18 10:41:13.733 UTC: exec[67851]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'SYSTEM'. Use 'show configuration commit changes 1000000092' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:41:14.278 UTC: pyztp2[274]: %INFRA-ZTP-6-USERNAME_CONFIGURED : ZTP will abort as username is configured. Do not configure router until ZTP exited message is seen. 
+0/RP0/ADMIN0:Feb 18 10:41:15.151 UTC: confd_helper[3197]: %MGBL-CONFD_HELPER-5-SYSADMIN_COMMIT : A sysadmin configuration change has been committed. Use 'show configuration commit list' in admin mode for more details  
+0/RP0/ADMIN0:Feb 18 10:41:15.219 UTC: aaad[3192]: %MGBL-AAAD-7-DEBUG : AAA subscription number of users 1   
+RP/0/RP0/CPU0:Feb 18 10:41:20.778 UTC: exec[67851]: %SECURITY-LOGIN-6-AUTHEN_SUCCESS : Successfully authenticated user 'cisco' from 'console' on 'con0_RP0_CPU0' 
+RP/0/RP0/CPU0:Feb 18 10:41:36.377 UTC: ifmgr[393]: %PKT_INFRA-LINK-5-CHANGED : Interface MgmtEth0/RP0/CPU0/0, changed state to Administratively Down 
+RP/0/RP0/CPU0:Feb 18 10:41:38.836 UTC: config[68243]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'ZTP'. Use 'show configuration commit changes 1000000093' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:41:45.792 UTC: pyztp2[274]: %INFRA-ZTP-6-EXITED : ZTP exited 
+RP/0/RP0/CPU0:Feb 18 10:41:54.837 UTC: config[68176]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000094' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:41:56.826 UTC: config[68176]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco 
+LC/0/0/CPU0:Feb 18 10:42:19.084 UTC: ifmgr[329]: %PKT_INFRA-LINK-3-UPDOWN : Interface GigabitEthernet0/0/0/0, changed state to Down 
+LC/0/0/CPU0:Feb 18 10:42:19.084 UTC: ifmgr[329]: %PKT_INFRA-LINEPROTO-5-UPDOWN : Line protocol on Interface GigabitEthernet0/0/0/0, changed state to Down 
+LC/0/0/CPU0:Feb 18 10:42:19.195 UTC: ifmgr[329]: %PKT_INFRA-LINK-3-UPDOWN : Interface GigabitEthernet0/0/0/0, changed state to Up 
+LC/0/0/CPU0:Feb 18 10:42:19.197 UTC: ifmgr[329]: %PKT_INFRA-LINEPROTO-5-UPDOWN : Line protocol on Interface GigabitEthernet0/0/0/0, changed state to Up 
+RP/0/RP0/CPU0:Feb 18 10:42:19.223 UTC: kim[327]: Initialized TPA inject source MAC (5254.015c.558e)
+RP/0/RP0/CPU0:Feb 18 10:42:19.223 UTC: kim[327]: Initialized TPA inject destination MAC (5254.015c.557e)
+RP/0/RP0/CPU0:Feb 18 10:42:19.830 UTC: config[68489]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000095' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:42:21.700 UTC: config[68489]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco 
+RP/0/RP0/CPU0:Feb 18 10:42:30.924 UTC: config[68545]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000096' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:42:32.715 UTC: config[68545]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco 
+RP/0/RP0/CPU0:Feb 18 10:42:49.260 UTC: config[68720]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco 
+RP/0/RP0/CPU0:Feb 18 10:43:46.739 UTC: config[68781]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000097' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:43:54.052 UTC: config[68781]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco 
+RP/0/RP0/CPU0:Feb 18 10:44:19.505 UTC: cepki[272]: %SECURITY-CEPKI-6-KEY_INFO : crypto key DSA zeroized, label:the_default 
+RP/0/RP0/CPU0:Feb 18 10:44:19.508 UTC: cepki[272]: %SECURITY-CEPKI-6-KEY_INFO : crypto key DSA generated, label:the_default, modBits:1024 
+RP/0/RP0/CPU0:Feb 18 10:44:19.531 UTC: cepki[272]: %SECURITY-CEPKI-6-INFO : key database updated successfully 
+RP/0/RP0/CPU0:Feb 18 10:44:19.538 UTC: cepki[272]: %SECURITY-CEPKI-6-KEY_INFO : crypto key RSA zeroized, label:the_default 
+RP/0/RP0/CPU0:Feb 18 10:44:20.119 UTC: cepki[272]: %SECURITY-CEPKI-6-KEY_INFO : crypto key RSA generated, label:the_default, modBits:2048 
+RP/0/RP0/CPU0:Feb 18 10:44:20.843 UTC: config[68810]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000098' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:44:22.276 UTC: config[68810]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco 
+RP/0/RP0/CPU0:Feb 18 10:44:27.968 UTC: ce_cmd[68866]: %SECURITY-CEPKI-6-ERR : Key is added as part of config mode, RSA key overwrite is not allowed , delete key from config mode 
+RP/0/RP0/CPU0:Feb 18 10:44:27.968 UTC: ce_cmd[68866]: %SECURITY-CEPKI-6-ERR_2 : Cannot execute the command :   Operation not permitted 
+RP/0/RP0/CPU0:Feb 18 10:44:36.762 UTC: ce_cmd[68871]: %SECURITY-CEPKI-6-ERR : Key is added as part of config mode, DSA key overwrite is not allowed , delete key from config mode 
+RP/0/RP0/CPU0:Feb 18 10:44:36.762 UTC: ce_cmd[68871]: %SECURITY-CEPKI-6-ERR_2 : Cannot execute the command :   Operation not permitted 
+RP/0/RP0/CPU0:Feb 18 10:44:58.661 UTC: SSHD_[68883]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'helena' from '198.18.0.132' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-512') 
+RP/0/RP0/CPU0:Feb 18 10:45:02.184 UTC: SSHD_[68883]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'helena' from '198.18.0.132' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 18 10:49:03.146 UTC: ospf[1027]: %ROUTING-OSPF-5-HA_NOTICE_START : Starting OSPF 
+RP/0/RP0/CPU0:Feb 18 10:49:03.633 UTC: ospf[1027]: %ROUTING-OSPF-6-HA_INFO : Process 1: OSPF process initialization complete 
+RP/0/RP0/CPU0:Feb 18 10:49:03.682 UTC: ospf[1027]: %ROUTING-OSPF-5-HA_NOTICE : Process 1: Signaled PROC_AVAILABLE 
+RP/0/RP0/CPU0:Feb 18 10:49:04.681 UTC: config[68978]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000099' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:49:06.211 UTC: config[68978]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco 
+RP/0/RP0/CPU0:Feb 18 10:49:12.858 UTC: ospf[1027]: %ROUTING-OSPF-5-ADJCHG : Process 1, Nbr 198.18.0.121 on GigabitEthernet0/0/0/0 in area 0 from LOADING to FULL, Loading Done, vrf default vrfid 0x60000000 
+RP/0/RP0/CPU0:Feb 18 10:49:12.858 UTC: ospf[1027]: %ROUTING-OSPF-5-ADJCHG : Process 1, Nbr 198.18.0.122 on GigabitEthernet0/0/0/0 in area 0 from LOADING to FULL, Loading Done, vrf default vrfid 0x60000000 
+RP/0/RP0/CPU0:Feb 18 10:49:30.526 UTC: config[69456]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000100' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:49:37.588 UTC: config[69456]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco 
+RP/0/RP0/CPU0:Feb 18 10:50:14.732 UTC: config[69566]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000101' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:50:16.320 UTC: config[69566]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco 
+RP/0/RP0/CPU0:Feb 18 10:50:58.678 UTC: config[65923]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000102' to view the changes. 
+RP/0/RP0/CPU0:Feb 18 10:51:00.203 UTC: config[65923]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco 
+RP/0/RP0/CPU0:Feb 18 10:54:21.831 UTC: ospf[1027]: %ROUTING-OSPF-5-ADJCHG : Process 1, Nbr 198.18.0.122 on GigabitEthernet0/0/0/0 in area 0 from FULL to DOWN, Neighbor Down: dead timer expired, vrf default vrfid 0x60000000 
+RP/0/RP0/CPU0:Feb 18 10:54:26.471 UTC: ospf[1027]: %ROUTING-OSPF-5-ADJCHG : Process 1, Nbr 198.18.0.123 on GigabitEthernet0/0/0/0 in area 0 from LOADING to FULL, Loading Done, vrf default vrfid 0x60000000 
+RP/0/RP0/CPU0:Feb 18 11:02:32.290 UTC: exec[67851]: %SECURITY-LOGIN-6-CLOSE : User 'cisco' logged out 
+RP/0/RP0/CPU0:Feb 18 11:03:21.538 UTC: ospf[1027]: %ROUTING-OSPF-5-ADJCHG : Process 1, Nbr 198.18.0.122 on GigabitEthernet0/0/0/0 in area 0 from LOADING to FULL, Loading Done, vrf default vrfid 0x60000000 
+LC/0/0/CPU0:Feb 18 11:04:27.366 UTC: fib_mgr[172]: %ROUTING-FIB-4-RETRYDB_NONEMPTY : 1 FIB object(s) have been in IPv4 retry queue for at least 120 seconds 
+LC/0/0/CPU0:Feb 18 11:08:27.366 UTC: fib_mgr[172]: %ROUTING-FIB-4-RETRYDB_NONEMPTY : 1 FIB object(s) have been in IPv4 retry queue for at least 240 seconds 
+LC/0/0/CPU0:Feb 18 11:16:27.367 UTC: fib_mgr[172]: %ROUTING-FIB-4-RETRYDB_NONEMPTY : 1 FIB object(s) have been in IPv4 retry queue for at least 480 seconds 
+LC/0/0/CPU0:Feb 18 11:32:27.367 UTC: fib_mgr[172]: %ROUTING-FIB-4-RETRYDB_NONEMPTY : 1 FIB object(s) have been in IPv4 retry queue for at least 960 seconds 
+RP/0/RP0/CPU0:Feb 18 11:39:44.608 UTC: exec[67047]: %SECURITY-LOGIN-6-AUTHEN_SUCCESS : Successfully authenticated user 'helena' from 'console' on 'con0_RP0_CPU0' 
+RP/0/RP0/CPU0:Feb 18 11:50:14.831 UTC: exec[67047]: %SECURITY-LOGIN-6-CLOSE : User 'helena' logged out 
+LC/0/0/CPU0:Feb 18 12:04:27.367 UTC: fib_mgr[172]: %ROUTING-FIB-4-RETRYDB_NONEMPTY : 1 FIB object(s) have been in IPv4 retry queue for at least 1920 seconds 
+LC/0/0/CPU0:Feb 18 13:08:27.367 UTC: fib_mgr[172]: %ROUTING-FIB-4-RETRYDB_NONEMPTY : 1 FIB object(s) have been in IPv4 retry queue for at least 3840 seconds 
+LC/0/0/CPU0:Feb 18 15:08:52.546 UTC: fib_mgr[172]: %ROUTING-FIB-6-RETRYDB_OK : All objects in FIB IPv4 retry queue are resolved now. 
+RP/0/RP0/CPU0:Feb 20 12:11:35.170 UTC: exec[66929]: %SECURITY-LOGIN-6-AUTHEN_SUCCESS : Successfully authenticated user 'helena' from 'console' on 'con0_RP0_CPU0' 
+RP/0/RP0/CPU0:Feb 20 12:21:49.162 UTC: exec[66929]: %SECURITY-LOGIN-6-CLOSE : User 'helena' logged out 
+LC/0/0/CPU0:Feb 20 16:13:52.294 UTC: fib_mgr[172]: %ROUTING-FIB-4-RETRYDB_NONEMPTY : 1 FIB object(s) have been in IPv4 retry queue for at least 120 seconds 
+LC/0/0/CPU0:Feb 20 16:17:52.294 UTC: fib_mgr[172]: %ROUTING-FIB-4-RETRYDB_NONEMPTY : 2 FIB object(s) have been in IPv4 retry queue for at least 240 seconds 
+LC/0/0/CPU0:Feb 20 16:25:52.295 UTC: fib_mgr[172]: %ROUTING-FIB-4-RETRYDB_NONEMPTY : 3 FIB object(s) have been in IPv4 retry queue for at least 480 seconds 
+LC/0/0/CPU0:Feb 20 16:41:52.295 UTC: fib_mgr[172]: %ROUTING-FIB-4-RETRYDB_NONEMPTY : 3 FIB object(s) have been in IPv4 retry queue for at least 960 seconds 
+LC/0/0/CPU0:Feb 20 17:13:52.295 UTC: fib_mgr[172]: %ROUTING-FIB-4-RETRYDB_NONEMPTY : 3 FIB object(s) have been in IPv4 retry queue for at least 1920 seconds 
+LC/0/0/CPU0:Feb 20 18:17:52.295 UTC: fib_mgr[172]: %ROUTING-FIB-4-RETRYDB_NONEMPTY : 3 FIB object(s) have been in IPv4 retry queue for at least 3840 seconds 
+LC/0/0/CPU0:Feb 20 20:25:52.295 UTC: fib_mgr[172]: %ROUTING-FIB-4-RETRYDB_NONEMPTY : 3 FIB object(s) have been in IPv4 retry queue for at least 7680 seconds 
+LC/0/0/CPU0:Feb 21 00:41:52.296 UTC: fib_mgr[172]: %ROUTING-FIB-4-RETRYDB_NONEMPTY : 3 FIB object(s) have been in IPv4 retry queue for at least 15360 seconds 
+LC/0/0/CPU0:Feb 21 09:13:52.296 UTC: fib_mgr[172]: %ROUTING-FIB-4-RETRYDB_NONEMPTY : 3 FIB object(s) have been in IPv4 retry queue for at least 30720 seconds 
+LC/0/0/CPU0:Feb 22 02:17:52.296 UTC: fib_mgr[172]: %ROUTING-FIB-4-RETRYDB_NONEMPTY : 3 FIB object(s) have been in IPv4 retry queue for at least 61440 seconds 
+LC/0/0/CPU0:Feb 23 02:17:52.296 UTC: fib_mgr[172]: %ROUTING-FIB-4-RETRYDB_NONEMPTY : 3 FIB object(s) have been in IPv4 retry queue for at least 86400 seconds 
+RP/0/RP0/CPU0:Feb 23 07:47:22.509 UTC: SSHD_[66781]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.97' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 23 07:47:29.438 UTC: config[66818]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000103' to view the changes. 
+RP/0/RP0/CPU0:Feb 23 07:47:29.634 UTC: config[66818]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.97) 
+RP/0/RP0/CPU0:Feb 23 07:48:24.066 UTC: SSHD_[66781]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.97' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 23 07:53:33.222 UTC: SSHD_[67336]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.97' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 23 07:53:41.521 UTC: config[67373]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000104' to view the changes. 
+RP/0/RP0/CPU0:Feb 23 07:53:41.957 UTC: config[67373]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.97) 
+RP/0/RP0/CPU0:Feb 23 07:54:57.499 UTC: SSHD_[67336]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.97' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 23 07:57:35.214 UTC: SSHD_[67589]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.97' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 23 07:57:38.323 UTC: SSHD_[67589]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.97' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 23 07:57:49.805 UTC: SSHD_[67664]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.97' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 23 07:57:57.478 UTC: config[67716]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000105' to view the changes. 
+RP/0/RP0/CPU0:Feb 23 07:57:57.723 UTC: config[67716]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.97) 
+RP/0/RP0/CPU0:Feb 23 07:58:50.369 UTC: SSHD_[67793]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.97' on 'vty1'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 23 07:58:58.727 UTC: config[67830]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000106' to view the changes. 
+RP/0/RP0/CPU0:Feb 23 07:58:59.375 UTC: config[67830]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty1 (10.16.36.97) 
+RP/0/RP0/CPU0:Feb 23 07:59:12.368 UTC: SSHD_[67664]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.97' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 23 07:59:39.676 UTC: SSHD_[67793]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.97' logged out on 'vty1' 
+RP/0/RP0/CPU0:Feb 23 08:03:57.727 UTC: SSHD_[68131]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.97' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 23 08:04:07.209 UTC: config[68168]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000107' to view the changes. 
+RP/0/RP0/CPU0:Feb 23 08:04:07.575 UTC: config[68168]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.97) 
+RP/0/RP0/CPU0:Feb 23 08:05:20.193 UTC: SSHD_[68131]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.97' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 23 11:32:23.471 UTC: SSHD_[67574]: %SECURITY-SSHD-4-INFO_FAILURE : Failed authentication attempt by user 'cisco' from '10.16.36.97' on 'vty0' 
+RP/0/RP0/CPU0:Feb 23 11:32:26.100 UTC: SSHD_[67574]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.97' on 'vty0'(cipher 'aes256-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 23 11:32:31.782 UTC: SSHD_[67574]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.97' logged out on 'vty0' 
+LC/0/0/CPU0:Feb 24 02:17:52.297 UTC: fib_mgr[172]: %ROUTING-FIB-4-RETRYDB_NONEMPTY : 3 FIB object(s) have been in IPv4 retry queue for at least 86400 seconds 
+LC/0/0/CPU0:Feb 25 02:17:52.297 UTC: fib_mgr[172]: %ROUTING-FIB-4-RETRYDB_NONEMPTY : 3 FIB object(s) have been in IPv4 retry queue for at least 86400 seconds 
+RP/0/RP0/CPU0:Feb 25 05:32:36.593 UTC: ospf[1027]: %ROUTING-OSPF-5-ADJCHG : Process 1, Nbr 198.18.0.31 on GigabitEthernet0/0/0/0 in area 0 from LOADING to FULL, Loading Done, vrf default vrfid 0x60000000 
+LC/0/0/CPU0:Feb 26 02:17:52.297 UTC: fib_mgr[172]: %ROUTING-FIB-4-RETRYDB_NONEMPTY : 3 FIB object(s) have been in IPv4 retry queue for at least 86400 seconds 
+LC/0/0/CPU0:Feb 27 02:17:52.297 UTC: fib_mgr[172]: %ROUTING-FIB-4-RETRYDB_NONEMPTY : 3 FIB object(s) have been in IPv4 retry queue for at least 86400 seconds 
+RP/0/RP0/CPU0:Feb 27 10:47:55.139 UTC: SSHD_[68211]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.97' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 27 10:48:53.818 UTC: SSHD_[68211]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.97' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 27 10:49:05.290 UTC: SSHD_[68365]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.97' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 27 10:49:13.827 UTC: SSHD_[68365]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.97' logged out on 'vty0' 
+LC/0/0/CPU0:Feb 28 02:17:52.297 UTC: fib_mgr[172]: %ROUTING-FIB-4-RETRYDB_NONEMPTY : 3 FIB object(s) have been in IPv4 retry queue for at least 86400 seconds 
+RP/0/RP0/CPU0:Feb 28 03:16:28.365 UTC: SSHD_[69144]: %SECURITY-SSHD-6-INFO_GENERAL : Client closes socket connection 
+RP/0/RP0/CPU0:Feb 28 03:16:28.365 UTC: SSHD_[69144]: %SECURITY-SSHD-3-ERR_GENERAL : Error in receiving key exchange packet 
+RP/0/RP0/CPU0:Feb 28 03:20:56.655 UTC: SSHD_[69454]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.97' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 03:21:00.315 UTC: config[69491]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000108' to view the changes. 
+RP/0/RP0/CPU0:Feb 28 03:21:00.481 UTC: config[69491]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.97) 
+RP/0/RP0/CPU0:Feb 28 03:22:32.577 UTC: SSHD_[69454]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.97' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 28 03:24:45.558 UTC: SSHD_[65629]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.97' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 03:24:49.546 UTC: config[65666]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000109' to view the changes. 
+RP/0/RP0/CPU0:Feb 28 03:24:49.684 UTC: config[65666]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.97) 
+RP/0/RP0/CPU0:Feb 28 03:24:57.090 UTC: SSHD_[65629]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.97' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 28 03:43:43.795 UTC: SSHD_[66661]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '198.18.0.121' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 03:44:15.812 UTC: SSHD_[66661]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '198.18.0.121' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 28 04:20:54.984 UTC: SSHD_[68956]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.100' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 04:21:00.299 UTC: config[68993]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000110' to view the changes. 
+RP/0/RP0/CPU0:Feb 28 04:21:00.458 UTC: config[68993]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.100) 
+RP/0/RP0/CPU0:Feb 28 04:21:40.395 UTC: SSHD_[68956]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.100' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 28 04:46:34.969 UTC: SSHD_[66247]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.97' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 04:47:57.771 UTC: SSHD_[66342]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.97' on 'vty1'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 04:48:01.549 UTC: config[66379]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000111' to view the changes. 
+RP/0/RP0/CPU0:Feb 28 04:48:01.680 UTC: config[66379]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty1 (10.16.36.97) 
+RP/0/RP0/CPU0:Feb 28 04:48:02.609 UTC: SSHD_[66342]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.97' logged out on 'vty1' 
+RP/0/RP0/CPU0:Feb 28 05:11:36.833 UTC: SSHD_[66247]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.97' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 28 10:23:20.137 UTC: SSHD_[68122]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.97' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 10:23:22.339 UTC: SSHD_[68122]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.97' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 28 10:28:07.610 UTC: SSHD_[68403]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.97' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 10:28:44.781 UTC: SSHD_[68403]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.97' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 28 10:41:31.572 UTC: SSHD_[69136]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.97' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 10:42:08.896 UTC: SSHD_[69136]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.97' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 28 10:43:01.339 UTC: SSHD_[69257]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.97' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 10:43:03.634 UTC: SSHD_[69257]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.97' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 28 10:43:32.076 UTC: SSHD_[69307]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.97' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 10:43:36.382 UTC: SSHD_[69307]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.97' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 28 10:47:02.343 UTC: SSHD_[69538]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.97' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 10:47:06.554 UTC: SSHD_[69538]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.97' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 28 10:49:09.796 UTC: SSHD_[65643]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.97' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 10:49:14.292 UTC: SSHD_[65643]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.97' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 28 10:57:37.892 UTC: SSHD_[66199]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 10:57:40.608 UTC: SSHD_[66199]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 28 11:02:35.354 UTC: SSHD_[66505]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 11:02:38.168 UTC: SSHD_[66505]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 28 11:03:11.569 UTC: SSHD_[66574]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 11:03:15.303 UTC: SSHD_[66574]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 28 11:03:59.180 UTC: SSHD_[66667]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 11:04:02.896 UTC: SSHD_[66667]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 28 11:06:34.090 UTC: SSHD_[66856]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 11:06:38.055 UTC: SSHD_[66856]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 28 11:09:02.225 UTC: SSHD_[67021]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 11:09:05.690 UTC: SSHD_[67021]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 28 11:09:41.087 UTC: SSHD_[67100]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 11:09:46.078 UTC: SSHD_[67100]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 28 11:13:12.626 UTC: SSHD_[67373]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 11:13:17.571 UTC: SSHD_[67373]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 28 11:13:43.040 UTC: SSHD_[67475]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 11:13:47.192 UTC: SSHD_[67475]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 28 11:14:21.416 UTC: SSHD_[67546]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.97' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 11:14:57.276 UTC: SSHD_[67546]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.97' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 28 11:14:58.533 UTC: SSHD_[67611]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 11:15:03.582 UTC: SSHD_[67611]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 28 11:15:18.574 UTC: SSHD_[67704]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 11:15:22.807 UTC: SSHD_[67704]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 28 11:15:39.623 UTC: SSHD_[67782]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.97' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 11:15:43.451 UTC: SSHD_[67782]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.97' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 28 11:19:24.681 UTC: SSHD_[67989]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 11:24:54.748 UTC: SSHD_[67989]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 28 11:27:42.835 UTC: SSHD_[68568]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 11:35:10.803 UTC: SSHD_[68994]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty1'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 11:35:14.546 UTC: config[69031]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000112' to view the changes. 
+RP/0/RP0/CPU0:Feb 28 11:35:14.685 UTC: config[69031]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty1 (10.16.36.98) 
+RP/0/RP0/CPU0:Feb 28 11:36:47.532 UTC: SSHD_[68994]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty1' 
+RP/0/RP0/CPU0:Feb 28 11:38:41.707 UTC: SSHD_[69211]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.97' on 'vty1'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 11:38:45.533 UTC: SSHD_[69211]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.97' logged out on 'vty1' 
+RP/0/RP0/CPU0:Feb 28 11:54:08.592 UTC: SSHD_[66161]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty1'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 11:54:13.710 UTC: config[66198]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000113' to view the changes. 
+RP/0/RP0/CPU0:Feb 28 11:54:13.915 UTC: config[66198]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty1 (10.16.36.98) 
+RP/0/RP0/CPU0:Feb 28 11:54:50.626 UTC: SSHD_[66161]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty1' 
+RP/0/RP0/CPU0:Feb 28 11:56:14.259 UTC: SSHD_[66341]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty1'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 11:56:17.959 UTC: config[66378]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000114' to view the changes. 
+RP/0/RP0/CPU0:Feb 28 11:56:18.120 UTC: config[66378]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty1 (10.16.36.98) 
+RP/0/RP0/CPU0:Feb 28 11:57:49.509 UTC: SSHD_[66341]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty1' 
+RP/0/RP0/CPU0:Feb 28 12:02:01.910 UTC: SSHD_[66744]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty1'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 12:02:05.495 UTC: config[66781]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000115' to view the changes. 
+RP/0/RP0/CPU0:Feb 28 12:02:05.648 UTC: config[66781]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty1 (10.16.36.98) 
+RP/0/RP0/CPU0:Feb 28 12:02:12.007 UTC: SSHD_[66744]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty1' 
+RP/0/RP0/CPU0:Feb 28 12:06:41.532 UTC: SSHD_[67028]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty1'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 12:06:45.277 UTC: config[67065]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000116' to view the changes. 
+RP/0/RP0/CPU0:Feb 28 12:06:45.389 UTC: config[67065]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty1 (10.16.36.98) 
+RP/0/RP0/CPU0:Feb 28 12:06:51.822 UTC: SSHD_[67028]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty1' 
+RP/0/RP0/CPU0:Feb 28 12:18:15.333 UTC: SSHD_[67680]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty1'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 12:18:19.726 UTC: config[67717]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000117' to view the changes. 
+RP/0/RP0/CPU0:Feb 28 12:18:19.861 UTC: config[67717]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty1 (10.16.36.98) 
+RP/0/RP0/CPU0:Feb 28 12:18:26.679 UTC: SSHD_[67680]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty1' 
+RP/0/RP0/CPU0:Feb 28 12:27:42.496 UTC: SSHD_[68568]: %SECURITY-SSHD-6-INFO_REKEY : Server initiated time rekey for session 39 , session_rekey_count = 1 
+RP/0/RP0/CPU0:Feb 28 13:03:51.921 UTC: SSHD_[66284]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.97' on 'vty1'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 13:27:42.587 UTC: SSHD_[68568]: %SECURITY-SSHD-6-INFO_REKEY : Server initiated time rekey for session 39 , session_rekey_count = 2 
+RP/0/RP0/CPU0:Feb 28 13:35:44.554 UTC: SSHD_[68096]: %SECURITY-SSHD-6-INFO_GENERAL : Client closes socket connection 
+RP/0/RP0/CPU0:Feb 28 13:35:44.554 UTC: SSHD_[68096]: %SECURITY-SSHD-3-ERR_GENERAL : Error in receiving key exchange packet 
+RP/0/RP0/CPU0:Feb 28 14:03:50.370 UTC: SSHD_[66284]: %SECURITY-SSHD-6-INFO_REKEY : Server initiated time rekey for session 47 , session_rekey_count = 1 
+RP/0/RP0/CPU0:Feb 28 14:08:53.134 UTC: SSHD_[66156]: %SECURITY-SSHD-6-INFO_GENERAL : Client closes socket connection 
+RP/0/RP0/CPU0:Feb 28 14:08:53.134 UTC: SSHD_[66156]: %SECURITY-SSHD-3-ERR_GENERAL : Error in receiving key exchange packet 
+RP/0/RP0/CPU0:Feb 28 14:09:52.644 UTC: SSHD_[66207]: %SECURITY-SSHD-6-INFO_GENERAL : Client closes socket connection 
+RP/0/RP0/CPU0:Feb 28 14:09:52.644 UTC: SSHD_[66207]: %SECURITY-SSHD-3-ERR_GENERAL : Error in receiving key exchange packet 
+RP/0/RP0/CPU0:Feb 28 14:10:35.551 UTC: SSHD_[66299]: %SECURITY-SSHD-6-INFO_GENERAL : Client closes socket connection 
+RP/0/RP0/CPU0:Feb 28 14:10:35.551 UTC: SSHD_[66299]: %SECURITY-SSHD-3-ERR_GENERAL : Error in receiving key exchange packet 
+RP/0/RP0/CPU0:Feb 28 14:10:40.816 UTC: SSHD_[66308]: %SECURITY-SSHD-6-INFO_GENERAL : Client closes socket connection 
+RP/0/RP0/CPU0:Feb 28 14:10:40.816 UTC: SSHD_[66308]: %SECURITY-SSHD-3-ERR_GENERAL : Error in receiving key exchange packet 
+RP/0/RP0/CPU0:Feb 28 14:10:46.301 UTC: SSHD_[66317]: %SECURITY-SSHD-6-INFO_GENERAL : Client closes socket connection 
+RP/0/RP0/CPU0:Feb 28 14:10:46.301 UTC: SSHD_[66317]: %SECURITY-SSHD-3-ERR_GENERAL : Error in receiving key exchange packet 
+RP/0/RP0/CPU0:Feb 28 14:12:20.567 UTC: SSHD_[66418]: %SECURITY-SSHD-4-INFO_FAILURE : Failed authentication attempt by user 'cisco' from '198.18.0.121' on 'vty2' 
+RP/0/RP0/CPU0:Feb 28 14:12:23.034 UTC: SSHD_[66418]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '198.18.0.121' on 'vty2'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 14:17:47.528 UTC: SSHD_[66709]: %SECURITY-SSHD-6-INFO_GENERAL : Client closes socket connection 
+RP/0/RP0/CPU0:Feb 28 14:17:47.528 UTC: SSHD_[66709]: %SECURITY-SSHD-3-ERR_GENERAL : Error in receiving key exchange packet 
+RP/0/RP0/CPU0:Feb 28 14:27:42.704 UTC: SSHD_[68568]: %SECURITY-SSHD-6-INFO_REKEY : Server initiated time rekey for session 39 , session_rekey_count = 3 
+RP/0/RP0/CPU0:Feb 28 14:29:52.340 UTC: SSHD_[66284]: %SECURITY-SSHD-6-INFO_GENERAL : Client closes socket connection 
+RP/0/RP0/CPU0:Feb 28 14:29:52.376 UTC: SSHD_[66418]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '198.18.0.121' logged out on 'vty2' 
+RP/0/RP0/CPU0:Feb 28 14:29:52.379 UTC: SSHD_[66284]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.97' logged out on 'vty1' 
+RP/0/RP0/CPU0:Feb 28 14:41:14.520 UTC: SSHD_[68568]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Feb 28 15:57:03.523 UTC: SSHD_[67080]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Feb 28 16:37:05.882 UTC: SSHD_[67080]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 00:51:54.436 UTC: SSHD_[67678]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 00:51:59.756 UTC: SSHD_[67678]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 02:01:03.691 UTC: SSHD_[67552]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 02:01:07.582 UTC: config[67589]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000118' to view the changes. 
+RP/0/RP0/CPU0:Mar  1 02:01:07.709 UTC: config[67589]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.98) 
+RP/0/RP0/CPU0:Mar  1 02:01:12.747 UTC: SSHD_[67552]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 02:16:02.184 UTC: SSHD_[68395]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 02:16:06.043 UTC: config[68432]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000119' to view the changes. 
+RP/0/RP0/CPU0:Mar  1 02:16:06.177 UTC: config[68432]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.98) 
+RP/0/RP0/CPU0:Mar  1 02:16:11.355 UTC: SSHD_[68395]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+LC/0/0/CPU0:Mar  1 02:17:52.298 UTC: fib_mgr[172]: %ROUTING-FIB-4-RETRYDB_NONEMPTY : 3 FIB object(s) have been in IPv4 retry queue for at least 86400 seconds 
+RP/0/RP0/CPU0:Mar  1 05:44:29.513 UTC: SSHD_[67861]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 05:44:30.848 UTC: SSHD_[67861]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 05:56:32.591 UTC: SSHD_[68609]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 05:56:33.599 UTC: SSHD_[68609]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 06:40:47.556 UTC: SSHD_[66992]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 06:40:51.257 UTC: config[67029]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000120' to view the changes. 
+RP/0/RP0/CPU0:Mar  1 06:40:51.371 UTC: config[67029]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.99) 
+RP/0/RP0/CPU0:Mar  1 06:40:52.132 UTC: SSHD_[66992]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 06:51:50.507 UTC: SSHD_[67709]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 06:51:54.239 UTC: config[67746]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000121' to view the changes. 
+RP/0/RP0/CPU0:Mar  1 06:51:54.375 UTC: config[67746]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.99) 
+RP/0/RP0/CPU0:Mar  1 06:51:55.083 UTC: SSHD_[67709]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 07:53:11.091 UTC: SSHD_[67437]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 07:53:14.756 UTC: config[67474]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000122' to view the changes. 
+RP/0/RP0/CPU0:Mar  1 07:53:14.860 UTC: config[67474]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.99) 
+RP/0/RP0/CPU0:Mar  1 07:53:16.150 UTC: SSHD_[67437]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 07:53:39.761 UTC: SSHD_[67533]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 07:53:43.697 UTC: config[67570]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000123' to view the changes. 
+RP/0/RP0/CPU0:Mar  1 07:53:43.815 UTC: config[67570]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.99) 
+RP/0/RP0/CPU0:Mar  1 07:54:23.285 UTC: SSHD_[67533]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 07:55:38.042 UTC: SSHD_[67707]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 07:55:41.641 UTC: config[67744]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000124' to view the changes. 
+RP/0/RP0/CPU0:Mar  1 07:55:41.762 UTC: config[67744]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.99) 
+RP/0/RP0/CPU0:Mar  1 07:55:42.526 UTC: SSHD_[67707]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 07:56:36.422 UTC: SSHD_[67800]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 07:56:41.143 UTC: config[67837]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000125' to view the changes. 
+RP/0/RP0/CPU0:Mar  1 07:56:41.256 UTC: config[67837]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.99) 
+RP/0/RP0/CPU0:Mar  1 07:56:41.966 UTC: SSHD_[67800]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 07:58:31.797 UTC: SSHD_[68001]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 07:58:35.490 UTC: config[68042]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000126' to view the changes. 
+RP/0/RP0/CPU0:Mar  1 07:58:35.621 UTC: config[68042]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.99) 
+RP/0/RP0/CPU0:Mar  1 07:58:36.319 UTC: SSHD_[68001]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 08:00:20.660 UTC: SSHD_[68181]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 08:00:24.348 UTC: config[68221]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000127' to view the changes. 
+RP/0/RP0/CPU0:Mar  1 08:00:24.473 UTC: config[68221]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.99) 
+RP/0/RP0/CPU0:Mar  1 08:01:02.433 UTC: SSHD_[68181]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 08:01:16.872 UTC: SSHD_[68272]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 08:01:20.829 UTC: config[68309]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000128' to view the changes. 
+RP/0/RP0/CPU0:Mar  1 08:01:21.008 UTC: config[68309]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.99) 
+RP/0/RP0/CPU0:Mar  1 08:01:21.769 UTC: SSHD_[68272]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 08:01:31.811 UTC: SSHD_[68357]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 08:01:35.572 UTC: config[68394]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000129' to view the changes. 
+RP/0/RP0/CPU0:Mar  1 08:01:35.694 UTC: config[68394]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.99) 
+RP/0/RP0/CPU0:Mar  1 08:01:36.406 UTC: SSHD_[68357]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 08:04:26.370 UTC: SSHD_[68562]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 08:04:30.654 UTC: config[68599]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000130' to view the changes. 
+RP/0/RP0/CPU0:Mar  1 08:04:30.779 UTC: config[68599]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.99) 
+RP/0/RP0/CPU0:Mar  1 08:05:13.027 UTC: SSHD_[68562]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 08:08:40.395 UTC: SSHD_[68831]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 08:08:44.158 UTC: config[68869]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000131' to view the changes. 
+RP/0/RP0/CPU0:Mar  1 08:08:44.273 UTC: config[68869]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.99) 
+RP/0/RP0/CPU0:Mar  1 08:09:23.346 UTC: SSHD_[68831]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 08:10:58.981 UTC: SSHD_[69006]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 08:11:02.752 UTC: config[69043]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000132' to view the changes. 
+RP/0/RP0/CPU0:Mar  1 08:11:02.857 UTC: config[69043]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.99) 
+RP/0/RP0/CPU0:Mar  1 08:11:41.723 UTC: SSHD_[69006]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 08:12:51.042 UTC: SSHD_[69166]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 08:12:55.424 UTC: config[69204]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000133' to view the changes. 
+RP/0/RP0/CPU0:Mar  1 08:12:55.454 UTC: SSHD_[69218]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty1'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 08:12:55.574 UTC: config[69204]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.98) 
+RP/0/RP0/CPU0:Mar  1 08:12:59.343 UTC: config[69264]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000134' to view the changes. 
+RP/0/RP0/CPU0:Mar  1 08:12:59.470 UTC: config[69264]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty1 (10.16.36.99) 
+RP/0/RP0/CPU0:Mar  1 08:13:38.183 UTC: SSHD_[69218]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty1' 
+RP/0/RP0/CPU0:Mar  1 08:14:29.553 UTC: SSHD_[69166]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 08:23:06.341 UTC: SSHD_[66336]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 08:23:10.020 UTC: config[66376]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000135' to view the changes. 
+RP/0/RP0/CPU0:Mar  1 08:23:10.127 UTC: config[66376]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.99) 
+RP/0/RP0/CPU0:Mar  1 08:23:49.520 UTC: SSHD_[66336]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 08:25:24.662 UTC: SSHD_[66960]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 08:25:28.574 UTC: config[67099]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000136' to view the changes. 
+RP/0/RP0/CPU0:Mar  1 08:25:28.685 UTC: config[67099]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.99) 
+RP/0/RP0/CPU0:Mar  1 08:26:07.423 UTC: SSHD_[66960]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 14:37:08.491 UTC: SSHD_[69313]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 14:37:46.354 UTC: SSHD_[69313]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 14:40:16.289 UTC: SSHD_[69531]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 14:41:26.146 UTC: SSHD_[69531]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 14:47:56.897 UTC: SSHD_[65843]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 14:48:36.615 UTC: SSHD_[65843]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 14:50:50.493 UTC: SSHD_[66117]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 14:51:28.300 UTC: SSHD_[66117]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 14:58:18.273 UTC: SSHD_[66532]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 14:58:56.197 UTC: SSHD_[66532]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 15:00:28.781 UTC: SSHD_[66761]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 15:01:06.537 UTC: SSHD_[66761]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 15:02:00.467 UTC: SSHD_[66843]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 15:02:38.033 UTC: SSHD_[66843]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 15:07:44.606 UTC: SSHD_[67187]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 15:08:22.480 UTC: SSHD_[67187]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 15:09:15.862 UTC: SSHD_[67266]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 15:09:54.014 UTC: SSHD_[67266]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 15:10:59.224 UTC: SSHD_[67423]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 15:11:36.962 UTC: SSHD_[67423]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 15:12:39.354 UTC: SSHD_[67554]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 15:13:17.005 UTC: SSHD_[67554]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 15:16:46.700 UTC: SSHD_[67801]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 15:17:24.900 UTC: SSHD_[67801]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 15:25:49.435 UTC: SSHD_[68310]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 15:26:27.027 UTC: SSHD_[68310]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 15:28:13.477 UTC: SSHD_[68431]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 15:28:47.697 UTC: SSHD_[68431]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 15:28:57.239 UTC: SSHD_[68505]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 15:29:34.851 UTC: SSHD_[68505]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 15:33:10.816 UTC: SSHD_[68838]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 15:33:48.588 UTC: SSHD_[68838]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 15:36:30.809 UTC: SSHD_[69066]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 15:37:08.441 UTC: SSHD_[69066]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 15:39:20.797 UTC: SSHD_[69203]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 15:39:56.901 UTC: SSHD_[69203]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 15:40:47.194 UTC: SSHD_[69333]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 15:41:25.016 UTC: SSHD_[69333]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 15:43:18.130 UTC: SSHD_[69476]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 15:43:57.037 UTC: SSHD_[69476]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 15:45:26.230 UTC: SSHD_[65862]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 15:46:04.082 UTC: SSHD_[65862]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 15:51:05.165 UTC: SSHD_[66231]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 15:51:42.924 UTC: SSHD_[66231]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 15:54:22.096 UTC: SSHD_[66425]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 15:54:59.949 UTC: SSHD_[66425]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 15:57:50.773 UTC: SSHD_[66651]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 15:58:28.466 UTC: SSHD_[66651]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  1 15:59:20.673 UTC: SSHD_[66736]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  1 16:00:30.704 UTC: SSHD_[66736]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+LC/0/0/CPU0:Mar  2 02:17:52.298 UTC: fib_mgr[172]: %ROUTING-FIB-4-RETRYDB_NONEMPTY : 3 FIB object(s) have been in IPv4 retry queue for at least 86400 seconds 
+RP/0/RP0/CPU0:Mar  2 03:56:07.906 UTC: SSHD_[68270]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 03:57:17.386 UTC: SSHD_[68270]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 03:59:54.334 UTC: SSHD_[68459]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 04:01:03.371 UTC: SSHD_[68459]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 04:01:10.427 UTC: SSHD_[68621]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 04:02:19.521 UTC: SSHD_[68621]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 04:05:11.813 UTC: SSHD_[68950]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 04:05:49.316 UTC: SSHD_[68950]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 04:09:27.784 UTC: SSHD_[69167]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 04:10:04.787 UTC: SSHD_[69167]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 04:13:14.916 UTC: SSHD_[69419]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 04:13:52.143 UTC: SSHD_[69419]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 04:14:43.479 UTC: SSHD_[69504]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 04:15:21.680 UTC: SSHD_[69504]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 04:18:38.770 UTC: SSHD_[65643]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 04:19:16.032 UTC: SSHD_[65643]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 04:25:16.379 UTC: SSHD_[66055]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 04:25:56.831 UTC: SSHD_[66055]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 04:30:35.369 UTC: SSHD_[66346]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 04:31:15.989 UTC: SSHD_[66346]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 04:37:28.306 UTC: SSHD_[66807]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 04:38:16.241 UTC: SSHD_[66807]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 04:40:30.169 UTC: SSHD_[67001]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 04:41:11.518 UTC: SSHD_[67001]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 04:44:54.151 UTC: SSHD_[67234]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 04:45:35.790 UTC: SSHD_[67234]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 04:48:56.402 UTC: SSHD_[67550]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 04:49:00.587 UTC: config[67587]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000137' to view the changes. 
+RP/0/RP0/CPU0:Mar  2 04:49:00.821 UTC: config[67587]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.98) 
+RP/0/RP0/CPU0:Mar  2 04:50:36.508 UTC: SSHD_[67550]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 04:52:55.583 UTC: SSHD_[67841]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 04:52:59.764 UTC: config[67878]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000138' to view the changes. 
+RP/0/RP0/CPU0:Mar  2 04:52:59.913 UTC: config[67878]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.98) 
+RP/0/RP0/CPU0:Mar  2 04:53:37.738 UTC: SSHD_[67841]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 04:55:14.268 UTC: SSHD_[68063]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 04:55:19.321 UTC: config[68100]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000139' to view the changes. 
+RP/0/RP0/CPU0:Mar  2 04:55:19.463 UTC: config[68100]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.98) 
+RP/0/RP0/CPU0:Mar  2 04:56:53.006 UTC: SSHD_[68063]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 05:01:01.215 UTC: ospf[1027]: %ROUTING-OSPF-5-ADJCHG : Process 1, Nbr 198.18.0.121 on GigabitEthernet0/0/0/0 in area 0 from FULL to DOWN, Neighbor Down: dead timer expired, vrf default vrfid 0x60000000 
+RP/0/RP0/CPU0:Mar  2 05:10:14.238 UTC: ospf[1027]: %ROUTING-OSPF-5-ADJCHG : Process 1, Nbr 198.18.0.121 on GigabitEthernet0/0/0/0 in area 0 from LOADING to FULL, Loading Done, vrf default vrfid 0x60000000 
+RP/0/RP0/CPU0:Mar  2 05:11:01.876 UTC: SSHD_[68978]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 05:11:16.717 UTC: config[69015]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000140' to view the changes. 
+RP/0/RP0/CPU0:Mar  2 05:11:16.876 UTC: config[69015]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.98) 
+RP/0/RP0/CPU0:Mar  2 05:11:51.802 UTC: SSHD_[69080]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty1'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 05:12:36.825 UTC: SSHD_[69080]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty1' 
+RP/0/RP0/CPU0:Mar  2 05:12:51.603 UTC: SSHD_[68978]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 05:15:20.966 UTC: SSHD_[69337]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 05:15:27.763 UTC: config[69374]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000141' to view the changes. 
+RP/0/RP0/CPU0:Mar  2 05:15:27.947 UTC: config[69374]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.98) 
+RP/0/RP0/CPU0:Mar  2 05:17:03.071 UTC: SSHD_[69337]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 05:20:25.974 UTC: SSHD_[65550]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 05:20:34.837 UTC: SSHD_[65550]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 05:21:29.369 UTC: SSHD_[65625]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 05:21:35.695 UTC: config[65662]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000142' to view the changes. 
+RP/0/RP0/CPU0:Mar  2 05:21:35.842 UTC: config[65662]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.98) 
+RP/0/RP0/CPU0:Mar  2 05:23:13.727 UTC: SSHD_[65625]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 05:32:34.314 UTC: SSHD_[66248]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 05:32:36.314 UTC: SSHD_[66248]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 05:44:11.041 UTC: exec[66930]: %SECURITY-LOGIN-6-AUTHEN_SUCCESS : Successfully authenticated user 'helena' from 'console' on 'con0_RP0_CPU0' 
+RP/0/RP0/CPU0:Mar  2 05:44:32.754 UTC: ssh_xr[66988]: %SECURITY-SSHD-3-ERR_ERRNO : Failed to connect to 198.18.0.133 - Connection failed 
+RP/0/RP0/CPU0:Mar  2 05:46:05.272 UTC: ospf[1027]: %ROUTING-OSPF-5-ADJCHG : Process 1, Nbr 198.18.0.133 on GigabitEthernet0/0/0/0 in area 0 from LOADING to FULL, Loading Done, vrf default vrfid 0x60000000 
+RP/0/RP0/CPU0:Mar  2 05:59:36.752 UTC: ospf[1027]: %ROUTING-OSPF-5-ADJCHG : Process 1, Nbr 198.18.0.32 on GigabitEthernet0/0/0/0 in area 0 from LOADING to FULL, Loading Done, vrf default vrfid 0x60000000 
+RP/0/RP0/CPU0:Mar  2 06:15:48.426 UTC: SSHD_[68882]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 06:15:53.213 UTC: SSHD_[68882]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 06:18:03.877 UTC: SSHD_[69003]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 06:18:08.912 UTC: SSHD_[69003]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 06:18:54.219 UTC: SSHD_[69077]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 06:18:58.664 UTC: SSHD_[69077]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 06:57:53.134 UTC: SSHD_[67218]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 06:58:03.040 UTC: SSHD_[67218]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 06:58:29.533 UTC: SSHD_[67269]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 06:58:38.779 UTC: SSHD_[67269]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 06:58:54.138 UTC: SSHD_[67326]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 06:59:04.347 UTC: SSHD_[67326]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 06:59:50.538 UTC: SSHD_[67401]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 07:00:00.277 UTC: SSHD_[67401]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 07:00:56.569 UTC: SSHD_[67507]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 07:01:07.464 UTC: SSHD_[67507]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 07:29:50.423 UTC: SSHD_[69102]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 07:30:02.635 UTC: SSHD_[69102]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 07:43:03.889 UTC: SSHD_[65824]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.100' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 07:43:07.415 UTC: SSHD_[65824]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.100' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 07:43:29.712 UTC: SSHD_[65874]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.100' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 07:43:33.848 UTC: SSHD_[65874]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.100' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 07:48:52.215 UTC: SSHD_[66260]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 07:49:00.598 UTC: SSHD_[66260]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 07:50:07.253 UTC: ospf[1027]: %ROUTING-OSPF-5-ADJCHG : Process 1, Nbr 198.18.0.133 on GigabitEthernet0/0/0/0 in area 0 from FULL to DOWN, Neighbor Down: dead timer expired, vrf default vrfid 0x60000000 
+RP/0/RP0/CPU0:Mar  2 07:56:00.553 UTC: ospf[1027]: %ROUTING-OSPF-5-ADJCHG : Process 1, Nbr 198.18.0.133 on GigabitEthernet0/0/0/0 in area 0 from LOADING to FULL, Loading Done, vrf default vrfid 0x60000000 
+RP/0/RP0/CPU0:Mar  2 07:56:36.083 UTC: SSHD_[66700]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 07:56:44.262 UTC: SSHD_[66700]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 08:06:54.809 UTC: SSHD_[67382]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 08:07:08.571 UTC: SSHD_[67382]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 08:09:02.720 UTC: SSHD_[67502]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 08:09:32.968 UTC: SSHD_[67502]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 08:10:06.814 UTC: SSHD_[67609]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 08:10:29.684 UTC: SSHD_[67609]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 08:11:42.090 UTC: SSHD_[67701]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 08:11:51.624 UTC: SSHD_[67701]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 08:12:35.869 UTC: SSHD_[67775]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 08:12:44.667 UTC: SSHD_[67775]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 08:13:11.774 UTC: SSHD_[67855]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 08:13:20.407 UTC: SSHD_[67855]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 08:15:54.322 UTC: SSHD_[68048]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 08:19:59.092 UTC: SSHD_[68256]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty1'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 08:20:04.316 UTC: SSHD_[68256]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty1' 
+RP/0/RP0/CPU0:Mar  2 08:23:04.379 UTC: SSHD_[68048]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 08:48:17.421 UTC: smartlicserver[402]: %LICENSE-SMART_LIC-5-EVAL_START : Entering evaluation period 
+RP/0/RP0/CPU0:Mar  2 12:18:24.603 UTC: SSHD_[68594]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.101' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 12:18:29.414 UTC: config[68631]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000143' to view the changes. 
+RP/0/RP0/CPU0:Mar  2 12:18:29.562 UTC: config[68631]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.101) 
+RP/0/RP0/CPU0:Mar  2 12:18:45.299 UTC: SSHD_[68594]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.101' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 12:22:10.972 UTC: SSHD_[68815]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.101' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 12:22:12.304 UTC: SSHD_[68815]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.101' logged out on 'vty0' 
+RP/0/RP0/CPU0:Mar  2 12:27:50.387 UTC: SSHD_[69155]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.101' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Mar  2 12:27:55.002 UTC: config[69192]: %MGBL-CONFIG-6-DB_COMMIT : Configuration committed by user 'cisco'. Use 'show configuration commit changes 1000000144' to view the changes. 
+RP/0/RP0/CPU0:Mar  2 12:27:55.215 UTC: config[69192]: %MGBL-SYS-5-CONFIG_I : Configured from console by cisco on vty0 (10.16.36.101)

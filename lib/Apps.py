@@ -1,202 +1,154 @@
-import pyinputplus as pyip
-import sys
-from lib.File import ReadFile,DataFrame,ProcessExcel
-import lib.Automation as auto
+import subprocess
+from pathlib import Path
+import time
 import pyfiglet
-# from multiprocessing.dummy import Pool, Process
+import pyinputplus as pyip
+from rich.console import Console
+from rich.progress import track
+from rich.prompt import Prompt
+import sys
+from lib.log import myLog
+from datetime import datetime
+from lib.getConfig.main import captureConfig
+from lib.getMemmory.main_backup import getMemmoryUtils
+from lib.getCPU.main import getCPUUtils
+from lib.getLogging.main import captureLog
+import logging
+from rich.logging import RichHandler
 
+console = Console()
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
+
+# the handler determines where the logs go: stdout/file
+shell_handler = RichHandler()
+file_handler = logging.FileHandler('log/Application.log')
+shell_handler.setLevel(logging.DEBUG)
+file_handler.setLevel(logging.DEBUG)
+
+# the formatter determines what our logs will look like
+fmt_shell = '%(message)s'
+fmt_file = '%(levelname)s %(asctime)s [%(filename)s:%(funcName)s:%(lineno)d] %(message)s'
+
+shell_formatter = logging.Formatter(fmt_shell)
+file_formatter = logging.Formatter(fmt_file)
+
+# here we hook everything together
+shell_handler.setFormatter(shell_formatter)
+file_handler.setFormatter(file_formatter)
+logger.addHandler(shell_handler)
+logger.addHandler(file_handler)
+
+
+Menu = ['Get Configuration Device','Get Inventory Device','Get Memmory Utils','Get CPU Utils','Get Logging Device','Get All','Exit']
+
+testbedFile = 'testbed/device.yaml'
+
+
+def create():
+    console.print("If you want to import csv/xls/xlsx, please put into folder 'import'")
+    input_str = Prompt.ask("Please input name file csv/xls/xlsx, you want to import (ex :filename.csv)")
+
+    # Start Bash script as subprocess with input from variable
+    result = subprocess.Popen(['/bin/bash', './lib/createTestbed.sh'], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
+    # Send input to subprocess and get output and errors
+    output, errors = result.communicate(input=input_str.encode())
+
+    # Get return code
+    return_code = result.returncode
+
+    if return_code == 0:
+        # Success
+        logger.info("Importing file..."+input_str)
+        for i in track(range(100), description="Progress..."):
+            time.sleep(0.01)
+
+        logger.info(f"Success: {output.decode().strip()}")
+        logger.info("---testbed file ready---")
+        return True
+    elif return_code == 1:
+        # Error
+        logger.error(f"Error: {errors.decode().strip()}")
+        return False
+
+def check():
+    # check path file is exsist or not, return True / False
+    path = Path(testbedFile)
+    return path.is_file()
+
+def init():
+    logger.info("---Starting the Application---")
+    ascii_banner = pyfiglet.figlet_format("MasterSystem - ProjectOne")
+    console.print(ascii_banner,style="Bold Red")
+    logger.info("---Initialize testbed file---")
+    if check() == False:
+        logger.warning("---System can't find testbed file---")
+        time.sleep(0.5)
+        if create() == False:
+          return False
+        
+    else:
+        logger.info("---testbed file ready---")
+        updateFile = pyip.inputYesNo(prompt="Do you want to update testbed file..? (Y/n)",blank=False)
+        if updateFile == 'yes':
+            if create() == False:
+                return False
+        time.sleep(0.5)
+        logger.info("---Opening Main Menu Application---")
+        time.sleep(1)
+    return True
+        
+    
 def MainMenu():
-    ascii_banner = pyfiglet.figlet_format("Welcome")
-    print(ascii_banner)
-    print("Main Menu Application")
-    menuResponse=pyip.inputMenu(['Get Configuration Device','Get Inventory Device','Get Memmory Utils','Get CPU Utils','Get Logging Device','Exit'],numbered=True,prompt="Please select one of the following menu..?\n")
+    console.print("--Main Menu--",style="Bold Green")
+    menuResponse=pyip.inputMenu(Menu,numbered=True,blank=False,prompt="Please select one of the following menu..?\n")
+    print(menuResponse)
     if(menuResponse=='Get Configuration Device'):
-        getConfig()
+        logger.info("---Get Configuration Device---")
+
+        #### add function get Config device here ####
+        captureConfig(testbedFile)
+        
     elif(menuResponse=='Get Inventory Device'):
-        getInven()
+        logger.info("---Get Inventory Device---")
+
+        #### add function get Inventory Device here ####
+
+        
     elif(menuResponse=='Get Memmory Utils'):
-        getMemUtils()
+        logger.info("---Get Memmory Utilization---")
+
+        #### function get Memmory Utilization ####
+        getMemmoryUtils(testbedFile)
+        
     elif(menuResponse=='Get CPU Utils'):
-        getCPUUtils()
+        logger.info("---Get CPU Utilization---")
+
+        #### function get CPU Utilization ####
+        getCPUUtils(testbedFile)
+        
+        
     elif(menuResponse=='Get Logging Device'):
-        getLogging()
+        logger.info("---Get Logging device---")
+        
+        #### function get Logging device ####
+        captureLog(testbedFile)
+        
+    elif(menuResponse=='Get All'):
+        logger.info("---Get All---")
+        #### function get all ####
+        logger.info("---Get Configuration Device---")
+        captureConfig(testbedFile)
+        logger.info("---Get Memmory Utilization---")
+        getMemmoryUtils(testbedFile)
+        logger.info("---Get CPU Utilization---")
+        getCPUUtils(testbedFile)
+        logger.info("---Get Logging device---")
+        captureLog(testbedFile)
+
+        
     elif(menuResponse=='Exit'):
+        logger.info("---Closing Application---")
+        time.sleep(1)
         sys.exit()
-
-def getConfig():
-    menu = 1
-    cmd=['show run']
-    getConfigDevice = auto.AutoPy()
-    try:
-        list_credential = pyip.inputNum(prompt='How many you have the credential..(1-3)? ',min=1,max=3,limit=3)
-    except pyip.RetryLimitException:
-        print("Error: Retry Limit exception")
-        sys.exit()
-    
-    getConfigDevice.SetListCredential(list_credential)
-    # print(getConfigDevice.credential)
-    listIP = ReadFile("ListIP","txt","r")
-    if listIP != None:
-        Prompt = "you have "+str(len(listIP))+" device IP in the list, are you sure..(yes/no)?  "
-        confirm_listIP = pyip.inputYesNo(prompt=Prompt)
-        if confirm_listIP =="yes":
-            ################# Serial Processs #################
-            for ip in listIP:
-                for user in range(len(getConfigDevice.credential)):
-                    device = getConfigDevice.ConnectDevice(ip,cmd,menu,**getConfigDevice.credential[user])
-                    if device != False:
-                        print("OK")
-                        break
-            ################# End Serial Processs #################
-    else:
-        print("Please update file ListIP")
-        sys.exit()
-    print("Get Config Device, Success")
-    MainMenu()
-
-def getInven():
-    menu = 2
-    cmd=['show inventory']
-    getInvenDevice = auto.AutoPy()
-    try:
-        list_credential = pyip.inputNum(prompt='How many you have the credential..(1-3)? ',min=1,max=3,limit=3)
-    except pyip.RetryLimitException:
-        print("Error: Retry Limit exception")
-        sys.exit()
-    
-    getInvenDevice.SetListCredential(list_credential)
-    # print(getInvenDevice.credential)
-    listIP = ReadFile("ListIP","txt","r")
-    if listIP != None:
-        Prompt = "you have "+str(len(listIP))+" device IP in the list, are you sure..(yes/no)?  "
-        confirm_listIP = pyip.inputYesNo(prompt=Prompt)
-        if confirm_listIP =="yes":
-            ################# Serial Processs #################
-            for ip in listIP:
-                for user in range(len(getInvenDevice.credential)):
-                    device = getInvenDevice.ConnectDevice(ip,cmd,menu,**getInvenDevice.credential[user])
-                    if device != False:
-                        print("OK")
-                        break
-            ################# End Serial Processs #################
-
-            ################# Multiprocess Processs #################
-            # for user in range(len(credential)):
-            #     device = [Process(target=ConnectDevice, args=[ip] , kwargs=credential[user]) for ip in listIP]
-            #     print(f"{device}")
-            #     # start all processes
-            #     for process in device:
-            #         process.start()
-            #     # wait for all processes to complete
-            #     for process in device:
-            #         process.join()
-                
-            #     if device!=False:
-            #         print('Done', flush=True)
-            #         break
-            ################# End Multiprocess Processs #################
-
-            DataFrame(getInvenDevice.data,menu)
-            ProcessExcel(nameFile='DeviceInventory')
-    else:
-        print("Please update file ListIP")
-        sys.exit()
-    print("Get Inventory Device, Success")
-    MainMenu()
-
-def getMemUtils():
-    menu = 3
-    cmd=['show processes memory sorted']
-    getMemUtilsDevice = auto.AutoPy()
-    try:
-        list_credential = pyip.inputNum(prompt='How many you have the credential..(1-3)? ',min=1,max=3,limit=3)
-    except pyip.RetryLimitException:
-        print("Error: Retry Limit exception")
-        sys.exit()
-    
-    getMemUtilsDevice.SetListCredential(list_credential)
-    # print(getInvenDevice.credential)
-    listIP = ReadFile("ListIP","txt","r")
-    if listIP != None:
-        Prompt = "you have "+str(len(listIP))+" device IP in the list, are you sure..(yes/no)?  "
-        confirm_listIP = pyip.inputYesNo(prompt=Prompt)
-        if confirm_listIP =="yes":
-            ################# Serial Processs #################
-            for ip in listIP:
-                for user in range(len(getMemUtilsDevice.credential)):
-                    device = getMemUtilsDevice.ConnectDevice(ip,cmd,menu,**getMemUtilsDevice.credential[user])
-                    if device != False:
-                        print("OK")
-                        break
-            ################# End Serial Processs #################
-        DataFrame(getMemUtilsDevice.data,menu)
-        ProcessExcel(nameFile='MemmoryUtils')
-    else:
-        print("Please update file ListIP")
-        sys.exit()
-    print("Get Memmory Utils Device, Success")
-    MainMenu()
-
-def getCPUUtils():
-    menu = 4
-    cmd=['show processes cpu platform']
-    getCpuUtilsDevice = auto.AutoPy()
-    try:
-        list_credential = pyip.inputNum(prompt='How many you have the credential..(1-3)? ',min=1,max=3,limit=3)
-    except pyip.RetryLimitException:
-        print("Error: Retry Limit exception")
-        sys.exit()
-    
-    getCpuUtilsDevice.SetListCredential(list_credential)
-    # print(getInvenDevice.credential)
-    listIP = ReadFile("ListIP","txt","r")
-    if listIP != None:
-        Prompt = "you have "+str(len(listIP))+" device IP in the list, are you sure..(yes/no)?  "
-        confirm_listIP = pyip.inputYesNo(prompt=Prompt)
-        if confirm_listIP =="yes":
-            ################# Serial Processs #################
-            for ip in listIP:
-                for user in range(len(getCpuUtilsDevice.credential)):
-                    device = getCpuUtilsDevice.ConnectDevice(ip,cmd,menu,**getCpuUtilsDevice.credential[user])
-                    if device != False:
-                        print("OK")
-                        break
-            ################# End Serial Processs #################
-        DataFrame(getCpuUtilsDevice.data,menu)
-        ProcessExcel(nameFile='CPU-Utils')
-    else:
-        print("Please update file ListIP")
-        sys.exit()
-    print("Get CPU Utils Device, Success")
-    MainMenu()
-
-def getLogging():
-    menu = 5
-    cmd=['show logging']
-    getConfigDevice = auto.AutoPy()
-    try:
-        list_credential = pyip.inputNum(prompt='How many you have the credential..(1-3)? ',min=1,max=3,limit=3)
-    except pyip.RetryLimitException:
-        print("Error: Retry Limit exception")
-        sys.exit()
-    
-    getConfigDevice.SetListCredential(list_credential)
-    # print(getConfigDevice.credential)
-    listIP = ReadFile("ListIP","txt","r")
-    if listIP != None:
-        Prompt = "you have "+str(len(listIP))+" device IP in the list, are you sure..(yes/no)?  "
-        confirm_listIP = pyip.inputYesNo(prompt=Prompt)
-        if confirm_listIP =="yes":
-            ################# Serial Processs #################
-            for ip in listIP:
-                for user in range(len(getConfigDevice.credential)):
-                    device = getConfigDevice.ConnectDevice(ip,cmd,menu,**getConfigDevice.credential[user])
-                    if device != False:
-                        print("OK")
-                        break
-            ################# End Serial Processs #################
-    else:
-        print("Please update file ListIP")
-        sys.exit()
-    print("Get Logging Device, Success")
-    MainMenu()
