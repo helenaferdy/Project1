@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 # the handler determines where the logs go: stdout/file
 shell_handler = RichHandler()
-file_handler = logging.FileHandler('log/LoggingDevice.log')
+file_handler = logging.FileHandler('Project1/log/LoggingDevice.log')
 shell_handler.setLevel(logging.DEBUG)
 file_handler.setLevel(logging.DEBUG)
 # the formatter determines what our logs will look like

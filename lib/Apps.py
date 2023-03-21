@@ -22,7 +22,7 @@ logger.setLevel(logging.DEBUG)
 
 # the handler determines where the logs go: stdout/file
 shell_handler = RichHandler()
-file_handler = logging.FileHandler('log/Application.log')
+file_handler = logging.FileHandler('Project1/log/Application.log')
 shell_handler.setLevel(logging.DEBUG)
 file_handler.setLevel(logging.DEBUG)
 
@@ -42,7 +42,7 @@ logger.addHandler(file_handler)
 
 Menu = ['Get Configuration Device','Get Inventory Device','Get Memmory Utils','Get CPU Utils','Get Logging Device','Get All','Exit']
 
-testbedFile = 'testbed/device.yaml'
+testbedFile = 'Project1/testbed/device.yaml'
 
 
 def create():

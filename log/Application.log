@@ -107,3 +107,15 @@ INFO 2023-03-02 19:33:36,457 [apps.py:init:84] ---Initialize testbed file---
 INFO 2023-03-02 19:33:36,460 [apps.py:init:92] ---testbed file ready---
 INFO 2023-03-02 19:33:37,841 [apps.py:init:98] ---Opening Main Menu Application---
 INFO 2023-03-02 19:33:43,280 [apps.py:MainMenu:133] ---Get Logging device---
+INFO 2023-03-20 07:14:26,423 [Apps.py:init:81] ---Starting the Application---
+INFO 2023-03-20 07:14:26,485 [Apps.py:init:84] ---Initialize testbed file---
+WARNING 2023-03-20 07:14:26,487 [Apps.py:init:86] ---System can't find testbed file---
+INFO 2023-03-20 07:14:57,932 [Apps.py:MainMenu:152] ---Closing Application---
+INFO 2023-03-20 07:15:22,427 [Apps.py:init:81] ---Starting the Application---
+INFO 2023-03-20 07:15:22,473 [Apps.py:init:84] ---Initialize testbed file---
+INFO 2023-03-20 07:15:22,479 [Apps.py:init:92] ---testbed file ready---
+INFO 2023-03-20 07:15:25,271 [Apps.py:init:98] ---Opening Main Menu Application---
+INFO 2023-03-20 07:15:34,077 [Apps.py:MainMenu:152] ---Closing Application---
+INFO 2023-03-20 07:17:07,404 [Apps.py:init:81] ---Starting the Application---
+INFO 2023-03-20 07:17:07,426 [Apps.py:init:84] ---Initialize testbed file---
+INFO 2023-03-20 07:17:07,429 [Apps.py:init:92] ---testbed file ready---
