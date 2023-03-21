@@ -1,0 +1,50 @@
+2023-03-21 13:21:45,729 [INFO] ---Starting the Application---
+2023-03-21 13:21:45,767 [INFO] ---Initialize testbed file---
+2023-03-21 13:21:45,772 [INFO] ---testbed file ready---
+2023-03-21 13:21:48,453 [INFO] ---Opening Main Menu Application---
+2023-03-21 13:21:52,907 [INFO] ---Get Healty Check / Environtment Device ---
+2023-03-21 13:22:15,770 [INFO] ---Starting the Application---
+2023-03-21 13:22:15,803 [INFO] ---Initialize testbed file---
+2023-03-21 13:22:15,807 [INFO] ---testbed file ready---
+2023-03-21 13:22:16,934 [INFO] ---Opening Main Menu Application---
+2023-03-21 13:22:18,812 [INFO] ---Get Healty Check / Environtment Device ---
+2023-03-21 13:22:35,287 [ERROR] Exception (client): Error reading SSH protocol banner
+2023-03-21 13:22:35,288 [ERROR] Exception (client): Error reading SSH protocol banner
+2023-03-21 13:22:35,297 [ERROR] Traceback (most recent call last):
+2023-03-21 13:22:35,297 [ERROR]   File "/usr/local/lib/python3.9/site-packages/paramiko/transport.py", line 2270, in _check_banner
+2023-03-21 13:22:35,297 [ERROR]     buf = self.packetizer.readline(timeout)
+2023-03-21 13:22:35,298 [ERROR]   File "/usr/local/lib/python3.9/site-packages/paramiko/packet.py", line 374, in readline
+2023-03-21 13:22:35,298 [ERROR]     buf += self._read_timeout(timeout)
+2023-03-21 13:22:35,298 [ERROR]   File "/usr/local/lib/python3.9/site-packages/paramiko/packet.py", line 603, in _read_timeout
+2023-03-21 13:22:35,298 [ERROR]     raise EOFError()
+2023-03-21 13:22:35,298 [ERROR] EOFError
+2023-03-21 13:22:35,298 [ERROR] 
+2023-03-21 13:22:35,299 [ERROR] During handling of the above exception, another exception occurred:
+2023-03-21 13:22:35,299 [ERROR] 
+2023-03-21 13:22:35,299 [ERROR] Traceback (most recent call last):
+2023-03-21 13:22:35,299 [ERROR]   File "/usr/local/lib/python3.9/site-packages/paramiko/transport.py", line 2093, in run
+2023-03-21 13:22:35,299 [ERROR]     self._check_banner()
+2023-03-21 13:22:35,299 [ERROR]   File "/usr/local/lib/python3.9/site-packages/paramiko/transport.py", line 2274, in _check_banner
+2023-03-21 13:22:35,299 [ERROR]     raise SSHException(
+2023-03-21 13:22:35,300 [ERROR] paramiko.ssh_exception.SSHException: Error reading SSH protocol banner
+2023-03-21 13:22:35,300 [ERROR] 
+2023-03-21 13:22:35,300 [ERROR] 10.3.123.10: Failed to connect
+2023-03-21 13:22:35,310 [ERROR] Traceback (most recent call last):
+2023-03-21 13:22:35,311 [ERROR]   File "/usr/local/lib/python3.9/site-packages/paramiko/transport.py", line 2270, in _check_banner
+2023-03-21 13:22:35,311 [ERROR]     buf = self.packetizer.readline(timeout)
+2023-03-21 13:22:35,311 [ERROR]   File "/usr/local/lib/python3.9/site-packages/paramiko/packet.py", line 374, in readline
+2023-03-21 13:22:35,311 [ERROR]     buf += self._read_timeout(timeout)
+2023-03-21 13:22:35,311 [ERROR]   File "/usr/local/lib/python3.9/site-packages/paramiko/packet.py", line 603, in _read_timeout
+2023-03-21 13:22:35,312 [ERROR]     raise EOFError()
+2023-03-21 13:22:35,312 [ERROR] EOFError
+2023-03-21 13:22:35,312 [ERROR] 
+2023-03-21 13:22:35,312 [ERROR] During handling of the above exception, another exception occurred:
+2023-03-21 13:22:35,312 [ERROR] 
+2023-03-21 13:22:35,312 [ERROR] Traceback (most recent call last):
+2023-03-21 13:22:35,313 [ERROR]   File "/usr/local/lib/python3.9/site-packages/paramiko/transport.py", line 2093, in run
+2023-03-21 13:22:35,313 [ERROR]     self._check_banner()
+2023-03-21 13:22:35,313 [ERROR]   File "/usr/local/lib/python3.9/site-packages/paramiko/transport.py", line 2274, in _check_banner
+2023-03-21 13:22:35,313 [ERROR]     raise SSHException(
+2023-03-21 13:22:35,313 [ERROR] paramiko.ssh_exception.SSHException: Error reading SSH protocol banner
+2023-03-21 13:22:35,313 [ERROR] 
+2023-03-21 13:22:35,314 [ERROR] 10.22.123.10: Failed to connect

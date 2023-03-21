@@ -1,0 +1,10 @@
+INFO 2023-03-21 13:21:45,729 [Apps.py:init:85] ---Starting the Application---
+INFO 2023-03-21 13:21:45,767 [Apps.py:init:88] ---Initialize testbed file---
+INFO 2023-03-21 13:21:45,772 [Apps.py:init:96] ---testbed file ready---
+INFO 2023-03-21 13:21:48,453 [Apps.py:init:102] ---Opening Main Menu Application---
+INFO 2023-03-21 13:21:52,907 [Apps.py:inputMenu:164] ---Get Healty Check / Environtment Device ---
+INFO 2023-03-21 13:22:15,770 [Apps.py:init:85] ---Starting the Application---
+INFO 2023-03-21 13:22:15,803 [Apps.py:init:88] ---Initialize testbed file---
+INFO 2023-03-21 13:22:15,807 [Apps.py:init:96] ---testbed file ready---
+INFO 2023-03-21 13:22:16,934 [Apps.py:init:102] ---Opening Main Menu Application---
+INFO 2023-03-21 13:22:18,812 [Apps.py:inputMenu:164] ---Get Healty Check / Environtment Device ---

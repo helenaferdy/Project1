@@ -16,6 +16,7 @@ from lib.getLogging.main import captureLog
 from lib.getCRC.main import interfaceCRC
 from lib.getInven.main import getInven
 from lib.getCDP.main import getCDP
+from lib.getEnvi.main import getEnvi
 import logging
 from rich.logging import RichHandler
 
@@ -43,7 +44,7 @@ logger.addHandler(shell_handler)
 logger.addHandler(file_handler)
 
 
-Menu = ['Get Configuration Device','Get Inventory Device','Get Memmory Utils','Get CPU Utils','Get Logging Device','Interface CRC','CDP Neighbours','Exit']
+Menu = ['Get Configuration Device','Get Inventory Device','Get Memmory Utils','Get CPU Utils','Get Logging Device','Interface CRC','CDP Neighbours','Get Environtment','Exit']
 
 testbedFile = 'testbed/device.yaml'
 
@@ -158,8 +159,14 @@ def inputMenu(value):
         
         #### function get Logging device ####
         getCDP(testbedFile)
-        
+    
     elif(value==Menu[7] or value=='8'):
+        logger.info("---Get Healty Check / Environtment Device ---")
+        
+        #### function get Logging device ####
+        getEnvi()
+        
+    elif(value==Menu[8] or value=='9'):
         logger.info("---Closing Application---")
         time.sleep(1)
         sys.exit()
