@@ -7,12 +7,14 @@ from lib.log import myLog
 import logging
 from rich.logging import RichHandler
 import traceback
+import concurrent.futures
+from time import sleep
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 # the handler determines where the logs go: stdout/file
 shell_handler = RichHandler()
-file_handler = logging.FileHandler('Project1/log/LoggingDevice.log')
+file_handler = logging.FileHandler('log/CaptureLogging.log')
 shell_handler.setLevel(logging.DEBUG)
 file_handler.setLevel(logging.DEBUG)
 # the formatter determines what our logs will look like
@@ -29,25 +31,43 @@ logger.addHandler(shell_handler)
 logger.addHandler(file_handler)
 
 
-def captureLog(testbedFile):
+def captureLogX(device):
     # Load the testbed file
-    testbed = load(testbedFile)
-
     # Send a command to the device
-    for device in testbed:
-        device.connect(log_stdout=False)
-        #Print the output
-        hostname = device.name
-        logger.info('---getting log from device '+hostname+'---')
-        waktu = datetime.now().strftime("%d-%m-%y_%H_%M_%S")
-        NameFile = hostname + "_" + waktu +".txt"
-        file_path = "out/LogDevice/"
-        output = device.execute('show logging')
-        file_name = os.path.join(file_path,NameFile)
-        logger.info(NameFile)
+    try:
+      device.connect(log_stdout=False)
+      #Print the output
+      hostname = device.name
+      logger.info('---getting capture logging from device '+hostname+'---')
+      waktu = datetime.now().strftime("%d-%m-%y_%H_%M_%S")
+      NameFile = hostname + "_" + waktu +".txt"
+      file_path = "out/LogDevice/"
+      output = device.execute('show logging')
+      file_name = os.path.join(file_path,NameFile)
+      logger.info(NameFile)
+      try:
+        with open(file_name, 'a') as file:
+          file.write(f'''{output}''')
+      except:
+        logger.error("exception ",exc_info=1)
+    except Exception as e:
+      #print(f"Error connecting to device {device.name}: {e}")
+      logger.error(f"Error connecting to device {device.name}: {e}")
+
+def captureLog(testbedFile):
+    testbed = load(testbedFile)
+    # Create a list of futures for iosxe and iosxr devices
+    futures = []
+    with concurrent.futures.ThreadPoolExecutor() as executor:
+        for device in testbed:
+            futures.append(executor.submit(captureLogX, device))
+            logger.info(f"Connecting to device {device.name}")
+            sleep(0.1)
+        # Wait for all futures to complete
+
+    for future in concurrent.futures.as_completed(futures):
         try:
-          with open(file_name, 'a') as file:
-            file.write(f'''{output}''')
-        except:
-          logger.error("exception ",exc_info=1)
-        
+            future.result()
+        except Exception as exc:
+            logger.error(f"{exc} occurred while processing device {device.name}")
+    logger.info("Script execution completed successfully.")

@@ -3,10 +3,10 @@ import yaml
 import csv
 
 # Constants:
-TEST_BED_FILE = "testbed_pyats_supark.yml"
-OUTPUT_INVEN_FILE = "myinven.csv"
-OUTPUT_VER_FILE = "myver.csv"
-OUTPUT_INT_FILE = "myint.csv"
+# TEST_BED_FILE = "testbed_pyats_supark.yml"
+OUTPUT_INVEN_FILE = "out/InventoryList/myinven.csv"
+# OUTPUT_VER_FILE = "myver.csv"
+# OUTPUT_INT_FILE = "myint.csv"
 
 # TODO: Create function to import list of equipments from CSV and generate test-bed YAML. Format: hostname, ip, username, password. Optional: os_type, protocol.
 # TODO: Rewrite program using OOP.
@@ -92,21 +92,21 @@ def write_inven_csv(file_name, input_list_1, input_list_2):
         for x in input_list_2:
             writer.writerow(x)
 
+def getInven(testbed_file):
+    #Populate device dictionary:
+    test_bed = load(testbed_file)
+    device_dict_xr, device_dict_xe = create_device_dict(testbed_file)
+    # print(device_dict_xr) # debugger
+    # print(device_dict_xe) # debugger
 
-#Populate device dictionary:
-test_bed = load(TEST_BED_FILE)
-device_dict_xr, device_dict_xe = create_device_dict(TEST_BED_FILE)
-# print(device_dict_xr) # debugger
-# print(device_dict_xe) # debugger
+    print("Parsing inventory IOS-XR:")
+    inventory_list_xr = parse_inven_xr(test_bed, device_dict_xr)
+    print("Done.")
 
-print("Parsing inventory IOS-XR:")
-inventory_list_xr = parse_inven_xr(test_bed, device_dict_xr)
-print("Done.")
+    print("Parsing inventory IOS-XE:")
+    inventory_list_xe = parse_inven_xe(test_bed, device_dict_xe)
+    print("Done.")
 
-print("Parsing inventory IOS-XE:")
-inventory_list_xe = parse_inven_xe(test_bed, device_dict_xe)
-print("Done.")
-
-print("Creating CSV: ", end="")
-write_inven_csv(OUTPUT_INVEN_FILE, inventory_list_xr, inventory_list_xe)
-print("Complete.")
+    print("Creating CSV: ", end="")
+    write_inven_csv(OUTPUT_INVEN_FILE, inventory_list_xr, inventory_list_xe)
+    print("Complete.")

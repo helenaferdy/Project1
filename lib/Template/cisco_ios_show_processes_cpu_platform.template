@@ -1,4 +1,0 @@
-Value CPU_5_MIN (\d+)
-
-Start
-  ^CPU utilization for five seconds:\s+\d\d%,\s+one minute:\s+\d\d%,\s+five minutes:\s+${CPU_5_MIN}

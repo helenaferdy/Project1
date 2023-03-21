@@ -10,9 +10,12 @@ import sys
 from lib.log import myLog
 from datetime import datetime
 from lib.getConfig.main import captureConfig
-from lib.getMemmory.main_backup import getMemmoryUtils
+from lib.getMemmory.main import getMemmoryUtils
 from lib.getCPU.main import getCPUUtils
 from lib.getLogging.main import captureLog
+from lib.getCRC.main import interfaceCRC
+from lib.getInven.main import getInven
+from lib.getCDP.main import getCDP
 import logging
 from rich.logging import RichHandler
 
@@ -22,7 +25,7 @@ logger.setLevel(logging.DEBUG)
 
 # the handler determines where the logs go: stdout/file
 shell_handler = RichHandler()
-file_handler = logging.FileHandler('Project1/log/Application.log')
+file_handler = logging.FileHandler('log/Application.log')
 shell_handler.setLevel(logging.DEBUG)
 file_handler.setLevel(logging.DEBUG)
 
@@ -40,9 +43,9 @@ logger.addHandler(shell_handler)
 logger.addHandler(file_handler)
 
 
-Menu = ['Get Configuration Device','Get Inventory Device','Get Memmory Utils','Get CPU Utils','Get Logging Device','Get All','Exit']
+Menu = ['Get Configuration Device','Get Inventory Device','Get Memmory Utils','Get CPU Utils','Get Logging Device','Interface CRC','CDP Neighbours','Exit']
 
-testbedFile = 'Project1/testbed/device.yaml'
+testbedFile = 'testbed/device.yaml'
 
 
 def create():
@@ -102,53 +105,63 @@ def init():
     
 def MainMenu():
     console.print("--Main Menu--",style="Bold Green")
-    menuResponse=pyip.inputMenu(Menu,numbered=True,blank=False,prompt="Please select one of the following menu..?\n")
-    print(menuResponse)
-    if(menuResponse=='Get Configuration Device'):
+    menuResponse=pyip.inputMenu(Menu,allowRegexes=[r'([0-9]+(,[0-9]+)+)'],blockRegexes=[r'([0-9][0-9]+(,[0-9][0-9]+)+)'],numbered=True,blank=False,prompt="Please select one or multiple (separate by comma ',') of the following menu..?\n")
+    # console.print(menuResponse)
+    if(menuResponse.find(',')==True):
+        input = menuResponse.split(',')
+        for val in input:
+            inputMenu(val)
+    else:
+        inputMenu(menuResponse)
+    
+
+def inputMenu(value):
+    if(value==Menu[0] or value=='1'):
         logger.info("---Get Configuration Device---")
 
         #### add function get Config device here ####
         captureConfig(testbedFile)
         
-    elif(menuResponse=='Get Inventory Device'):
+    elif(value==Menu[1] or value=='2'):
         logger.info("---Get Inventory Device---")
-
+        
         #### add function get Inventory Device here ####
+        getInven(testbedFile)
 
         
-    elif(menuResponse=='Get Memmory Utils'):
+    elif(value==Menu[2] or value=='3'):
         logger.info("---Get Memmory Utilization---")
 
         #### function get Memmory Utilization ####
         getMemmoryUtils(testbedFile)
         
-    elif(menuResponse=='Get CPU Utils'):
+    elif(value==Menu[3] or value=='4'):
         logger.info("---Get CPU Utilization---")
 
         #### function get CPU Utilization ####
         getCPUUtils(testbedFile)
-        
-        
-    elif(menuResponse=='Get Logging Device'):
+           
+    elif(value==Menu[4] or value=='5'):
         logger.info("---Get Logging device---")
         
         #### function get Logging device ####
         captureLog(testbedFile)
-        
-    elif(menuResponse=='Get All'):
-        logger.info("---Get All---")
-        #### function get all ####
-        logger.info("---Get Configuration Device---")
-        captureConfig(testbedFile)
-        logger.info("---Get Memmory Utilization---")
-        getMemmoryUtils(testbedFile)
-        logger.info("---Get CPU Utilization---")
-        getCPUUtils(testbedFile)
-        logger.info("---Get Logging device---")
-        captureLog(testbedFile)
 
+    elif(value==Menu[5] or value=='6'):
+        logger.info("---Get Interface CRC device---")
         
-    elif(menuResponse=='Exit'):
+        #### function get Logging device ####
+        interfaceCRC(testbedFile)
+
+    elif(value==Menu[6] or value=='7'):
+        logger.info("---Get CDP Neighbours ---")
+        
+        #### function get Logging device ####
+        getCDP(testbedFile)
+        
+    elif(value==Menu[7] or value=='8'):
         logger.info("---Closing Application---")
         time.sleep(1)
         sys.exit()
+    else:
+        logger.info("--Error Input menu--")

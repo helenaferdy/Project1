@@ -1,6 +1,4 @@
-# from lib.config.createTestbed import File,generateDeviceList
 import sys
-import pandas as pd
 from lib.Apps import init,MainMenu
 
 ############ Program Start here ############

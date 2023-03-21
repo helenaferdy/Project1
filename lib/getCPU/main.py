@@ -5,12 +5,34 @@ from genie.utils.timeout import Timeout
 import logging
 import concurrent.futures
 from time import sleep
+import logging
+from rich.logging import RichHandler
 
-# testbed = load('/Project1/testbed/devices.yaml')
-timeout = Timeout(max_time=10, interval=3)
-logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
+# the handler determines where the logs go: stdout/file
+shell_handler = RichHandler()
+file_handler = logging.FileHandler('log/getCPUUtils.log')
+shell_handler.setLevel(logging.DEBUG)
+file_handler.setLevel(logging.DEBUG)
+# the formatter determines what our logs will look like
+fmt_shell = '%(message)s'
+fmt_file = '%(levelname)s %(asctime)s [%(filename)s:%(funcName)s:%(lineno)d] %(message)s'
+
+shell_formatter = logging.Formatter(fmt_shell)
+file_formatter = logging.Formatter(fmt_file)
+
+# here we hook everything together
+shell_handler.setFormatter(shell_formatter)
+file_handler.setFormatter(file_formatter)
+logger.addHandler(shell_handler)
+logger.addHandler(file_handler)
+
+# timeout = Timeout(max_time=10, interval=3)
+# logging.basicConfig(level=logging.INFO)
 cpu_load = 0
 
+timestamp = datetime.datetime.now().strftime('%Y-%m-%d %H-%M-%S')
 
 def xe(devicex, ix):
     resultx = {"no": ix,
@@ -42,20 +64,20 @@ def xe(devicex, ix):
                    "category": category}
         # deviceX.disconnect()
 
-        with open(f'output/show_processes_cpu_{timestamp}.csv', 'a', newline='') as file:
+        with open(f'out/CPU_Utils/show_processes_cpu_{timestamp}.csv', 'a', newline='') as file:
             writer = csv.writer(file)
-            print(f"{resultx['no']}, {resultx['device']}, {resultx['cpu_load']}, {resultx['free_load']}, {resultx['category']}")
+            logger.info(f"{resultx['no']}, {resultx['device']}, {resultx['cpu_load']}, {resultx['free_load']}, {resultx['category']}")
             writer.writerow([resultx['no'], resultx['device'], resultx['cpu_load'], resultx['free_load'], resultx['category']])
 
     except Exception as e:
         if 'Authentication failed' in str(e):
-            logging.error('Authentication failed. Please check your credentials.')
+            logger.error('Authentication failed. Please check your credentials.')
         elif 'Connection timed out' in str(e):
-            logging.error('Connection timed out. Please check your network connectivity.')
+            logger.error('Connection timed out. Please check your network connectivity.')
         elif 'Could not connect to device' in str(e):
-            logging.error('Could not connect to device. Please check the device is reachable.')
+            logger.error('Could not connect to device. Please check the device is reachable.')
         else:
-            logging.error(f'Unexpected error occurred: {str(e)}')
+            logger.error(f'Unexpected error occurred: {str(e)}')
 
     return resultx
 
@@ -90,24 +112,25 @@ def xr(devicex, ix):
                    "category": category}
         # deviceX.disconnect()
 
-        with open(f'output/show_processes_cpu_{timestamp}.csv', 'a', newline='') as file:
+        with open(f'out/CPU_Utils/show_processes_cpu_{timestamp}.csv', 'a', newline='') as file:
             writer = csv.writer(file)
-            print(f"{resultx['no']}, {resultx['device']}, {resultx['cpu_load']}, {resultx['free_load']}, {resultx['category']}")
+            logger.info(f"{resultx['no']}, {resultx['device']}, {resultx['cpu_load']}, {resultx['free_load']}, {resultx['category']}")
             writer.writerow([resultx['no'], resultx['device'], resultx['cpu_load'], resultx['free_load'], resultx['category']])
 
     except Exception as e:
         if 'Authentication failed' in str(e):
-            logging.error('Authentication failed. Please check your credentials.')
+            logger.error('Authentication failed. Please check your credentials.')
         elif 'Connection timed out' in str(e):
-            logging.error('Connection timed out. Please check your network connectivity.')
+            logger.error('Connection timed out. Please check your network connectivity.')
         elif 'Could not connect to device' in str(e):
-            logging.error('Could not connect to device. Please check the device is reachable.')
+            logger.error('Could not connect to device. Please check the device is reachable.')
         else:
-            logging.error(f'Unexpected error occurred: {str(e)}')
+            logger.error(f'Unexpected error occurred: {str(e)}')
 
-def getCPUUtils(testbed):
-    timestamp = datetime.datetime.now().strftime('%Y-%m-%d %H-%M-%S')
-    with open(f'Project1/out/CPU_Utils/show_processes_cpu_{timestamp}.csv', 'a', newline='') as file:
+
+def getCPUUtils(testbed_file):
+    testbed = load(testbed_file)
+    with open(f'out/CPU_Utils/show_processes_cpu_{timestamp}.csv', 'a', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(['No', 'Device', 'Memory Used', 'Memory Free', 'Category'])
 
@@ -131,7 +154,7 @@ def getCPUUtils(testbed):
     i = 1
     with concurrent.futures.ThreadPoolExecutor() as executor:
         for device in testbed:
-            print(f"===== processing {device.name} =====")
+            logger.info(f"===== processing {device.name} =====")
             if device.type == 'iosxe':
                 futures.append(executor.submit(xe, device, i))
                 i += 1
@@ -146,6 +169,6 @@ def getCPUUtils(testbed):
         try:
             future.result()
         except Exception as exc:
-            print(f"{exc} occurred while processing device {device.name}")
+            logger.error(f"{exc} occurred while processing device {device.name}")
 
-    print("Script execution completed successfully.")
+    logger.info("Script execution completed successfully.")
