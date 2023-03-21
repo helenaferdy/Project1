@@ -5,7 +5,8 @@ import csv
 import logging, sys
 
 LOG_LOCATION = "log/getEnvironment.log"
-os.environ["NTC_TEMPLATES_DIR"] = "/Users/helena/Documents/VSCode/netmiko-network-automation/templates"
+OUTPUT= "out/Environment/"
+os.environ["NTC_TEMPLATES_DIR"] = "lib/getEnvi/templates"
 
 logging.basicConfig(
     level=logging.INFO,
@@ -70,7 +71,7 @@ class Routers:
 
     def export_csv(self):
         try:
-            with open(f"output/{self.hostname}_{self.command}.csv", mode="w", newline="") as csv_file:
+            with open(f"{OUTPUT}{self.hostname}_{self.command}.csv", mode="w", newline="") as csv_file:
                 fieldnames = self.parsed_output[0].keys()
                 writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
                 writer.writeheader()
@@ -104,7 +105,7 @@ class Routers:
 
         self.final_environment = [self.hostname, "DC", self.power, self.fan, self.temp]
         try:
-            with open(f"output/{self.command}_summary.csv", mode="a", newline="") as csvfile:
+            with open(f"{OUTPUT}{self.command}_summary.csv", mode="a", newline="") as csvfile:
                 csvwriter = csv.writer(csvfile)
                 csvwriter.writerow(self.final_environment)
                 logging.info(f"{self.ip} : Output saved to {self.command}_summary.csv")

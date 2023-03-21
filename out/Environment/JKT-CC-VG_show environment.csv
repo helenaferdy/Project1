@@ -1,0 +1,50 @@
+part,sensor,state,sensorvalue,unit
+ P0,Temp 1,Normal,33,Celsius
+ P0,Temp 2,Normal,34,Celsius
+ P0,Temp 3,Normal,37,Celsius
+ P0,PEM In,Normal,1,A
+ P0,PEM Out,Normal,3,A
+ P0,In pwr,Normal,44,Watts
+ P0,Out pwr,Normal,33,Watts
+ P0,fan0,Normal,4832,RPM
+ P1,Temp 1,Normal,32,Celsius
+ P1,Temp 2,Normal,34,Celsius
+ P1,Temp 3,Normal,35,Celsius
+ P1,PEM In,Normal,1,A
+ P1,PEM Out,Normal,3,A
+ P1,In pwr,Normal,35,Watts
+ P1,Out pwr,Normal,25,Watts
+ P1,fan0,Normal,4864,RPM
+ P2,fan0,Normal,8888,RPM
+ P2,fan1,Normal,8806,RPM
+ P2,fan2,Normal,8800,RPM
+ P2,pwr,Normal,3,Watts
+ R0,Inlet 1,Normal,22,Celsius
+ R0,Inlet 2,Normal,28,Celsius
+ R0,Outlet 1,Normal,29,Celsius
+ R0,Outlet 2,Normal,30,Celsius
+ R0,core-A,Normal,46,Celsius
+ R0,core-B,Normal,41,Celsius
+ R0,core-C,Normal,47,Celsius
+ R0,5v,Normal,5125,mV
+ R0,3.3v,Normal,3344,mV
+ R0,3.0v,Normal,2972,mV
+ R0,2.5v,Normal,2483,mV
+ R0,1.05v,Normal,1057,mV
+ R0,1.8v,Normal,1801,mV
+ R0,1.2v,Normal,1210,mV
+ R0,Vcore-C,Normal,1139,mV
+ R0,1.1v,Normal,1096,mV
+ R0,1.0v,Normal,1004,mV
+ R0,1.8v-A,Normal,1782,mV
+ R0,1.5v-A,Normal,1505,mV
+ R0,1.5v-C1,Normal,1508,mV
+ R0,1.5v-B,Normal,1511,mV
+ R0,Vcore-A,Normal,996,mV
+ R0,1.5v-C2,Normal,1489,mV
+ R0,Vcore-B1,Normal,867,mV
+ R0,Vcore-B2,Normal,796,mV
+ R0,0.75v-B,Normal,754,mV
+ R0,0.75v-C,Normal,748,mV
+ R0,12v,Normal,5,A
+ R0,pwr,Normal,52,Watts
