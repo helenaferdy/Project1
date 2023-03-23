@@ -193,3 +193,24 @@
 2023-03-23 19:47:21,946 [INFO] 10.22.123.10 : Output saved to MKS-CC-VG_show environment.csv
 2023-03-23 19:47:21,946 [INFO] 10.22.123.10 : Output saved to show environment_summary.csv
 2023-03-23 19:47:22,033 [INFO] 10.22.123.10 : Disconnected succcessfully
+2023-03-23 20:45:30,576 [INFO] ---Starting the Application---
+2023-03-23 20:45:30,584 [INFO] ---Initialize testbed file---
+2023-03-23 20:45:30,585 [INFO] ---testbed file ready---
+2023-03-23 20:45:32,581 [INFO] ---Opening Main Menu Application---
+2023-03-23 20:45:36,120 [INFO] ---Get CPU Utilization---
+2023-03-23 20:46:14,693 [INFO] ---Starting the Application---
+2023-03-23 20:46:14,701 [INFO] ---Initialize testbed file---
+2023-03-23 20:46:14,701 [INFO] ---testbed file ready---
+2023-03-23 20:46:16,740 [INFO] ---Opening Main Menu Application---
+2023-03-23 20:46:20,150 [INFO] ---Get CPU Utilization---
+2023-03-23 20:46:20,280 [INFO] ===== processing xe1 =====
+2023-03-23 20:46:20,386 [INFO] ===== processing xe2 =====
+2023-03-23 20:46:20,495 [INFO] ===== processing xe3 =====
+2023-03-23 20:46:20,605 [INFO] ===== processing xr1 =====
+2023-03-23 20:46:20,715 [INFO] ===== processing xr2 =====
+2023-03-23 20:46:20,828 [INFO] ===== processing xr3 =====
+2023-03-23 20:46:22,352 [INFO] 1, xe1, 1%, 99%, low
+2023-03-23 20:46:22,387 [INFO] 2, xe2, 1%, 99%, low
+2023-03-23 20:46:22,403 [INFO] 3, xe3, 1%, 99%, low
+2023-03-23 20:46:23,554 [INFO] 4, xr1, 1%, 99%, low
+2023-03-23 20:46:23,717 [INFO] 5, xr2, 1%, 99%, low
