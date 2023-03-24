@@ -33,3 +33,23 @@ INFO 2023-03-21 22:50:41,910 [Apps.py:init:88] ---Initialize testbed file---
 INFO 2023-03-21 22:50:41,910 [Apps.py:init:96] ---testbed file ready---
 INFO 2023-03-21 22:50:44,036 [Apps.py:init:102] ---Opening Main Menu Application---
 INFO 2023-03-21 22:50:47,134 [Apps.py:inputMenu:164] ---Get Healty Check / Environtment Device ---
+INFO 2023-03-23 19:46:49,140 [Apps.py:init:85] ---Starting the Application---
+INFO 2023-03-23 19:46:49,148 [Apps.py:init:88] ---Initialize testbed file---
+INFO 2023-03-23 19:46:49,149 [Apps.py:init:96] ---testbed file ready---
+INFO 2023-03-23 19:46:53,644 [Apps.py:init:102] ---Opening Main Menu Application---
+INFO 2023-03-23 19:46:58,815 [Apps.py:inputMenu:164] ---Get Healty Check / Environtment Device ---
+INFO 2023-03-23 19:47:14,541 [Apps.py:init:85] ---Starting the Application---
+INFO 2023-03-23 19:47:14,548 [Apps.py:init:88] ---Initialize testbed file---
+INFO 2023-03-23 19:47:14,549 [Apps.py:init:96] ---testbed file ready---
+INFO 2023-03-23 19:47:16,339 [Apps.py:init:102] ---Opening Main Menu Application---
+INFO 2023-03-23 19:47:19,373 [Apps.py:inputMenu:164] ---Get Healty Check / Environtment Device ---
+INFO 2023-03-23 20:45:30,576 [Apps.py:init:85] ---Starting the Application---
+INFO 2023-03-23 20:45:30,584 [Apps.py:init:88] ---Initialize testbed file---
+INFO 2023-03-23 20:45:30,585 [Apps.py:init:96] ---testbed file ready---
+INFO 2023-03-23 20:45:32,581 [Apps.py:init:102] ---Opening Main Menu Application---
+INFO 2023-03-23 20:45:36,120 [Apps.py:inputMenu:140] ---Get CPU Utilization---
+INFO 2023-03-23 20:46:14,693 [Apps.py:init:85] ---Starting the Application---
+INFO 2023-03-23 20:46:14,701 [Apps.py:init:88] ---Initialize testbed file---
+INFO 2023-03-23 20:46:14,701 [Apps.py:init:96] ---testbed file ready---
+INFO 2023-03-23 20:46:16,740 [Apps.py:init:102] ---Opening Main Menu Application---
+INFO 2023-03-23 20:46:20,150 [Apps.py:inputMenu:140] ---Get CPU Utilization---

@@ -1,0 +1,11 @@
+INFO 2023-03-23 20:46:20,280 [main.py:getCPUUtils:161] ===== processing xe1 =====
+INFO 2023-03-23 20:46:20,386 [main.py:getCPUUtils:161] ===== processing xe2 =====
+INFO 2023-03-23 20:46:20,495 [main.py:getCPUUtils:161] ===== processing xe3 =====
+INFO 2023-03-23 20:46:20,605 [main.py:getCPUUtils:161] ===== processing xr1 =====
+INFO 2023-03-23 20:46:20,715 [main.py:getCPUUtils:161] ===== processing xr2 =====
+INFO 2023-03-23 20:46:20,828 [main.py:getCPUUtils:161] ===== processing xr3 =====
+INFO 2023-03-23 20:46:22,352 [main.py:xe:73] 1, xe1, 1%, 99%, low
+INFO 2023-03-23 20:46:22,387 [main.py:xe:73] 2, xe2, 1%, 99%, low
+INFO 2023-03-23 20:46:22,403 [main.py:xe:73] 3, xe3, 1%, 99%, low
+INFO 2023-03-23 20:46:23,554 [main.py:xr:121] 4, xr1, 1%, 99%, low
+INFO 2023-03-23 20:46:23,717 [main.py:xr:121] 5, xr2, 1%, 99%, low
