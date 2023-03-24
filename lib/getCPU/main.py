@@ -7,6 +7,7 @@ import concurrent.futures
 from time import sleep
 import logging
 from rich.logging import RichHandler
+import os
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
@@ -33,6 +34,9 @@ logger.addHandler(file_handler)
 cpu_load = 0
 
 timestamp = datetime.datetime.now().strftime('%Y-%m-%d %H-%M-%S')
+
+if not os.path.exists("out/CPU_Utils"):
+    os.makedirs("out/CPU_Utils")
 
 def xe(devicex, ix):
     resultx = {"no": ix,
