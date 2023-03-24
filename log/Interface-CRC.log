@@ -1,7 +1,0 @@
-INFO 2023-03-24 14:21:50,056 [main.py:interfaceCRC:71] getting CRC information from Device: xe1
-INFO 2023-03-24 14:21:50,393 [main.py:interfaceCRC:71] getting CRC information from Device: xe2
-INFO 2023-03-24 14:21:50,523 [main.py:interfaceCRC:71] getting CRC information from Device: xe3
-INFO 2023-03-24 14:21:54,561 [main.py:proc_iface_crc:38] Connecting to Device: xe2
-INFO 2023-03-24 14:21:54,673 [main.py:proc_iface_crc:38] Connecting to Device: xe1
-INFO 2023-03-24 14:21:55,092 [main.py:proc_iface_crc:38] Connecting to Device: xe3
-INFO 2023-03-24 14:21:56,076 [main.py:interfaceCRC:84] Get Interface CRC -  execution completed successfully.
