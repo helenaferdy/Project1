@@ -11,10 +11,10 @@ def getEnvi():
         data = [row for row in csv_reader]
 
 
-    print('''
-    Welcome to helena network automation xxz
-    These are your devices : 
-    ''')
+    # print('''
+    # Welcome to helena network automation xxz
+    # These are your devices : 
+    # ''')
         
     devices = []
     for d in data:
@@ -28,16 +28,14 @@ def getEnvi():
         )
         devices.append(new_router)
 
-    commands_x = input(f"\nEnter ios commmand : [show environment] \n-> ")
-    if commands_x == "":
-        commands_x = "show environment"
-        headers = ['Hostname', 'Site', 'Power Supply', 'Temperature', 'Fan']
-        try:
-            with open(f"out/Environment/{commands_x}_summary.csv", mode="w", newline="") as csvfile:
-                csvwriter = csv.writer(csvfile)
-                csvwriter.writerow(headers)
-        except:
-            pass
+    commands_x = "show environment"
+    headers = ['Hostname', 'Site', 'Power Supply', 'Temperature', 'Fan']
+    try:
+        with open(f"out/Environment/{commands_x}_summary.csv", mode="w", newline="") as csvfile:
+            csvwriter = csv.writer(csvfile)
+            csvwriter.writerow(headers)
+    except:
+        pass
 
     threads = []
     for device in devices:

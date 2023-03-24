@@ -48,6 +48,7 @@
 2023-03-21 13:22:35,313 [ERROR] paramiko.ssh_exception.SSHException: Error reading SSH protocol banner
 2023-03-21 13:22:35,313 [ERROR] 
 2023-03-21 13:22:35,314 [ERROR] 10.22.123.10: Failed to connect
+<<<<<<< HEAD
 2023-03-24 14:09:28,723 [INFO] ---Starting the Application---
 2023-03-24 14:09:28,749 [INFO] ---Initialize testbed file---
 2023-03-24 14:09:28,751 [INFO] ---testbed file ready---
@@ -271,3 +272,104 @@ Failed while bringing device to "any" state
 2023-03-24 14:25:25,075 [ERROR] Unexpected error occurred: failed to connect to xr3
 Failed while bringing device to "any" state
 2023-03-24 14:25:25,083 [INFO] Get CPU Utilization -  execution completed successfully.
+=======
+2023-03-21 22:45:16,686 [INFO] ---Starting the Application---
+2023-03-21 22:45:16,693 [INFO] ---Initialize testbed file---
+2023-03-21 22:45:16,694 [INFO] ---testbed file ready---
+2023-03-21 22:45:20,613 [INFO] ---Opening Main Menu Application---
+2023-03-21 22:45:32,400 [INFO] ---Get Healty Check / Environtment Device ---
+2023-03-21 22:45:42,408 [ERROR] 10.22.123.10: Failed to connect
+2023-03-21 22:45:42,408 [ERROR] 10.3.123.10: Failed to connect
+2023-03-21 22:45:55,698 [INFO] ---Starting the Application---
+2023-03-21 22:45:55,705 [INFO] ---Initialize testbed file---
+2023-03-21 22:45:55,706 [INFO] ---testbed file ready---
+2023-03-21 22:45:57,852 [INFO] ---Opening Main Menu Application---
+2023-03-21 22:46:00,252 [INFO] ---Get Healty Check / Environtment Device ---
+2023-03-21 22:46:00,318 [INFO] Connected (version 1.99, client Cisco-1.25)
+2023-03-21 22:46:00,778 [INFO] Connected (version 1.99, client Cisco-1.25)
+2023-03-21 22:46:00,917 [INFO] Authentication (password) successful!
+2023-03-21 22:46:01,412 [INFO] Authentication (password) successful!
+2023-03-21 22:46:01,497 [INFO] 10.3.123.10 : Connected 
+2023-03-21 22:46:01,933 [INFO] 10.3.123.10 : Entered enable mode 
+2023-03-21 22:46:02,066 [INFO] 10.3.123.10 : Command 'show environment' sent
+2023-03-21 22:46:02,126 [INFO] 10.3.123.10 : Command 'show environment' parsed
+2023-03-21 22:46:02,126 [ERROR] 10.3.123.10 : Output saving for show environment failed
+2023-03-21 22:46:02,126 [ERROR] 10.3.123.10 : Output saving for show environment summary failed
+2023-03-21 22:46:02,152 [INFO] 10.3.123.10 : Disconnected succcessfully
+2023-03-21 22:46:02,243 [INFO] 10.22.123.10 : Connected 
+2023-03-21 22:46:02,643 [INFO] 10.22.123.10 : Entered enable mode 
+2023-03-21 22:46:02,915 [INFO] 10.22.123.10 : Command 'show environment' sent
+2023-03-21 22:46:02,924 [INFO] 10.22.123.10 : Command 'show environment' parsed
+2023-03-21 22:46:02,924 [ERROR] 10.22.123.10 : Output saving for show environment failed
+2023-03-21 22:46:02,924 [ERROR] 10.22.123.10 : Output saving for show environment summary failed
+2023-03-21 22:46:02,999 [INFO] 10.22.123.10 : Disconnected succcessfully
+2023-03-21 22:49:15,646 [INFO] ---Starting the Application---
+2023-03-21 22:49:15,653 [INFO] ---Initialize testbed file---
+2023-03-21 22:49:15,654 [INFO] ---testbed file ready---
+2023-03-21 22:49:17,767 [INFO] ---Opening Main Menu Application---
+2023-03-21 22:49:22,989 [INFO] ---Get Healty Check / Environtment Device ---
+2023-03-21 22:49:23,088 [INFO] Connected (version 1.99, client Cisco-1.25)
+2023-03-21 22:49:23,178 [INFO] Connected (version 1.99, client Cisco-1.25)
+2023-03-21 22:49:23,729 [INFO] Authentication (password) successful!
+2023-03-21 22:49:23,931 [INFO] Authentication (password) successful!
+2023-03-21 22:49:24,281 [INFO] 10.3.123.10 : Connected 
+2023-03-21 22:49:24,506 [INFO] 10.3.123.10 : Entered enable mode 
+2023-03-21 22:49:24,566 [INFO] 10.22.123.10 : Connected 
+2023-03-21 22:49:24,707 [INFO] 10.3.123.10 : Command 'show environment' sent
+2023-03-21 22:49:24,753 [INFO] 10.3.123.10 : Command 'show environment' parsed
+2023-03-21 22:49:24,753 [INFO] 10.3.123.10 : Output saved to JKT-CC-VG_show environment.csv
+2023-03-21 22:49:24,753 [INFO] 10.3.123.10 : Output saved to show environment_summary.csv
+2023-03-21 22:49:24,778 [INFO] 10.3.123.10 : Disconnected succcessfully
+2023-03-21 22:49:25,290 [INFO] 10.22.123.10 : Entered enable mode 
+2023-03-21 22:49:25,584 [INFO] 10.22.123.10 : Command 'show environment' sent
+2023-03-21 22:49:25,592 [INFO] 10.22.123.10 : Command 'show environment' parsed
+2023-03-21 22:49:25,593 [INFO] 10.22.123.10 : Output saved to MKS-CC-VG_show environment.csv
+2023-03-21 22:49:25,593 [INFO] 10.22.123.10 : Output saved to show environment_summary.csv
+2023-03-21 22:49:25,694 [INFO] 10.22.123.10 : Disconnected succcessfully
+2023-03-21 22:50:15,738 [INFO] ---Starting the Application---
+2023-03-21 22:50:15,745 [INFO] ---Initialize testbed file---
+2023-03-21 22:50:15,745 [INFO] ---testbed file ready---
+2023-03-21 22:50:18,058 [INFO] ---Opening Main Menu Application---
+2023-03-21 22:50:21,774 [INFO] ---Get Healty Check / Environtment Device ---
+2023-03-21 22:50:21,873 [INFO] Connected (version 1.99, client Cisco-1.25)
+2023-03-21 22:50:21,921 [INFO] Connected (version 1.99, client Cisco-1.25)
+2023-03-21 22:50:22,265 [INFO] Authentication (password) successful!
+2023-03-21 22:50:22,688 [INFO] 10.3.123.10 : Connected 
+2023-03-21 22:50:22,830 [INFO] Authentication (password) successful!
+2023-03-21 22:50:22,960 [INFO] 10.3.123.10 : Entered enable mode 
+2023-03-21 22:50:23,130 [INFO] 10.3.123.10 : Command 'show environment' sent
+2023-03-21 22:50:23,189 [INFO] 10.3.123.10 : Command 'show environment' parsed
+2023-03-21 22:50:23,190 [INFO] 10.3.123.10 : Output saved to JKT-CC-VG_show environment.csv
+2023-03-21 22:50:23,190 [INFO] 10.3.123.10 : Output saved to show environment_summary.csv
+2023-03-21 22:50:23,203 [INFO] 10.3.123.10 : Disconnected succcessfully
+2023-03-21 22:50:23,456 [INFO] 10.22.123.10 : Connected 
+2023-03-21 22:50:23,824 [INFO] 10.22.123.10 : Entered enable mode 
+2023-03-21 22:50:24,109 [INFO] 10.22.123.10 : Command 'show environment' sent
+2023-03-21 22:50:24,118 [INFO] 10.22.123.10 : Command 'show environment' parsed
+2023-03-21 22:50:24,119 [INFO] 10.22.123.10 : Output saved to MKS-CC-VG_show environment.csv
+2023-03-21 22:50:24,119 [INFO] 10.22.123.10 : Output saved to show environment_summary.csv
+2023-03-21 22:50:24,208 [INFO] 10.22.123.10 : Disconnected succcessfully
+2023-03-21 22:50:41,903 [INFO] ---Starting the Application---
+2023-03-21 22:50:41,910 [INFO] ---Initialize testbed file---
+2023-03-21 22:50:41,910 [INFO] ---testbed file ready---
+2023-03-21 22:50:44,036 [INFO] ---Opening Main Menu Application---
+2023-03-21 22:50:47,134 [INFO] ---Get Healty Check / Environtment Device ---
+2023-03-21 22:50:47,352 [INFO] Connected (version 1.99, client Cisco-1.25)
+2023-03-21 22:50:47,392 [INFO] Connected (version 1.99, client Cisco-1.25)
+2023-03-21 22:50:48,189 [INFO] Authentication (password) successful!
+2023-03-21 22:50:48,208 [INFO] Authentication (password) successful!
+2023-03-21 22:50:48,640 [INFO] 10.3.123.10 : Connected 
+2023-03-21 22:50:48,726 [INFO] 10.22.123.10 : Connected 
+2023-03-21 22:50:48,886 [INFO] 10.3.123.10 : Entered enable mode 
+2023-03-21 22:50:49,035 [INFO] 10.22.123.10 : Entered enable mode 
+2023-03-21 22:50:49,049 [INFO] 10.3.123.10 : Command 'show environment' sent
+2023-03-21 22:50:49,103 [INFO] 10.3.123.10 : Command 'show environment' parsed
+2023-03-21 22:50:49,103 [INFO] 10.3.123.10 : Output saved to JKT-CC-VG_show environment.csv
+2023-03-21 22:50:49,103 [INFO] 10.3.123.10 : Output saved to show environment_summary.csv
+2023-03-21 22:50:49,116 [INFO] 10.3.123.10 : Disconnected succcessfully
+2023-03-21 22:50:49,283 [INFO] 10.22.123.10 : Command 'show environment' sent
+2023-03-21 22:50:49,291 [INFO] 10.22.123.10 : Command 'show environment' parsed
+2023-03-21 22:50:49,292 [INFO] 10.22.123.10 : Output saved to MKS-CC-VG_show environment.csv
+2023-03-21 22:50:49,292 [INFO] 10.22.123.10 : Output saved to show environment_summary.csv
+2023-03-21 22:50:49,344 [INFO] 10.22.123.10 : Disconnected succcessfully
+>>>>>>> b554fdf2f377bf86adf48757aa5b6cd980b07b9d
