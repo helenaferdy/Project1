@@ -1,0 +1,19 @@
+INFO 2023-03-24 14:10:31,589 [main.py:captureConfig:64] Connecting to device xe1
+INFO 2023-03-24 14:10:31,727 [main.py:captureConfig:64] Connecting to device xe2
+INFO 2023-03-24 14:10:31,893 [main.py:captureConfig:64] Connecting to device xe3
+INFO 2023-03-24 14:10:32,280 [main.py:captureConfig:64] Connecting to device xr1
+INFO 2023-03-24 14:10:32,512 [main.py:captureConfig:64] Connecting to device xr2
+INFO 2023-03-24 14:10:32,649 [main.py:captureConfig:64] Connecting to device xr3
+INFO 2023-03-24 14:10:34,992 [main.py:captureConfigX:41] ---getting capture config from device xe2---
+INFO 2023-03-24 14:10:35,237 [main.py:captureConfigX:41] ---getting capture config from device xe1---
+INFO 2023-03-24 14:10:35,525 [main.py:captureConfigX:41] ---getting capture config from device xe3---
+INFO 2023-03-24 14:10:35,637 [main.py:captureConfigX:47] xe2_24-03-23_14_10_34.txt
+INFO 2023-03-24 14:10:36,061 [main.py:captureConfigX:47] xe1_24-03-23_14_10_35.txt
+INFO 2023-03-24 14:10:36,114 [main.py:captureConfigX:47] xe3_24-03-23_14_10_35.txt
+ERROR 2023-03-24 14:10:44,285 [main.py:captureConfigX:55] Error connecting to device xr1: failed to connect to xr1
+Failed while bringing device to "any" state
+ERROR 2023-03-24 14:10:44,448 [main.py:captureConfigX:55] Error connecting to device xr2: failed to connect to xr2
+Failed while bringing device to "any" state
+ERROR 2023-03-24 14:11:09,852 [main.py:captureConfigX:55] Error connecting to device xr3: failed to connect to xr3
+Failed while bringing device to "any" state
+INFO 2023-03-24 14:11:09,860 [main.py:captureConfig:73] Script execution completed successfully.

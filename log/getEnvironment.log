@@ -48,3 +48,226 @@
 2023-03-21 13:22:35,313 [ERROR] paramiko.ssh_exception.SSHException: Error reading SSH protocol banner
 2023-03-21 13:22:35,313 [ERROR] 
 2023-03-21 13:22:35,314 [ERROR] 10.22.123.10: Failed to connect
+2023-03-24 14:09:28,723 [INFO] ---Starting the Application---
+2023-03-24 14:09:28,749 [INFO] ---Initialize testbed file---
+2023-03-24 14:09:28,751 [INFO] ---testbed file ready---
+2023-03-24 14:10:23,268 [INFO] ---Starting the Application---
+2023-03-24 14:10:23,296 [INFO] ---Initialize testbed file---
+2023-03-24 14:10:23,300 [INFO] ---testbed file ready---
+2023-03-24 14:10:24,932 [INFO] ---Opening Main Menu Application---
+2023-03-24 14:10:30,867 [INFO] ---Get Configuration Device---
+2023-03-24 14:10:30,870 [INFO] Proccesing menu1
+2023-03-24 14:10:30,977 [INFO] ---Get Memmory Utilization---
+2023-03-24 14:10:30,984 [INFO] Proccesing menu3
+2023-03-24 14:10:31,139 [INFO] ---Get CPU Utilization---
+2023-03-24 14:10:31,142 [INFO] Proccesing menu4
+2023-03-24 14:10:31,589 [INFO] Connecting to device xe1
+2023-03-24 14:10:31,599 [INFO] ===== processing xe1 =====
+2023-03-24 14:10:31,710 [INFO] ===== processing xe2 =====
+2023-03-24 14:10:31,727 [INFO] Connecting to device xe2
+2023-03-24 14:10:31,885 [INFO] ===== processing xe3 =====
+2023-03-24 14:10:31,893 [INFO] Connecting to device xe3
+2023-03-24 14:10:32,010 [INFO] ===== processing xr1 =====
+2023-03-24 14:10:32,280 [INFO] Connecting to device xr1
+2023-03-24 14:10:32,384 [INFO] ===== processing xr2 =====
+2023-03-24 14:10:32,512 [INFO] Connecting to device xr2
+2023-03-24 14:10:32,593 [INFO] ===== processing xr3 =====
+2023-03-24 14:10:32,649 [INFO] Connecting to device xr3
+2023-03-24 14:10:33,164 [INFO] Device: xe1
+2023-03-24 14:10:33,395 [INFO] Device: xe3
+2023-03-24 14:10:33,431 [INFO] Device: xe2
+2023-03-24 14:10:34,273 [INFO] Device: xr1
+2023-03-24 14:10:34,274 [INFO] Device: xr2
+2023-03-24 14:10:34,992 [INFO] ---getting capture config from device xe2---
+2023-03-24 14:10:35,237 [INFO] ---getting capture config from device xe1---
+2023-03-24 14:10:35,525 [INFO] ---getting capture config from device xe3---
+2023-03-24 14:10:35,637 [INFO] xe2_24-03-23_14_10_34.txt
+2023-03-24 14:10:36,061 [INFO] xe1_24-03-23_14_10_35.txt
+2023-03-24 14:10:36,114 [INFO] xe3_24-03-23_14_10_35.txt
+2023-03-24 14:10:38,255 [INFO] 2, xe2, 1%, 99%, low
+2023-03-24 14:10:38,262 [INFO] 1, xe1, 1%, 99%, low
+2023-03-24 14:10:38,281 [INFO] 3, xe3, 1%, 99%, low
+2023-03-24 14:10:43,775 [ERROR] Unexpected error occurred: failed to connect to xr1
+Failed while bringing device to "any" state
+2023-03-24 14:10:44,285 [ERROR] Error connecting to device xr1: failed to connect to xr1
+Failed while bringing device to "any" state
+2023-03-24 14:10:44,448 [ERROR] Error connecting to device xr2: failed to connect to xr2
+Failed while bringing device to "any" state
+2023-03-24 14:10:44,455 [ERROR] Unexpected error occurred: failed to connect to xr2
+Failed while bringing device to "any" state
+2023-03-24 14:11:09,844 [ERROR] Unexpected error occurred: failed to connect to xr3
+Failed while bringing device to "any" state
+2023-03-24 14:11:09,847 [INFO] Script execution completed successfully.
+2023-03-24 14:11:09,852 [ERROR] Error connecting to device xr3: failed to connect to xr3
+Failed while bringing device to "any" state
+2023-03-24 14:11:09,855 [ERROR] Error connecting to device xr3: failed to connect to xr3
+Failed while bringing device to "any" state
+2023-03-24 14:11:09,860 [INFO] Script execution completed successfully.
+2023-03-24 14:11:09,864 [INFO] Script execution completed successfully.
+2023-03-24 14:20:05,643 [INFO] ---Starting the Application---
+2023-03-24 14:20:05,668 [INFO] ---Initialize testbed file---
+2023-03-24 14:20:05,670 [INFO] ---testbed file ready---
+2023-03-24 14:20:07,053 [INFO] ---Opening Main Menu Application---
+2023-03-24 14:20:15,929 [INFO] ---Get CDP Neighbours ---
+2023-03-24 14:20:16,194 [INFO] getting CDP neighbours information from Device: xe1
+2023-03-24 14:20:16,311 [INFO] getting CDP neighbours information from Device: xe2
+2023-03-24 14:20:16,436 [INFO] getting CDP neighbours information from Device: xe3
+2023-03-24 14:20:18,527 [INFO] Connecting to Device: xe2
+2023-03-24 14:20:20,153 [INFO] Connecting to Device: xe1
+2023-03-24 14:20:21,523 [INFO] Connecting to Device: xe3
+2023-03-24 14:21:34,309 [INFO] ---Starting the Application---
+2023-03-24 14:21:34,327 [INFO] ---Initialize testbed file---
+2023-03-24 14:21:34,330 [INFO] ---testbed file ready---
+2023-03-24 14:21:36,102 [INFO] ---Opening Main Menu Application---
+2023-03-24 14:21:49,343 [INFO] ---Get Memmory Utilization---
+2023-03-24 14:21:49,346 [INFO] Proccesing menu: Get CPU Utils
+2023-03-24 14:21:49,575 [INFO] ---Get CPU Utilization---
+2023-03-24 14:21:49,578 [INFO] Proccesing menu: Get Logging Device
+2023-03-24 14:21:49,720 [INFO] ---Get Logging device---
+2023-03-24 14:21:49,725 [INFO] Proccesing menu: Interface CRC
+2023-03-24 14:21:49,885 [INFO] Connecting to device xe1
+2023-03-24 14:21:49,903 [INFO] ---Get Interface CRC device---
+2023-03-24 14:21:49,906 [INFO] Proccesing menu: CDP Neighbours
+2023-03-24 14:21:50,033 [INFO] ---Get CDP Neighbours ---
+2023-03-24 14:21:50,023 [INFO] Connecting to device xe2
+2023-03-24 14:21:50,041 [INFO] Proccesing menu: Get Environtment
+2023-03-24 14:21:50,056 [INFO] getting CRC information from Device: xe1
+2023-03-24 14:21:50,060 [INFO] ===== processing xe1 =====
+2023-03-24 14:21:50,228 [INFO] Connecting to device xe3
+2023-03-24 14:21:50,260 [INFO] getting CDP neighbours information from Device: xe1
+2023-03-24 14:21:50,393 [INFO] getting CRC information from Device: xe2
+2023-03-24 14:21:50,409 [INFO] ===== processing xe2 =====
+2023-03-24 14:21:50,466 [INFO] getting CDP neighbours information from Device: xe2
+2023-03-24 14:21:50,497 [INFO] Connecting to device xr1
+2023-03-24 14:21:50,523 [INFO] getting CRC information from Device: xe3
+2023-03-24 14:21:50,604 [INFO] ===== processing xe3 =====
+2023-03-24 14:21:50,621 [INFO] getting CDP neighbours information from Device: xe3
+2023-03-24 14:21:50,661 [INFO] Connecting to device xr2
+2023-03-24 14:21:50,782 [INFO] ===== processing xr1 =====
+2023-03-24 14:21:50,923 [INFO] Connecting to device xr3
+2023-03-24 14:21:50,998 [INFO] ===== processing xr2 =====
+2023-03-24 14:21:51,151 [INFO] ===== processing xr3 =====
+2023-03-24 14:21:51,356 [INFO] Device: xe2
+2023-03-24 14:21:51,532 [INFO] Device: xe1
+2023-03-24 14:21:51,536 [INFO] Device: xe3
+2023-03-24 14:21:51,782 [INFO] Connecting to Device: xe2
+2023-03-24 14:21:51,927 [INFO] Connecting to Device: xe1
+2023-03-24 14:21:52,288 [INFO] Connecting to Device: xe3
+2023-03-24 14:21:52,312 [INFO] Device: xr1
+2023-03-24 14:21:52,409 [INFO] Device: xr2
+2023-03-24 14:21:53,091 [INFO] ---getting capture logging from device xe2---
+2023-03-24 14:21:53,436 [INFO] ---getting capture logging from device xe1---
+2023-03-24 14:21:53,527 [INFO] ---getting capture logging from device xe3---
+2023-03-24 14:21:54,561 [INFO] Connecting to Device: xe2
+2023-03-24 14:21:54,664 [INFO] xe2_24-03-23_14_21_53.txt
+2023-03-24 14:21:54,673 [INFO] Connecting to Device: xe1
+2023-03-24 14:21:54,977 [INFO] xe1_24-03-23_14_21_53.txt
+2023-03-24 14:21:55,044 [INFO] xe3_24-03-23_14_21_54.txt
+2023-03-24 14:21:55,089 [INFO] 1, xe1, 2%, 98%, low
+2023-03-24 14:21:55,092 [INFO] Connecting to Device: xe3
+2023-03-24 14:21:55,141 [INFO] 2, xe2, 1%, 99%, low
+2023-03-24 14:21:55,169 [INFO] 3, xe3, 1%, 99%, low
+2023-03-24 14:21:56,076 [INFO] Get Interface CRC -  execution completed successfully.
+2023-03-24 14:22:02,065 [ERROR] Error connecting to device xr1: failed to connect to xr1
+Failed while bringing device to "any" state
+2023-03-24 14:22:02,344 [ERROR] Error connecting to device xr2: failed to connect to xr2
+Failed while bringing device to "any" state
+2023-03-24 14:22:02,447 [ERROR] Unexpected error occurred: failed to connect to xr1
+Failed while bringing device to "any" state
+2023-03-24 14:22:02,548 [ERROR] Unexpected error occurred: failed to connect to xr2
+Failed while bringing device to "any" state
+2023-03-24 14:22:23,215 [ERROR] Error connecting to device xr3: failed to connect to xr3
+Failed while bringing device to "any" state
+2023-03-24 14:22:23,222 [INFO] Get Memmory Utilization - execution completed successfully.
+2023-03-24 14:22:23,331 [ERROR] Error connecting to device xr3: failed to connect to xr3
+Failed while bringing device to "any" state
+2023-03-24 14:22:23,336 [INFO] Get Logging Device - execution completed successfully.
+2023-03-24 14:22:23,457 [ERROR] Unexpected error occurred: failed to connect to xr3
+Failed while bringing device to "any" state
+2023-03-24 14:22:23,461 [INFO] Get CPU Utilization -  execution completed successfully.
+2023-03-24 14:23:48,818 [INFO] ---Starting the Application---
+2023-03-24 14:23:48,835 [INFO] ---Initialize testbed file---
+2023-03-24 14:23:48,837 [INFO] ---testbed file ready---
+2023-03-24 14:23:50,530 [INFO] ---Opening Main Menu Application---
+2023-03-24 14:23:53,687 [INFO] ---Get Memmory Utilization---
+2023-03-24 14:23:53,689 [INFO] Proccesing menu: Get Logging Device
+2023-03-24 14:23:53,864 [INFO] ---Get CPU Utilization---
+2023-03-24 14:23:53,873 [INFO] Proccesing menu: Interface CRC
+2023-03-24 14:23:54,200 [INFO] ===== processing xe1 =====
+2023-03-24 14:23:54,320 [INFO] ===== processing xe2 =====
+2023-03-24 14:23:54,451 [INFO] ===== processing xe3 =====
+2023-03-24 14:23:54,562 [INFO] ===== processing xr1 =====
+2023-03-24 14:23:54,684 [INFO] ===== processing xr2 =====
+2023-03-24 14:23:54,799 [INFO] ===== processing xr3 =====
+2023-03-24 14:23:55,190 [INFO] Device: xe2
+2023-03-24 14:23:55,210 [INFO] Device: xe3
+2023-03-24 14:23:55,233 [INFO] Device: xe1
+2023-03-24 14:23:56,037 [INFO] Device: xr1
+2023-03-24 14:23:56,054 [INFO] Device: xr2
+2023-03-24 14:23:57,922 [INFO] 1, xe1, 2%, 98%, low
+2023-03-24 14:23:57,931 [INFO] 2, xe2, 1%, 99%, low
+2023-03-24 14:23:57,938 [INFO] 3, xe3, 1%, 99%, low
+2023-03-24 14:24:05,707 [ERROR] Unexpected error occurred: failed to connect to xr1
+Failed while bringing device to "any" state
+2023-03-24 14:24:05,830 [ERROR] Unexpected error occurred: failed to connect to xr2
+Failed while bringing device to "any" state
+2023-03-24 14:24:26,884 [ERROR] Error connecting to device xr3: failed to connect to xr3
+Failed while bringing device to "any" state
+2023-03-24 14:24:26,892 [INFO] Get Memmory Utilization - execution completed successfully.
+2023-03-24 14:24:26,997 [ERROR] Unexpected error occurred: failed to connect to xr3
+Failed while bringing device to "any" state
+2023-03-24 14:24:27,000 [INFO] Get CPU Utilization -  execution completed successfully.
+2023-03-24 14:24:44,673 [INFO] ---Starting the Application---
+2023-03-24 14:24:44,697 [INFO] ---Initialize testbed file---
+2023-03-24 14:24:44,699 [INFO] ---testbed file ready---
+2023-03-24 14:24:47,402 [INFO] ---Opening Main Menu Application---
+2023-03-24 14:24:50,980 [INFO] ---Get Memmory Utilization---
+2023-03-24 14:24:50,981 [INFO] Proccesing menu: Get Memmory Utils
+2023-03-24 14:24:51,158 [INFO] ---Get CPU Utilization---
+2023-03-24 14:24:51,162 [INFO] Proccesing menu: Get CPU Utils
+2023-03-24 14:24:51,315 [INFO] ---Get Logging device---
+2023-03-24 14:24:51,318 [INFO] Proccesing menu: Get Logging Device
+2023-03-24 14:24:51,461 [INFO] Connecting to device xe1
+2023-03-24 14:24:51,532 [INFO] ===== processing xe1 =====
+2023-03-24 14:24:51,590 [INFO] Connecting to device xe2
+2023-03-24 14:24:51,663 [INFO] ===== processing xe2 =====
+2023-03-24 14:24:51,741 [INFO] Connecting to device xe3
+2023-03-24 14:24:51,786 [INFO] ===== processing xe3 =====
+2023-03-24 14:24:51,871 [INFO] Connecting to device xr1
+2023-03-24 14:24:51,946 [INFO] ===== processing xr1 =====
+2023-03-24 14:24:52,135 [INFO] ===== processing xr2 =====
+2023-03-24 14:24:52,290 [INFO] Connecting to device xr2
+2023-03-24 14:24:52,563 [INFO] Connecting to device xr3
+2023-03-24 14:24:52,617 [INFO] ===== processing xr3 =====
+2023-03-24 14:24:52,919 [INFO] Device: xe1
+2023-03-24 14:24:53,030 [INFO] Device: xe3
+2023-03-24 14:24:53,051 [INFO] Device: xe2
+2023-03-24 14:24:53,875 [INFO] Device: xr2
+2023-03-24 14:24:54,800 [INFO] ---getting capture logging from device xe1---
+2023-03-24 14:24:54,825 [INFO] ---getting capture logging from device xe3---
+2023-03-24 14:24:54,825 [INFO] ---getting capture logging from device xe2---
+2023-03-24 14:24:55,912 [INFO] xe3_24-03-23_14_24_54.txt
+2023-03-24 14:24:56,026 [INFO] xe2_24-03-23_14_24_54.txt
+2023-03-24 14:24:56,030 [INFO] xe1_24-03-23_14_24_54.txt
+2023-03-24 14:24:56,160 [INFO] 1, xe1, 2%, 98%, low
+2023-03-24 14:24:56,166 [INFO] 3, xe3, 1%, 99%, low
+2023-03-24 14:24:56,200 [INFO] 2, xe2, 1%, 99%, low
+2023-03-24 14:24:58,325 [INFO] ---getting capture logging from device xr1---
+2023-03-24 14:24:59,392 [INFO] xr1_24-03-23_14_24_58.txt
+2023-03-24 14:25:03,685 [ERROR] Error connecting to device xr1: failed to connect to xr1
+Failed while bringing device to "any" state
+2023-03-24 14:25:03,724 [ERROR] Unexpected error occurred: failed to connect to xr1
+Failed while bringing device to "any" state
+2023-03-24 14:25:03,955 [ERROR] Error connecting to device xr2: failed to connect to xr2
+Failed while bringing device to "any" state
+2023-03-24 14:25:04,028 [ERROR] Unexpected error occurred: failed to connect to xr2
+Failed while bringing device to "any" state
+2023-03-24 14:25:24,661 [ERROR] Error connecting to device xr3: failed to connect to xr3
+Failed while bringing device to "any" state
+2023-03-24 14:25:24,668 [INFO] Get Memmory Utilization - execution completed successfully.
+2023-03-24 14:25:25,030 [ERROR] Error connecting to device xr3: failed to connect to xr3
+Failed while bringing device to "any" state
+2023-03-24 14:25:25,035 [INFO] Get Logging Device - execution completed successfully.
+2023-03-24 14:25:25,075 [ERROR] Unexpected error occurred: failed to connect to xr3
+Failed while bringing device to "any" state
+2023-03-24 14:25:25,083 [INFO] Get CPU Utilization -  execution completed successfully.

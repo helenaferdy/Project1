@@ -137,6 +137,6 @@ def getMemmoryUtils(testbedFile):
         except Exception as exc:
             logger.error(f"{exc} occurred while processing device {device.name}")
 
-    logger.info("Script execution completed successfully.")
+    logger.info("Get Memmory Utilization - execution completed successfully.")
 
 # Define functions to retrieve memory information for iosxe and iosxr devices

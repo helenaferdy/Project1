@@ -53,6 +53,28 @@ def proc_iface_crc(deviceX,counter):
     except Exception as e:
         logger.error(f"Error connecting to device {deviceX.name}: {e}")
 
+def proc_iface_crc_xr(device,counter):
+    try:
+        device.connect(learn_hostname = True, learn_os = True, log_stdout=False)
+        print(f"Device: {device.name}")
+        output_iface_crc = device.parse('show interfaces')
+        output_device = device.parse('show platform')
+        devPID=output_device['slot']['lc']['0/0']['name']
+        for iface in output_iface_crc:
+            if iface == 'Null0':
+                print('Iface Null')
+            else:
+                crc = output_iface_crc[iface]['counters']['in_crc_errors']
+                input_errors = output_iface_crc[iface]['counters']['in_errors']
+                output_errors = output_iface_crc[iface]['counters']['out_errors']
+                with open(
+                f"output/show_int_crc_{timestamp}.csv", "a", newline=""
+                ) as csvfile:
+                    writer = csv.writer(csvfile)  
+                    writer.writerow([counter,device.name, devPID,iface,crc,input_errors,output_errors])
+    except Exception as e:
+        print(f"Error connecting to device {device.name}: {e}")
+
 def interfaceCRC(testbedFile):
     testbed= loader.load(testbedFile)
     with open(f'out/InterfaceCRC/show_int_crc_{timestamp}.csv', 'a', newline='') as file:
@@ -70,10 +92,11 @@ def interfaceCRC(testbedFile):
                 counter += 1
                 logger.info(f"getting CRC information from Device: {device.name}")
                 sleep(0.1)
-            # elif device.type == 'iosxr':
-            #     futures.append(executor.submit(get_iosxr_memory_info, device, counter))
-            #     counter += 1
-            #     sleep(0.1)
+            elif device.type == 'iosxr':
+                futures.append(executor.submit(proc_iface_crc_xr, device, counter))
+                counter += 1
+                logger.info(f"getting CRC information from Device: {device.name}")
+                sleep(0.1)
         # Wait for all futures to complete
     for future in concurrent.futures.as_completed(futures):
         try:
@@ -81,5 +104,5 @@ def interfaceCRC(testbedFile):
         except Exception as exc:
             logger.info(f"{exc} occurred while processing device {device.name}")
 
-    logger.info("Script execution completed successfully.")
+    logger.info("Get Interface CRC -  execution completed successfully.")
 

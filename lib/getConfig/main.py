@@ -70,4 +70,4 @@ def captureConfig(testbedFile):
             future.result()
         except Exception as exc:
             logger.error(f"{exc} occurred while processing device {device.name}")
-    logger.info("Script execution completed successfully.")
+    logger.info("Get Config -  execution completed successfully.")

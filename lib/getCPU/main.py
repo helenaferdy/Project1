@@ -171,4 +171,4 @@ def getCPUUtils(testbed_file):
         except Exception as exc:
             logger.error(f"{exc} occurred while processing device {device.name}")
 
-    logger.info("Script execution completed successfully.")
+    logger.info("Get CPU Utilization -  execution completed successfully.")

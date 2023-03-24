@@ -19,6 +19,8 @@ from lib.getCDP.main import getCDP
 from lib.getEnvi.main import getEnvi
 import logging
 from rich.logging import RichHandler
+import concurrent.futures
+from time import sleep
 
 console = Console()
 logger = logging.getLogger(__name__)
@@ -110,8 +112,20 @@ def MainMenu():
     # console.print(menuResponse)
     if(menuResponse.find(',')==True):
         input = menuResponse.split(',')
-        for val in input:
-            inputMenu(val)
+        futures = []
+        counter = 1
+        with concurrent.futures.ThreadPoolExecutor() as executor:
+            for val in input:
+                futures.append(executor.submit(inputMenu, val))
+                logger.info("Proccesing menu: "+ Menu[int(val)-1])
+                counter += 1
+                sleep(0.1)
+        # Wait for all futures to complete
+        for future in concurrent.futures.as_completed(futures):
+            try:
+                future.result()
+            except Exception as exc:
+                logger.error(f"{exc} occurred while processing")
     else:
         inputMenu(menuResponse)
     

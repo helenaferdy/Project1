@@ -1,0 +1,19 @@
+NE Hostname,NE Interface,NE Platform,FE Hostname,FE Interface,FE Platform
+xe2,GigabitEthernet1,CSR1000V,xe1.helena.gg,GigabitEthernet6,CSR1000V
+xe2,GigabitEthernet1,CSR1000V,xe5,GigabitEthernet1,CSR1000V
+xe2,GigabitEthernet1,CSR1000V,xe4,GigabitEthernet1,CSR1000V
+xe2,GigabitEthernet1,CSR1000V,xe3,GigabitEthernet1,CSR1000V
+xe2,GigabitEthernet1,CSR1000V,UCSM-A(SSI17360D2Y),VEthernet867,UCS-FI-62
+xe2,GigabitEthernet1,CSR1000V,xr1,GigabitEthernet0/0/0/0,IOS-XRv 9
+xe1,GigabitEthernet6,CSR1000V,xe5,GigabitEthernet1,CSR1000V
+xe1,GigabitEthernet6,CSR1000V,xe4,GigabitEthernet1,CSR1000V
+xe1,GigabitEthernet6,CSR1000V,xe3,GigabitEthernet1,CSR1000V
+xe1,GigabitEthernet6,CSR1000V,xe2,GigabitEthernet1,CSR1000V
+xe1,GigabitEthernet6,CSR1000V,UCSM-A(SSI17360D2Y),VEthernet867,UCS-FI-62
+xe1,GigabitEthernet6,CSR1000V,xr1,GigabitEthernet0/0/0/0,IOS-XRv 9
+xe3,GigabitEthernet1,CSR1000V,xe1.helena.gg,GigabitEthernet6,CSR1000V
+xe3,GigabitEthernet1,CSR1000V,xe5,GigabitEthernet1,CSR1000V
+xe3,GigabitEthernet1,CSR1000V,xe4,GigabitEthernet1,CSR1000V
+xe3,GigabitEthernet1,CSR1000V,xe2,GigabitEthernet1,CSR1000V
+xe3,GigabitEthernet1,CSR1000V,UCSM-A(SSI17360D2Y),VEthernet867,UCS-FI-62
+xe3,GigabitEthernet1,CSR1000V,xr1,GigabitEthernet0/0/0/0,IOS-XRv 9

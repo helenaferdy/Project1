@@ -1,0 +1,64 @@
+INFO 2023-03-24 14:10:31,599 [main.py:getCPUUtils:157] ===== processing xe1 =====
+INFO 2023-03-24 14:10:31,710 [main.py:getCPUUtils:157] ===== processing xe2 =====
+INFO 2023-03-24 14:10:31,885 [main.py:getCPUUtils:157] ===== processing xe3 =====
+INFO 2023-03-24 14:10:32,010 [main.py:getCPUUtils:157] ===== processing xr1 =====
+INFO 2023-03-24 14:10:32,384 [main.py:getCPUUtils:157] ===== processing xr2 =====
+INFO 2023-03-24 14:10:32,593 [main.py:getCPUUtils:157] ===== processing xr3 =====
+INFO 2023-03-24 14:10:38,255 [main.py:xe:69] 2, xe2, 1%, 99%, low
+INFO 2023-03-24 14:10:38,262 [main.py:xe:69] 1, xe1, 1%, 99%, low
+INFO 2023-03-24 14:10:38,281 [main.py:xe:69] 3, xe3, 1%, 99%, low
+ERROR 2023-03-24 14:10:43,775 [main.py:xr:128] Unexpected error occurred: failed to connect to xr1
+Failed while bringing device to "any" state
+ERROR 2023-03-24 14:10:44,455 [main.py:xr:128] Unexpected error occurred: failed to connect to xr2
+Failed while bringing device to "any" state
+ERROR 2023-03-24 14:11:09,844 [main.py:xr:128] Unexpected error occurred: failed to connect to xr3
+Failed while bringing device to "any" state
+INFO 2023-03-24 14:11:09,847 [main.py:getCPUUtils:174] Script execution completed successfully.
+INFO 2023-03-24 14:21:50,060 [main.py:getCPUUtils:157] ===== processing xe1 =====
+INFO 2023-03-24 14:21:50,409 [main.py:getCPUUtils:157] ===== processing xe2 =====
+INFO 2023-03-24 14:21:50,604 [main.py:getCPUUtils:157] ===== processing xe3 =====
+INFO 2023-03-24 14:21:50,782 [main.py:getCPUUtils:157] ===== processing xr1 =====
+INFO 2023-03-24 14:21:50,998 [main.py:getCPUUtils:157] ===== processing xr2 =====
+INFO 2023-03-24 14:21:51,151 [main.py:getCPUUtils:157] ===== processing xr3 =====
+INFO 2023-03-24 14:21:55,089 [main.py:xe:69] 1, xe1, 2%, 98%, low
+INFO 2023-03-24 14:21:55,141 [main.py:xe:69] 2, xe2, 1%, 99%, low
+INFO 2023-03-24 14:21:55,169 [main.py:xe:69] 3, xe3, 1%, 99%, low
+ERROR 2023-03-24 14:22:02,447 [main.py:xr:128] Unexpected error occurred: failed to connect to xr1
+Failed while bringing device to "any" state
+ERROR 2023-03-24 14:22:02,548 [main.py:xr:128] Unexpected error occurred: failed to connect to xr2
+Failed while bringing device to "any" state
+ERROR 2023-03-24 14:22:23,457 [main.py:xr:128] Unexpected error occurred: failed to connect to xr3
+Failed while bringing device to "any" state
+INFO 2023-03-24 14:22:23,461 [main.py:getCPUUtils:174] Get CPU Utilization -  execution completed successfully.
+INFO 2023-03-24 14:23:54,200 [main.py:getCPUUtils:157] ===== processing xe1 =====
+INFO 2023-03-24 14:23:54,320 [main.py:getCPUUtils:157] ===== processing xe2 =====
+INFO 2023-03-24 14:23:54,451 [main.py:getCPUUtils:157] ===== processing xe3 =====
+INFO 2023-03-24 14:23:54,562 [main.py:getCPUUtils:157] ===== processing xr1 =====
+INFO 2023-03-24 14:23:54,684 [main.py:getCPUUtils:157] ===== processing xr2 =====
+INFO 2023-03-24 14:23:54,799 [main.py:getCPUUtils:157] ===== processing xr3 =====
+INFO 2023-03-24 14:23:57,922 [main.py:xe:69] 1, xe1, 2%, 98%, low
+INFO 2023-03-24 14:23:57,931 [main.py:xe:69] 2, xe2, 1%, 99%, low
+INFO 2023-03-24 14:23:57,938 [main.py:xe:69] 3, xe3, 1%, 99%, low
+ERROR 2023-03-24 14:24:05,707 [main.py:xr:128] Unexpected error occurred: failed to connect to xr1
+Failed while bringing device to "any" state
+ERROR 2023-03-24 14:24:05,830 [main.py:xr:128] Unexpected error occurred: failed to connect to xr2
+Failed while bringing device to "any" state
+ERROR 2023-03-24 14:24:26,997 [main.py:xr:128] Unexpected error occurred: failed to connect to xr3
+Failed while bringing device to "any" state
+INFO 2023-03-24 14:24:27,000 [main.py:getCPUUtils:174] Get CPU Utilization -  execution completed successfully.
+INFO 2023-03-24 14:24:51,532 [main.py:getCPUUtils:157] ===== processing xe1 =====
+INFO 2023-03-24 14:24:51,663 [main.py:getCPUUtils:157] ===== processing xe2 =====
+INFO 2023-03-24 14:24:51,786 [main.py:getCPUUtils:157] ===== processing xe3 =====
+INFO 2023-03-24 14:24:51,946 [main.py:getCPUUtils:157] ===== processing xr1 =====
+INFO 2023-03-24 14:24:52,135 [main.py:getCPUUtils:157] ===== processing xr2 =====
+INFO 2023-03-24 14:24:52,617 [main.py:getCPUUtils:157] ===== processing xr3 =====
+INFO 2023-03-24 14:24:56,160 [main.py:xe:69] 1, xe1, 2%, 98%, low
+INFO 2023-03-24 14:24:56,166 [main.py:xe:69] 3, xe3, 1%, 99%, low
+INFO 2023-03-24 14:24:56,200 [main.py:xe:69] 2, xe2, 1%, 99%, low
+ERROR 2023-03-24 14:25:03,724 [main.py:xr:128] Unexpected error occurred: failed to connect to xr1
+Failed while bringing device to "any" state
+ERROR 2023-03-24 14:25:04,028 [main.py:xr:128] Unexpected error occurred: failed to connect to xr2
+Failed while bringing device to "any" state
+ERROR 2023-03-24 14:25:25,075 [main.py:xr:128] Unexpected error occurred: failed to connect to xr3
+Failed while bringing device to "any" state
+INFO 2023-03-24 14:25:25,083 [main.py:getCPUUtils:174] Get CPU Utilization -  execution completed successfully.
