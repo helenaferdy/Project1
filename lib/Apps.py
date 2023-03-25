@@ -46,7 +46,7 @@ logger.addHandler(shell_handler)
 logger.addHandler(file_handler)
 
 
-Menu = ['Get Configuration Device','Get Inventory Device','Get Memmory Utils','Get CPU Utils','Get Logging Device','Interface CRC','CDP Neighbours','Get Environtment','Exit']
+Menu = ['Get Configuration Device','Get Inventory Device','Get Memory Utils','Get CPU Utils','Get Logging Device','Get Interface CRC','Get CDP Neighbours','Get Environtment','Exit']
 
 testbedFile = 'testbed/device.yaml'
 
@@ -178,7 +178,7 @@ def inputMenu(value):
         logger.info("---Get Healty Check / Environtment Device ---")
         
         #### function get Logging device ####
-        getEnvi()
+        getEnvi(testbedFile)
         
     elif(value==Menu[8] or value=='9'):
         logger.info("---Closing Application---")

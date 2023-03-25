@@ -13,3 +13,4 @@ Start
 
 Device
   ^${PART}\s+[\S*]+:\s+${SENSOR}\s+${STATE}\s+${SENSORVALUE}(\s+)${UNIT} -> Record
+  

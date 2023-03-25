@@ -1,56 +1,11 @@
-from lib.getEnvi.router import Routers
-import csv
-import threading
+from lib.helenalibs.main import helenamain
+import os
 
-CSV_PATH = "lib/getEnvi/device.csv"
+OUTPUT_PATH = "out/getEnvi/"
+COMMAND = "show environment"
 
-def getEnvi():
+if not os.path.exists(OUTPUT_PATH):
+    os.makedirs(OUTPUT_PATH)
 
-    with open(CSV_PATH, mode='r') as csv_file:
-        csv_reader = csv.DictReader(csv_file)
-        data = [row for row in csv_reader]
-
-    # print('''
-    # Welcome to helena network automation xxz
-    # These are your devices : 
-    # ''')
-
-    devices = []
-    for d in data:
-        print(f"{d['hostname']} : {d['ip']}")
-        new_router = Routers(
-            d['hostname'],
-            d['ip'],
-            d['username'],
-            d['password'],
-            d['enable_password']
-        )
-        devices.append(new_router)
-
-
-    commands_x = "show environment"
-    headers = ['Hostname', 'Site', 'Power Supply', 'Temperature', 'Fan']
-    try:
-        with open(f"out/Environment/{commands_x}_summary.csv", mode="w", newline="") as csvfile:
-            csvwriter = csv.writer(csvfile)
-            csvwriter.writerow(headers)
-    except:
-        pass
-
-    command = "show environment"
-    headers = ['Hostname', 'Site', 'Power Supply', 'Temperature', 'Fan']
- 
-    with open(f"out/Environment/{command}_summary.csv", mode="w", newline="") as csvfile:
-        csvwriter = csv.writer(csvfile)
-        csvwriter.writerow(headers)
-
-
-    threads = []
-    for device in devices:
-        thread = threading.Thread(target=device.connect, args=(command,))
-        thread.start()
-        threads.append(thread)
-
-    for thread in threads:
-        thread.join()
-
+def getEnvi(testbed):
+    helenamain(COMMAND, OUTPUT_PATH)
