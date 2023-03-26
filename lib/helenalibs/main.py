@@ -1,10 +1,22 @@
-from lib.helenalibs.router import Routers, TIMESTAMP
+from lib.helenalibs.router import Routers, TIMESTAMP, DATE
 import csv
 import threading
+import os
 
 CSV_PATH = "import/env.csv"
 
 def helenamain(command, out):
+    date_path = out+DATE+"/"
+    if not os.path.exists(out):
+            os.makedirs(out)
+    if not os.path.exists(date_path):
+            os.makedirs(date_path)
+
+    with open(CSV_PATH, mode='r') as csv_file:
+        csv_reader = csv.DictReader(csv_file)
+        data = [row for row in csv_reader]
+    
+
     with open(CSV_PATH, mode='r') as csv_file:
         csv_reader = csv.DictReader(csv_file)
         data = [row for row in csv_reader]

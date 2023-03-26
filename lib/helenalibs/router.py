@@ -7,6 +7,7 @@ import datetime
 
 LOG_LOCATION = "lib/helenalibs/logs/debug.log"
 TIMESTAMP = datetime.datetime.now().strftime('%Y-%m-%d_%H:%M')
+DATE = datetime.datetime.now().strftime('%Y-%m-%d')
 os.environ["NTC_TEMPLATES_DIR"] = "lib/helenalibs/templates"
 
 logging.basicConfig(
@@ -18,14 +19,22 @@ logging.basicConfig(
         ])
 
 class Routers:
-    def __init__(self, hostname, ip, username, password, secret, os, out):
+    def __init__(self, hostname, ip, username, password, secret, ios_os, out):
         self.hostname = hostname
         self.ip = ip
         self.username = username
         self.password = password
         self.secret = secret
-        self.os = os
+        self.ios_os = ios_os
+
         self.out_path = out
+        self.date_path = out+DATE+"/"
+        self.raw_path = self.date_path+"raw_data/"
+        self.cpu_history_path = self.date_path+"history/"
+
+        if not os.path.exists(self.raw_path):
+            os.makedirs(self.raw_path)
+        
 
     def connect(self, command, i):
         allgood = False
@@ -58,6 +67,12 @@ class Routers:
                     self.parse_environment_summary()
                 elif self.command == "show processes cpu":
                     self.parse_cpu_summary()
+
+                    if not os.path.exists(self.cpu_history_path):
+                        os.makedirs(self.cpu_history_path)
+                    self.command = self.command+" history"
+                    self.connect_command()
+                    self.parse_cpu_history()
                 elif self.command == "show inventory":
                     self.parse_inventory_summary()
             self.disconnect()
@@ -67,27 +82,27 @@ class Routers:
             self.output = self.connection.send_command(self.command)
             logging.info(f"{self.ip} : Command '{self.command}' sent")
         except Exception as e:
-            logging.error(f"{self.ip} : Command '{self.command}' failed")
+            logging.error(f"{self.ip} : Failed to parse command '{self.command}'")
     
     def parse(self):
         try:
-            self.parsed_output = parse_output(platform=self.os, command=self.command, data=self.output)
+            self.parsed_output = parse_output(platform=self.ios_os, command=self.command, data=self.output)
             logging.info(f"{self.ip} : Command '{self.command}' parsed")
             return True
         except Exception as e:
-            logging.error(f"{self.ip} : Command '{self.command}' failed to parse")
+            logging.error(f"{self.ip} : Failed to parse command '{self.command}'")
 
     def export_csv(self):
         try:
-            with open(f"{self.out_path}{self.hostname}_{self.command}_{TIMESTAMP}.csv", mode="w", newline="") as csv_file:
+            with open(f"{self.raw_path}{self.hostname}_{self.command}_{TIMESTAMP}.csv", mode="w", newline="") as csv_file:
                 fieldnames = self.parsed_output[0].keys()
                 writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
                 writer.writeheader()
                 for row in self.parsed_output:
                     writer.writerow(row)
-            logging.info(f"{self.ip} : Output saved to {self.out_path}{self.hostname}_{self.command}_{TIMESTAMP}.csv")
+            logging.info(f"{self.ip} : Output saved to {self.raw_path}{self.hostname}_{self.command}_{TIMESTAMP}.csv")
         except Exception as e:
-            logging.error(f"{self.ip} : Output saving for {self.out_path}{self.hostname}_{self.command}_{TIMESTAMP} failed")
+            logging.error(f"{self.ip} : Failed saving to {self.raw_path}{self.hostname}_{self.command}_{TIMESTAMP}.csv")
 
     def disconnect(self):
         self.connection.disconnect()
@@ -131,6 +146,14 @@ class Routers:
         
         final_cpu = [self.i, self.hostname, cpu_load, free_load, category]
         self.export_csv_bonus(final_cpu)
+
+    def parse_cpu_history(self):
+        try:
+            with open(f"{self.cpu_history_path}{self.hostname}_{self.command}_{TIMESTAMP}.txt", mode="w", newline="") as txtfile:
+                txtfile.write(self.output)
+                logging.info(f"{self.ip} : Output saved to {self.cpu_history_path}{self.hostname}_{self.command}_{TIMESTAMP}.txt")
+        except:
+            logging.error(f"{self.ip} : Failed saving to {self.cpu_history_path}{self.hostname}_{self.command}_{TIMESTAMP}.txt")
     
     def parse_inventory_summary(self):
         i = 1
@@ -142,12 +165,12 @@ class Routers:
             final_inventory = [i, self.hostname, name, pid, sn]
             self.export_csv_bonus(final_inventory)
             i +=1
-
+            
     def export_csv_bonus(self, final):
         try:
-            with open(f"{self.out_path}{self.command}_summary_{TIMESTAMP}.csv", mode="a", newline="") as csvfile:
+            with open(f"{self.date_path}{self.command}_summary_{TIMESTAMP}.csv", mode="a", newline="") as csvfile:
                 csvwriter = csv.writer(csvfile)
                 csvwriter.writerow(final)
-                logging.info(f"{self.ip} : Output saved to {self.out_path}{self.hostname}_{self.command}_summary_{TIMESTAMP}.csv")
+                logging.info(f"{self.ip} : Output appended to {self.date_path}{self.hostname}_{self.command}_summary_{TIMESTAMP}.csv")
         except Exception as e:
-            logging.error(f"{self.ip} : Output saving for {self.out_path}{self.hostname}_{self.command}_summary_{TIMESTAMP} summary failed")
+            logging.error(f"{self.ip} : Failed appending for {self.date_path}{self.hostname}_{self.command}_summary_{TIMESTAMP}.csv")
