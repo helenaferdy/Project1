@@ -1226,3 +1226,26 @@
 2023-03-26 12:59:02,484 [INFO] 198.18.0.121 : Output saved to out/getCPU/2023-03-26/history/xe1_show processes cpu history_2023-03-26_12:58.txt
 2023-03-26 12:59:02,653 [INFO] 198.18.0.121 : Disconnected succcessfully
 2023-03-26 12:59:09,664 [ERROR] 198.18.0.133: Failed to connect
+2023-03-26 13:00:07,410 [INFO] ---Starting the Application---
+2023-03-26 13:00:07,417 [INFO] ---Initialize testbed file---
+2023-03-26 13:00:07,417 [INFO] ---testbed file ready---
+2023-03-26 13:00:09,847 [INFO] ---Opening Main Menu Application---
+2023-03-26 13:00:11,562 [INFO] ---Get Healty Check / Environtment Device ---
+2023-03-26 13:00:11,932 [INFO] Connected (version 1.99, client Cisco-1.25)
+2023-03-26 13:00:11,939 [INFO] Connected (version 1.99, client Cisco-1.25)
+2023-03-26 13:00:13,210 [INFO] Authentication (password) successful!
+2023-03-26 13:00:13,373 [INFO] Authentication (password) successful!
+2023-03-26 13:00:14,041 [INFO] 10.3.123.10 : Connected 
+2023-03-26 13:00:14,178 [INFO] 10.22.123.10 : Connected 
+2023-03-26 13:00:14,249 [INFO] 10.3.123.10 : Entered enable mode 
+2023-03-26 13:00:14,607 [INFO] 10.3.123.10 : Command 'show environment' sent
+2023-03-26 13:00:14,665 [INFO] 10.3.123.10 : Command 'show environment' parsed
+2023-03-26 13:00:14,665 [INFO] 10.3.123.10 : Output saved to out/getEnvi/2023-03-26/raw_data/JKT-CC-VG_show environment_2023-03-26_13:00.csv
+2023-03-26 13:00:14,665 [INFO] 10.3.123.10 : Output appended to out/getEnvi/2023-03-26/JKT-CC-VG_show environment_summary_2023-03-26_13:00.csv
+2023-03-26 13:00:14,753 [INFO] 10.3.123.10 : Disconnected succcessfully
+2023-03-26 13:00:15,377 [INFO] 10.22.123.10 : Entered enable mode 
+2023-03-26 13:00:15,727 [INFO] 10.22.123.10 : Command 'show environment' sent
+2023-03-26 13:00:15,734 [INFO] 10.22.123.10 : Command 'show environment' parsed
+2023-03-26 13:00:15,735 [INFO] 10.22.123.10 : Output saved to out/getEnvi/2023-03-26/raw_data/MKS-CC-VG_show environment_2023-03-26_13:00.csv
+2023-03-26 13:00:15,735 [INFO] 10.22.123.10 : Output appended to out/getEnvi/2023-03-26/MKS-CC-VG_show environment_summary_2023-03-26_13:00.csv
+2023-03-26 13:00:15,809 [INFO] 10.22.123.10 : Disconnected succcessfully
