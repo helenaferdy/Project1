@@ -1090,3 +1090,139 @@
 2023-03-26 12:46:33,639 [INFO] 10.22.123.10 : Output saved to out/getEnvi/2023-03-26/raw_data/MKS-CC-VG_show environment_2023-03-26_12:46.csv
 2023-03-26 12:46:33,639 [INFO] 10.22.123.10 : Output appended to out/getEnvi/2023-03-26/MKS-CC-VG_show environment_summary_2023-03-26_12:46.csv
 2023-03-26 12:46:33,728 [INFO] 10.22.123.10 : Disconnected succcessfully
+2023-03-26 12:57:42,442 [INFO] ---Starting the Application---
+2023-03-26 12:57:42,448 [INFO] ---Initialize testbed file---
+2023-03-26 12:57:42,449 [INFO] ---testbed file ready---
+2023-03-26 12:57:44,119 [INFO] ---Opening Main Menu Application---
+2023-03-26 12:57:49,106 [INFO] ---Get Inventory Device---
+2023-03-26 12:57:51,742 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-03-26 12:57:51,743 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-03-26 12:57:51,746 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-03-26 12:57:51,747 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-03-26 12:57:51,747 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-03-26 12:57:52,491 [INFO] Authentication (password) successful!
+2023-03-26 12:57:52,504 [INFO] Authentication (password) successful!
+2023-03-26 12:57:52,523 [INFO] Authentication (password) successful!
+2023-03-26 12:57:52,646 [INFO] Authentication (password) successful!
+2023-03-26 12:57:52,649 [INFO] Authentication (password) successful!
+2023-03-26 12:57:53,721 [INFO] 198.18.0.123 : Connected 
+2023-03-26 12:57:53,733 [INFO] 198.18.0.121 : Connected 
+2023-03-26 12:57:53,733 [INFO] 198.18.0.122 : Connected 
+2023-03-26 12:57:54,212 [INFO] 198.18.0.131 : Connected 
+2023-03-26 12:57:54,219 [INFO] 198.18.0.132 : Connected 
+2023-03-26 12:57:54,386 [INFO] 198.18.0.131 : Entered enable mode 
+2023-03-26 12:57:54,439 [INFO] 198.18.0.132 : Entered enable mode 
+2023-03-26 12:57:55,284 [INFO] 198.18.0.123 : Entered enable mode 
+2023-03-26 12:57:55,445 [INFO] 198.18.0.122 : Entered enable mode 
+2023-03-26 12:57:55,469 [INFO] 198.18.0.121 : Entered enable mode 
+2023-03-26 12:57:55,671 [INFO] 198.18.0.122 : Command 'show inventory' sent
+2023-03-26 12:57:55,730 [INFO] 198.18.0.122 : Command 'show inventory' parsed
+2023-03-26 12:57:55,730 [INFO] 198.18.0.122 : Output saved to out/getInven/2023-03-26/raw_data/xe2_show inventory_2023-03-26_12:57.csv
+2023-03-26 12:57:55,731 [INFO] 198.18.0.122 : Output appended to out/getInven/2023-03-26/xe2_show inventory_summary_2023-03-26_12:57.csv
+2023-03-26 12:57:55,731 [INFO] 198.18.0.122 : Output appended to out/getInven/2023-03-26/xe2_show inventory_summary_2023-03-26_12:57.csv
+2023-03-26 12:57:55,731 [INFO] 198.18.0.122 : Output appended to out/getInven/2023-03-26/xe2_show inventory_summary_2023-03-26_12:57.csv
+2023-03-26 12:57:55,769 [INFO] 198.18.0.121 : Command 'show inventory' sent
+2023-03-26 12:57:55,769 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-03-26 12:57:55,770 [INFO] 198.18.0.121 : Command 'show inventory' parsed
+2023-03-26 12:57:55,771 [INFO] 198.18.0.121 : Output saved to out/getInven/2023-03-26/raw_data/xe1_show inventory_2023-03-26_12:57.csv
+2023-03-26 12:57:55,771 [INFO] 198.18.0.121 : Output appended to out/getInven/2023-03-26/xe1_show inventory_summary_2023-03-26_12:57.csv
+2023-03-26 12:57:55,771 [INFO] 198.18.0.121 : Output appended to out/getInven/2023-03-26/xe1_show inventory_summary_2023-03-26_12:57.csv
+2023-03-26 12:57:55,771 [INFO] 198.18.0.121 : Output appended to out/getInven/2023-03-26/xe1_show inventory_summary_2023-03-26_12:57.csv
+2023-03-26 12:57:55,823 [INFO] 198.18.0.123 : Command 'show inventory' sent
+2023-03-26 12:57:55,824 [INFO] 198.18.0.123 : Command 'show inventory' parsed
+2023-03-26 12:57:55,825 [INFO] 198.18.0.123 : Output saved to out/getInven/2023-03-26/raw_data/xe3_show inventory_2023-03-26_12:57.csv
+2023-03-26 12:57:55,825 [INFO] 198.18.0.123 : Output appended to out/getInven/2023-03-26/xe3_show inventory_summary_2023-03-26_12:57.csv
+2023-03-26 12:57:55,825 [INFO] 198.18.0.123 : Output appended to out/getInven/2023-03-26/xe3_show inventory_summary_2023-03-26_12:57.csv
+2023-03-26 12:57:55,825 [INFO] 198.18.0.123 : Output appended to out/getInven/2023-03-26/xe3_show inventory_summary_2023-03-26_12:57.csv
+2023-03-26 12:57:55,882 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-03-26 12:57:55,950 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-03-26 12:57:56,002 [INFO] 198.18.0.132 : Command 'show inventory' sent
+2023-03-26 12:57:56,007 [INFO] 198.18.0.132 : Command 'show inventory' parsed
+2023-03-26 12:57:56,008 [INFO] 198.18.0.132 : Output saved to out/getInven/2023-03-26/raw_data/xr2_show inventory_2023-03-26_12:57.csv
+2023-03-26 12:57:56,008 [INFO] 198.18.0.132 : Output appended to out/getInven/2023-03-26/xr2_show inventory_summary_2023-03-26_12:57.csv
+2023-03-26 12:57:56,009 [INFO] 198.18.0.132 : Output appended to out/getInven/2023-03-26/xr2_show inventory_summary_2023-03-26_12:57.csv
+2023-03-26 12:57:56,009 [INFO] 198.18.0.132 : Output appended to out/getInven/2023-03-26/xr2_show inventory_summary_2023-03-26_12:57.csv
+2023-03-26 12:57:56,010 [INFO] 198.18.0.132 : Output appended to out/getInven/2023-03-26/xr2_show inventory_summary_2023-03-26_12:57.csv
+2023-03-26 12:57:56,010 [INFO] 198.18.0.132 : Output appended to out/getInven/2023-03-26/xr2_show inventory_summary_2023-03-26_12:57.csv
+2023-03-26 12:57:56,010 [INFO] 198.18.0.132 : Output appended to out/getInven/2023-03-26/xr2_show inventory_summary_2023-03-26_12:57.csv
+2023-03-26 12:57:56,010 [INFO] 198.18.0.132 : Output appended to out/getInven/2023-03-26/xr2_show inventory_summary_2023-03-26_12:57.csv
+2023-03-26 12:57:56,010 [INFO] 198.18.0.132 : Output appended to out/getInven/2023-03-26/xr2_show inventory_summary_2023-03-26_12:57.csv
+2023-03-26 12:57:56,011 [INFO] 198.18.0.132 : Output appended to out/getInven/2023-03-26/xr2_show inventory_summary_2023-03-26_12:57.csv
+2023-03-26 12:57:56,011 [INFO] 198.18.0.132 : Output appended to out/getInven/2023-03-26/xr2_show inventory_summary_2023-03-26_12:57.csv
+2023-03-26 12:57:56,061 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-03-26 12:57:56,607 [INFO] 198.18.0.131 : Command 'show inventory' sent
+2023-03-26 12:57:56,612 [INFO] 198.18.0.131 : Command 'show inventory' parsed
+2023-03-26 12:57:56,614 [INFO] 198.18.0.131 : Output saved to out/getInven/2023-03-26/raw_data/xr1_show inventory_2023-03-26_12:57.csv
+2023-03-26 12:57:56,614 [INFO] 198.18.0.131 : Output appended to out/getInven/2023-03-26/xr1_show inventory_summary_2023-03-26_12:57.csv
+2023-03-26 12:57:56,614 [INFO] 198.18.0.131 : Output appended to out/getInven/2023-03-26/xr1_show inventory_summary_2023-03-26_12:57.csv
+2023-03-26 12:57:56,614 [INFO] 198.18.0.131 : Output appended to out/getInven/2023-03-26/xr1_show inventory_summary_2023-03-26_12:57.csv
+2023-03-26 12:57:56,615 [INFO] 198.18.0.131 : Output appended to out/getInven/2023-03-26/xr1_show inventory_summary_2023-03-26_12:57.csv
+2023-03-26 12:57:56,615 [INFO] 198.18.0.131 : Output appended to out/getInven/2023-03-26/xr1_show inventory_summary_2023-03-26_12:57.csv
+2023-03-26 12:57:56,616 [INFO] 198.18.0.131 : Output appended to out/getInven/2023-03-26/xr1_show inventory_summary_2023-03-26_12:57.csv
+2023-03-26 12:57:56,616 [INFO] 198.18.0.131 : Output appended to out/getInven/2023-03-26/xr1_show inventory_summary_2023-03-26_12:57.csv
+2023-03-26 12:57:56,616 [INFO] 198.18.0.131 : Output appended to out/getInven/2023-03-26/xr1_show inventory_summary_2023-03-26_12:57.csv
+2023-03-26 12:57:56,616 [INFO] 198.18.0.131 : Output appended to out/getInven/2023-03-26/xr1_show inventory_summary_2023-03-26_12:57.csv
+2023-03-26 12:57:56,616 [INFO] 198.18.0.131 : Output appended to out/getInven/2023-03-26/xr1_show inventory_summary_2023-03-26_12:57.csv
+2023-03-26 12:57:56,751 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-03-26 12:57:59,115 [ERROR] 198.18.0.133: Failed to connect
+2023-03-26 12:58:54,936 [INFO] ---Starting the Application---
+2023-03-26 12:58:54,942 [INFO] ---Initialize testbed file---
+2023-03-26 12:58:54,943 [INFO] ---testbed file ready---
+2023-03-26 12:58:57,082 [INFO] ---Opening Main Menu Application---
+2023-03-26 12:58:59,654 [INFO] ---Get CPU Utilization---
+2023-03-26 12:58:59,766 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-03-26 12:58:59,768 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-03-26 12:58:59,772 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-03-26 12:58:59,893 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-03-26 12:58:59,957 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-03-26 12:59:00,492 [INFO] Authentication (password) successful!
+2023-03-26 12:59:00,547 [INFO] Authentication (password) successful!
+2023-03-26 12:59:00,607 [INFO] Authentication (password) successful!
+2023-03-26 12:59:00,663 [INFO] Authentication (password) successful!
+2023-03-26 12:59:00,726 [INFO] Authentication (password) successful!
+2023-03-26 12:59:00,889 [INFO] 198.18.0.123 : Connected 
+2023-03-26 12:59:01,015 [INFO] 198.18.0.122 : Connected 
+2023-03-26 12:59:01,124 [INFO] 198.18.0.121 : Connected 
+2023-03-26 12:59:01,126 [INFO] 198.18.0.123 : Entered enable mode 
+2023-03-26 12:59:01,150 [INFO] 198.18.0.131 : Connected 
+2023-03-26 12:59:01,194 [INFO] 198.18.0.132 : Connected 
+2023-03-26 12:59:01,207 [INFO] 198.18.0.132 : Entered enable mode 
+2023-03-26 12:59:01,212 [INFO] 198.18.0.131 : Entered enable mode 
+2023-03-26 12:59:01,268 [INFO] 198.18.0.122 : Entered enable mode 
+2023-03-26 12:59:01,390 [INFO] 198.18.0.121 : Entered enable mode 
+2023-03-26 12:59:01,465 [INFO] 198.18.0.123 : Command 'show processes cpu' sent
+2023-03-26 12:59:01,521 [INFO] 198.18.0.123 : Command 'show processes cpu' parsed
+2023-03-26 12:59:01,521 [INFO] 198.18.0.123 : Output saved to out/getCPU/2023-03-26/raw_data/xe3_show processes cpu_2023-03-26_12:58.csv
+2023-03-26 12:59:01,522 [INFO] 198.18.0.123 : Output appended to out/getCPU/2023-03-26/xe3_show processes cpu_summary_2023-03-26_12:58.csv
+2023-03-26 12:59:01,579 [INFO] 198.18.0.131 : Command 'show processes cpu' sent
+2023-03-26 12:59:01,581 [INFO] 198.18.0.131 : Command 'show processes cpu' parsed
+2023-03-26 12:59:01,581 [INFO] 198.18.0.131 : Output saved to out/getCPU/2023-03-26/raw_data/xr1_show processes cpu_2023-03-26_12:58.csv
+2023-03-26 12:59:01,581 [INFO] 198.18.0.131 : Output appended to out/getCPU/2023-03-26/xr1_show processes cpu_summary_2023-03-26_12:58.csv
+2023-03-26 12:59:01,721 [INFO] 198.18.0.132 : Command 'show processes cpu' sent
+2023-03-26 12:59:01,724 [INFO] 198.18.0.132 : Command 'show processes cpu' parsed
+2023-03-26 12:59:01,725 [INFO] 198.18.0.132 : Output saved to out/getCPU/2023-03-26/raw_data/xr2_show processes cpu_2023-03-26_12:58.csv
+2023-03-26 12:59:01,725 [INFO] 198.18.0.132 : Output appended to out/getCPU/2023-03-26/xr2_show processes cpu_summary_2023-03-26_12:58.csv
+2023-03-26 12:59:01,805 [INFO] 198.18.0.122 : Command 'show processes cpu' sent
+2023-03-26 12:59:01,809 [INFO] 198.18.0.122 : Command 'show processes cpu' parsed
+2023-03-26 12:59:01,810 [INFO] 198.18.0.122 : Output saved to out/getCPU/2023-03-26/raw_data/xe2_show processes cpu_2023-03-26_12:58.csv
+2023-03-26 12:59:01,810 [INFO] 198.18.0.122 : Output appended to out/getCPU/2023-03-26/xe2_show processes cpu_summary_2023-03-26_12:58.csv
+2023-03-26 12:59:01,901 [INFO] 198.18.0.123 : Command 'show processes cpu history' sent
+2023-03-26 12:59:01,902 [INFO] 198.18.0.123 : Output saved to out/getCPU/2023-03-26/history/xe3_show processes cpu history_2023-03-26_12:58.txt
+2023-03-26 12:59:02,029 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-03-26 12:59:02,030 [INFO] 198.18.0.131 : Command 'show processes cpu history' sent
+2023-03-26 12:59:02,033 [INFO] 198.18.0.131 : Output saved to out/getCPU/2023-03-26/history/xr1_show processes cpu history_2023-03-26_12:58.txt
+2023-03-26 12:59:02,061 [INFO] 198.18.0.121 : Command 'show processes cpu' sent
+2023-03-26 12:59:02,064 [INFO] 198.18.0.121 : Command 'show processes cpu' parsed
+2023-03-26 12:59:02,064 [INFO] 198.18.0.121 : Output saved to out/getCPU/2023-03-26/raw_data/xe1_show processes cpu_2023-03-26_12:58.csv
+2023-03-26 12:59:02,064 [INFO] 198.18.0.121 : Output appended to out/getCPU/2023-03-26/xe1_show processes cpu_summary_2023-03-26_12:58.csv
+2023-03-26 12:59:02,116 [INFO] 198.18.0.132 : Command 'show processes cpu history' sent
+2023-03-26 12:59:02,116 [INFO] 198.18.0.132 : Output saved to out/getCPU/2023-03-26/history/xr2_show processes cpu history_2023-03-26_12:58.txt
+2023-03-26 12:59:02,120 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-03-26 12:59:02,141 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-03-26 12:59:02,189 [INFO] 198.18.0.122 : Command 'show processes cpu history' sent
+2023-03-26 12:59:02,189 [INFO] 198.18.0.122 : Output saved to out/getCPU/2023-03-26/history/xe2_show processes cpu history_2023-03-26_12:58.txt
+2023-03-26 12:59:02,227 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-03-26 12:59:02,483 [INFO] 198.18.0.121 : Command 'show processes cpu history' sent
+2023-03-26 12:59:02,484 [INFO] 198.18.0.121 : Output saved to out/getCPU/2023-03-26/history/xe1_show processes cpu history_2023-03-26_12:58.txt
+2023-03-26 12:59:02,653 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-03-26 12:59:09,664 [ERROR] 198.18.0.133: Failed to connect

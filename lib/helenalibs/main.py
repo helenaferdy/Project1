@@ -7,8 +7,6 @@ CSV_PATH = "import/env.csv"
 
 def helenamain(command, out):
     date_path = out+DATE+"/"
-    if not os.path.exists(out):
-            os.makedirs(out)
     if not os.path.exists(date_path):
             os.makedirs(date_path)
 
@@ -38,13 +36,13 @@ def helenamain(command, out):
         
     if command == "show environment":
         headers = ['No','Hostname', 'Site', 'Power Supply', 'Temperature', 'Fan']
-        export_headers(headers, command, out)
+        export_headers(headers, command, date_path)
     elif command == "show processes cpu":
         headers = ['No', 'Device', 'CPU Used', 'CPU Free', 'Category']
-        export_headers(headers, command, out)
+        export_headers(headers, command, date_path)
     elif command == "show inventory":
         headers = ['No', 'Hostname', 'Name', 'PID', 'SN']
-        export_headers(headers, command, out)
+        export_headers(headers, command, date_path)
     
 
     threads = []
@@ -59,7 +57,7 @@ def helenamain(command, out):
         thread.join()
 
 
-def export_headers(headers, command, out):
-    with open(f"{out}{command}_summary_{TIMESTAMP}.csv", 'w', newline='') as file:
+def export_headers(headers, command, date_path):
+    with open(f"{date_path}{command}_summary_{TIMESTAMP}.csv", 'w', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(headers)
