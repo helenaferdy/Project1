@@ -30,6 +30,10 @@ file_handler.setFormatter(file_formatter)
 logger.addHandler(shell_handler)
 logger.addHandler(file_handler)
 
+# Check if output folder is available, create it if not
+if not os.path.exists("out/CaptureConfig"):
+    os.makedirs("out/CaptureConfig")
+
 
 def captureConfigX(device):
     # Load the testbed file
