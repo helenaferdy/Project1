@@ -30,6 +30,11 @@ logger.addHandler(file_handler)
 
 timestamp = datetime.datetime.now().strftime('%Y-%m-%d %H-%M-%S')
 
+
+# Check if output folder is available, create it if not
+if not os.path.exists("out/CDP"):
+    os.makedirs("out/CDP")
+
 def proc_cdp(deviceX,counter):
     try:
         deviceX.connect(learn_hostname = True, learn_os = True, mit=True, log_stdout=False)
