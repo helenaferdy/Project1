@@ -112,3 +112,13 @@ INFO 2023-03-26 13:00:07,417 [Apps.py:init:90] ---Initialize testbed file---
 INFO 2023-03-26 13:00:07,417 [Apps.py:init:98] ---testbed file ready---
 INFO 2023-03-26 13:00:09,847 [Apps.py:init:104] ---Opening Main Menu Application---
 INFO 2023-03-26 13:00:11,562 [Apps.py:inputMenu:178] ---Get Healty Check / Environtment Device ---
+INFO 2023-03-27 10:48:19,809 [Apps.py:init:87] ---Starting the Application---
+INFO 2023-03-27 10:48:19,816 [Apps.py:init:90] ---Initialize testbed file---
+INFO 2023-03-27 10:48:19,817 [Apps.py:init:98] ---testbed file ready---
+INFO 2023-03-27 10:48:21,549 [Apps.py:init:104] ---Opening Main Menu Application---
+INFO 2023-03-27 10:48:24,217 [Apps.py:inputMenu:141] ---Get Inventory Device---
+INFO 2023-03-27 10:48:37,737 [Apps.py:init:87] ---Starting the Application---
+INFO 2023-03-27 10:48:37,743 [Apps.py:init:90] ---Initialize testbed file---
+INFO 2023-03-27 10:48:37,744 [Apps.py:init:98] ---testbed file ready---
+INFO 2023-03-27 10:48:39,475 [Apps.py:init:104] ---Opening Main Menu Application---
+INFO 2023-03-27 10:48:42,213 [Apps.py:inputMenu:154] ---Get CPU Utilization---
