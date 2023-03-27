@@ -2,37 +2,55 @@ from lib.helenalibs.router import Routers, TIMESTAMP, DATE
 import csv
 import threading
 import os
+import yaml
 
 CSV_PATH = "import/env.csv"
+TESTBED =  "testbed/device.yaml"
 
 def helenamain(command, out):
     date_path = out+DATE+"/"
     if not os.path.exists(date_path):
             os.makedirs(date_path)
 
-    with open(CSV_PATH, mode='r') as csv_file:
-        csv_reader = csv.DictReader(csv_file)
-        data = [row for row in csv_reader]
-    
-
-    with open(CSV_PATH, mode='r') as csv_file:
-        csv_reader = csv.DictReader(csv_file)
-        data = [row for row in csv_reader]
-    
-    print('Devices : \n')
     devices = []
-    for d in data:
-        print(f"{d['hostname']} : {d['ip']}")
-        new_router = Routers(
-            d['hostname'],
-            d['ip'],
-            d['username'],
-            d['password'],
-            d['enable_password'],
-            d['os'],
-            out
-        )
-        devices.append(new_router)
+    with open(TESTBED) as f:
+        device = yaml.safe_load(f)['devices']
+        for d in device:
+            the_ip = device[d]['connections']['cli']['ip']
+            the_protocol = device[d]['connections']['cli']['protocol']
+            the_username = device[d]['credentials']['default']['username']
+            the_password = device[d]['credentials']['default']['password']
+            the_enable = device[d]['credentials']['enable']['password']
+            the_ios_os = device[d]['os']
+
+            print(f"{d} : {the_ip}")
+            new_router = Routers(
+                d,
+                the_ip,
+                the_username,
+                the_password,
+                the_enable,
+                the_ios_os,
+                out
+            )
+            devices.append(new_router)
+
+
+    
+    # print('Devices : \n')
+    # devices = []
+    # for d in data:
+    #     print(f"{d['hostname']} : {d['ip']}")
+    #     new_router = Routers(
+    #         d['hostname'],
+    #         d['ip'],
+    #         d['username'],
+    #         d['password'],
+    #         d['enable_password'],
+    #         d['os'],
+    #         out
+    #     )
+    #     devices.append(new_router)
         
     if command == "show environment":
         headers = ['No','Hostname', 'Site', 'Power Supply', 'Temperature', 'Fan']
