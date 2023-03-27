@@ -6,7 +6,7 @@ import logging, sys
 import datetime
 
 LOG_LOCATION = "lib/helenalibs/logs/debug.log"
-TIMESTAMP = datetime.datetime.now().strftime('%Y-%m-%d_%H:%M')
+TIMESTAMP = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M')
 DATE = datetime.datetime.now().strftime('%Y-%m-%d')
 os.environ["NTC_TEMPLATES_DIR"] = "lib/helenalibs/templates"
 
