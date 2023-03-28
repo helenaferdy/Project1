@@ -10,8 +10,8 @@ devices:
         username: cisco
       enable:
         password: cisco
-    os: iosxe
-    type: iosxe
+    os: ios
+    type: ios
   xe2:
     connections:
       cli:
