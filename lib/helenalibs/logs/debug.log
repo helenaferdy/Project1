@@ -1734,3 +1734,78 @@
 2023-03-27 13:43:11,972 [INFO] 198.18.0.121 : Output saved to out/getCPU/2023-03-27/history/xe1_show processes cpu history_2023-03-27_13-43.txt
 2023-03-27 13:43:12,010 [INFO] 198.18.0.121 : Disconnected succcessfully
 2023-03-27 13:43:19,529 [ERROR] 198.18.0.133: Failed to connect
+2023-03-28 11:11:55,380 [INFO] ---Starting the Application---
+2023-03-28 11:11:55,387 [INFO] ---Initialize testbed file---
+2023-03-28 11:11:55,388 [INFO] ---testbed file ready---
+2023-03-28 11:12:09,426 [INFO] ---Opening Main Menu Application---
+2023-03-28 11:12:22,855 [INFO] ---Get Inventory Device---
+2023-03-28 11:12:23,187 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-03-28 11:12:23,217 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-03-28 11:12:23,219 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-03-28 11:12:23,221 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-03-28 11:12:23,244 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-03-28 11:12:23,819 [INFO] Authentication (password) successful!
+2023-03-28 11:12:23,861 [INFO] Authentication (password) successful!
+2023-03-28 11:12:23,885 [INFO] Authentication (password) successful!
+2023-03-28 11:12:23,923 [INFO] Authentication (password) successful!
+2023-03-28 11:12:23,932 [INFO] Authentication (password) successful!
+2023-03-28 11:12:24,307 [INFO] 198.18.0.121 : Connected 
+2023-03-28 11:12:24,373 [INFO] 198.18.0.131 : Connected 
+2023-03-28 11:12:24,392 [INFO] 198.18.0.122 : Connected 
+2023-03-28 11:12:24,417 [INFO] 198.18.0.123 : Connected 
+2023-03-28 11:12:24,436 [INFO] 198.18.0.131 : Entered enable mode 
+2023-03-28 11:12:24,552 [INFO] 198.18.0.121 : Entered enable mode 
+2023-03-28 11:12:24,601 [INFO] 198.18.0.132 : Connected 
+2023-03-28 11:12:24,649 [INFO] 198.18.0.132 : Entered enable mode 
+2023-03-28 11:12:24,651 [INFO] 198.18.0.122 : Entered enable mode 
+2023-03-28 11:12:24,662 [INFO] 198.18.0.123 : Entered enable mode 
+2023-03-28 11:12:24,799 [INFO] 198.18.0.121 : Command 'show inventory' sent
+2023-03-28 11:12:24,848 [INFO] 198.18.0.121 : Command 'show inventory' parsed
+2023-03-28 11:12:24,848 [INFO] 198.18.0.121 : Output saved to out/getInven/2023-03-28/raw_data/xe1_show inventory_2023-03-28_11-11.csv
+2023-03-28 11:12:24,849 [INFO] 198.18.0.121 : Output appended to out/getInven/2023-03-28/xe1_show inventory_summary_2023-03-28_11-11.csv
+2023-03-28 11:12:24,849 [INFO] 198.18.0.121 : Output appended to out/getInven/2023-03-28/xe1_show inventory_summary_2023-03-28_11-11.csv
+2023-03-28 11:12:24,849 [INFO] 198.18.0.121 : Output appended to out/getInven/2023-03-28/xe1_show inventory_summary_2023-03-28_11-11.csv
+2023-03-28 11:12:24,868 [INFO] 198.18.0.131 : Command 'show inventory' sent
+2023-03-28 11:12:24,869 [INFO] 198.18.0.131 : Command 'show inventory' parsed
+2023-03-28 11:12:24,869 [INFO] 198.18.0.131 : Output saved to out/getInven/2023-03-28/raw_data/xr1_show inventory_2023-03-28_11-11.csv
+2023-03-28 11:12:24,870 [INFO] 198.18.0.131 : Output appended to out/getInven/2023-03-28/xr1_show inventory_summary_2023-03-28_11-11.csv
+2023-03-28 11:12:24,870 [INFO] 198.18.0.131 : Output appended to out/getInven/2023-03-28/xr1_show inventory_summary_2023-03-28_11-11.csv
+2023-03-28 11:12:24,870 [INFO] 198.18.0.131 : Output appended to out/getInven/2023-03-28/xr1_show inventory_summary_2023-03-28_11-11.csv
+2023-03-28 11:12:24,870 [INFO] 198.18.0.131 : Output appended to out/getInven/2023-03-28/xr1_show inventory_summary_2023-03-28_11-11.csv
+2023-03-28 11:12:24,870 [INFO] 198.18.0.131 : Output appended to out/getInven/2023-03-28/xr1_show inventory_summary_2023-03-28_11-11.csv
+2023-03-28 11:12:24,870 [INFO] 198.18.0.131 : Output appended to out/getInven/2023-03-28/xr1_show inventory_summary_2023-03-28_11-11.csv
+2023-03-28 11:12:24,870 [INFO] 198.18.0.131 : Output appended to out/getInven/2023-03-28/xr1_show inventory_summary_2023-03-28_11-11.csv
+2023-03-28 11:12:24,870 [INFO] 198.18.0.131 : Output appended to out/getInven/2023-03-28/xr1_show inventory_summary_2023-03-28_11-11.csv
+2023-03-28 11:12:24,870 [INFO] 198.18.0.131 : Output appended to out/getInven/2023-03-28/xr1_show inventory_summary_2023-03-28_11-11.csv
+2023-03-28 11:12:24,870 [INFO] 198.18.0.131 : Output appended to out/getInven/2023-03-28/xr1_show inventory_summary_2023-03-28_11-11.csv
+2023-03-28 11:12:24,885 [INFO] 198.18.0.122 : Command 'show inventory' sent
+2023-03-28 11:12:24,886 [INFO] 198.18.0.122 : Command 'show inventory' parsed
+2023-03-28 11:12:24,886 [INFO] 198.18.0.122 : Output saved to out/getInven/2023-03-28/raw_data/xe2_show inventory_2023-03-28_11-11.csv
+2023-03-28 11:12:24,886 [INFO] 198.18.0.122 : Output appended to out/getInven/2023-03-28/xe2_show inventory_summary_2023-03-28_11-11.csv
+2023-03-28 11:12:24,886 [INFO] 198.18.0.122 : Output appended to out/getInven/2023-03-28/xe2_show inventory_summary_2023-03-28_11-11.csv
+2023-03-28 11:12:24,886 [INFO] 198.18.0.122 : Output appended to out/getInven/2023-03-28/xe2_show inventory_summary_2023-03-28_11-11.csv
+2023-03-28 11:12:24,895 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-03-28 11:12:24,898 [INFO] 198.18.0.123 : Command 'show inventory' sent
+2023-03-28 11:12:24,898 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-03-28 11:12:24,899 [INFO] 198.18.0.123 : Command 'show inventory' parsed
+2023-03-28 11:12:24,899 [INFO] 198.18.0.123 : Output saved to out/getInven/2023-03-28/raw_data/xe3_show inventory_2023-03-28_11-11.csv
+2023-03-28 11:12:24,899 [INFO] 198.18.0.123 : Output appended to out/getInven/2023-03-28/xe3_show inventory_summary_2023-03-28_11-11.csv
+2023-03-28 11:12:24,899 [INFO] 198.18.0.123 : Output appended to out/getInven/2023-03-28/xe3_show inventory_summary_2023-03-28_11-11.csv
+2023-03-28 11:12:24,899 [INFO] 198.18.0.123 : Output appended to out/getInven/2023-03-28/xe3_show inventory_summary_2023-03-28_11-11.csv
+2023-03-28 11:12:24,923 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-03-28 11:12:24,937 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-03-28 11:12:25,234 [INFO] 198.18.0.132 : Command 'show inventory' sent
+2023-03-28 11:12:25,239 [INFO] 198.18.0.132 : Command 'show inventory' parsed
+2023-03-28 11:12:25,240 [INFO] 198.18.0.132 : Output saved to out/getInven/2023-03-28/raw_data/xr2_show inventory_2023-03-28_11-11.csv
+2023-03-28 11:12:25,241 [INFO] 198.18.0.132 : Output appended to out/getInven/2023-03-28/xr2_show inventory_summary_2023-03-28_11-11.csv
+2023-03-28 11:12:25,242 [INFO] 198.18.0.132 : Output appended to out/getInven/2023-03-28/xr2_show inventory_summary_2023-03-28_11-11.csv
+2023-03-28 11:12:25,242 [INFO] 198.18.0.132 : Output appended to out/getInven/2023-03-28/xr2_show inventory_summary_2023-03-28_11-11.csv
+2023-03-28 11:12:25,243 [INFO] 198.18.0.132 : Output appended to out/getInven/2023-03-28/xr2_show inventory_summary_2023-03-28_11-11.csv
+2023-03-28 11:12:25,243 [INFO] 198.18.0.132 : Output appended to out/getInven/2023-03-28/xr2_show inventory_summary_2023-03-28_11-11.csv
+2023-03-28 11:12:25,243 [INFO] 198.18.0.132 : Output appended to out/getInven/2023-03-28/xr2_show inventory_summary_2023-03-28_11-11.csv
+2023-03-28 11:12:25,243 [INFO] 198.18.0.132 : Output appended to out/getInven/2023-03-28/xr2_show inventory_summary_2023-03-28_11-11.csv
+2023-03-28 11:12:25,244 [INFO] 198.18.0.132 : Output appended to out/getInven/2023-03-28/xr2_show inventory_summary_2023-03-28_11-11.csv
+2023-03-28 11:12:25,244 [INFO] 198.18.0.132 : Output appended to out/getInven/2023-03-28/xr2_show inventory_summary_2023-03-28_11-11.csv
+2023-03-28 11:12:25,244 [INFO] 198.18.0.132 : Output appended to out/getInven/2023-03-28/xr2_show inventory_summary_2023-03-28_11-11.csv
+2023-03-28 11:12:25,282 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-03-28 11:12:32,870 [ERROR] 198.18.0.133: Failed to connect

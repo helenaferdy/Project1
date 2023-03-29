@@ -1,0 +1,4 @@
+name,descr,pid,vid,sn
+Chassis,Cisco CSR1000V Chassis,CSR1000V,V00  ,93HP7YX6HKX
+module R0,Cisco CSR1000V Route Processor,CSR1000V,V00  ,JAB1303001C
+module F0,Cisco CSR1000V Embedded Services Processor,CSR1000V,,
