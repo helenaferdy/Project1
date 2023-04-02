@@ -109,6 +109,79 @@ def get_iosxr_memory_info(device, counter):
     except Exception as e:
         logger.error(f"Error connecting to device {device.name}: {e}")
 
+def get_ios_memory_info(device, counter):
+    try:
+        # Connect to the device
+        device.connect(mit=True, log_stdout=False)
+
+        # Print the output
+        logger.info(f"Device: {device.name}")
+
+        output = device.parse("show processes memory")
+
+        used = round(output["used_memory"]/1024/1000, 2)
+        total = round(output["total_memory"]/1024/1000, 2)
+        percentage = round(used / total * 100, 2)
+
+        # Categorize percentage based on certain ranges
+        if percentage <= 40:
+            category = "low"
+        elif percentage <= 70:
+            category = "medium"
+        elif percentage <= 85:
+            category = "high"
+        else:
+            category = "critical"
+
+        # Write the output to the CSV file
+        with open(
+            f"out/MemmoryUtils/summary_show_memory_{timestamp}.csv", "a", newline=""
+        ) as csvfile:
+            writer = csv.writer(csvfile)
+            writer.writerow([f"{counter}", f"{device.name}", used, total, percentage, category])
+
+        return counter
+
+    except Exception as e:
+        logger.error(f"Error connecting to device {device.name}: {e}")
+
+def get_nxos_memory_info(device, counter):
+    try:
+        # Connect to the device
+        device.connect(mit=True, log_stdout=False)
+
+        # Print the output
+        logger.info(f"Device: {device.name}")
+
+        output = device.parse("show system resources")
+
+        used = round(output["memory"]["used"]/1024, 2)
+        total = round(output["memory"]["total"]/1024, 2)
+        percentage = round(used / total * 100, 2)
+
+        # Categorize percentage based on certain ranges
+        if percentage <= 40:
+            category = "low"
+        elif percentage <= 70:
+            category = "medium"
+        elif percentage <= 85:
+            category = "high"
+        else:
+            category = "critical"
+
+        # Write the output to the CSV file
+        with open(
+            f"out/MemmoryUtils/summary_show_memory_{timestamp}.csv", "a", newline=""
+        ) as csvfile:
+            writer = csv.writer(csvfile)
+            writer.writerow([f"{counter}", f"{device.name}", used, total, percentage, category])
+
+        return counter
+
+    except Exception as e:
+        logger.error(f"Error connecting to device {device.name}: {e}")
+
+
 def getMemmoryUtils(testbedFile):
     testbed = load(testbedFile)
     # Open the output file in append mode
@@ -128,6 +201,18 @@ def getMemmoryUtils(testbedFile):
                 sleep(0.1)
             elif device.type == 'iosxr':
                 futures.append(executor.submit(get_iosxr_memory_info, device, counter))
+                counter += 1
+                sleep(0.1)
+            elif device.type == 'ios':
+                futures.append(executor.submit(get_ios_memory_info, device, counter))
+                counter += 1
+                sleep(0.1)
+            elif device.type == 'ios':
+                futures.append(executor.submit(get_nxos_memory_info, device, counter))
+                counter += 1
+                sleep(0.1)
+            else:
+                futures.append(executor.submit(get_ios_memory_info, device, counter))
                 counter += 1
                 sleep(0.1)
         # Wait for all futures to complete
