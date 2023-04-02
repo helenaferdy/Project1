@@ -117,10 +117,10 @@ def get_ios_memory_info(device, counter):
         # Print the output
         logger.info(f"Device: {device.name}")
 
-        output = device.parse("show processes memory")
+        output = device.parse("show memory statistics")
 
-        used = round(output["used_memory"]/1024/1000, 2)
-        total = round(output["total_memory"]/1024/1000, 2)
+        used = round(output["name"]["processor"]["used"]/1024/1000, 2)
+        total = round(output["name"]["processor"]["total"]/1024/1000, 2)
         percentage = round(used / total * 100, 2)
 
         # Categorize percentage based on certain ranges
