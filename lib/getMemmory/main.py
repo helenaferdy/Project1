@@ -207,7 +207,7 @@ def getMemmoryUtils(testbedFile):
                 futures.append(executor.submit(get_ios_memory_info, device, counter))
                 counter += 1
                 sleep(0.1)
-            elif device.type == 'ios':
+            elif device.type == 'nxos':
                 futures.append(executor.submit(get_nxos_memory_info, device, counter))
                 counter += 1
                 sleep(0.1)
@@ -223,5 +223,3 @@ def getMemmoryUtils(testbedFile):
             logger.error(f"{exc} occurred while processing device {device.name}")
 
     logger.info("Get Memmory Utilization - execution completed successfully.")
-
-# Define functions to retrieve memory information for iosxe and iosxr devices
