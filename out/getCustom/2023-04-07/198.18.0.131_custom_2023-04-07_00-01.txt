@@ -1,0 +1,71 @@
+
+---------------------------------------------------------------------------
+show ip ospf neighbor
+---------------------------------------------------------------------------
+
+Thu Apr  6 16:54:48.457 UTC
+
+* Indicates MADJ interface
+# Indicates Neighbor awaiting BFD session up
+
+Neighbors for OSPF 1
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+1.1.2.1         1     FULL/BDR        00:00:35    120.0.0.1       GigabitEthernet0/0/0/3
+    Neighbor is up for 4w0d
+
+Total neighbor count: 1
+---------------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------------
+show ip bgp summary
+---------------------------------------------------------------------------
+
+Thu Apr  6 16:54:48.457 UTC
+
+* Indicates MADJ interface
+# Indicates Neighbor awaiting BFD session up
+
+Neighbors for OSPF 1
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+1.1.2.1         1     FULL/BDR        00:00:35    120.0.0.1       GigabitEthernet0/0/0/3
+    Neighbor is up for 4w0d
+
+Total neighbor count: 1
+---------------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------------
+show ip route
+---------------------------------------------------------------------------
+
+Thu Apr  6 16:55:10.480 UTC
+
+Codes: C - connected, S - static, R - RIP, B - BGP, (>) - Diversion path
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2, E - EGP
+       i - ISIS, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, su - IS-IS summary null, * - candidate default
+       U - per-user static route, o - ODR, L - local, G  - DAGR, l - LISP
+       A - access/subscriber, a - Application route
+       M - mobile route, r - RPL, t - Traffic Engineering, (!) - FRR Backup path
+
+Gateway of last resort is 198.18.0.1 to network 0.0.0.0
+
+S*   0.0.0.0/0 [1/0] via 198.18.0.1, 4w0d
+C    120.0.0.0/24 is directly connected, 4w0d, GigabitEthernet0/0/0/3
+L    120.0.0.2/32 is directly connected, 4w0d, GigabitEthernet0/0/0/3
+O IA 121.0.0.0/24 [110/2] via 120.0.0.1, 4w0d, GigabitEthernet0/0/0/3
+C    196.10.0.0/24 is directly connected, 4w0d, GigabitEthernet0/0/0/4
+L    196.10.0.1/32 is directly connected, 4w0d, GigabitEthernet0/0/0/4
+O IA 196.11.0.0/24 [110/3] via 120.0.0.1, 4w0d, GigabitEthernet0/0/0/3
+C    198.18.0.0/24 is directly connected, 4w0d, GigabitEthernet0/0/0/0
+L    198.18.0.131/32 is directly connected, 4w0d, GigabitEthernet0/0/0/0
+---------------------------------------------------------------------------
+
+

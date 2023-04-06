@@ -1,0 +1,1661 @@
+2023-04-06 23:16:07,764 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:16:07,764 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:16:07,765 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:16:07,766 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:16:07,766 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:16:07,766 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:16:07,808 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:16:07,808 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:16:07,812 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:16:07,979 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:16:08,025 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:16:08,280 [INFO] Authentication (password) successful!
+2023-04-06 23:16:08,341 [INFO] Authentication (password) successful!
+2023-04-06 23:16:08,521 [INFO] Authentication (password) successful!
+2023-04-06 23:16:08,649 [INFO] Authentication (password) successful!
+2023-04-06 23:16:08,661 [INFO] Authentication (password) successful!
+2023-04-06 23:16:08,707 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:16:08,841 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:16:08,864 [INFO] 198.18.0.122 : Connected 
+2023-04-06 23:16:08,945 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 23:16:09,013 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 23:16:09,076 [INFO] 198.18.0.123 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:16:09,076 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 23:16:09,090 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:16:09,103 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:16:09,124 [INFO] 198.18.0.123 : Command 'show ip ospf neighbor
+' parsed
+2023-04-06 23:16:09,125 [INFO] 198.18.0.123 : Output saved to out/getCustom/2023-04-06/raw_data/xe3_show ip ospf neighbor
+_2023-04-06_23-16.csv
+2023-04-06 23:16:09,136 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:16:09,136 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:16:09,160 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 23:16:09,165 [INFO] 198.18.0.121 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:16:09,165 [ERROR] 198.18.0.121 : Failed to parse command 'show ip ospf neighbor
+'
+2023-04-06 23:16:09,309 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 23:16:09,377 [INFO] 198.18.0.122 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:16:09,378 [INFO] 198.18.0.122 : Command 'show ip ospf neighbor
+' parsed
+2023-04-06 23:16:09,379 [INFO] 198.18.0.122 : Output saved to out/getCustom/2023-04-06/raw_data/xe2_show ip ospf neighbor
+_2023-04-06_23-16.csv
+2023-04-06 23:16:09,415 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 23:16:09,911 [INFO] 198.18.0.132 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:16:09,911 [INFO] 198.18.0.131 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:16:09,914 [ERROR] 198.18.0.132 : Failed to parse command 'show ip ospf neighbor
+'
+2023-04-06 23:16:09,916 [ERROR] 198.18.0.131 : Failed to parse command 'show ip ospf neighbor
+'
+2023-04-06 23:16:09,942 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 23:16:09,941 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 23:16:17,768 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-06 23:16:17,771 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:16:17,772 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:16:17,773 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:16:17,772 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:16:17,772 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:16:17,772 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:16:17,821 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:16:17,822 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:16:17,829 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:16:17,996 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:16:18,028 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:16:18,285 [INFO] Authentication (password) successful!
+2023-04-06 23:16:18,376 [INFO] Authentication (password) successful!
+2023-04-06 23:16:18,409 [INFO] Authentication (password) successful!
+2023-04-06 23:16:18,657 [INFO] Authentication (password) successful!
+2023-04-06 23:16:18,680 [INFO] 198.18.0.122 : Connected 
+2023-04-06 23:16:18,707 [INFO] Authentication (password) successful!
+2023-04-06 23:16:18,778 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:16:18,841 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:16:18,918 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 23:16:19,039 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 23:16:19,131 [INFO] 198.18.0.122 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:16:19,138 [ERROR] 198.18.0.122 : Parsed return empty for command 'show ip bgp summary
+'
+2023-04-06 23:16:19,142 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:16:19,163 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 23:16:19,163 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 23:16:19,167 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:16:19,235 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:16:19,259 [INFO] 198.18.0.121 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:16:19,260 [ERROR] 198.18.0.121 : Failed to parse command 'show ip bgp summary
+'
+2023-04-06 23:16:19,283 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:16:19,284 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 23:16:19,300 [INFO] 198.18.0.123 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:16:19,301 [ERROR] 198.18.0.123 : Parsed return empty for command 'show ip bgp summary
+'
+2023-04-06 23:16:19,363 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 23:16:19,670 [INFO] 198.18.0.132 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:16:19,678 [ERROR] 198.18.0.132 : Parsed return empty for command 'show ip bgp summary
+'
+2023-04-06 23:16:19,704 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 23:16:19,745 [INFO] 198.18.0.131 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:16:19,747 [ERROR] 198.18.0.131 : Parsed return empty for command 'show ip bgp summary
+'
+2023-04-06 23:16:19,773 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 23:16:27,776 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-06 23:16:27,779 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:16:27,780 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:16:27,779 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:16:27,781 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:16:27,781 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:16:27,783 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:16:27,835 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:16:27,835 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:16:27,836 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:16:28,002 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:16:28,016 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:16:28,322 [INFO] Authentication (password) successful!
+2023-04-06 23:16:28,367 [INFO] Authentication (password) successful!
+2023-04-06 23:16:28,603 [INFO] Authentication (password) successful!
+2023-04-06 23:16:28,628 [INFO] Authentication (password) successful!
+2023-04-06 23:16:28,635 [INFO] Authentication (password) successful!
+2023-04-06 23:16:28,730 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:16:28,890 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:16:28,925 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 23:16:29,074 [INFO] 198.18.0.122 : Connected 
+2023-04-06 23:16:29,132 [INFO] 198.18.0.123 : Command 'show ip route' sent
+2023-04-06 23:16:29,142 [INFO] 198.18.0.123 : Command 'show ip route' parsed
+2023-04-06 23:16:29,143 [INFO] 198.18.0.123 : Output saved to out/getCustom/2023-04-06/raw_data/xe3_show ip route_2023-04-06_23-16.csv
+2023-04-06 23:16:29,168 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:16:29,180 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 23:16:29,205 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:16:29,217 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 23:16:29,336 [INFO] 198.18.0.121 : Command 'show ip route' sent
+2023-04-06 23:16:29,337 [ERROR] 198.18.0.121 : Failed to parse command 'show ip route'
+2023-04-06 23:16:29,373 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 23:16:29,376 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 23:16:29,498 [INFO] 198.18.0.122 : Command 'show ip route' sent
+2023-04-06 23:16:29,501 [INFO] 198.18.0.122 : Command 'show ip route' parsed
+2023-04-06 23:16:29,501 [INFO] 198.18.0.122 : Output saved to out/getCustom/2023-04-06/raw_data/xe2_show ip route_2023-04-06_23-16.csv
+2023-04-06 23:16:29,526 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 23:16:29,676 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:16:29,702 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:16:29,759 [INFO] 198.18.0.132 : Command 'show ip route' sent
+2023-04-06 23:16:29,767 [INFO] 198.18.0.132 : Command 'show ip route' parsed
+2023-04-06 23:16:29,768 [INFO] 198.18.0.132 : Output saved to out/getCustom/2023-04-06/raw_data/xr2_show ip route_2023-04-06_23-16.csv
+2023-04-06 23:16:29,804 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 23:16:30,046 [INFO] 198.18.0.131 : Command 'show ip route' sent
+2023-04-06 23:16:30,052 [INFO] 198.18.0.131 : Command 'show ip route' parsed
+2023-04-06 23:16:30,054 [INFO] 198.18.0.131 : Output saved to out/getCustom/2023-04-06/raw_data/xr1_show ip route_2023-04-06_23-16.csv
+2023-04-06 23:16:30,092 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 23:16:37,785 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-06 23:18:51,031 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:18:51,031 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:18:51,031 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:18:51,031 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:18:51,032 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:18:51,032 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:18:51,089 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:18:51,091 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:18:51,092 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:18:51,263 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:18:51,384 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:18:51,559 [INFO] Authentication (password) successful!
+2023-04-06 23:18:51,604 [INFO] Authentication (password) successful!
+2023-04-06 23:18:51,860 [INFO] Authentication (password) successful!
+2023-04-06 23:18:51,926 [INFO] Authentication (password) successful!
+2023-04-06 23:18:51,951 [INFO] 198.18.0.122 : Connected 
+2023-04-06 23:18:52,031 [INFO] Authentication (password) successful!
+2023-04-06 23:18:52,049 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:18:52,173 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 23:18:52,270 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:18:52,317 [INFO] 198.18.0.122 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:18:52,367 [INFO] 198.18.0.122 : Command 'show ip ospf neighbor
+' parsed
+2023-04-06 23:18:52,367 [INFO] 198.18.0.122 : Output saved to out/getCustom/2023-04-06/raw_data/xe2_show ip ospf neighbor
+_2023-04-06_23-18.csv
+2023-04-06 23:18:52,453 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 23:18:52,454 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 23:18:52,535 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:18:52,561 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:18:52,584 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:18:52,596 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 23:18:52,603 [INFO] 198.18.0.121 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:18:52,605 [INFO] 198.18.0.121 : Command 'show ip ospf neighbor
+' parsed
+2023-04-06 23:18:52,606 [INFO] 198.18.0.121 : Output saved to out/getCustom/2023-04-06/raw_data/xe1_show ip ospf neighbor
+_2023-04-06_23-18.csv
+2023-04-06 23:18:52,641 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 23:18:52,728 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:18:52,743 [INFO] 198.18.0.123 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:18:52,745 [INFO] 198.18.0.123 : Command 'show ip ospf neighbor
+' parsed
+2023-04-06 23:18:52,745 [INFO] 198.18.0.123 : Output saved to out/getCustom/2023-04-06/raw_data/xe3_show ip ospf neighbor
+_2023-04-06_23-18.csv
+2023-04-06 23:18:52,782 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 23:18:52,815 [INFO] 198.18.0.131 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:18:52,816 [INFO] 198.18.0.131 : Command 'show ip ospf neighbor
+' parsed
+2023-04-06 23:18:52,817 [INFO] 198.18.0.131 : Output saved to out/getCustom/2023-04-06/raw_data/xr1_show ip ospf neighbor
+_2023-04-06_23-18.csv
+2023-04-06 23:18:52,853 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 23:18:53,056 [INFO] 198.18.0.132 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:18:53,060 [INFO] 198.18.0.132 : Command 'show ip ospf neighbor
+' parsed
+2023-04-06 23:18:53,061 [INFO] 198.18.0.132 : Output saved to out/getCustom/2023-04-06/raw_data/xr2_show ip ospf neighbor
+_2023-04-06_23-18.csv
+2023-04-06 23:18:53,099 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 23:19:01,034 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-06 23:19:01,038 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:19:01,039 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:19:01,040 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:19:01,041 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:19:01,041 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:19:01,041 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:19:01,096 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:19:01,110 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:19:01,110 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:19:01,275 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:19:01,275 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:19:01,600 [INFO] Authentication (password) successful!
+2023-04-06 23:19:01,947 [INFO] Authentication (password) successful!
+2023-04-06 23:19:01,957 [INFO] Authentication (password) successful!
+2023-04-06 23:19:02,092 [INFO] Authentication (password) successful!
+2023-04-06 23:19:02,094 [INFO] Authentication (password) successful!
+2023-04-06 23:19:02,298 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:19:02,830 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 23:19:02,992 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:19:03,063 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:19:03,117 [INFO] 198.18.0.123 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:19:03,120 [ERROR] 198.18.0.123 : Parsed return empty for command 'show ip bgp summary
+'
+2023-04-06 23:19:03,200 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:19:03,202 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 23:19:03,262 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:19:03,517 [INFO] 198.18.0.131 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:19:03,523 [ERROR] 198.18.0.131 : Parsed return empty for command 'show ip bgp summary
+'
+2023-04-06 23:19:03,561 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 23:19:03,664 [INFO] 198.18.0.132 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:19:03,667 [ERROR] 198.18.0.132 : Parsed return empty for command 'show ip bgp summary
+'
+2023-04-06 23:19:03,743 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 23:19:04,374 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:19:04,374 [INFO] 198.18.0.122 : Connected 
+2023-04-06 23:19:04,714 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 23:19:04,775 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 23:19:04,910 [INFO] 198.18.0.122 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:19:04,913 [ERROR] 198.18.0.122 : Parsed return empty for command 'show ip bgp summary
+'
+2023-04-06 23:19:04,964 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 23:19:04,982 [INFO] 198.18.0.121 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:19:04,984 [INFO] 198.18.0.121 : Command 'show ip bgp summary
+' parsed
+2023-04-06 23:19:04,984 [INFO] 198.18.0.121 : Output saved to out/getCustom/2023-04-06/raw_data/xe1_show ip bgp summary
+_2023-04-06_23-18.csv
+2023-04-06 23:19:05,157 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 23:19:11,044 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-06 23:19:11,047 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:19:11,048 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:19:11,049 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:19:11,050 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:19:11,050 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:19:11,051 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:19:11,119 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:19:11,144 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:19:11,170 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:19:11,305 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:19:11,365 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:19:11,909 [INFO] Authentication (password) successful!
+2023-04-06 23:19:11,932 [INFO] Authentication (password) successful!
+2023-04-06 23:19:12,040 [INFO] Authentication (password) successful!
+2023-04-06 23:19:12,041 [INFO] Authentication (password) successful!
+2023-04-06 23:19:12,782 [INFO] Authentication (password) successful!
+2023-04-06 23:19:13,174 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:19:13,327 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:19:13,331 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:19:13,340 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:19:13,418 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:19:13,429 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:19:13,436 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 23:19:13,599 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 23:19:13,655 [INFO] 198.18.0.123 : Command 'show ip route' sent
+2023-04-06 23:19:13,664 [INFO] 198.18.0.123 : Command 'show ip route' parsed
+2023-04-06 23:19:13,666 [INFO] 198.18.0.123 : Output saved to out/getCustom/2023-04-06/raw_data/xe3_show ip route_2023-04-06_23-18.csv
+2023-04-06 23:19:13,703 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 23:19:13,743 [INFO] 198.18.0.121 : Command 'show ip route' sent
+2023-04-06 23:19:13,748 [INFO] 198.18.0.121 : Command 'show ip route' parsed
+2023-04-06 23:19:13,748 [INFO] 198.18.0.121 : Output saved to out/getCustom/2023-04-06/raw_data/xe1_show ip route_2023-04-06_23-18.csv
+2023-04-06 23:19:13,786 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 23:19:13,888 [INFO] 198.18.0.132 : Command 'show ip route' sent
+2023-04-06 23:19:13,900 [INFO] 198.18.0.132 : Command 'show ip route' parsed
+2023-04-06 23:19:13,901 [INFO] 198.18.0.132 : Output saved to out/getCustom/2023-04-06/raw_data/xr2_show ip route_2023-04-06_23-18.csv
+2023-04-06 23:19:14,072 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 23:19:14,117 [INFO] 198.18.0.131 : Command 'show ip route' sent
+2023-04-06 23:19:14,121 [INFO] 198.18.0.131 : Command 'show ip route' parsed
+2023-04-06 23:19:14,121 [INFO] 198.18.0.131 : Output saved to out/getCustom/2023-04-06/raw_data/xr1_show ip route_2023-04-06_23-18.csv
+2023-04-06 23:19:14,155 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 23:19:14,234 [INFO] 198.18.0.122 : Connected 
+2023-04-06 23:19:14,431 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 23:19:14,638 [INFO] 198.18.0.122 : Command 'show ip route' sent
+2023-04-06 23:19:14,645 [INFO] 198.18.0.122 : Command 'show ip route' parsed
+2023-04-06 23:19:14,646 [INFO] 198.18.0.122 : Output saved to out/getCustom/2023-04-06/raw_data/xe2_show ip route_2023-04-06_23-18.csv
+2023-04-06 23:19:14,670 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 23:19:21,053 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-06 23:22:24,413 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:22:24,413 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:22:24,414 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:22:24,414 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:22:24,415 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:22:24,415 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:22:24,477 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:22:24,480 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:22:24,480 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:22:24,638 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:22:24,667 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:22:24,982 [INFO] Authentication (password) successful!
+2023-04-06 23:22:25,242 [INFO] Authentication (password) successful!
+2023-04-06 23:22:25,252 [INFO] Authentication (password) successful!
+2023-04-06 23:22:25,254 [INFO] Authentication (password) successful!
+2023-04-06 23:22:25,347 [INFO] Authentication (password) successful!
+2023-04-06 23:22:25,415 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:22:25,699 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:22:25,762 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 23:22:25,762 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:22:25,800 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:22:25,813 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:22:25,941 [INFO] 198.18.0.123 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:22:26,004 [INFO] 198.18.0.123 : Command 'show ip ospf neighbor
+' parsed
+2023-04-06 23:22:26,004 [INFO] 198.18.0.123 : Output saved to out/getCustom/2023-04-06/raw_data/xe3_show ip ospf neighbor
+_2023-04-06_23-22.csv
+2023-04-06 23:22:26,040 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 23:22:26,041 [INFO] 198.18.0.131 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:22:26,042 [INFO] 198.18.0.131 : Command 'show ip ospf neighbor
+' parsed
+2023-04-06 23:22:26,043 [INFO] 198.18.0.131 : Output saved to out/getCustom/2023-04-06/raw_data/xr1_show ip ospf neighbor
+_2023-04-06_23-22.csv
+2023-04-06 23:22:26,067 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 23:22:26,183 [INFO] 198.18.0.132 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:22:26,185 [INFO] 198.18.0.132 : Command 'show ip ospf neighbor
+' parsed
+2023-04-06 23:22:26,185 [INFO] 198.18.0.132 : Output saved to out/getCustom/2023-04-06/raw_data/xr2_show ip ospf neighbor
+_2023-04-06_23-22.csv
+2023-04-06 23:22:26,602 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 23:22:27,129 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:22:27,177 [INFO] 198.18.0.122 : Connected 
+2023-04-06 23:22:27,407 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 23:22:27,406 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 23:22:27,552 [INFO] 198.18.0.122 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:22:27,555 [INFO] 198.18.0.122 : Command 'show ip ospf neighbor
+' parsed
+2023-04-06 23:22:27,556 [INFO] 198.18.0.122 : Output saved to out/getCustom/2023-04-06/raw_data/xe2_show ip ospf neighbor
+_2023-04-06_23-22.csv
+2023-04-06 23:22:27,558 [INFO] 198.18.0.121 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:22:27,561 [INFO] 198.18.0.121 : Command 'show ip ospf neighbor
+' parsed
+2023-04-06 23:22:27,562 [INFO] 198.18.0.121 : Output saved to out/getCustom/2023-04-06/raw_data/xe1_show ip ospf neighbor
+_2023-04-06_23-22.csv
+2023-04-06 23:22:27,581 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 23:22:27,598 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 23:22:34,417 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-06 23:22:34,421 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:22:34,422 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:22:34,422 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:22:34,424 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:22:34,424 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:22:34,425 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:22:34,478 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:22:34,478 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:22:34,480 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:22:34,648 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:22:34,656 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:22:34,931 [INFO] Authentication (password) successful!
+2023-04-06 23:22:34,940 [INFO] Authentication (password) successful!
+2023-04-06 23:22:35,151 [INFO] Authentication (password) successful!
+2023-04-06 23:22:35,298 [INFO] Authentication (password) successful!
+2023-04-06 23:22:35,300 [INFO] Authentication (password) successful!
+2023-04-06 23:22:35,366 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:22:35,376 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:22:35,594 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 23:22:35,594 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 23:22:35,605 [INFO] 198.18.0.122 : Connected 
+2023-04-06 23:22:35,723 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:22:35,736 [INFO] 198.18.0.123 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:22:35,739 [ERROR] 198.18.0.123 : Parsed return empty for command 'show ip bgp summary
+'
+2023-04-06 23:22:35,762 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 23:22:35,784 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:22:35,785 [INFO] 198.18.0.121 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:22:35,786 [INFO] 198.18.0.121 : Command 'show ip bgp summary
+' parsed
+2023-04-06 23:22:35,787 [INFO] 198.18.0.121 : Output saved to out/getCustom/2023-04-06/raw_data/xe1_show ip bgp summary
+_2023-04-06_23-22.csv
+2023-04-06 23:22:35,822 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 23:22:35,846 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 23:22:35,995 [INFO] 198.18.0.122 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:22:35,997 [ERROR] 198.18.0.122 : Parsed return empty for command 'show ip bgp summary
+'
+2023-04-06 23:22:36,034 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 23:22:36,076 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:22:36,101 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:22:36,121 [INFO] 198.18.0.132 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:22:36,124 [ERROR] 198.18.0.132 : Parsed return empty for command 'show ip bgp summary
+'
+2023-04-06 23:22:36,170 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 23:22:36,420 [INFO] 198.18.0.131 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:22:36,424 [ERROR] 198.18.0.131 : Parsed return empty for command 'show ip bgp summary
+'
+2023-04-06 23:22:36,463 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 23:22:44,429 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-06 23:22:44,434 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:22:44,433 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:22:44,434 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:22:44,435 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:22:44,436 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:22:44,436 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:22:44,488 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:22:44,490 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:22:44,496 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:22:44,664 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:22:44,664 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:22:44,960 [INFO] Authentication (password) successful!
+2023-04-06 23:22:44,962 [INFO] Authentication (password) successful!
+2023-04-06 23:22:45,199 [INFO] Authentication (password) successful!
+2023-04-06 23:22:45,277 [INFO] Authentication (password) successful!
+2023-04-06 23:22:45,279 [INFO] Authentication (password) successful!
+2023-04-06 23:22:45,321 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:22:45,356 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:22:45,527 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 23:22:45,577 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 23:22:45,590 [INFO] 198.18.0.122 : Connected 
+2023-04-06 23:22:45,689 [INFO] 198.18.0.123 : Command 'show ip route' sent
+2023-04-06 23:22:45,695 [INFO] 198.18.0.123 : Command 'show ip route' parsed
+2023-04-06 23:22:45,696 [INFO] 198.18.0.123 : Output saved to out/getCustom/2023-04-06/raw_data/xe3_show ip route_2023-04-06_23-22.csv
+2023-04-06 23:22:45,708 [INFO] 198.18.0.121 : Command 'show ip route' sent
+2023-04-06 23:22:45,710 [INFO] 198.18.0.121 : Command 'show ip route' parsed
+2023-04-06 23:22:45,711 [INFO] 198.18.0.121 : Output saved to out/getCustom/2023-04-06/raw_data/xe1_show ip route_2023-04-06_23-22.csv
+2023-04-06 23:22:45,723 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 23:22:45,746 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 23:22:45,798 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 23:22:45,973 [INFO] 198.18.0.122 : Command 'show ip route' sent
+2023-04-06 23:22:45,975 [INFO] 198.18.0.122 : Command 'show ip route' parsed
+2023-04-06 23:22:45,976 [INFO] 198.18.0.122 : Output saved to out/getCustom/2023-04-06/raw_data/xe2_show ip route_2023-04-06_23-22.csv
+2023-04-06 23:22:45,989 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:22:46,010 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:22:46,010 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 23:22:46,012 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:22:46,048 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:22:46,383 [INFO] 198.18.0.131 : Command 'show ip route' sent
+2023-04-06 23:22:46,389 [INFO] 198.18.0.131 : Command 'show ip route' parsed
+2023-04-06 23:22:46,389 [INFO] 198.18.0.131 : Output saved to out/getCustom/2023-04-06/raw_data/xr1_show ip route_2023-04-06_23-22.csv
+2023-04-06 23:22:46,415 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 23:22:46,445 [INFO] 198.18.0.132 : Command 'show ip route' sent
+2023-04-06 23:22:46,447 [INFO] 198.18.0.132 : Command 'show ip route' parsed
+2023-04-06 23:22:46,447 [INFO] 198.18.0.132 : Output saved to out/getCustom/2023-04-06/raw_data/xr2_show ip route_2023-04-06_23-22.csv
+2023-04-06 23:22:46,473 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 23:22:54,439 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-06 23:35:36,352 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:35:36,352 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:35:36,353 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:35:36,353 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:35:36,354 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:35:36,354 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:35:36,441 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:35:36,452 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:35:36,459 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:35:36,668 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:35:36,676 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:35:37,288 [INFO] Authentication (password) successful!
+2023-04-06 23:35:37,292 [INFO] Authentication (password) successful!
+2023-04-06 23:35:37,337 [INFO] Authentication (password) successful!
+2023-04-06 23:35:37,443 [INFO] Authentication (password) successful!
+2023-04-06 23:35:37,476 [INFO] Authentication (password) successful!
+2023-04-06 23:35:37,748 [INFO] 198.18.0.122 : Connected 
+2023-04-06 23:35:37,760 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:35:37,949 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:35:37,961 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:35:37,971 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 23:35:37,981 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 23:35:38,116 [INFO] 198.18.0.121 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:35:38,119 [INFO] 198.18.0.122 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:35:38,126 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:35:38,144 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 23:35:38,154 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 23:35:38,160 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:35:38,501 [INFO] 198.18.0.132 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:35:38,527 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 23:35:38,572 [INFO] 198.18.0.131 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:35:38,598 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 23:35:38,719 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:35:38,917 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 23:35:39,060 [INFO] 198.18.0.123 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:35:39,099 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 23:35:46,358 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-06 23:35:46,362 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:35:46,363 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:35:46,363 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:35:46,363 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:35:46,364 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:35:46,363 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:35:46,429 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:35:46,434 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:35:46,439 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:35:46,607 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:35:46,629 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:35:47,254 [INFO] Authentication (password) successful!
+2023-04-06 23:35:47,284 [INFO] Authentication (password) successful!
+2023-04-06 23:35:47,290 [INFO] Authentication (password) successful!
+2023-04-06 23:35:47,321 [INFO] Authentication (password) successful!
+2023-04-06 23:35:47,576 [INFO] Authentication (password) successful!
+2023-04-06 23:35:47,692 [INFO] 198.18.0.122 : Connected 
+2023-04-06 23:35:47,818 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:35:47,867 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:35:47,924 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 23:35:47,948 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:35:47,985 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:35:48,023 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 23:35:48,064 [INFO] 198.18.0.122 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:35:48,102 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 23:35:48,113 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 23:35:48,248 [INFO] 198.18.0.123 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:35:48,254 [INFO] 198.18.0.132 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:35:48,273 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 23:35:48,276 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 23:35:48,288 [INFO] 198.18.0.121 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:35:48,313 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 23:35:48,336 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:35:48,374 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:35:48,651 [INFO] 198.18.0.131 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:35:48,677 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 23:35:56,369 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-06 23:35:56,372 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:35:56,372 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:35:56,374 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:35:56,373 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:35:56,377 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:35:56,373 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:35:56,465 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:35:56,471 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:35:56,472 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:35:56,625 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:35:56,707 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:35:57,036 [INFO] Authentication (password) successful!
+2023-04-06 23:35:57,119 [INFO] Authentication (password) successful!
+2023-04-06 23:35:57,132 [INFO] Authentication (password) successful!
+2023-04-06 23:35:57,249 [INFO] Authentication (password) successful!
+2023-04-06 23:35:57,292 [INFO] Authentication (password) successful!
+2023-04-06 23:35:57,405 [INFO] 198.18.0.122 : Connected 
+2023-04-06 23:35:57,500 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:35:57,513 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:35:57,631 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 23:35:57,794 [INFO] 198.18.0.122 : Command 'show ip route' sent
+2023-04-06 23:35:57,801 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 23:35:57,818 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 23:35:57,820 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 23:35:57,929 [INFO] 198.18.0.121 : Command 'show ip route' sent
+2023-04-06 23:35:57,949 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:35:57,965 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 23:35:57,980 [INFO] 198.18.0.123 : Command 'show ip route' sent
+2023-04-06 23:35:57,985 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:35:58,017 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 23:35:58,094 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:35:58,120 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:35:58,336 [INFO] 198.18.0.131 : Command 'show ip route' sent
+2023-04-06 23:35:58,361 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 23:35:58,502 [INFO] 198.18.0.132 : Command 'show ip route' sent
+2023-04-06 23:35:58,588 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 23:36:06,377 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-06 23:42:30,913 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:42:30,914 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:42:30,914 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:42:30,914 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:42:30,915 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:42:30,914 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:42:31,644 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:42:31,649 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:42:31,947 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:42:31,947 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:42:31,953 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:42:33,381 [INFO] Authentication (password) successful!
+2023-04-06 23:42:33,381 [INFO] Authentication (password) successful!
+2023-04-06 23:42:33,663 [INFO] Authentication (password) successful!
+2023-04-06 23:42:33,666 [INFO] Authentication (password) successful!
+2023-04-06 23:42:33,666 [INFO] Authentication (password) successful!
+2023-04-06 23:42:35,033 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:42:35,452 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:42:35,547 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:42:35,661 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:42:35,691 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:42:35,752 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 23:42:36,473 [INFO] 198.18.0.132 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:42:36,475 [INFO] 198.18.0.132 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-42.txt
+2023-04-06 23:42:36,659 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 23:42:36,680 [INFO] 198.18.0.122 : Connected 
+2023-04-06 23:42:36,682 [INFO] 198.18.0.131 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:42:36,683 [INFO] 198.18.0.131 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-42.txt
+2023-04-06 23:42:36,685 [INFO] 198.18.0.123 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:42:36,685 [INFO] 198.18.0.123 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-42.txt
+2023-04-06 23:42:36,850 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 23:42:36,856 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 23:42:37,300 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 23:42:37,770 [INFO] 198.18.0.122 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:42:37,770 [INFO] 198.18.0.122 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-42.txt
+2023-04-06 23:42:37,882 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 23:42:38,527 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:42:39,077 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 23:42:39,643 [INFO] 198.18.0.121 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:42:39,644 [INFO] 198.18.0.121 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-42.txt
+2023-04-06 23:42:39,780 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 23:42:40,917 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-06 23:42:40,920 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:42:40,920 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:42:40,921 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:42:40,921 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:42:40,921 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:42:40,922 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:42:41,153 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:42:41,173 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:42:41,181 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:42:41,342 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:42:41,347 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:42:42,253 [INFO] Authentication (password) successful!
+2023-04-06 23:42:42,353 [INFO] Authentication (password) successful!
+2023-04-06 23:42:42,358 [INFO] Authentication (password) successful!
+2023-04-06 23:42:42,538 [INFO] Authentication (password) successful!
+2023-04-06 23:42:42,540 [INFO] Authentication (password) successful!
+2023-04-06 23:42:43,582 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:42:43,595 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:42:43,705 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:42:43,741 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:42:44,553 [INFO] 198.18.0.131 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:42:44,554 [INFO] 198.18.0.131 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-42.txt
+2023-04-06 23:42:44,556 [INFO] 198.18.0.132 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:42:44,557 [INFO] 198.18.0.132 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-42.txt
+2023-04-06 23:42:45,360 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 23:42:45,361 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 23:42:45,388 [INFO] 198.18.0.122 : Connected 
+2023-04-06 23:42:45,668 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:42:45,970 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:42:46,149 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 23:42:46,294 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 23:42:46,700 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 23:42:46,723 [INFO] 198.18.0.122 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:42:46,723 [INFO] 198.18.0.122 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-42.txt
+2023-04-06 23:42:46,844 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 23:42:46,905 [INFO] 198.18.0.123 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:42:46,906 [INFO] 198.18.0.123 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-42.txt
+2023-04-06 23:42:47,039 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 23:42:47,297 [INFO] 198.18.0.121 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:42:47,298 [INFO] 198.18.0.121 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-42.txt
+2023-04-06 23:42:47,503 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 23:42:50,923 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-06 23:42:50,927 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:42:50,927 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:42:50,928 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:42:50,927 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:42:50,928 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:42:50,928 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:42:51,182 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:42:51,187 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:42:51,187 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:42:51,375 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:42:51,457 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:42:52,213 [INFO] Authentication (password) successful!
+2023-04-06 23:42:52,369 [INFO] Authentication (password) successful!
+2023-04-06 23:42:52,391 [INFO] Authentication (password) successful!
+2023-04-06 23:42:52,550 [INFO] Authentication (password) successful!
+2023-04-06 23:42:52,617 [INFO] Authentication (password) successful!
+2023-04-06 23:42:53,893 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:42:53,899 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:42:53,967 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:42:54,010 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:42:54,360 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:42:54,885 [INFO] 198.18.0.132 : Command 'show ip route' sent
+2023-04-06 23:42:54,886 [INFO] 198.18.0.132 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-42.txt
+2023-04-06 23:42:54,907 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:44:32,891 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:44:32,892 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:44:32,892 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:44:32,892 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:44:32,893 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:44:32,893 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:44:33,059 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:44:33,082 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:44:33,082 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:44:33,276 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:44:33,295 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:44:39,833 [INFO] Authentication (password) successful!
+2023-04-06 23:44:39,837 [INFO] Authentication (password) successful!
+2023-04-06 23:44:39,837 [INFO] Authentication (password) successful!
+2023-04-06 23:44:39,839 [INFO] Authentication (password) successful!
+2023-04-06 23:44:39,938 [INFO] Authentication (password) successful!
+2023-04-06 23:44:41,669 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:44:41,811 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:44:41,840 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:44:41,883 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:44:42,361 [INFO] 198.18.0.131 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:44:42,362 [INFO] 198.18.0.131 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-44.txt
+2023-04-06 23:44:42,390 [INFO] 198.18.0.132 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:44:42,391 [INFO] 198.18.0.132 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-44.txt
+2023-04-06 23:44:42,460 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 23:44:42,487 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 23:44:42,895 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-06 23:44:42,920 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:44:42,947 [INFO] 198.18.0.122 : Connected 
+2023-04-06 23:44:43,350 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:44:43,397 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 23:44:43,466 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 23:44:43,854 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 23:44:43,866 [INFO] 198.18.0.121 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:44:43,866 [INFO] 198.18.0.121 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-44.txt
+2023-04-06 23:44:43,902 [INFO] 198.18.0.122 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:44:43,903 [INFO] 198.18.0.122 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-44.txt
+2023-04-06 23:44:43,955 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 23:44:43,989 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 23:44:44,253 [INFO] 198.18.0.123 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:44:44,254 [INFO] 198.18.0.123 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-44.txt
+2023-04-06 23:44:44,350 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 23:44:44,352 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:44:44,353 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:44:44,355 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:44:44,356 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:44:44,356 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:44:44,356 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:44:44,557 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:44:44,557 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:44:44,558 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:44:44,702 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:44:44,724 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:44:45,341 [INFO] Authentication (password) successful!
+2023-04-06 23:44:45,343 [INFO] Authentication (password) successful!
+2023-04-06 23:44:45,401 [INFO] Authentication (password) successful!
+2023-04-06 23:44:45,682 [INFO] Authentication (password) successful!
+2023-04-06 23:44:45,696 [INFO] Authentication (password) successful!
+2023-04-06 23:44:46,094 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:44:46,547 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 23:44:46,696 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:44:46,909 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:44:46,946 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:44:46,984 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:44:47,207 [INFO] 198.18.0.121 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:44:47,208 [INFO] 198.18.0.121 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-44.txt
+2023-04-06 23:44:47,316 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 23:44:47,364 [INFO] 198.18.0.131 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:44:47,365 [INFO] 198.18.0.131 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-44.txt
+2023-04-06 23:44:47,520 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:44:47,542 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 23:44:47,551 [INFO] 198.18.0.132 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:44:47,552 [INFO] 198.18.0.132 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-44.txt
+2023-04-06 23:44:47,684 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 23:44:48,040 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 23:44:48,701 [INFO] 198.18.0.123 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:44:48,702 [INFO] 198.18.0.123 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-44.txt
+2023-04-06 23:44:48,884 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 23:44:50,788 [INFO] 198.18.0.122 : Connected 
+2023-04-06 23:44:51,311 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 23:44:51,706 [INFO] 198.18.0.122 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:44:51,707 [INFO] 198.18.0.122 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-44.txt
+2023-04-06 23:44:51,795 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 23:44:54,359 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-06 23:44:54,360 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:44:54,361 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:44:54,361 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:44:54,361 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:44:54,361 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:44:54,362 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:44:54,558 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:44:54,574 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:44:54,582 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:44:54,757 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:44:54,760 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:44:55,561 [INFO] Authentication (password) successful!
+2023-04-06 23:44:55,593 [INFO] Authentication (password) successful!
+2023-04-06 23:44:55,662 [INFO] Authentication (password) successful!
+2023-04-06 23:44:55,864 [INFO] Authentication (password) successful!
+2023-04-06 23:44:55,865 [INFO] Authentication (password) successful!
+2023-04-06 23:44:57,015 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:44:57,052 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:44:57,114 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:44:57,127 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:44:57,165 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:44:57,272 [INFO] 198.18.0.122 : Connected 
+2023-04-06 23:44:57,635 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 23:44:57,775 [INFO] 198.18.0.131 : Command 'show ip route' sent
+2023-04-06 23:44:57,775 [INFO] 198.18.0.131 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-44.txt
+2023-04-06 23:44:57,782 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 23:44:57,789 [INFO] 198.18.0.132 : Command 'show ip route' sent
+2023-04-06 23:44:57,789 [INFO] 198.18.0.132 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-44.txt
+2023-04-06 23:44:57,875 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 23:44:57,888 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 23:44:58,088 [INFO] 198.18.0.123 : Command 'show ip route' sent
+2023-04-06 23:44:58,088 [INFO] 198.18.0.123 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-44.txt
+2023-04-06 23:44:58,182 [INFO] 198.18.0.122 : Command 'show ip route' sent
+2023-04-06 23:44:58,182 [INFO] 198.18.0.122 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-44.txt
+2023-04-06 23:44:58,200 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 23:44:58,270 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 23:44:58,652 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:44:59,127 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 23:44:59,443 [INFO] 198.18.0.121 : Command 'show ip route' sent
+2023-04-06 23:44:59,444 [INFO] 198.18.0.121 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-44.txt
+2023-04-06 23:44:59,531 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 23:45:04,363 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-06 23:49:27,231 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:49:27,232 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:49:27,234 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:49:27,234 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:49:27,235 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:49:27,236 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:49:27,337 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:49:27,346 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:49:27,348 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:49:27,530 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:49:27,578 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:49:27,897 [INFO] Authentication (password) successful!
+2023-04-06 23:49:27,962 [INFO] Authentication (password) successful!
+2023-04-06 23:49:28,190 [INFO] Authentication (password) successful!
+2023-04-06 23:49:28,271 [INFO] Authentication (password) successful!
+2023-04-06 23:49:28,423 [INFO] Authentication (password) successful!
+2023-04-06 23:49:28,449 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:49:28,550 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:49:28,731 [INFO] 198.18.0.122 : Connected 
+2023-04-06 23:49:28,856 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:49:28,871 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:49:28,887 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 23:49:28,924 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 23:49:28,998 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:49:29,136 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 23:49:29,163 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:49:29,177 [INFO] 198.18.0.121 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:49:29,178 [INFO] 198.18.0.121 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-49.txt
+2023-04-06 23:49:29,192 [INFO] 198.18.0.131 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:49:29,192 [INFO] 198.18.0.131 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-49.txt
+2023-04-06 23:49:29,213 [INFO] 198.18.0.123 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:49:29,214 [INFO] 198.18.0.123 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-49.txt
+2023-04-06 23:49:29,237 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 23:49:29,252 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 23:49:29,264 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 23:49:29,390 [INFO] 198.18.0.122 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:49:29,391 [INFO] 198.18.0.122 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-49.txt
+2023-04-06 23:49:29,454 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 23:49:29,519 [INFO] 198.18.0.132 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:49:29,520 [INFO] 198.18.0.132 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-49.txt
+2023-04-06 23:49:29,606 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 23:49:37,238 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-06 23:49:37,243 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:49:37,243 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:49:37,244 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:49:37,245 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:49:37,244 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:49:37,247 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:49:37,334 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:49:37,351 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:49:37,352 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:49:37,524 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:49:37,586 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:49:37,926 [INFO] Authentication (password) successful!
+2023-04-06 23:49:37,972 [INFO] Authentication (password) successful!
+2023-04-06 23:49:38,016 [INFO] Authentication (password) successful!
+2023-04-06 23:49:38,301 [INFO] Authentication (password) successful!
+2023-04-06 23:49:38,347 [INFO] Authentication (password) successful!
+2023-04-06 23:49:38,527 [INFO] 198.18.0.122 : Connected 
+2023-04-06 23:49:38,608 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:49:38,611 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:49:38,803 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:49:38,840 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:49:38,900 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:49:38,909 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 23:49:38,913 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 23:49:38,964 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 23:49:38,999 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:49:39,195 [INFO] 198.18.0.123 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:49:39,196 [INFO] 198.18.0.123 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-49.txt
+2023-04-06 23:49:39,205 [INFO] 198.18.0.121 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:49:39,205 [INFO] 198.18.0.121 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-49.txt
+2023-04-06 23:49:39,257 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 23:49:39,258 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 23:49:39,306 [INFO] 198.18.0.122 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:49:39,307 [INFO] 198.18.0.122 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-49.txt
+2023-04-06 23:49:39,369 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 23:49:39,445 [INFO] 198.18.0.132 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:49:39,446 [INFO] 198.18.0.132 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-49.txt
+2023-04-06 23:49:39,496 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 23:49:47,247 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-06 23:49:48,936 [ERROR] 198.18.0.131 : Failed to parse command 'show ip bgp summary
+'
+2023-04-06 23:49:48,938 [INFO] 198.18.0.131 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-49.txt
+2023-04-06 23:49:49,000 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 23:49:49,002 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:49:49,003 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:49:49,003 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:49:49,002 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:49:49,004 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:49:49,005 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:49:49,141 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:49:49,144 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:49:49,151 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:49:49,329 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:49:49,349 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:49:49,766 [INFO] Authentication (password) successful!
+2023-04-06 23:49:49,769 [INFO] Authentication (password) successful!
+2023-04-06 23:49:49,789 [INFO] Authentication (password) successful!
+2023-04-06 23:49:50,080 [INFO] Authentication (password) successful!
+2023-04-06 23:49:50,084 [INFO] Authentication (password) successful!
+2023-04-06 23:49:50,334 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:49:50,334 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:49:50,335 [INFO] 198.18.0.122 : Connected 
+2023-04-06 23:49:50,637 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:49:50,651 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:49:50,663 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 23:49:50,668 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 23:49:50,754 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 23:49:50,781 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:49:50,852 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:49:50,877 [INFO] 198.18.0.123 : Command 'show ip route' sent
+2023-04-06 23:49:50,878 [INFO] 198.18.0.122 : Command 'show ip route' sent
+2023-04-06 23:49:50,878 [INFO] 198.18.0.123 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-49.txt
+2023-04-06 23:49:50,878 [INFO] 198.18.0.122 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-49.txt
+2023-04-06 23:49:50,937 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 23:49:50,937 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 23:49:50,987 [INFO] 198.18.0.121 : Command 'show ip route' sent
+2023-04-06 23:49:50,987 [INFO] 198.18.0.121 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-49.txt
+2023-04-06 23:49:51,084 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 23:49:51,140 [INFO] 198.18.0.132 : Command 'show ip route' sent
+2023-04-06 23:49:51,140 [INFO] 198.18.0.132 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-49.txt
+2023-04-06 23:49:51,203 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 23:49:51,305 [INFO] 198.18.0.131 : Command 'show ip route' sent
+2023-04-06 23:49:51,306 [INFO] 198.18.0.131 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-49.txt
+2023-04-06 23:49:51,381 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 23:49:59,008 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-06 23:53:09,018 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:53:09,018 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:53:09,019 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:53:09,019 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:53:09,019 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:53:09,019 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:53:09,138 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:53:09,146 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:53:09,152 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:53:09,326 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:53:09,355 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:53:09,812 [INFO] Authentication (password) successful!
+2023-04-06 23:53:09,812 [INFO] Authentication (password) successful!
+2023-04-06 23:53:09,972 [INFO] Authentication (password) successful!
+2023-04-06 23:53:10,072 [INFO] Authentication (password) successful!
+2023-04-06 23:53:10,085 [INFO] Authentication (password) successful!
+2023-04-06 23:53:10,441 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:53:10,441 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:53:10,614 [INFO] 198.18.0.122 : Connected 
+2023-04-06 23:53:10,714 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:53:10,741 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:53:10,748 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 23:53:10,775 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 23:53:10,851 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:53:10,902 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:53:10,922 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 23:53:11,051 [INFO] 198.18.0.123 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:53:11,052 [INFO] 198.18.0.123 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-53.txt
+2023-04-06 23:53:11,085 [INFO] 198.18.0.121 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:53:11,085 [INFO] 198.18.0.121 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-53.txt
+2023-04-06 23:53:11,113 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 23:53:11,124 [INFO] 198.18.0.132 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:53:11,125 [INFO] 198.18.0.132 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-53.txt
+2023-04-06 23:53:11,144 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 23:53:11,185 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 23:53:11,190 [INFO] 198.18.0.122 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:53:11,190 [INFO] 198.18.0.122 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-53.txt
+2023-04-06 23:53:11,297 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 23:53:11,300 [INFO] 198.18.0.131 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:53:11,301 [INFO] 198.18.0.131 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-53.txt
+2023-04-06 23:53:11,364 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 23:53:19,022 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-06 23:53:19,026 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:53:19,026 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:53:19,026 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:53:19,027 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:53:19,027 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:53:19,028 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:53:19,125 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:53:19,129 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:53:19,134 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:53:19,312 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:53:19,313 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:53:19,737 [INFO] Authentication (password) successful!
+2023-04-06 23:53:19,737 [INFO] Authentication (password) successful!
+2023-04-06 23:53:19,750 [INFO] Authentication (password) successful!
+2023-04-06 23:53:20,061 [INFO] Authentication (password) successful!
+2023-04-06 23:53:20,068 [INFO] Authentication (password) successful!
+2023-04-06 23:53:20,336 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:53:20,339 [INFO] 198.18.0.122 : Connected 
+2023-04-06 23:53:20,341 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:53:20,555 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:53:20,555 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:53:20,617 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:53:20,618 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:53:20,656 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 23:53:20,662 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 23:53:20,791 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 23:53:20,896 [INFO] 198.18.0.122 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:53:20,897 [INFO] 198.18.0.122 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-53.txt
+2023-04-06 23:53:20,904 [INFO] 198.18.0.123 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:53:20,905 [INFO] 198.18.0.123 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-53.txt
+2023-04-06 23:53:20,959 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 23:53:20,968 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 23:53:21,019 [INFO] 198.18.0.121 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:53:21,019 [INFO] 198.18.0.121 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-53.txt
+2023-04-06 23:53:21,057 [INFO] 198.18.0.132 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:53:21,058 [INFO] 198.18.0.132 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-53.txt
+2023-04-06 23:53:21,081 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 23:53:21,095 [INFO] 198.18.0.131 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:53:21,095 [INFO] 198.18.0.131 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-53.txt
+2023-04-06 23:53:21,108 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 23:53:21,143 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 23:53:29,031 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-06 23:53:29,035 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:53:29,036 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:53:29,035 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:53:29,036 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:53:29,036 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:53:29,037 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:53:29,129 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:53:29,133 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:53:29,140 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:53:29,308 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:53:29,381 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:53:29,743 [INFO] Authentication (password) successful!
+2023-04-06 23:53:29,745 [INFO] Authentication (password) successful!
+2023-04-06 23:53:29,786 [INFO] Authentication (password) successful!
+2023-04-06 23:53:30,047 [INFO] Authentication (password) successful!
+2023-04-06 23:53:30,134 [INFO] Authentication (password) successful!
+2023-04-06 23:53:30,325 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:53:30,350 [INFO] 198.18.0.122 : Connected 
+2023-04-06 23:53:30,350 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:53:30,618 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:53:30,655 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:53:30,683 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 23:53:30,684 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 23:53:30,720 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:53:30,745 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:53:30,744 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 23:53:30,911 [INFO] 198.18.0.122 : Command 'show ip route' sent
+2023-04-06 23:53:30,911 [INFO] 198.18.0.122 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-53.txt
+2023-04-06 23:53:30,917 [INFO] 198.18.0.123 : Command 'show ip route' sent
+2023-04-06 23:53:30,917 [INFO] 198.18.0.123 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-53.txt
+2023-04-06 23:53:30,968 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 23:53:30,970 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 23:53:31,013 [INFO] 198.18.0.121 : Command 'show ip route' sent
+2023-04-06 23:53:31,014 [INFO] 198.18.0.121 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-53.txt
+2023-04-06 23:53:31,065 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 23:53:31,106 [INFO] 198.18.0.131 : Command 'show ip route' sent
+2023-04-06 23:53:31,107 [INFO] 198.18.0.131 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-53.txt
+2023-04-06 23:53:31,165 [INFO] 198.18.0.132 : Command 'show ip route' sent
+2023-04-06 23:53:31,166 [INFO] 198.18.0.132 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-53.txt
+2023-04-06 23:53:31,169 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 23:53:31,228 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 23:53:39,039 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-06 23:55:06,856 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:55:06,857 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:55:06,857 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:55:06,858 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:55:06,859 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:55:06,859 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:55:06,992 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:55:07,009 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:55:07,009 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:55:07,178 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:55:07,215 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:55:07,591 [INFO] Authentication (password) successful!
+2023-04-06 23:55:07,591 [INFO] Authentication (password) successful!
+2023-04-06 23:55:07,597 [INFO] Authentication (password) successful!
+2023-04-06 23:55:07,949 [INFO] Authentication (password) successful!
+2023-04-06 23:55:07,969 [INFO] Authentication (password) successful!
+2023-04-06 23:55:08,145 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:55:08,144 [INFO] 198.18.0.122 : Connected 
+2023-04-06 23:55:08,148 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:55:08,465 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 23:55:08,465 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 23:55:08,467 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 23:55:08,489 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:55:08,503 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:55:08,540 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:55:08,601 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:55:08,723 [INFO] 198.18.0.121 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:55:08,724 [INFO] 198.18.0.123 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:55:08,724 [INFO] 198.18.0.121 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-55.txt
+2023-04-06 23:55:08,725 [INFO] 198.18.0.123 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-55.txt
+2023-04-06 23:55:08,730 [INFO] 198.18.0.122 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:55:08,731 [INFO] 198.18.0.122 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-55.txt
+2023-04-06 23:55:08,780 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 23:55:08,787 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 23:55:08,800 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 23:55:16,860 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-06 23:55:18,606 [ERROR] 198.18.0.131 : Failed to parse command 'show ip ospf neighbor
+'
+2023-04-06 23:55:18,608 [ERROR] 198.18.0.131 : Failed appending to out/getCustom/2023-04-06/_custom_2023-04-06_23-55.txt
+2023-04-06 23:55:18,676 [ERROR] 198.18.0.132 : Failed to parse command 'show ip ospf neighbor
+'
+2023-04-06 23:55:18,678 [ERROR] 198.18.0.132 : Failed appending to out/getCustom/2023-04-06/_custom_2023-04-06_23-55.txt
+2023-04-06 23:55:18,692 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 23:55:18,743 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 23:55:18,745 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:55:18,744 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:55:18,746 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:55:18,747 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:55:18,748 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:55:18,749 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:55:18,833 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:55:18,842 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:55:18,843 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:55:19,037 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:55:19,039 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:55:19,495 [INFO] Authentication (password) successful!
+2023-04-06 23:55:19,495 [INFO] Authentication (password) successful!
+2023-04-06 23:55:19,498 [INFO] Authentication (password) successful!
+2023-04-06 23:55:19,842 [INFO] Authentication (password) successful!
+2023-04-06 23:55:19,865 [INFO] Authentication (password) successful!
+2023-04-06 23:55:20,181 [INFO] 198.18.0.122 : Connected 
+2023-04-06 23:55:20,181 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:55:20,182 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:55:20,479 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:55:20,478 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:55:20,493 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:55:20,498 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 23:55:20,503 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 23:55:20,516 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 23:55:20,531 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:55:20,712 [INFO] 198.18.0.122 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:55:20,713 [INFO] 198.18.0.122 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-55.txt
+2023-04-06 23:55:20,756 [INFO] 198.18.0.121 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:55:20,757 [INFO] 198.18.0.121 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-55.txt
+2023-04-06 23:55:20,781 [INFO] 198.18.0.123 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:55:20,781 [INFO] 198.18.0.123 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-55.txt
+2023-04-06 23:55:20,790 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 23:55:20,844 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 23:55:20,844 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 23:55:20,870 [INFO] 198.18.0.131 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:55:20,870 [INFO] 198.18.0.131 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-55.txt
+2023-04-06 23:55:20,882 [INFO] 198.18.0.132 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:55:20,883 [INFO] 198.18.0.132 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-55.txt
+2023-04-06 23:55:20,953 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 23:55:20,954 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 23:55:28,751 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-06 23:55:28,754 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:55:28,755 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:55:28,754 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:55:28,756 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:55:28,757 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:55:28,757 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:55:28,855 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:55:28,855 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:55:28,862 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:55:29,029 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:55:29,082 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:55:29,460 [INFO] Authentication (password) successful!
+2023-04-06 23:55:29,509 [INFO] Authentication (password) successful!
+2023-04-06 23:55:29,509 [INFO] Authentication (password) successful!
+2023-04-06 23:55:29,765 [INFO] Authentication (password) successful!
+2023-04-06 23:55:29,926 [INFO] Authentication (password) successful!
+2023-04-06 23:55:30,000 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:55:30,075 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:55:30,074 [INFO] 198.18.0.122 : Connected 
+2023-04-06 23:55:30,342 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:55:30,440 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 23:55:30,440 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 23:55:30,446 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:55:30,449 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 23:55:30,511 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:55:30,560 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:55:30,644 [INFO] 198.18.0.123 : Command 'show ip route' sent
+2023-04-06 23:55:30,645 [INFO] 198.18.0.123 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-55.txt
+2023-04-06 23:55:30,653 [INFO] 198.18.0.122 : Command 'show ip route' sent
+2023-04-06 23:55:30,653 [INFO] 198.18.0.121 : Command 'show ip route' sent
+2023-04-06 23:55:30,654 [INFO] 198.18.0.122 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-55.txt
+2023-04-06 23:55:30,654 [INFO] 198.18.0.121 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-55.txt
+2023-04-06 23:55:30,707 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 23:55:30,742 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 23:55:30,750 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 23:55:30,907 [INFO] 198.18.0.132 : Command 'show ip route' sent
+2023-04-06 23:55:30,908 [INFO] 198.18.0.132 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-55.txt
+2023-04-06 23:55:31,077 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 23:55:31,091 [INFO] 198.18.0.131 : Command 'show ip route' sent
+2023-04-06 23:55:31,091 [INFO] 198.18.0.131 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-55.txt
+2023-04-06 23:55:31,151 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 23:55:38,759 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-06 23:58:22,413 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:58:22,413 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:58:22,414 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:58:22,414 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:58:22,414 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:58:22,415 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:58:22,518 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:58:22,518 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:58:22,519 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:58:22,690 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:58:22,700 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:58:23,143 [INFO] Authentication (password) successful!
+2023-04-06 23:58:23,229 [INFO] Authentication (password) successful!
+2023-04-06 23:58:23,323 [INFO] Authentication (password) successful!
+2023-04-06 23:58:23,443 [INFO] Authentication (password) successful!
+2023-04-06 23:58:23,468 [INFO] Authentication (password) successful!
+2023-04-06 23:58:23,653 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:58:23,795 [INFO] 198.18.0.122 : Connected 
+2023-04-06 23:58:23,881 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:58:23,958 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 23:58:24,014 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:58:24,077 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:58:24,100 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 23:58:24,226 [INFO] 198.18.0.123 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:58:24,227 [INFO] 198.18.0.123 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-58.txt
+2023-04-06 23:58:24,231 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 23:58:24,290 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 23:58:24,357 [INFO] 198.18.0.122 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:58:24,358 [INFO] 198.18.0.122 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-58.txt
+2023-04-06 23:58:24,407 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 23:58:24,499 [INFO] 198.18.0.121 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:58:24,500 [INFO] 198.18.0.121 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-58.txt
+2023-04-06 23:58:24,560 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 23:58:24,642 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:58:24,704 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:58:25,061 [INFO] 198.18.0.132 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:58:25,061 [INFO] 198.18.0.132 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-58.txt
+2023-04-06 23:58:25,147 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 23:58:32,417 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-06 23:58:34,211 [ERROR] 198.18.0.131 : Failed to parse command 'show ip ospf neighbor
+'
+2023-04-06 23:58:34,214 [ERROR] 198.18.0.131 : Failed appending to out/getCustom/2023-04-06/_custom_2023-04-06_23-58.txt
+2023-04-06 23:58:34,275 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 23:58:34,277 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:58:34,277 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:58:34,278 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:58:34,279 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:58:34,280 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:58:34,281 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:58:34,378 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:58:34,394 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:58:34,394 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:58:34,621 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:58:34,636 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:58:34,988 [INFO] Authentication (password) successful!
+2023-04-06 23:58:35,036 [INFO] Authentication (password) successful!
+2023-04-06 23:58:35,037 [INFO] Authentication (password) successful!
+2023-04-06 23:58:35,350 [INFO] Authentication (password) successful!
+2023-04-06 23:58:35,358 [INFO] Authentication (password) successful!
+2023-04-06 23:58:35,653 [INFO] 198.18.0.122 : Connected 
+2023-04-06 23:58:35,658 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:58:35,660 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:58:35,880 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:58:35,939 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:58:35,978 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:58:35,989 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 23:58:35,989 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 23:58:36,002 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:58:36,110 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 23:58:36,235 [INFO] 198.18.0.123 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:58:36,236 [INFO] 198.18.0.123 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-58.txt
+2023-04-06 23:58:36,244 [INFO] 198.18.0.122 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:58:36,245 [INFO] 198.18.0.122 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-58.txt
+2023-04-06 23:58:36,296 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 23:58:36,296 [INFO] 198.18.0.131 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:58:36,297 [INFO] 198.18.0.131 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-58.txt
+2023-04-06 23:58:36,297 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 23:58:36,353 [INFO] 198.18.0.121 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:58:36,354 [INFO] 198.18.0.121 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-58.txt
+2023-04-06 23:58:36,373 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 23:58:36,416 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 23:58:44,283 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-06 23:58:46,095 [ERROR] 198.18.0.132 : Failed to parse command 'show ip bgp summary
+'
+2023-04-06 23:58:46,097 [INFO] 198.18.0.132 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-58.txt
+2023-04-06 23:58:46,196 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 23:58:46,197 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:58:46,197 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:58:46,198 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:58:46,199 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:58:46,199 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:58:46,199 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:58:46,286 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:58:46,302 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:58:46,302 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:58:46,475 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:58:46,636 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:58:46,865 [INFO] Authentication (password) successful!
+2023-04-06 23:58:46,866 [INFO] Authentication (password) successful!
+2023-04-06 23:58:47,138 [INFO] Authentication (password) successful!
+2023-04-06 23:58:47,245 [INFO] Authentication (password) successful!
+2023-04-06 23:58:47,414 [INFO] Authentication (password) successful!
+2023-04-06 23:58:47,443 [INFO] 198.18.0.122 : Connected 
+2023-04-06 23:58:47,449 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:58:47,666 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:58:47,802 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 23:58:47,812 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:58:47,826 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 23:58:47,883 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:58:47,957 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 23:58:47,970 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:58:48,028 [INFO] 198.18.0.122 : Command 'show ip route' sent
+2023-04-06 23:58:48,029 [INFO] 198.18.0.122 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-58.txt
+2023-04-06 23:58:48,049 [INFO] 198.18.0.121 : Command 'show ip route' sent
+2023-04-06 23:58:48,049 [INFO] 198.18.0.121 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-58.txt
+2023-04-06 23:58:48,058 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:58:48,077 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 23:58:48,108 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 23:58:48,200 [INFO] 198.18.0.123 : Command 'show ip route' sent
+2023-04-06 23:58:48,200 [INFO] 198.18.0.123 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-58.txt
+2023-04-06 23:58:48,261 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 23:58:48,288 [INFO] 198.18.0.131 : Command 'show ip route' sent
+2023-04-06 23:58:48,289 [INFO] 198.18.0.131 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-58.txt
+2023-04-06 23:58:48,351 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 23:58:48,493 [INFO] 198.18.0.132 : Command 'show ip route' sent
+2023-04-06 23:58:48,494 [INFO] 198.18.0.132 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-58.txt
+2023-04-06 23:58:48,557 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 23:58:56,201 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-06 23:59:06,957 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:59:06,958 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:59:06,958 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:59:06,958 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:59:06,959 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:59:06,959 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:59:07,059 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:59:07,070 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:59:07,073 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:59:07,246 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:59:07,266 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:59:07,660 [INFO] Authentication (password) successful!
+2023-04-06 23:59:07,672 [INFO] Authentication (password) successful!
+2023-04-06 23:59:07,745 [INFO] Authentication (password) successful!
+2023-04-06 23:59:08,024 [INFO] Authentication (password) successful!
+2023-04-06 23:59:08,068 [INFO] Authentication (password) successful!
+2023-04-06 23:59:08,224 [INFO] 198.18.0.122 : Connected 
+2023-04-06 23:59:08,231 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:59:08,298 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:59:08,544 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 23:59:08,543 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 23:59:08,577 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:59:08,595 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:59:08,675 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:59:08,713 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 23:59:08,713 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:59:08,865 [INFO] 198.18.0.122 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:59:08,866 [INFO] 198.18.0.122 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-59.txt
+2023-04-06 23:59:08,869 [INFO] 198.18.0.123 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:59:08,870 [INFO] 198.18.0.123 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-59.txt
+2023-04-06 23:59:08,941 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 23:59:08,941 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 23:59:08,968 [INFO] 198.18.0.121 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:59:08,969 [INFO] 198.18.0.121 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-59.txt
+2023-04-06 23:59:09,008 [INFO] 198.18.0.131 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:59:09,009 [INFO] 198.18.0.131 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-59.txt
+2023-04-06 23:59:09,018 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 23:59:09,064 [INFO] 198.18.0.132 : Command 'show ip ospf neighbor
+' sent
+2023-04-06 23:59:09,065 [INFO] 198.18.0.132 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-59.txt
+2023-04-06 23:59:09,068 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 23:59:09,114 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 23:59:16,961 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-06 23:59:16,964 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:59:16,965 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:59:16,965 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:59:16,964 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:59:16,965 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:59:16,966 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:59:17,067 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:59:17,067 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:59:17,068 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:59:17,238 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:59:17,248 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:59:17,672 [INFO] Authentication (password) successful!
+2023-04-06 23:59:17,671 [INFO] Authentication (password) successful!
+2023-04-06 23:59:17,678 [INFO] Authentication (password) successful!
+2023-04-06 23:59:18,007 [INFO] Authentication (password) successful!
+2023-04-06 23:59:18,019 [INFO] Authentication (password) successful!
+2023-04-06 23:59:18,231 [INFO] 198.18.0.122 : Connected 
+2023-04-06 23:59:18,231 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:59:18,244 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:59:18,518 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 23:59:18,541 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 23:59:18,547 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:59:18,561 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 23:59:18,591 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:59:18,603 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:59:18,610 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:59:18,798 [INFO] 198.18.0.122 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:59:18,799 [INFO] 198.18.0.122 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-59.txt
+2023-04-06 23:59:18,802 [INFO] 198.18.0.123 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:59:18,803 [INFO] 198.18.0.123 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-59.txt
+2023-04-06 23:59:18,838 [INFO] 198.18.0.121 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:59:18,838 [INFO] 198.18.0.121 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-59.txt
+2023-04-06 23:59:18,862 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 23:59:18,867 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 23:59:18,910 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 23:59:18,979 [INFO] 198.18.0.131 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:59:18,980 [INFO] 198.18.0.131 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-59.txt
+2023-04-06 23:59:19,046 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 23:59:19,066 [INFO] 198.18.0.132 : Command 'show ip bgp summary
+' sent
+2023-04-06 23:59:19,066 [INFO] 198.18.0.132 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-59.txt
+2023-04-06 23:59:19,117 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 23:59:26,970 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-06 23:59:26,975 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 23:59:26,976 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 23:59:26,977 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 23:59:26,978 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 23:59:26,979 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 23:59:26,980 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 23:59:27,072 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:59:27,076 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:59:27,081 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 23:59:27,258 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:59:27,327 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 23:59:27,676 [INFO] Authentication (password) successful!
+2023-04-06 23:59:27,763 [INFO] Authentication (password) successful!
+2023-04-06 23:59:27,847 [INFO] Authentication (password) successful!
+2023-04-06 23:59:28,012 [INFO] Authentication (password) successful!
+2023-04-06 23:59:28,091 [INFO] Authentication (password) successful!
+2023-04-06 23:59:28,250 [INFO] 198.18.0.121 : Connected 
+2023-04-06 23:59:28,328 [INFO] 198.18.0.122 : Connected 
+2023-04-06 23:59:28,359 [INFO] 198.18.0.123 : Connected 
+2023-04-06 23:59:28,577 [INFO] 198.18.0.132 : Connected 
+2023-04-06 23:59:28,653 [INFO] 198.18.0.131 : Connected 
+2023-04-06 23:59:28,684 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 23:59:28,684 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 23:59:28,696 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 23:59:28,701 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 23:59:28,738 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 23:59:28,889 [INFO] 198.18.0.121 : Command 'show ip route' sent
+2023-04-06 23:59:28,890 [INFO] 198.18.0.121 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-59.txt
+2023-04-06 23:59:28,942 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 23:59:28,959 [INFO] 198.18.0.123 : Command 'show ip route' sent
+2023-04-06 23:59:28,960 [INFO] 198.18.0.123 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-59.txt
+2023-04-06 23:59:28,968 [INFO] 198.18.0.122 : Command 'show ip route' sent
+2023-04-06 23:59:28,968 [INFO] 198.18.0.122 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-59.txt
+2023-04-06 23:59:29,029 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 23:59:29,035 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 23:59:29,149 [INFO] 198.18.0.131 : Command 'show ip route' sent
+2023-04-06 23:59:29,150 [INFO] 198.18.0.131 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-59.txt
+2023-04-06 23:59:29,163 [INFO] 198.18.0.132 : Command 'show ip route' sent
+2023-04-06 23:59:29,163 [INFO] 198.18.0.132 : Output appended to out/getCustom/2023-04-06/_custom_2023-04-06_23-59.txt
+2023-04-06 23:59:29,227 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 23:59:29,227 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 23:59:36,981 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-07 00:01:46,324 [INFO] 198.18.0.122 : Connecting 
+2023-04-07 00:01:46,324 [INFO] 198.18.0.131 : Connecting 
+2023-04-07 00:01:46,324 [INFO] 198.18.0.121 : Connecting 
+2023-04-07 00:01:46,324 [INFO] 198.18.0.132 : Connecting 
+2023-04-07 00:01:46,324 [INFO] 198.18.0.123 : Connecting 
+2023-04-07 00:01:46,325 [INFO] 198.18.0.133 : Connecting 
+2023-04-07 00:01:46,438 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-07 00:01:46,438 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-07 00:01:46,438 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-07 00:01:46,613 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-07 00:01:46,618 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-07 00:01:47,047 [INFO] Authentication (password) successful!
+2023-04-07 00:01:47,060 [INFO] Authentication (password) successful!
+2023-04-07 00:01:47,060 [INFO] Authentication (password) successful!
+2023-04-07 00:01:47,360 [INFO] Authentication (password) successful!
+2023-04-07 00:01:47,360 [INFO] Authentication (password) successful!
+2023-04-07 00:01:47,615 [INFO] 198.18.0.123 : Connected 
+2023-04-07 00:01:47,636 [INFO] 198.18.0.122 : Connected 
+2023-04-07 00:01:47,661 [INFO] 198.18.0.121 : Connected 
+2023-04-07 00:01:47,923 [INFO] 198.18.0.132 : Connected 
+2023-04-07 00:01:47,924 [INFO] 198.18.0.131 : Connected 
+2023-04-07 00:01:47,936 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-07 00:01:47,985 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-07 00:01:47,986 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-07 00:01:47,988 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-07 00:01:48,091 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-07 00:01:48,232 [INFO] 198.18.0.123 : Command 'show ip ospf neighbor' sent
+2023-04-07 00:01:48,233 [INFO] 198.18.0.123 : Output appended to out/getCustom/2023-04-07/_custom_2023-04-07_00-01.txt
+2023-04-07 00:01:48,297 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-07 00:01:48,302 [INFO] 198.18.0.122 : Command 'show ip ospf neighbor' sent
+2023-04-07 00:01:48,302 [INFO] 198.18.0.131 : Command 'show ip ospf neighbor' sent
+2023-04-07 00:01:48,303 [INFO] 198.18.0.122 : Output appended to out/getCustom/2023-04-07/_custom_2023-04-07_00-01.txt
+2023-04-07 00:01:48,303 [INFO] 198.18.0.131 : Output appended to out/getCustom/2023-04-07/_custom_2023-04-07_00-01.txt
+2023-04-07 00:01:48,339 [INFO] 198.18.0.121 : Command 'show ip ospf neighbor' sent
+2023-04-07 00:01:48,340 [INFO] 198.18.0.121 : Output appended to out/getCustom/2023-04-07/_custom_2023-04-07_00-01.txt
+2023-04-07 00:01:48,391 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-07 00:01:48,392 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-07 00:01:48,399 [INFO] 198.18.0.132 : Command 'show ip ospf neighbor' sent
+2023-04-07 00:01:48,400 [INFO] 198.18.0.132 : Output appended to out/getCustom/2023-04-07/_custom_2023-04-07_00-01.txt
+2023-04-07 00:01:48,402 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-07 00:01:48,471 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-07 00:01:56,327 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-07 00:01:56,331 [INFO] 198.18.0.122 : Connecting 
+2023-04-07 00:01:56,332 [INFO] 198.18.0.131 : Connecting 
+2023-04-07 00:01:56,333 [INFO] 198.18.0.132 : Connecting 
+2023-04-07 00:01:56,334 [INFO] 198.18.0.121 : Connecting 
+2023-04-07 00:01:56,335 [INFO] 198.18.0.133 : Connecting 
+2023-04-07 00:01:56,335 [INFO] 198.18.0.123 : Connecting 
+2023-04-07 00:01:56,439 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-07 00:01:56,439 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-07 00:01:56,440 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-07 00:01:56,620 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-07 00:01:56,643 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-07 00:01:57,050 [INFO] Authentication (password) successful!
+2023-04-07 00:01:57,057 [INFO] Authentication (password) successful!
+2023-04-07 00:01:57,127 [INFO] Authentication (password) successful!
+2023-04-07 00:01:57,370 [INFO] Authentication (password) successful!
+2023-04-07 00:01:57,398 [INFO] Authentication (password) successful!
+2023-04-07 00:01:57,616 [INFO] 198.18.0.122 : Connected 
+2023-04-07 00:01:57,615 [INFO] 198.18.0.123 : Connected 
+2023-04-07 00:01:57,661 [INFO] 198.18.0.121 : Connected 
+2023-04-07 00:01:57,901 [INFO] 198.18.0.131 : Connected 
+2023-04-07 00:01:57,922 [INFO] 198.18.0.132 : Connected 
+2023-04-07 00:01:57,992 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-07 00:01:57,996 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-07 00:01:58,019 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-07 00:01:58,020 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-07 00:01:58,105 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-07 00:01:58,234 [INFO] 198.18.0.123 : Command 'show ip bgp summary' sent
+2023-04-07 00:01:58,235 [INFO] 198.18.0.123 : Output appended to out/getCustom/2023-04-07/_custom_2023-04-07_00-01.txt
+2023-04-07 00:01:58,242 [INFO] 198.18.0.122 : Command 'show ip bgp summary' sent
+2023-04-07 00:01:58,242 [INFO] 198.18.0.122 : Output appended to out/getCustom/2023-04-07/_custom_2023-04-07_00-01.txt
+2023-04-07 00:01:58,296 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-07 00:01:58,305 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-07 00:01:58,412 [INFO] 198.18.0.121 : Command 'show ip bgp summary' sent
+2023-04-07 00:01:58,413 [INFO] 198.18.0.121 : Output appended to out/getCustom/2023-04-07/_custom_2023-04-07_00-01.txt
+2023-04-07 00:01:58,473 [INFO] 198.18.0.132 : Command 'show ip bgp summary' sent
+2023-04-07 00:01:58,474 [INFO] 198.18.0.132 : Output appended to out/getCustom/2023-04-07/_custom_2023-04-07_00-01.txt
+2023-04-07 00:01:58,476 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-07 00:01:58,538 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-07 00:02:06,337 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-07 00:02:08,117 [ERROR] 198.18.0.131 : Failed to parse command 'show ip bgp summary'
+2023-04-07 00:02:08,118 [INFO] 198.18.0.131 : Output appended to out/getCustom/2023-04-07/_custom_2023-04-07_00-01.txt
+2023-04-07 00:02:08,181 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-07 00:02:08,183 [INFO] 198.18.0.121 : Connecting 
+2023-04-07 00:02:08,184 [INFO] 198.18.0.122 : Connecting 
+2023-04-07 00:02:08,185 [INFO] 198.18.0.123 : Connecting 
+2023-04-07 00:02:08,186 [INFO] 198.18.0.131 : Connecting 
+2023-04-07 00:02:08,186 [INFO] 198.18.0.132 : Connecting 
+2023-04-07 00:02:08,189 [INFO] 198.18.0.133 : Connecting 
+2023-04-07 00:02:08,288 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-07 00:02:08,288 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-07 00:02:08,288 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-07 00:02:08,475 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-07 00:02:08,532 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-07 00:02:08,959 [INFO] Authentication (password) successful!
+2023-04-07 00:02:08,963 [INFO] Authentication (password) successful!
+2023-04-07 00:02:09,087 [INFO] Authentication (password) successful!
+2023-04-07 00:02:09,250 [INFO] Authentication (password) successful!
+2023-04-07 00:02:09,380 [INFO] Authentication (password) successful!
+2023-04-07 00:02:09,523 [INFO] 198.18.0.121 : Connected 
+2023-04-07 00:02:09,539 [INFO] 198.18.0.123 : Connected 
+2023-04-07 00:02:09,627 [INFO] 198.18.0.122 : Connected 
+2023-04-07 00:02:09,898 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-07 00:02:09,902 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-07 00:02:09,906 [INFO] 198.18.0.132 : Connected 
+2023-04-07 00:02:09,919 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-07 00:02:09,949 [INFO] 198.18.0.131 : Connected 
+2023-04-07 00:02:10,010 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-07 00:02:10,077 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-07 00:02:10,118 [INFO] 198.18.0.123 : Command 'show ip route' sent
+2023-04-07 00:02:10,119 [INFO] 198.18.0.123 : Output appended to out/getCustom/2023-04-07/_custom_2023-04-07_00-01.txt
+2023-04-07 00:02:10,120 [INFO] 198.18.0.121 : Command 'show ip route' sent
+2023-04-07 00:02:10,121 [INFO] 198.18.0.121 : Output appended to out/getCustom/2023-04-07/_custom_2023-04-07_00-01.txt
+2023-04-07 00:02:10,181 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-07 00:02:10,180 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-07 00:02:10,301 [INFO] 198.18.0.122 : Command 'show ip route' sent
+2023-04-07 00:02:10,302 [INFO] 198.18.0.122 : Output appended to out/getCustom/2023-04-07/_custom_2023-04-07_00-01.txt
+2023-04-07 00:02:10,389 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-07 00:02:10,457 [INFO] 198.18.0.131 : Command 'show ip route' sent
+2023-04-07 00:02:10,458 [INFO] 198.18.0.131 : Output appended to out/getCustom/2023-04-07/_custom_2023-04-07_00-01.txt
+2023-04-07 00:02:10,509 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-07 00:02:18,191 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-07 00:02:20,007 [ERROR] 198.18.0.132 : Failed to parse command 'show ip route'
+2023-04-07 00:02:20,010 [INFO] 198.18.0.132 : Output appended to out/getCustom/2023-04-07/_custom_2023-04-07_00-01.txt
+2023-04-07 00:02:20,073 [INFO] 198.18.0.132 : Disconnected succcessfully

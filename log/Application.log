@@ -386,3 +386,78 @@ INFO 2023-04-06 18:08:16,355 [Apps.py:init:90] ---Initialize testbed file---
 INFO 2023-04-06 18:08:16,355 [Apps.py:init:98] ---testbed file ready---
 INFO 2023-04-06 18:08:17,888 [Apps.py:init:104] ---Opening Main Menu Application---
 INFO 2023-04-06 18:08:19,811 [Apps.py:inputMenu:178] ---Get Healty Check / Environtment Device ---
+INFO 2023-04-06 23:05:24,520 [Apps.py:init:87] ---Starting the Application---
+INFO 2023-04-06 23:05:24,527 [Apps.py:init:90] ---Initialize testbed file---
+INFO 2023-04-06 23:05:24,528 [Apps.py:init:98] ---testbed file ready---
+INFO 2023-04-06 23:05:25,903 [Apps.py:init:104] ---Opening Main Menu Application---
+INFO 2023-04-06 23:05:27,827 [Apps.py:inputMenu:141] ---Get Inventory Device---
+INFO 2023-04-06 23:09:02,292 [Apps.py:init:87] ---Starting the Application---
+INFO 2023-04-06 23:09:02,298 [Apps.py:init:90] ---Initialize testbed file---
+INFO 2023-04-06 23:09:02,299 [Apps.py:init:98] ---testbed file ready---
+INFO 2023-04-06 23:09:06,801 [Apps.py:init:104] ---Opening Main Menu Application---
+INFO 2023-04-06 23:09:54,662 [Apps.py:inputMenu:141] ---Get Inventory Device---
+INFO 2023-04-06 23:16:03,191 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-04-06 23:16:03,197 [Apps.py:init:91] ---Initialize testbed file---
+INFO 2023-04-06 23:16:03,198 [Apps.py:init:99] ---testbed file ready---
+INFO 2023-04-06 23:16:04,863 [Apps.py:init:105] ---Opening Main Menu Application---
+INFO 2023-04-06 23:16:07,747 [Apps.py:inputMenu:185] ---Get Custom Commands from txt ---
+INFO 2023-04-06 23:18:47,347 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-04-06 23:18:47,353 [Apps.py:init:91] ---Initialize testbed file---
+INFO 2023-04-06 23:18:47,354 [Apps.py:init:99] ---testbed file ready---
+INFO 2023-04-06 23:18:48,927 [Apps.py:init:105] ---Opening Main Menu Application---
+INFO 2023-04-06 23:18:51,014 [Apps.py:inputMenu:185] ---Get Custom Commands from txt ---
+INFO 2023-04-06 23:22:20,840 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-04-06 23:22:20,847 [Apps.py:init:91] ---Initialize testbed file---
+INFO 2023-04-06 23:22:20,847 [Apps.py:init:99] ---testbed file ready---
+INFO 2023-04-06 23:22:22,571 [Apps.py:init:105] ---Opening Main Menu Application---
+INFO 2023-04-06 23:22:24,397 [Apps.py:inputMenu:185] ---Get Custom Commands from txt ---
+INFO 2023-04-06 23:34:44,763 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-04-06 23:34:44,769 [Apps.py:init:91] ---Initialize testbed file---
+INFO 2023-04-06 23:34:44,770 [Apps.py:init:99] ---testbed file ready---
+INFO 2023-04-06 23:34:46,584 [Apps.py:init:105] ---Opening Main Menu Application---
+INFO 2023-04-06 23:34:56,466 [Apps.py:inputMenu:142] ---Get Inventory Device---
+INFO 2023-04-06 23:35:18,970 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-04-06 23:35:18,977 [Apps.py:init:91] ---Initialize testbed file---
+INFO 2023-04-06 23:35:18,977 [Apps.py:init:99] ---testbed file ready---
+INFO 2023-04-06 23:35:21,415 [Apps.py:init:105] ---Opening Main Menu Application---
+INFO 2023-04-06 23:35:36,258 [Apps.py:inputMenu:185] ---Get Custom Commands from txt ---
+INFO 2023-04-06 23:42:27,922 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-04-06 23:42:27,929 [Apps.py:init:91] ---Initialize testbed file---
+INFO 2023-04-06 23:42:27,929 [Apps.py:init:99] ---testbed file ready---
+INFO 2023-04-06 23:42:29,158 [Apps.py:init:105] ---Opening Main Menu Application---
+INFO 2023-04-06 23:42:30,897 [Apps.py:inputMenu:185] ---Get Custom Commands from txt ---
+INFO 2023-04-06 23:44:30,105 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-04-06 23:44:30,111 [Apps.py:init:91] ---Initialize testbed file---
+INFO 2023-04-06 23:44:30,112 [Apps.py:init:99] ---testbed file ready---
+INFO 2023-04-06 23:44:31,207 [Apps.py:init:105] ---Opening Main Menu Application---
+INFO 2023-04-06 23:44:32,874 [Apps.py:inputMenu:185] ---Get Custom Commands from txt ---
+INFO 2023-04-06 23:49:23,798 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-04-06 23:49:23,804 [Apps.py:init:91] ---Initialize testbed file---
+INFO 2023-04-06 23:49:23,805 [Apps.py:init:99] ---testbed file ready---
+INFO 2023-04-06 23:49:25,412 [Apps.py:init:105] ---Opening Main Menu Application---
+INFO 2023-04-06 23:49:27,214 [Apps.py:inputMenu:185] ---Get Custom Commands from txt ---
+INFO 2023-04-06 23:53:05,883 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-04-06 23:53:05,890 [Apps.py:init:91] ---Initialize testbed file---
+INFO 2023-04-06 23:53:05,890 [Apps.py:init:99] ---testbed file ready---
+INFO 2023-04-06 23:53:07,307 [Apps.py:init:105] ---Opening Main Menu Application---
+INFO 2023-04-06 23:53:09,001 [Apps.py:inputMenu:185] ---Get Custom Commands from txt ---
+INFO 2023-04-06 23:55:00,650 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-04-06 23:55:00,656 [Apps.py:init:91] ---Initialize testbed file---
+INFO 2023-04-06 23:55:00,657 [Apps.py:init:99] ---testbed file ready---
+INFO 2023-04-06 23:55:02,388 [Apps.py:init:105] ---Opening Main Menu Application---
+INFO 2023-04-06 23:55:06,840 [Apps.py:inputMenu:185] ---Get Custom Commands from txt ---
+INFO 2023-04-06 23:58:18,879 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-04-06 23:58:18,885 [Apps.py:init:91] ---Initialize testbed file---
+INFO 2023-04-06 23:58:18,886 [Apps.py:init:99] ---testbed file ready---
+INFO 2023-04-06 23:58:20,462 [Apps.py:init:105] ---Opening Main Menu Application---
+INFO 2023-04-06 23:58:22,396 [Apps.py:inputMenu:185] ---Get Custom Commands from txt ---
+INFO 2023-04-06 23:59:03,975 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-04-06 23:59:03,981 [Apps.py:init:91] ---Initialize testbed file---
+INFO 2023-04-06 23:59:03,982 [Apps.py:init:99] ---testbed file ready---
+INFO 2023-04-06 23:59:05,162 [Apps.py:init:105] ---Opening Main Menu Application---
+INFO 2023-04-06 23:59:06,941 [Apps.py:inputMenu:185] ---Get Custom Commands from txt ---
+INFO 2023-04-07 00:01:41,862 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-04-07 00:01:41,868 [Apps.py:init:91] ---Initialize testbed file---
+INFO 2023-04-07 00:01:41,869 [Apps.py:init:99] ---testbed file ready---
+INFO 2023-04-07 00:01:43,190 [Apps.py:init:105] ---Opening Main Menu Application---
+INFO 2023-04-07 00:01:46,306 [Apps.py:inputMenu:185] ---Get Custom Commands from txt ---

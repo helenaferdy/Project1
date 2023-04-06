@@ -5,11 +5,17 @@ import csv
 import logging, sys
 import datetime
 
-# LOG_LOCATION = "lib/helenalibs/logs/debug.log"
+
+CUSTOM_FILE = "import/custom.txt"
 TIMESTAMP = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M')
 DATE = datetime.datetime.now().strftime('%Y-%m-%d')
 os.environ["NTC_TEMPLATES_DIR"] = "lib/helenalibs/templates"
 
+custom_commands = []
+with open(CUSTOM_FILE, "r") as f:
+    for csv_command in f:
+        custom_commands.append(csv_command.strip())
+        
 
 class Routers:
     def __init__(self, hostname, ip, username, password, secret, ios_os, out, log_path):
@@ -27,9 +33,6 @@ class Routers:
 
         self.log_path = log_path
         self.errorlog_path = log_path[:-4]+"-error.log"
-
-        if not os.path.exists(self.raw_path):
-            os.makedirs(self.raw_path)
 
     def logging_info(self, message):
         logging.basicConfig(
@@ -81,20 +84,25 @@ class Routers:
 
         if allgood:
             self.connect_command()
-            if self.parse():
-                self.export_csv()
-                if self.command == "show environment":
-                    self.parse_environment_summary()
-                elif self.command == "show processes cpu":
-                    self.parse_cpu_summary()
-
-                    if not os.path.exists(self.cpu_history_path):
-                        os.makedirs(self.cpu_history_path)
-                    self.command = self.command+" history"
-                    self.connect_command()
-                    self.parse_cpu_history()
-                elif self.command == "show inventory":
-                    self.parse_inventory_summary()
+            if self.command in custom_commands:
+                self.export_custom_command()
+            else:
+                if not os.path.exists(self.raw_path):
+                    os.makedirs(self.raw_path)
+                if self.parse():
+                    self.export_csv()
+                    if self.command == "show environment":
+                        self.parse_environment_summary()
+                    elif self.command == "show processes cpu":
+                        self.parse_cpu_summary()
+                        #cpu summary
+                        if not os.path.exists(self.cpu_history_path):
+                            os.makedirs(self.cpu_history_path)
+                        self.command = self.command+" history"
+                        self.connect_command()
+                        self.parse_cpu_history()
+                    elif self.command == "show inventory":
+                        self.parse_inventory_summary()                            
             self.disconnect()
 
     def connect_command(self):
@@ -209,5 +217,19 @@ class Routers:
                 logging.info(f"{self.ip} : Output appended to {self.date_path}{self.hostname}_{self.command}_summary_{TIMESTAMP}.csv")
         except Exception as e:
             err = (f"{self.ip} : Failed appending for {self.date_path}{self.hostname}_{self.command}_summary_{TIMESTAMP}.csv")
+            logging.error(err)
+            self.logging_error(err, e)
+
+    def export_custom_command(self):
+        try:
+            with open(f"{self.date_path}{self.ip}_custom_{TIMESTAMP}.txt", mode="a") as txtfile:
+                txtfile.write('\n---------------------------------------------------------------------------\n')
+                txtfile.write(self.command)
+                txtfile.write('\n---------------------------------------------------------------------------\n')
+                txtfile.write(self.output)
+                txtfile.write('\n---------------------------------------------------------------------------\n\n\n')
+                logging.info(f"{self.ip} : Output appended to {self.date_path}_custom_{TIMESTAMP}.txt")
+        except Exception as e:
+            err = (f"{self.ip} : Failed appending to {self.date_path}_custom_{TIMESTAMP}.txt")
             logging.error(err)
             self.logging_error(err, e)

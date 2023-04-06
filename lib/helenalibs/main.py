@@ -1,4 +1,4 @@
-from lib.helenalibs.router import Routers, TIMESTAMP, DATE
+from lib.helenalibs.router import Routers, TIMESTAMP, DATE, CUSTOM_FILE
 import csv
 import threading
 import os
@@ -7,12 +7,8 @@ import yaml
 # CSV_PATH = "import/env.csv"
 TESTBED =  "testbed/device.yaml"
 
-def helenamain(command, out, log_path):
-    date_path = out+DATE+"/"
-    if not os.path.exists(date_path):
-            os.makedirs(date_path)
-
-    devices = []
+devices = []
+def read_testbed(out, log_path):
     with open(TESTBED) as f:
         device = yaml.safe_load(f)['devices']
         for d in device:
@@ -37,6 +33,13 @@ def helenamain(command, out, log_path):
             )
             devices.append(new_router)
 
+
+def helenamain(command, out, log_path):
+    date_path = out+DATE+"/"
+    if not os.path.exists(date_path):
+            os.makedirs(date_path)
+
+    read_testbed(out, log_path)
         
     if command == "show environment":
         headers = ['No','Hostname', 'Site', 'Power Supply', 'Temperature', 'Fan']
@@ -65,3 +68,24 @@ def export_headers(headers, command, date_path):
     with open(f"{date_path}{command}_summary_{TIMESTAMP}.csv", 'w', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(headers)
+
+
+def helenacustom(out, log_path):
+    date_path = out+DATE+"/"
+    if not os.path.exists(date_path):
+            os.makedirs(date_path)
+
+    read_testbed(out, log_path)
+
+    with open(CUSTOM_FILE, "r") as f:
+        for command in f:
+            threads = []
+            i = 1
+            for device in devices:
+                thread = threading.Thread(target=device.connect, args=(command.strip(), i))
+                thread.start()
+                threads.append(thread)
+                i +=1
+
+            for thread in threads:
+                thread.join()
