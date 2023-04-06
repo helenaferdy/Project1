@@ -5,21 +5,14 @@ import csv
 import logging, sys
 import datetime
 
-LOG_LOCATION = "lib/helenalibs/logs/debug.log"
+# LOG_LOCATION = "lib/helenalibs/logs/debug.log"
 TIMESTAMP = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M')
 DATE = datetime.datetime.now().strftime('%Y-%m-%d')
 os.environ["NTC_TEMPLATES_DIR"] = "lib/helenalibs/templates"
 
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s [%(levelname)s] %(message)s', 
-    handlers=[
-        logging.FileHandler(LOG_LOCATION),
-        logging.StreamHandler(sys.stdout)
-        ])
 
 class Routers:
-    def __init__(self, hostname, ip, username, password, secret, ios_os, out):
+    def __init__(self, hostname, ip, username, password, secret, ios_os, out, log_path):
         self.hostname = hostname
         self.ip = ip
         self.username = username
@@ -32,9 +25,30 @@ class Routers:
         self.raw_path = self.date_path+"raw_data/"
         self.cpu_history_path = self.date_path+"history/"
 
+        self.log_path = log_path
+        self.errorlog_path = log_path[:-4]+"-error.log"
+
         if not os.path.exists(self.raw_path):
             os.makedirs(self.raw_path)
-        
+
+    def logging_info(self, message):
+        logging.basicConfig(
+            level=logging.INFO,
+            format='%(asctime)s [%(levelname)s] %(message)s', 
+            handlers=[
+                logging.FileHandler(self.log_path),
+                logging.StreamHandler(sys.stdout)
+                ])
+        logging.info(message)
+    
+    def logging_error(self, message, e=""):
+        current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        with open(self.errorlog_path, 'a') as f:
+            f.write(f'{current_time} [ERROR] {message}\n')
+            e_list = str(e).split("\n")
+            e_list = [line for line in e_list if line.strip()]
+            for line in e_list:
+                f.write(f'{current_time} {line} \n')
 
     def connect(self, command, i):
         allgood = False
@@ -47,6 +61,8 @@ class Routers:
             "password": self.password,
             "secret": self.secret,
         }
+        
+        self.logging_info(f"{self.ip} : Connecting ")
         try:
             self.connection = ConnectHandler(**device)
             logging.info(f"{self.ip} : Connected ")
@@ -55,9 +71,13 @@ class Routers:
                 logging.info(f"{self.ip} : Entered enable mode ")
                 allgood = True
             except Exception as e:
-                logging.error(f"{self.ip}: Failed to enter enable mode")
+                err = (f"{self.ip} : Failed to enter enable mode")
+                logging.error(err)
+                self.logging_error(err, e)
         except Exception as e:
-            logging.error(f"{self.ip}: Failed to connect")
+            err = (f"{self.ip} : Failed to connect")
+            logging.error(err)
+            self.logging_error(err, e)
 
         if allgood:
             self.connect_command()
@@ -82,15 +102,25 @@ class Routers:
             self.output = self.connection.send_command(self.command)
             logging.info(f"{self.ip} : Command '{self.command}' sent")
         except Exception as e:
-            logging.error(f"{self.ip} : Failed to parse command '{self.command}'")
+            err = (f"{self.ip} : Failed to parse command '{self.command}'")
+            logging.error(err)
+            self.logging_error(err, e)
     
     def parse(self):
         try:
             self.parsed_output = parse_output(platform=self.ios_os, command=self.command, data=self.output)
-            logging.info(f"{self.ip} : Command '{self.command}' parsed")
-            return True
+            if self.parsed_output == []:
+                err = (f"{self.ip} : Parsed return empty for command '{self.command}'")
+                logging.error(err)
+                self.logging_error(err)
+                return False
+            else:
+                logging.info(f"{self.ip} : Command '{self.command}' parsed")
+                return True
         except Exception as e:
-            logging.error(f"{self.ip} : Failed to parse command '{self.command}'")
+            err = (f"{self.ip} : Failed to parse command '{self.command}'")
+            logging.error(err)
+            self.logging_error(err, e)
 
     def export_csv(self):
         try:
@@ -102,7 +132,9 @@ class Routers:
                     writer.writerow(row)
             logging.info(f"{self.ip} : Output saved to {self.raw_path}{self.hostname}_{self.command}_{TIMESTAMP}.csv")
         except Exception as e:
-            logging.error(f"{self.ip} : Failed saving to {self.raw_path}{self.hostname}_{self.command}_{TIMESTAMP}.csv")
+            err = (f"{self.ip} : Failed saving to {self.raw_path}{self.hostname}_{self.command}_{TIMESTAMP}.csv")
+            logging.error(err)
+            self.logging_error(err, e)
 
     def disconnect(self):
         self.connection.disconnect()
@@ -130,6 +162,7 @@ class Routers:
         self.export_csv_bonus(final_environment)
 
     def parse_cpu_summary(self):
+        cpu_load = 0
         for p in self.parsed_output:
             cpu_load = int(p['cpu_5_min'])
             if cpu_load <= 40:
@@ -152,8 +185,10 @@ class Routers:
             with open(f"{self.cpu_history_path}{self.hostname}_{self.command}_{TIMESTAMP}.txt", mode="w", newline="") as txtfile:
                 txtfile.write(self.output)
                 logging.info(f"{self.ip} : Output saved to {self.cpu_history_path}{self.hostname}_{self.command}_{TIMESTAMP}.txt")
-        except:
-            logging.error(f"{self.ip} : Failed saving to {self.cpu_history_path}{self.hostname}_{self.command}_{TIMESTAMP}.txt")
+        except Exception as e:
+            err = (f"{self.ip} : Failed saving to {self.cpu_history_path}{self.hostname}_{self.command}_{TIMESTAMP}.txt")
+            logging.error(err)
+            self.logging_error(err, e)
     
     def parse_inventory_summary(self):
         i = 1
@@ -173,4 +208,6 @@ class Routers:
                 csvwriter.writerow(final)
                 logging.info(f"{self.ip} : Output appended to {self.date_path}{self.hostname}_{self.command}_summary_{TIMESTAMP}.csv")
         except Exception as e:
-            logging.error(f"{self.ip} : Failed appending for {self.date_path}{self.hostname}_{self.command}_summary_{TIMESTAMP}.csv")
+            err = (f"{self.ip} : Failed appending for {self.date_path}{self.hostname}_{self.command}_summary_{TIMESTAMP}.csv")
+            logging.error(err)
+            self.logging_error(err, e)

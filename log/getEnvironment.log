@@ -1,5 +1,42 @@
-2023-03-24 14:57:52,429 [INFO] ---Starting the Application---
-2023-03-24 14:57:52,465 [INFO] ---Initialize testbed file---
-2023-03-24 14:57:52,469 [INFO] ---testbed file ready---
-2023-03-24 14:57:54,414 [INFO] ---Opening Main Menu Application---
-2023-03-24 14:57:57,309 [INFO] ---Closing Application---
+2023-04-06 18:08:19,825 [INFO] 198.18.0.123 : Connecting 
+2023-04-06 18:08:19,826 [INFO] 198.18.0.121 : Connecting 
+2023-04-06 18:08:19,826 [INFO] 198.18.0.122 : Connecting 
+2023-04-06 18:08:19,826 [INFO] 198.18.0.131 : Connecting 
+2023-04-06 18:08:19,826 [INFO] 198.18.0.132 : Connecting 
+2023-04-06 18:08:19,827 [INFO] 198.18.0.133 : Connecting 
+2023-04-06 18:08:19,872 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 18:08:19,872 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 18:08:19,872 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-06 18:08:20,055 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 18:08:20,084 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-06 18:08:20,308 [INFO] Authentication (password) successful!
+2023-04-06 18:08:20,308 [INFO] Authentication (password) successful!
+2023-04-06 18:08:20,344 [INFO] Authentication (password) successful!
+2023-04-06 18:08:20,651 [INFO] Authentication (password) successful!
+2023-04-06 18:08:20,679 [INFO] 198.18.0.122 : Connected 
+2023-04-06 18:08:20,678 [INFO] 198.18.0.123 : Connected 
+2023-04-06 18:08:20,679 [INFO] 198.18.0.121 : Connected 
+2023-04-06 18:08:20,681 [INFO] Authentication (password) successful!
+2023-04-06 18:08:20,939 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-06 18:08:20,940 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-06 18:08:20,941 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-06 18:08:21,065 [INFO] 198.18.0.123 : Command 'show environment' sent
+2023-04-06 18:08:21,075 [INFO] 198.18.0.121 : Command 'show environment' sent
+2023-04-06 18:08:21,076 [INFO] 198.18.0.122 : Command 'show environment' sent
+2023-04-06 18:08:21,102 [ERROR] 198.18.0.121 : Parsed return empty for command 'show environment'
+2023-04-06 18:08:21,102 [ERROR] 198.18.0.123 : Parsed return empty for command 'show environment'
+2023-04-06 18:08:21,102 [ERROR] 198.18.0.122 : Parsed return empty for command 'show environment'
+2023-04-06 18:08:21,139 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-06 18:08:21,139 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-06 18:08:21,141 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-06 18:08:21,235 [INFO] 198.18.0.132 : Connected 
+2023-04-06 18:08:21,249 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-06 18:08:21,448 [INFO] 198.18.0.132 : Command 'show environment' sent
+2023-04-06 18:08:21,451 [ERROR] 198.18.0.132 : Parsed return empty for command 'show environment'
+2023-04-06 18:08:21,476 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-06 18:08:21,658 [INFO] 198.18.0.131 : Connected 
+2023-04-06 18:08:21,685 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-06 18:08:22,177 [INFO] 198.18.0.131 : Command 'show environment' sent
+2023-04-06 18:08:22,180 [ERROR] 198.18.0.131 : Parsed return empty for command 'show environment'
+2023-04-06 18:08:22,205 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-06 18:08:29,829 [ERROR] 198.18.0.133 : Failed to connect
