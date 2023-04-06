@@ -1,0 +1,12 @@
+2023-04-06 18:08:21 [ERROR] 198.18.0.121 : Parsed return empty for command 'show environment'
+2023-04-06 18:08:21 [ERROR] 198.18.0.122 : Parsed return empty for command 'show environment'
+2023-04-06 18:08:21 [ERROR] 198.18.0.123 : Parsed return empty for command 'show environment'
+2023-04-06 18:08:21 [ERROR] 198.18.0.132 : Parsed return empty for command 'show environment'
+2023-04-06 18:08:22 [ERROR] 198.18.0.131 : Parsed return empty for command 'show environment'
+2023-04-06 18:08:29 [ERROR] 198.18.0.133 : Failed to connect
+2023-04-06 18:08:29 TCP connection to device failed. 
+2023-04-06 18:08:29 Common causes of this problem are: 
+2023-04-06 18:08:29 1. Incorrect hostname or IP address. 
+2023-04-06 18:08:29 2. Wrong TCP port. 
+2023-04-06 18:08:29 3. Intermediate firewall blocking access. 
+2023-04-06 18:08:29 Device settings: cisco_ios 198.18.0.133:22 
