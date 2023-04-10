@@ -246,7 +246,7 @@ class Routers:
                 txtfile.write('\n---------------------------------------------------------------------------\n')
                 txtfile.write(self.output)
                 txtfile.write('\n---------------------------------------------------------------------------\n\n\n')
-                logging.info(f"{self.ip} : Output appended to {self.date_path}_custom_{TIMESTAMP}.txt")
+                logging.info(f"{self.ip} : Output appended to {self.date_path}{self.ip}_custom_{TIMESTAMP}.txt")
         except Exception as e:
             err = (f"{self.ip} : Failed appending to {self.date_path}{self.ip}_custom_{TIMESTAMP}.txt")
             logging.error(err)
