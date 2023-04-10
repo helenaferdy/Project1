@@ -17,6 +17,7 @@ from lib.getCRC.main import interfaceCRC
 from lib.getInven.main import getInven
 from lib.getCDP.main import getCDP
 from lib.getEnvi.main import getEnvi
+from lib.getCustom.main import getCustom
 import logging
 from rich.logging import RichHandler
 import concurrent.futures
@@ -46,7 +47,7 @@ logger.addHandler(shell_handler)
 logger.addHandler(file_handler)
 
 
-Menu = ['Get Configuration Device','Get Inventory Device','Get Memory Utils','Get CPU Utils','Get Logging Device','Get Interface CRC','Get CDP Neighbours','Get Environtment','Exit']
+Menu = ['Get Configuration Device','Get Inventory Device','Get Memory Utils','Get CPU Utils','Get Logging Device','Get Interface CRC','Get CDP Neighbours','Get Environtment','Get Custom Commands','Exit']
 
 testbedFile = 'testbed/device.yaml'
 
@@ -179,8 +180,14 @@ def inputMenu(value):
         
         #### function get Logging device ####
         getEnvi(testbedFile)
-        
+
     elif(value==Menu[8] or value=='9'):
+        logger.info("---Get Custom Commands from txt ---")
+        
+        #### function get Logging device ####
+        getCustom(testbedFile)
+        
+    elif(value==Menu[10] or value=='10'):
         logger.info("---Closing Application---")
         time.sleep(1)
         sys.exit()

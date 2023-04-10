@@ -5,11 +5,17 @@ import csv
 import logging, sys
 import datetime
 
-# LOG_LOCATION = "lib/helenalibs/logs/debug.log"
+CONNECT_RETRY = 2
+CUSTOM_FILE = "import/custom.txt"
 TIMESTAMP = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M')
 DATE = datetime.datetime.now().strftime('%Y-%m-%d')
 os.environ["NTC_TEMPLATES_DIR"] = "lib/helenalibs/templates"
 
+custom_commands = []
+with open(CUSTOM_FILE, "r") as f:
+    for csv_command in f:
+        custom_commands.append(csv_command.strip())
+        
 
 class Routers:
     def __init__(self, hostname, ip, username, password, secret, ios_os, out, log_path):
@@ -27,9 +33,6 @@ class Routers:
 
         self.log_path = log_path
         self.errorlog_path = log_path[:-4]+"-error.log"
-
-        if not os.path.exists(self.raw_path):
-            os.makedirs(self.raw_path)
 
     def logging_info(self, message):
         logging.basicConfig(
@@ -51,7 +54,7 @@ class Routers:
                 f.write(f'{current_time} {line} \n')
 
     def connect(self, command, i):
-        allgood = False
+        connected = False
         self.command = command
         self.i = i
         device = {
@@ -63,39 +66,52 @@ class Routers:
         }
         
         self.logging_info(f"{self.ip} : Connecting ")
-        try:
-            self.connection = ConnectHandler(**device)
-            logging.info(f"{self.ip} : Connected ")
+        retry = 0
+        while retry < CONNECT_RETRY:
+            if retry > 0:
+                logging.info(f"{self.ip} : Retrying connection ")
             try:
-                self.connection.enable()
-                logging.info(f"{self.ip} : Entered enable mode ")
-                allgood = True
+                self.connection = ConnectHandler(**device)
+                logging.info(f"{self.ip} : Connected ")
+                retry = 2
+                try:
+                    self.connection.enable()
+                    logging.info(f"{self.ip} : Entered enable mode ")
+                    connected = True       
+                except Exception as e:
+                    err = (f"{self.ip} : Failed to enter enable mode")
+                    logging.error(err)
+                    self.logging_error(err, e)
             except Exception as e:
-                err = (f"{self.ip} : Failed to enter enable mode")
+                retry +=1
+                err = (f"{self.ip} : Failed to connect ({retry})")
                 logging.error(err)
                 self.logging_error(err, e)
-        except Exception as e:
-            err = (f"{self.ip} : Failed to connect")
-            logging.error(err)
-            self.logging_error(err, e)
 
-        if allgood:
-            self.connect_command()
-            if self.parse():
-                self.export_csv()
-                if self.command == "show environment":
-                    self.parse_environment_summary()
-                elif self.command == "show processes cpu":
-                    self.parse_cpu_summary()
+        if connected and self.command != "custom":
+            self.after_connect()
+        elif connected and self.command == "custom":
+            return True
 
-                    if not os.path.exists(self.cpu_history_path):
-                        os.makedirs(self.cpu_history_path)
-                    self.command = self.command+" history"
-                    self.connect_command()
-                    self.parse_cpu_history()
-                elif self.command == "show inventory":
-                    self.parse_inventory_summary()
-            self.disconnect()
+    def after_connect(self):
+        self.connect_command()
+        if not os.path.exists(self.raw_path):
+            os.makedirs(self.raw_path)
+        if self.parse():
+            self.export_csv()
+            if self.command == "show environment":
+                self.parse_environment_summary()
+            elif self.command == "show processes cpu":
+                self.parse_cpu_summary()
+                #cpu history
+                if not os.path.exists(self.cpu_history_path):
+                    os.makedirs(self.cpu_history_path)
+                self.command = self.command+" history"
+                self.connect_command()
+                self.parse_cpu_history()
+            elif self.command == "show inventory":
+                self.parse_inventory_summary()                            
+        self.disconnect()
 
     def connect_command(self):
         try:
@@ -141,7 +157,7 @@ class Routers:
         logging.info(f"{self.ip} : Disconnected succcessfully")
 
 
-    # bonus +++
+    # SUMMARY
     def parse_environment_summary(self):
         self.power = "OK"
         self.temp = "OK"
@@ -209,5 +225,33 @@ class Routers:
                 logging.info(f"{self.ip} : Output appended to {self.date_path}{self.hostname}_{self.command}_summary_{TIMESTAMP}.csv")
         except Exception as e:
             err = (f"{self.ip} : Failed appending for {self.date_path}{self.hostname}_{self.command}_summary_{TIMESTAMP}.csv")
+            logging.error(err)
+            self.logging_error(err, e)
+
+
+    ## CUSTOM COMMAND    
+    def custom_connect(self):
+        if self.connect("custom", 0):
+            for c in custom_commands:
+                self.command = c
+                self.connect_command()
+                if "Invalid" in self.output:
+                    err = (f"{self.ip} : Invalid command '{self.command}'")
+                    logging.error(err)
+                    self.logging_error(err)
+                self.export_custom_command()
+            self.disconnect()
+
+    def export_custom_command(self):
+        try:
+            with open(f"{self.date_path}{self.ip}_custom_{TIMESTAMP}.txt", mode="a") as txtfile:
+                txtfile.write('\n---------------------------------------------------------------------------\n')
+                txtfile.write(self.command)
+                txtfile.write('\n---------------------------------------------------------------------------\n')
+                txtfile.write(self.output)
+                txtfile.write('\n---------------------------------------------------------------------------\n\n\n')
+                logging.info(f"{self.ip} : Output appended to {self.date_path}{self.ip}_custom_{TIMESTAMP}.txt")
+        except Exception as e:
+            err = (f"{self.ip} : Failed appending to {self.date_path}{self.ip}_custom_{TIMESTAMP}.txt")
             logging.error(err)
             self.logging_error(err, e)

@@ -1,7 +1,14 @@
-2023-04-06 18:08:14 [ERROR] 198.18.0.133 : Failed to connect
-2023-04-06 18:08:14 TCP connection to device failed. 
-2023-04-06 18:08:14 Common causes of this problem are: 
-2023-04-06 18:08:14 1. Incorrect hostname or IP address. 
-2023-04-06 18:08:14 2. Wrong TCP port. 
-2023-04-06 18:08:14 3. Intermediate firewall blocking access. 
-2023-04-06 18:08:14 Device settings: cisco_ios 198.18.0.133:22 
+2023-04-10 13:11:54 [ERROR] 198.18.0.133 : Failed to connect (1)
+2023-04-10 13:11:54 TCP connection to device failed. 
+2023-04-10 13:11:54 Common causes of this problem are: 
+2023-04-10 13:11:54 1. Incorrect hostname or IP address. 
+2023-04-10 13:11:54 2. Wrong TCP port. 
+2023-04-10 13:11:54 3. Intermediate firewall blocking access. 
+2023-04-10 13:11:54 Device settings: cisco_ios 198.18.0.133:22 
+2023-04-10 13:12:04 [ERROR] 198.18.0.133 : Failed to connect (2)
+2023-04-10 13:12:04 TCP connection to device failed. 
+2023-04-10 13:12:04 Common causes of this problem are: 
+2023-04-10 13:12:04 1. Incorrect hostname or IP address. 
+2023-04-10 13:12:04 2. Wrong TCP port. 
+2023-04-10 13:12:04 3. Intermediate firewall blocking access. 
+2023-04-10 13:12:04 Device settings: cisco_ios 198.18.0.133:22 
