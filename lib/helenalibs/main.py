@@ -4,7 +4,6 @@ import threading
 import os
 import yaml
 
-# CSV_PATH = "import/env.csv"
 TESTBED =  "testbed/device.yaml"
 
 devices = []
@@ -51,7 +50,6 @@ def helenamain(command, out, log_path):
         headers = ['No', 'Hostname', 'Name', 'PID', 'SN']
         export_headers(headers, command, date_path)
     
-
     threads = []
     i = 1
     for device in devices:
@@ -62,7 +60,6 @@ def helenamain(command, out, log_path):
 
     for thread in threads:
         thread.join()
-
 
 def export_headers(headers, command, date_path):
     with open(f"{date_path}{command}_summary_{TIMESTAMP}.csv", 'w', newline='') as file:
@@ -77,15 +74,11 @@ def helenacustom(out, log_path):
 
     read_testbed(out, log_path)
 
-    with open(CUSTOM_FILE, "r") as f:
-        for command in f:
-            threads = []
-            i = 1
-            for device in devices:
-                thread = threading.Thread(target=device.connect, args=(command.strip(), i))
-                thread.start()
-                threads.append(thread)
-                i +=1
+    threads = []
+    for device in devices:
+        thread = threading.Thread(target=device.custom_connect)
+        thread.start()
+        threads.append(thread)
 
-            for thread in threads:
-                thread.join()
+    for thread in threads:
+        thread.join()
