@@ -660,3 +660,83 @@ INFO 2023-04-10 15:03:33,544 [Apps.py:init:91] ---Initialize testbed file---
 INFO 2023-04-10 15:03:33,545 [Apps.py:init:99] ---testbed file ready---
 INFO 2023-04-10 15:03:35,088 [Apps.py:init:105] ---Opening Main Menu Application---
 INFO 2023-04-10 15:03:37,470 [Apps.py:inputMenu:155] ---Get CPU Utilization---
+INFO 2023-04-10 16:04:41,067 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-04-10 16:04:41,073 [Apps.py:init:91] ---Initialize testbed file---
+INFO 2023-04-10 16:04:41,074 [Apps.py:init:99] ---testbed file ready---
+INFO 2023-04-10 16:04:43,268 [Apps.py:init:105] ---Opening Main Menu Application---
+INFO 2023-04-10 16:04:48,398 [Apps.py:inputMenu:142] ---Get Inventory Device---
+INFO 2023-04-10 16:05:13,339 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-04-10 16:05:13,345 [Apps.py:init:91] ---Initialize testbed file---
+INFO 2023-04-10 16:05:13,346 [Apps.py:init:99] ---testbed file ready---
+INFO 2023-04-10 16:05:15,755 [Apps.py:init:105] ---Opening Main Menu Application---
+INFO 2023-04-10 16:05:18,040 [Apps.py:inputMenu:142] ---Get Inventory Device---
+INFO 2023-04-10 16:05:33,274 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-04-10 16:05:33,280 [Apps.py:init:91] ---Initialize testbed file---
+INFO 2023-04-10 16:05:33,281 [Apps.py:init:99] ---testbed file ready---
+INFO 2023-04-10 16:05:34,833 [Apps.py:init:105] ---Opening Main Menu Application---
+INFO 2023-04-10 16:05:36,453 [Apps.py:inputMenu:142] ---Get Inventory Device---
+INFO 2023-04-10 16:06:35,478 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-04-10 16:06:35,485 [Apps.py:init:91] ---Initialize testbed file---
+INFO 2023-04-10 16:06:35,486 [Apps.py:init:99] ---testbed file ready---
+INFO 2023-04-10 16:06:36,534 [Apps.py:init:105] ---Opening Main Menu Application---
+INFO 2023-04-10 16:06:38,646 [Apps.py:inputMenu:142] ---Get Inventory Device---
+INFO 2023-04-10 16:08:45,180 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-04-10 16:08:45,186 [Apps.py:init:91] ---Initialize testbed file---
+INFO 2023-04-10 16:08:45,187 [Apps.py:init:99] ---testbed file ready---
+INFO 2023-04-10 16:08:46,273 [Apps.py:init:105] ---Opening Main Menu Application---
+INFO 2023-04-10 16:08:48,210 [Apps.py:inputMenu:185] ---Get Custom Commands from txt ---
+INFO 2023-04-10 16:15:29,096 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-04-10 16:15:29,102 [Apps.py:init:91] ---Initialize testbed file---
+INFO 2023-04-10 16:15:29,102 [Apps.py:init:99] ---testbed file ready---
+INFO 2023-04-10 16:15:30,536 [Apps.py:init:105] ---Opening Main Menu Application---
+INFO 2023-04-10 16:15:33,166 [Apps.py:inputMenu:179] ---Get Healty Check / Environtment Device ---
+INFO 2023-04-10 16:16:37,131 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-04-10 16:16:37,137 [Apps.py:init:91] ---Initialize testbed file---
+INFO 2023-04-10 16:16:37,137 [Apps.py:init:99] ---testbed file ready---
+INFO 2023-04-10 16:16:39,702 [Apps.py:init:105] ---Opening Main Menu Application---
+INFO 2023-04-10 16:16:43,502 [Apps.py:inputMenu:179] ---Get Healty Check / Environtment Device ---
+INFO 2023-04-10 16:17:11,360 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-04-10 16:17:11,366 [Apps.py:init:91] ---Initialize testbed file---
+INFO 2023-04-10 16:17:11,367 [Apps.py:init:99] ---testbed file ready---
+INFO 2023-04-10 16:17:15,168 [Apps.py:init:105] ---Opening Main Menu Application---
+INFO 2023-04-10 16:17:18,176 [Apps.py:inputMenu:185] ---Get Custom Commands from txt ---
+INFO 2023-04-10 16:18:42,318 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-04-10 16:18:42,325 [Apps.py:init:91] ---Initialize testbed file---
+INFO 2023-04-10 16:18:42,325 [Apps.py:init:99] ---testbed file ready---
+INFO 2023-04-10 16:18:43,368 [Apps.py:init:105] ---Opening Main Menu Application---
+INFO 2023-04-10 16:18:45,959 [Apps.py:inputMenu:155] ---Get CPU Utilization---
+INFO 2023-04-10 21:06:11,410 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-04-10 21:06:11,416 [Apps.py:init:91] ---Initialize testbed file---
+INFO 2023-04-10 21:06:11,417 [Apps.py:init:99] ---testbed file ready---
+INFO 2023-04-10 21:06:12,609 [Apps.py:init:105] ---Opening Main Menu Application---
+INFO 2023-04-10 21:06:14,359 [Apps.py:inputMenu:185] ---Get Custom Commands from txt ---
+INFO 2023-04-10 21:08:24,398 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-04-10 21:08:24,404 [Apps.py:init:91] ---Initialize testbed file---
+INFO 2023-04-10 21:08:24,405 [Apps.py:init:99] ---testbed file ready---
+INFO 2023-04-10 21:08:25,552 [Apps.py:init:105] ---Opening Main Menu Application---
+INFO 2023-04-10 21:08:28,424 [Apps.py:inputMenu:142] ---Get Inventory Device---
+INFO 2023-04-10 21:12:27,455 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-04-10 21:12:27,461 [Apps.py:init:91] ---Initialize testbed file---
+INFO 2023-04-10 21:12:27,462 [Apps.py:init:99] ---testbed file ready---
+INFO 2023-04-10 21:12:28,541 [Apps.py:init:105] ---Opening Main Menu Application---
+INFO 2023-04-10 21:12:30,082 [Apps.py:inputMenu:142] ---Get Inventory Device---
+INFO 2023-04-10 21:20:12,891 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-04-10 21:20:12,897 [Apps.py:init:91] ---Initialize testbed file---
+INFO 2023-04-10 21:20:12,898 [Apps.py:init:99] ---testbed file ready---
+INFO 2023-04-10 21:20:13,929 [Apps.py:init:105] ---Opening Main Menu Application---
+INFO 2023-04-10 21:20:16,406 [Apps.py:inputMenu:142] ---Get Inventory Device---
+INFO 2023-04-10 21:20:57,199 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-04-10 21:20:57,205 [Apps.py:init:91] ---Initialize testbed file---
+INFO 2023-04-10 21:20:57,205 [Apps.py:init:99] ---testbed file ready---
+INFO 2023-04-10 21:20:58,441 [Apps.py:init:105] ---Opening Main Menu Application---
+INFO 2023-04-10 21:21:01,376 [Apps.py:inputMenu:155] ---Get CPU Utilization---
+INFO 2023-04-10 21:21:28,883 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-04-10 21:21:28,889 [Apps.py:init:91] ---Initialize testbed file---
+INFO 2023-04-10 21:21:28,889 [Apps.py:init:99] ---testbed file ready---
+INFO 2023-04-10 21:21:30,743 [Apps.py:init:105] ---Opening Main Menu Application---
+INFO 2023-04-10 21:21:34,486 [Apps.py:inputMenu:179] ---Get Healty Check / Environtment Device ---
+INFO 2023-04-10 21:22:07,879 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-04-10 21:22:07,884 [Apps.py:init:91] ---Initialize testbed file---
+INFO 2023-04-10 21:22:07,885 [Apps.py:init:99] ---testbed file ready---
+INFO 2023-04-10 21:22:09,641 [Apps.py:init:105] ---Opening Main Menu Application---
+INFO 2023-04-10 21:22:14,340 [Apps.py:inputMenu:185] ---Get Custom Commands from txt ---

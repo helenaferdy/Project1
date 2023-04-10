@@ -19,7 +19,6 @@ def read_testbed(out, log_path):
             the_ios_os = device[d]['os']
             the_log_path = log_path
 
-            print(f"{d} : {the_ip}")
             new_router = Routers(
                 d,
                 the_ip,
