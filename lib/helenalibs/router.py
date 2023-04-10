@@ -32,9 +32,13 @@ class Routers:
         self.cpu_history_path = self.date_path+"history/"
 
         self.log_path = log_path
-        self.errorlog_path = log_path[:-4]+"-error.log"
+        self.errorlog = self.log_path[0:3]+"/error/"
+        self.errorlog_path = self.errorlog+self.log_path[4:-4]+"-error.log"
 
     def logging_info(self, message):
+        if not os.path.exists(self.errorlog):
+            os.makedirs(self.errorlog)
+
         logging.basicConfig(
             level=logging.INFO,
             format='%(asctime)s [%(levelname)s] %(message)s', 
