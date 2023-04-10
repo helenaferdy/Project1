@@ -235,6 +235,10 @@ class Routers:
             for c in custom_commands:
                 self.command = c
                 self.connect_command()
+                if "Invalid" in self.output:
+                    err = (f"{self.ip} : Invalid command '{self.command}'")
+                    logging.error(err)
+                    self.logging_error(err)
                 self.export_custom_command()
             self.disconnect()
 

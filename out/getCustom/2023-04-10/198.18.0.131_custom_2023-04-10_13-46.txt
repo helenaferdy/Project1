@@ -3,7 +3,7 @@
 show version
 ---------------------------------------------------------------------------
 
-Mon Apr 10 06:14:26.292 UTC
+Mon Apr 10 06:39:10.649 UTC
 Cisco IOS XR Software, Version 7.5.2
 Copyright (c) 2013-2022 by Cisco Systems, Inc.
 
@@ -17,7 +17,7 @@ Build Information:
  Label        : 7.5.2-0
 
 cisco IOS-XRv 9000 () processor
-System uptime is 4 weeks 4 days 6 hours 38 minutes
+System uptime is 4 weeks 4 days 7 hours 3 minutes
 
 ---------------------------------------------------------------------------
 
@@ -27,8 +27,8 @@ System uptime is 4 weeks 4 days 6 hours 38 minutes
 show clock
 ---------------------------------------------------------------------------
 
-Mon Apr 10 06:14:26.852 UTC
-06:14:26.920 UTC Mon Apr 10 2023
+Mon Apr 10 06:39:10.888 UTC
+06:39:10.940 UTC Mon Apr 10 2023
 ---------------------------------------------------------------------------
 
 
@@ -37,7 +37,7 @@ Mon Apr 10 06:14:26.852 UTC
 show run
 ---------------------------------------------------------------------------
 
-Mon Apr 10 06:14:27.122 UTC
+Mon Apr 10 06:39:11.120 UTC
 Building configuration...
 !! IOS XR Configuration 7.5.2
 !! Last configuration change at Wed Mar 29 00:56:04 2023 by cisco
@@ -136,7 +136,7 @@ show interfaces status
 show interfaces description
 ---------------------------------------------------------------------------
 
-Mon Apr 10 06:14:27.953 UTC
+Mon Apr 10 06:39:11.783 UTC
 
 Interface          Status      Protocol    Description
 --------------------------------------------------------------------------------
@@ -188,7 +188,7 @@ show port-channel
 show ip interface brief
 ---------------------------------------------------------------------------
 
-Mon Apr 10 06:14:28.707 UTC
+Mon Apr 10 06:39:12.487 UTC
 
 Interface                      IP-Address      Status          Protocol Vrf-Name
 MgmtEth0/RP0/CPU0/0            unassigned      Shutdown        Down     default 
@@ -207,16 +207,16 @@ GigabitEthernet0/0/0/6         unassigned      Shutdown        Down     default
 show cdp neighbors
 ---------------------------------------------------------------------------
 
-Mon Apr 10 06:14:29.045 UTC
+Mon Apr 10 06:39:12.718 UTC
 Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
                   S - Switch, H - Host, I - IGMP, r - Repeater
 
 Device ID       Local Intrfce    Holdtme Capability Platform  Port ID
-xe3             Gi0/0/0/0        170     R I        CSR1000V  Gi1             
-xe2             Gi0/0/0/0        155     R I        CSR1000V  Gi1             
-xe5             Gi0/0/0/0        145     R I        CSR1000V  Gi1             
-xe4             Gi0/0/0/0        178     R I        CSR1000V  Gi1             
-xe1.helena.gg   Gi0/0/0/0        154     R I        CSR1000V  Gi6             
+xe3             Gi0/0/0/0        136     R I        CSR1000V  Gi1             
+xe2             Gi0/0/0/0        129     R I        CSR1000V  Gi1             
+xe5             Gi0/0/0/0        157     R I        CSR1000V  Gi1             
+xe4             Gi0/0/0/0        147     R I        CSR1000V  Gi1             
+xe1.helena.gg   Gi0/0/0/0        132     R I        CSR1000V  Gi6             
 ---------------------------------------------------------------------------
 
 
@@ -265,7 +265,7 @@ show vpc brief
 show inventory
 ---------------------------------------------------------------------------
 
-Mon Apr 10 06:14:30.699 UTC
+Mon Apr 10 06:39:13.830 UTC
 NAME: "0/0", DESCR: "Cisco IOS-XRv 9000 Centralized Line Card"
 PID: R-IOSXRV9000-LC-C , VID: V01, SN: 06B08130FB9
 
@@ -313,7 +313,7 @@ show ip arp
 dir
 ---------------------------------------------------------------------------
 
-Mon Apr 10 06:14:31.204 UTC
+Mon Apr 10 06:39:14.382 UTC
 
 Directory of /misc/scratch
    15 lrwxrwxrwx. 1    12 Feb 18 08:41 config -> /misc/config
@@ -360,7 +360,7 @@ show environment all
 show platform
 ---------------------------------------------------------------------------
 
-Mon Apr 10 06:14:32.105 UTC
+Mon Apr 10 06:39:15.352 UTC
 Node              Type                       State             Config state
 --------------------------------------------------------------------------------
 0/0/CPU0          R-IOSXRV9000-LC-C          IOS XR RUN        NSHUT
@@ -412,7 +412,7 @@ show processes cpu sorted
 show processes cpu
 ---------------------------------------------------------------------------
 
-Mon Apr 10 06:14:32.834 UTC
+Mon Apr 10 06:39:16.573 UTC
 ---- node0_RP0_CPU0 ----
 
 CPU utilization for one minute: 1%; five minutes: 1%; fifteen minutes: 1%
@@ -737,8 +737,10 @@ PID    1Min    5Min    15Min Process
 10674    0%      0%       0% perl
 10872    0%      0%       0% perl
 11229    0%      0%       0% perl
-25163    0%      0%       0% sleep
-25194    0%      0%       0% sleep
+27680    0%      0%       0% sleep
+27733    0%      0%       0% sleep
+27734    0%      0%       0% sshd_child_handler
+27744    0%      0%       0% exec
 
 ---------------------------------------------------------------------------
 
@@ -758,7 +760,7 @@ show platform software status control-processor brief
 show ip ospf neighbor
 ---------------------------------------------------------------------------
 
-Mon Apr 10 06:14:33.205 UTC
+Mon Apr 10 06:39:17.107 UTC
 
 * Indicates MADJ interface
 # Indicates Neighbor awaiting BFD session up
@@ -766,7 +768,7 @@ Mon Apr 10 06:14:33.205 UTC
 Neighbors for OSPF 1
 
 Neighbor ID     Pri   State           Dead Time   Address         Interface
-1.1.2.1         1     FULL/BDR        00:00:38    120.0.0.1       GigabitEthernet0/0/0/3
+1.1.2.1         1     FULL/BDR        00:00:31    120.0.0.1       GigabitEthernet0/0/0/3
     Neighbor is up for 4w3d
 
 Total neighbor count: 1
@@ -778,7 +780,7 @@ Total neighbor count: 1
 show ip bgp summary
 ---------------------------------------------------------------------------
 
-Mon Apr 10 06:14:33.516 UTC
+Mon Apr 10 06:39:17.400 UTC
 % BGP instance 'default' not active
 ---------------------------------------------------------------------------
 
@@ -788,7 +790,7 @@ Mon Apr 10 06:14:33.516 UTC
 show ip route
 ---------------------------------------------------------------------------
 
-Mon Apr 10 06:14:33.773 UTC
+Mon Apr 10 06:39:17.768 UTC
 
 Codes: C - connected, S - static, R - RIP, B - BGP, (>) - Diversion path
        D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
@@ -819,170 +821,15 @@ L    198.18.0.131/32 is directly connected, 4w4d, GigabitEthernet0/0/0/0
 show logging
 ---------------------------------------------------------------------------
 
-Mon Apr 10 06:14:34.130 UTC
+Mon Apr 10 06:39:18.107 UTC
 Syslog logging: enabled (0 messages dropped, 0 flushes, 0 overruns)
     Console logging: Disabled
     Monitor logging: level debugging, 0 messages logged
     Trap logging: level informational, 0 messages logged
-    Buffer logging: level debugging, 251336 messages logged
+    Buffer logging: level debugging, 251491 messages logged
 
 Log Buffer (2097152 bytes):
 
-RP/0/RP0/CPU0:Apr  9 22:28:03.440 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:28:15.552 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:28:26.750 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:28:38.253 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:28:49.543 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:28:59.662 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:29:09.799 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:29:19.840 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:29:31.339 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:29:42.286 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:29:54.631 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:30:05.661 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:30:15.711 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:30:26.833 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:30:37.131 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:30:49.354 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:31:01.003 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:31:11.338 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:31:22.056 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:31:33.181 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:31:43.585 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:31:54.822 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:32:06.607 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:32:17.354 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:32:28.200 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:32:38.380 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:32:49.147 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:32:59.166 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:33:10.846 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:33:23.441 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:33:33.598 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:33:44.920 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:33:56.367 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:34:07.614 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:34:18.808 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:34:30.190 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:34:40.724 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.3, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:34:50.850 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:35:01.682 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:35:14.183 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:35:24.422 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:35:35.026 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:35:46.439 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:35:56.909 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:36:08.682 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:36:20.457 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:36:30.511 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:36:41.497 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:36:52.799 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:37:02.834 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.3, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:37:13.671 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:37:25.851 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:37:36.071 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:37:46.799 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:37:57.850 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:38:07.980 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.3, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:38:18.000 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:38:29.429 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:38:41.476 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:38:52.265 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:39:04.736 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:39:15.277 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:39:25.486 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:39:37.953 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:39:48.114 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:39:58.843 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:40:10.624 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:40:21.174 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.3, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:40:31.692 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:40:44.765 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:40:54.887 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:41:05.891 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:41:16.848 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:41:27.255 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:41:37.754 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:41:50.627 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:42:02.474 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:42:13.597 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:42:24.982 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:42:35.049 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.3, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:42:46.902 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:42:57.424 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:43:09.508 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:43:20.135 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:43:30.180 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:43:41.004 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:43:53.930 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:44:04.627 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:44:15.379 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:44:26.554 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:44:36.742 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:44:46.796 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:44:58.023 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.3, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:45:09.858 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:45:19.955 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:45:30.737 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:45:40.992 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:45:52.581 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:46:02.825 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:46:13.263 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.3, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:46:24.770 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:46:36.887 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:46:47.097 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:46:59.933 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:47:09.935 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:47:20.034 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:47:31.434 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:47:42.740 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:47:52.833 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:48:05.184 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:48:16.185 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:48:26.569 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:48:38.333 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/3 
-RP/0/RP0/CPU0:Apr  9 22:48:48.774 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:48:59.031 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:49:10.881 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:49:21.323 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.3, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:49:31.522 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:49:42.824 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:49:54.693 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:50:07.312 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:50:17.626 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:50:28.307 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:50:38.560 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:50:50.404 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:51:00.871 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:51:11.141 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:51:23.182 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:51:33.743 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:51:44.469 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.3, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:51:55.649 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:52:05.661 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:52:16.088 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:52:26.700 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:52:40.647 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:52:51.187 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.3, GigabitEthernet0/0/0/3 
-RP/0/RP0/CPU0:Apr  9 22:53:01.426 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:53:13.448 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:53:23.962 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:53:34.933 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:53:46.919 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:53:59.387 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:54:11.244 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:54:21.392 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:54:33.326 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:54:43.591 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:54:54.261 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:55:05.340 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.3, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:55:17.206 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:55:28.361 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:55:40.087 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:55:50.453 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.4, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:56:01.844 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.3, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:56:13.969 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
-RP/0/RP0/CPU0:Apr  9 22:56:24.406 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
 RP/0/RP0/CPU0:Apr  9 22:56:36.189 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
 RP/0/RP0/CPU0:Apr  9 22:56:46.322 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
 RP/0/RP0/CPU0:Apr  9 22:56:57.634 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.4, GigabitEthernet0/0/0/4 
@@ -3398,6 +3245,161 @@ RP/0/RP0/CPU0:Apr 10 06:14:18.514 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Rece
 RP/0/RP0/CPU0:Apr 10 06:14:25.024 UTC: SSHD_[66165]: %SECURITY-SSHD-6-INFO_WINDOW_SIZE : Failed to set window size row: 1000, column: 511. Error: 'tty-infra' detected the 'fatal' condition 'An invalid operation has been requested' 
 RP/0/RP0/CPU0:Apr 10 06:14:25.137 UTC: SSHD_[66165]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
 RP/0/RP0/CPU0:Apr 10 06:14:28.904 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.3, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:14:35.161 UTC: SSHD_[66165]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.98' logged out on 'vty0' 
+RP/0/RP0/CPU0:Apr 10 06:14:39.583 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:14:49.810 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:15:00.670 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:15:10.936 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:15:22.637 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.4, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:15:33.491 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:15:44.623 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.3, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:15:55.940 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:16:06.425 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:16:16.589 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:16:27.965 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:16:38.707 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:16:49.992 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.3, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:17:01.691 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/3 
+RP/0/RP0/CPU0:Apr 10 06:17:11.751 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:17:22.156 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:17:33.701 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:17:44.503 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:17:54.507 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:18:05.473 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.4, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:18:17.392 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:18:27.725 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:18:39.669 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:18:50.225 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:19:00.390 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:19:11.464 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:19:21.527 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.4, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:19:31.985 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.3, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:19:42.588 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:19:54.105 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:20:05.154 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:20:15.455 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:20:26.900 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:20:38.417 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.4, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:20:48.755 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.3, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:20:58.843 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:21:09.460 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:21:20.989 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:21:31.083 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:21:41.575 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:21:53.658 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.4, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:21:57.888 UTC: SSHD_[66821]: %SECURITY-SSHD-6-INFO_WINDOW_SIZE : Failed to set window size row: 1000, column: 511. Error: 'tty-infra' detected the 'fatal' condition 'An invalid operation has been requested' 
+RP/0/RP0/CPU0:Apr 10 06:21:57.922 UTC: SSHD_[66821]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Apr 10 06:22:03.767 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.3, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:22:14.893 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:22:21.575 UTC: SSHD_[66821]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Apr 10 06:22:26.720 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:22:37.885 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:22:50.735 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.4, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:23:02.037 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:23:13.811 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:23:24.704 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:23:29.365 UTC: SSHD_[67044]: %SECURITY-SSHD-6-INFO_WINDOW_SIZE : Failed to set window size row: 1000, column: 511. Error: 'tty-infra' detected the 'fatal' condition 'An invalid operation has been requested' 
+RP/0/RP0/CPU0:Apr 10 06:23:29.407 UTC: SSHD_[67044]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Apr 10 06:23:39.096 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.4, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:23:49.830 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:23:55.217 UTC: SSHD_[67044]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Apr 10 06:24:00.340 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:24:11.598 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:24:21.793 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:24:32.690 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:24:33.254 UTC: SSHD_[67280]: %SECURITY-SSHD-6-INFO_WINDOW_SIZE : Failed to set window size row: 1000, column: 511. Error: 'tty-infra' detected the 'fatal' condition 'An invalid operation has been requested' 
+RP/0/RP0/CPU0:Apr 10 06:24:33.302 UTC: SSHD_[67280]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Apr 10 06:24:45.915 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.4, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:24:48.394 UTC: SSHD_[67280]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Apr 10 06:24:56.538 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:25:07.695 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:25:19.146 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:25:29.306 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:25:41.614 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.3, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:25:52.612 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:26:02.484 UTC: SSHD_[67532]: %SECURITY-SSHD-6-INFO_WINDOW_SIZE : Failed to set window size row: 1000, column: 511. Error: 'tty-infra' detected the 'fatal' condition 'An invalid operation has been requested' 
+RP/0/RP0/CPU0:Apr 10 06:26:02.523 UTC: SSHD_[67532]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Apr 10 06:26:02.852 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:26:14.778 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:26:20.772 UTC: SSHD_[67532]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Apr 10 06:26:26.294 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:26:36.433 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:26:47.113 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:26:58.842 UTC: SSHD_[67745]: %SECURITY-SSHD-6-INFO_WINDOW_SIZE : Failed to set window size row: 1000, column: 511. Error: 'tty-infra' detected the 'fatal' condition 'An invalid operation has been requested' 
+RP/0/RP0/CPU0:Apr 10 06:26:58.881 UTC: SSHD_[67745]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Apr 10 06:26:59.085 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:27:09.149 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:27:21.380 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:27:33.025 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:27:43.807 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.3, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:27:44.693 UTC: SSHD_[67745]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Apr 10 06:27:56.311 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:28:07.205 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:28:14.087 UTC: SSHD_[67957]: %SECURITY-SSHD-6-INFO_WINDOW_SIZE : Failed to set window size row: 1000, column: 511. Error: 'tty-infra' detected the 'fatal' condition 'An invalid operation has been requested' 
+RP/0/RP0/CPU0:Apr 10 06:28:14.126 UTC: SSHD_[67957]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.99' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Apr 10 06:28:17.263 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:28:29.288 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:28:40.214 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:28:50.275 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.3, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:29:02.563 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:29:06.062 UTC: SSHD_[67957]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'cisco' from '10.16.36.99' logged out on 'vty0' 
+RP/0/RP0/CPU0:Apr 10 06:29:13.909 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.4, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:29:25.620 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:29:35.988 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:29:47.779 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.3, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:29:59.495 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:30:10.514 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:30:21.942 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.4, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:30:32.594 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:30:42.595 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:30:54.810 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:31:06.242 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:31:17.664 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:31:29.947 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:31:40.471 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:31:52.060 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.3, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:32:02.206 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:32:15.565 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:32:25.957 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:32:36.808 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:32:48.563 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.3, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:32:58.632 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:33:12.279 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:33:22.578 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.4, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:33:33.266 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:33:43.322 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:33:54.215 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:34:04.680 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:34:18.158 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:34:28.507 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:34:38.508 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:34:48.750 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:35:00.363 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:35:10.516 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:35:21.371 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.3, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:35:34.122 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:35:44.466 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:35:54.997 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:36:05.959 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:36:16.417 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:36:28.757 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.3, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:36:40.250 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:36:51.301 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.3, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:37:02.238 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:37:12.781 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:37:24.607 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.3, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:37:37.558 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:37:47.798 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:37:57.953 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:38:09.414 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.2, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:38:19.481 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.4, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:38:29.800 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.4, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:38:41.758 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.34.3, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:38:53.216 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.45.5, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:39:03.389 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.12.1, GigabitEthernet0/0/0/4 
+RP/0/RP0/CPU0:Apr 10 06:39:10.072 UTC: SSHD_[68694]: %SECURITY-SSHD-6-INFO_WINDOW_SIZE : Failed to set window size row: 1000, column: 511. Error: 'tty-infra' detected the 'fatal' condition 'An invalid operation has been requested' 
+RP/0/RP0/CPU0:Apr 10 06:39:10.105 UTC: SSHD_[68694]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'cisco' from '10.16.36.98' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Apr 10 06:39:13.765 UTC: ospf[1027]: %ROUTING-OSPF-4-ERRRCV : Received invalid packet: mismatch area ID, from backbone area must be virtual-link but not found from 2.2.23.2, GigabitEthernet0/0/0/4 
 ---------------------------------------------------------------------------
 
 

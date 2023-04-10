@@ -576,3 +576,8 @@ INFO 2023-04-10 13:21:25,605 [Apps.py:init:91] ---Initialize testbed file---
 INFO 2023-04-10 13:21:25,605 [Apps.py:init:99] ---testbed file ready---
 INFO 2023-04-10 13:21:26,796 [Apps.py:init:105] ---Opening Main Menu Application---
 INFO 2023-04-10 13:21:28,496 [Apps.py:inputMenu:185] ---Get Custom Commands from txt ---
+INFO 2023-04-10 13:46:06,855 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-04-10 13:46:06,861 [Apps.py:init:91] ---Initialize testbed file---
+INFO 2023-04-10 13:46:06,862 [Apps.py:init:99] ---testbed file ready---
+INFO 2023-04-10 13:46:11,301 [Apps.py:init:105] ---Opening Main Menu Application---
+INFO 2023-04-10 13:46:13,713 [Apps.py:inputMenu:185] ---Get Custom Commands from txt ---
