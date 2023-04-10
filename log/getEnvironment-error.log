@@ -1,0 +1,45 @@
+2023-04-10 13:12:50 [ERROR] 198.18.0.122 : Parsed return empty for command 'show environment'
+2023-04-10 13:12:50 [ERROR] 198.18.0.123 : Parsed return empty for command 'show environment'
+2023-04-10 13:12:50 [ERROR] 198.18.0.121 : Parsed return empty for command 'show environment'
+2023-04-10 13:12:50 [ERROR] 198.18.0.132 : Parsed return empty for command 'show environment'
+2023-04-10 13:12:59 [ERROR] 198.18.0.133 : Failed to connect (1)
+2023-04-10 13:12:59 TCP connection to device failed. 
+2023-04-10 13:12:59 Common causes of this problem are: 
+2023-04-10 13:12:59 1. Incorrect hostname or IP address. 
+2023-04-10 13:12:59 2. Wrong TCP port. 
+2023-04-10 13:12:59 3. Intermediate firewall blocking access. 
+2023-04-10 13:12:59 Device settings: cisco_ios 198.18.0.133:22 
+2023-04-10 13:13:00 [ERROR] 198.18.0.131 : Failed to parse command 'show environment'
+2023-04-10 13:13:00 Pattern not detected: 'Mon\\ Apr\\ 10\\ 06:05:45\\.827\\ UTC' in output. 
+2023-04-10 13:13:00 Things you might try to fix this: 
+2023-04-10 13:13:00 1. Explicitly set your pattern using the expect_string argument. 
+2023-04-10 13:13:00 2. Increase the read_timeout to a larger value. 
+2023-04-10 13:13:00 You can also look at the Netmiko session_log or debug log for more information. 
+2023-04-10 13:13:00 [ERROR] 198.18.0.131 : Failed to parse command 'show environment'
+2023-04-10 13:13:00 'Routers' object has no attribute 'output' 
+2023-04-10 13:13:09 [ERROR] 198.18.0.133 : Failed to connect (2)
+2023-04-10 13:13:09 TCP connection to device failed. 
+2023-04-10 13:13:09 Common causes of this problem are: 
+2023-04-10 13:13:09 1. Incorrect hostname or IP address. 
+2023-04-10 13:13:09 2. Wrong TCP port. 
+2023-04-10 13:13:09 3. Intermediate firewall blocking access. 
+2023-04-10 13:13:09 Device settings: cisco_ios 198.18.0.133:22 
+2023-04-10 13:14:51 [ERROR] 198.18.0.122 : Parsed return empty for command 'show environment'
+2023-04-10 13:14:51 [ERROR] 198.18.0.123 : Parsed return empty for command 'show environment'
+2023-04-10 13:14:51 [ERROR] 198.18.0.121 : Parsed return empty for command 'show environment'
+2023-04-10 13:14:51 [ERROR] 198.18.0.131 : Parsed return empty for command 'show environment'
+2023-04-10 13:14:51 [ERROR] 198.18.0.132 : Parsed return empty for command 'show environment'
+2023-04-10 13:14:59 [ERROR] 198.18.0.133 : Failed to connect (1)
+2023-04-10 13:14:59 TCP connection to device failed. 
+2023-04-10 13:14:59 Common causes of this problem are: 
+2023-04-10 13:14:59 1. Incorrect hostname or IP address. 
+2023-04-10 13:14:59 2. Wrong TCP port. 
+2023-04-10 13:14:59 3. Intermediate firewall blocking access. 
+2023-04-10 13:14:59 Device settings: cisco_ios 198.18.0.133:22 
+2023-04-10 13:15:09 [ERROR] 198.18.0.133 : Failed to connect (2)
+2023-04-10 13:15:09 TCP connection to device failed. 
+2023-04-10 13:15:09 Common causes of this problem are: 
+2023-04-10 13:15:09 1. Incorrect hostname or IP address. 
+2023-04-10 13:15:09 2. Wrong TCP port. 
+2023-04-10 13:15:09 3. Intermediate firewall blocking access. 
+2023-04-10 13:15:09 Device settings: cisco_ios 198.18.0.133:22 

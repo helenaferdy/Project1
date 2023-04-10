@@ -1,0 +1,64 @@
+2023-04-10 13:11:44,066 [INFO] 198.18.0.121 : Connecting 
+2023-04-10 13:11:44,067 [INFO] 198.18.0.122 : Connecting 
+2023-04-10 13:11:44,067 [INFO] 198.18.0.123 : Connecting 
+2023-04-10 13:11:44,067 [INFO] 198.18.0.131 : Connecting 
+2023-04-10 13:11:44,068 [INFO] 198.18.0.133 : Connecting 
+2023-04-10 13:11:44,068 [INFO] 198.18.0.132 : Connecting 
+2023-04-10 13:11:44,140 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-10 13:11:44,155 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-10 13:11:44,162 [INFO] Connected (version 2.0, client Cisco-1.25)
+2023-04-10 13:11:44,321 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-10 13:11:44,384 [INFO] Connected (version 2.0, client Cisco-2.0)
+2023-04-10 13:11:44,752 [INFO] Authentication (password) successful!
+2023-04-10 13:11:45,000 [INFO] Authentication (password) successful!
+2023-04-10 13:11:45,034 [INFO] Authentication (password) successful!
+2023-04-10 13:11:45,040 [INFO] Authentication (password) successful!
+2023-04-10 13:11:45,114 [INFO] 198.18.0.122 : Connected 
+2023-04-10 13:11:45,218 [INFO] Authentication (password) successful!
+2023-04-10 13:11:45,299 [INFO] 198.18.0.122 : Entered enable mode 
+2023-04-10 13:11:45,367 [INFO] 198.18.0.123 : Connected 
+2023-04-10 13:11:45,416 [INFO] 198.18.0.131 : Connected 
+2023-04-10 13:11:45,429 [INFO] 198.18.0.131 : Entered enable mode 
+2023-04-10 13:11:45,562 [INFO] 198.18.0.132 : Connected 
+2023-04-10 13:11:45,575 [INFO] 198.18.0.132 : Entered enable mode 
+2023-04-10 13:11:45,579 [INFO] 198.18.0.122 : Command 'show processes cpu' sent
+2023-04-10 13:11:45,589 [INFO] 198.18.0.123 : Entered enable mode 
+2023-04-10 13:11:45,619 [INFO] 198.18.0.122 : Command 'show processes cpu' parsed
+2023-04-10 13:11:45,619 [INFO] 198.18.0.122 : Output saved to out/getCPU/2023-04-10/raw_data/xe2_show processes cpu_2023-04-10_13-11.csv
+2023-04-10 13:11:45,619 [INFO] 198.18.0.122 : Output appended to out/getCPU/2023-04-10/xe2_show processes cpu_summary_2023-04-10_13-11.csv
+2023-04-10 13:11:45,620 [INFO] 198.18.0.121 : Connected 
+2023-04-10 13:11:45,771 [INFO] 198.18.0.122 : Command 'show processes cpu history' sent
+2023-04-10 13:11:45,771 [INFO] 198.18.0.122 : Output saved to out/getCPU/2023-04-10/history/xe2_show processes cpu history_2023-04-10_13-11.txt
+2023-04-10 13:11:45,808 [INFO] 198.18.0.122 : Disconnected succcessfully
+2023-04-10 13:11:45,845 [INFO] 198.18.0.121 : Entered enable mode 
+2023-04-10 13:11:45,847 [INFO] 198.18.0.123 : Command 'show processes cpu' sent
+2023-04-10 13:11:45,850 [INFO] 198.18.0.123 : Command 'show processes cpu' parsed
+2023-04-10 13:11:45,851 [INFO] 198.18.0.123 : Output saved to out/getCPU/2023-04-10/raw_data/xe3_show processes cpu_2023-04-10_13-11.csv
+2023-04-10 13:11:45,851 [INFO] 198.18.0.123 : Output appended to out/getCPU/2023-04-10/xe3_show processes cpu_summary_2023-04-10_13-11.csv
+2023-04-10 13:11:45,876 [INFO] 198.18.0.131 : Command 'show processes cpu' sent
+2023-04-10 13:11:45,879 [INFO] 198.18.0.131 : Command 'show processes cpu' parsed
+2023-04-10 13:11:45,880 [INFO] 198.18.0.131 : Output saved to out/getCPU/2023-04-10/raw_data/xr1_show processes cpu_2023-04-10_13-11.csv
+2023-04-10 13:11:45,880 [INFO] 198.18.0.131 : Output appended to out/getCPU/2023-04-10/xr1_show processes cpu_summary_2023-04-10_13-11.csv
+2023-04-10 13:11:46,007 [INFO] 198.18.0.123 : Command 'show processes cpu history' sent
+2023-04-10 13:11:46,008 [INFO] 198.18.0.123 : Output saved to out/getCPU/2023-04-10/history/xe3_show processes cpu history_2023-04-10_13-11.txt
+2023-04-10 13:11:46,034 [INFO] 198.18.0.123 : Disconnected succcessfully
+2023-04-10 13:11:46,060 [INFO] 198.18.0.131 : Command 'show processes cpu history' sent
+2023-04-10 13:11:46,061 [INFO] 198.18.0.131 : Output saved to out/getCPU/2023-04-10/history/xr1_show processes cpu history_2023-04-10_13-11.txt
+2023-04-10 13:11:46,088 [INFO] 198.18.0.131 : Disconnected succcessfully
+2023-04-10 13:11:46,094 [INFO] 198.18.0.132 : Command 'show processes cpu' sent
+2023-04-10 13:11:46,096 [INFO] 198.18.0.132 : Command 'show processes cpu' parsed
+2023-04-10 13:11:46,097 [INFO] 198.18.0.132 : Output saved to out/getCPU/2023-04-10/raw_data/xr2_show processes cpu_2023-04-10_13-11.csv
+2023-04-10 13:11:46,097 [INFO] 198.18.0.132 : Output appended to out/getCPU/2023-04-10/xr2_show processes cpu_summary_2023-04-10_13-11.csv
+2023-04-10 13:11:46,125 [INFO] 198.18.0.121 : Command 'show processes cpu' sent
+2023-04-10 13:11:46,129 [INFO] 198.18.0.121 : Command 'show processes cpu' parsed
+2023-04-10 13:11:46,130 [INFO] 198.18.0.121 : Output saved to out/getCPU/2023-04-10/raw_data/xe1_show processes cpu_2023-04-10_13-11.csv
+2023-04-10 13:11:46,130 [INFO] 198.18.0.121 : Output appended to out/getCPU/2023-04-10/xe1_show processes cpu_summary_2023-04-10_13-11.csv
+2023-04-10 13:11:46,266 [INFO] 198.18.0.132 : Command 'show processes cpu history' sent
+2023-04-10 13:11:46,267 [INFO] 198.18.0.132 : Output saved to out/getCPU/2023-04-10/history/xr2_show processes cpu history_2023-04-10_13-11.txt
+2023-04-10 13:11:46,286 [INFO] 198.18.0.121 : Command 'show processes cpu history' sent
+2023-04-10 13:11:46,286 [INFO] 198.18.0.121 : Output saved to out/getCPU/2023-04-10/history/xe1_show processes cpu history_2023-04-10_13-11.txt
+2023-04-10 13:11:46,294 [INFO] 198.18.0.132 : Disconnected succcessfully
+2023-04-10 13:11:46,363 [INFO] 198.18.0.121 : Disconnected succcessfully
+2023-04-10 13:11:54,071 [ERROR] 198.18.0.133 : Failed to connect (1)
+2023-04-10 13:11:54,072 [INFO] 198.18.0.133 : Retrying connection 
+2023-04-10 13:12:04,075 [ERROR] 198.18.0.133 : Failed to connect (2)
