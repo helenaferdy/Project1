@@ -44,10 +44,10 @@ def get_iosxe_memory_info(device, counter):
         # Print the output
         logger.info(f"Device: {device.name}")
 
-        output = device.parse("show memory statistics")
+        output = device.parse("show processes memory")
 
-        used = round(output["name"]["processor"]["used"]/1024/1000, 2)
-        total = round(output["name"]["processor"]["total"]/1024/1000, 2)
+        used = round(output['processor_pool']['used']/1024/1000, 2)
+        total = round(output['processor_pool']['used']/1024/1000, 2)
         percentage = round(used / total * 100, 2)
 
         # Categorize percentage based on certain ranges
@@ -117,10 +117,10 @@ def get_ios_memory_info(device, counter):
         # Print the output
         logger.info(f"Device: {device.name}")
 
-        output = device.parse("show memory statistics")
+        output = device.parse("show processes memory")
 
-        used = round(output["name"]["processor"]["used"]/1024/1000, 2)
-        total = round(output["name"]["processor"]["total"]/1024/1000, 2)
+        used = round(output['processor_pool']['used']/1024/1000, 2)
+        total = round(output['processor_pool']['used']/1024/1000, 2)
         percentage = round(used / total * 100, 2)
 
         # Categorize percentage based on certain ranges
