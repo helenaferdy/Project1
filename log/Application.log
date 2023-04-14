@@ -740,3 +740,13 @@ INFO 2023-04-10 21:22:07,884 [Apps.py:init:91] ---Initialize testbed file---
 INFO 2023-04-10 21:22:07,885 [Apps.py:init:99] ---testbed file ready---
 INFO 2023-04-10 21:22:09,641 [Apps.py:init:105] ---Opening Main Menu Application---
 INFO 2023-04-10 21:22:14,340 [Apps.py:inputMenu:185] ---Get Custom Commands from txt ---
+INFO 2023-04-14 10:23:21,539 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-04-14 10:23:21,546 [Apps.py:init:91] ---Initialize testbed file---
+INFO 2023-04-14 10:23:21,547 [Apps.py:init:99] ---testbed file ready---
+INFO 2023-04-14 10:23:23,254 [Apps.py:init:105] ---Opening Main Menu Application---
+INFO 2023-04-14 10:23:25,213 [Apps.py:inputMenu:142] ---Get Inventory Device---
+INFO 2023-04-14 10:24:31,287 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-04-14 10:24:31,293 [Apps.py:init:91] ---Initialize testbed file---
+INFO 2023-04-14 10:24:31,293 [Apps.py:init:99] ---testbed file ready---
+INFO 2023-04-14 10:24:32,346 [Apps.py:init:105] ---Opening Main Menu Application---
+INFO 2023-04-14 10:24:33,879 [Apps.py:inputMenu:142] ---Get Inventory Device---
