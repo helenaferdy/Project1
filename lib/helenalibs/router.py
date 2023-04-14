@@ -77,7 +77,7 @@ class Routers:
                 logging.warning(f"{self.hostname} : Retrying connection ")
             try:
                 self.connection = ConnectHandler(**device)
-                logging.warning(f"{self.hostname} : Connected ")
+                logging.info(f"{self.hostname} : Connected ")
                 retry = 2
                 try:
                     self.connection.enable()
@@ -159,7 +159,7 @@ class Routers:
 
     def disconnect(self):
         self.connection.disconnect()
-        logging.warning(f"{self.hostname} : Disconnected succcessfully")
+        logging.info(f"{self.hostname} : Disconnected succcessfully")
 
 
     # SUMMARY
