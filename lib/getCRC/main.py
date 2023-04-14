@@ -32,12 +32,35 @@ count_iface_up = 0
 count_iface_down = 0
 timestamp = datetime.datetime.now().strftime('%Y-%m-%d %H-%M-%S')
 
-def proc_iface_crc(deviceX,counter):
+def proc_iface_crc_ios(device,counter):
     try:
-        deviceX.connect(learn_hostname = True, learn_os = True, log_stdout=False)
-        logger.info(f"Connecting to Device: {deviceX.name}")
-        output_iface_crc = deviceX.parse('show interfaces')
-        output_device = deviceX.parse('show inventory')
+        device.connect(learn_hostname = True, learn_os = True, log_stdout=False,mit=True)
+        logger.info(f"Device: {device.name}")
+        output_iface_crc = device.parse('show interfaces')
+        output_device = device.parse('show inventory')
+        for pid in output_device['main']['chassis']:
+            devPID = pid
+        for iface in output_iface_crc:
+            if "Ethernet" in iface:
+                crc = output_iface_crc[iface]['counters']['in_crc_errors']
+                input_errors = output_iface_crc[iface]['counters']['in_errors']
+                output_errors = output_iface_crc[iface]['counters']['out_errors']
+                with open(
+                f"output/show_int_crc_{timestamp}.csv", "a", newline=""
+                ) as csvfile:
+                    writer = csv.writer(csvfile)  
+                    writer.writerow([counter,device.name, devPID,iface,crc,input_errors,output_errors])
+   
+    except Exception as e:
+        logger.error(f"Error connecting to device {device.name}: {e}")
+
+
+def proc_iface_crc_xe(device,counter):
+    try:
+        device.connect(learn_hostname = True, learn_os = True, log_stdout=False,mit=True)
+        logger.info(f"Device: {device.name}")
+        output_iface_crc = device.parse('show interfaces')
+        output_device = device.parse('show inventory')
         for pid in output_device['main']['chassis']:
             devPID = pid
         for iface in output_iface_crc:
@@ -45,17 +68,17 @@ def proc_iface_crc(deviceX,counter):
             input_errors = output_iface_crc[iface]['counters']['in_errors']
             output_errors = output_iface_crc[iface]['counters']['out_errors']
             with open(
-            f"out/InterfaceCRC/show_int_crc_{timestamp}.csv", "a", newline=""
+            f"output/show_int_crc_{timestamp}.csv", "a", newline=""
             ) as csvfile:
                 writer = csv.writer(csvfile)  
-                writer.writerow([counter,deviceX.name, devPID,iface,crc,input_errors,output_errors])
+                writer.writerow([counter,device.name, devPID,iface,crc,input_errors,output_errors])
    
     except Exception as e:
-        logger.error(f"Error connecting to device {deviceX.name}: {e}")
+        logger.error(f"Error connecting to device {device.name}: {e}")
 
 def proc_iface_crc_xr(device,counter):
     try:
-        device.connect(learn_hostname = True, learn_os = True, log_stdout=False)
+        device.connect(learn_hostname = True, learn_os = True, log_stdout=False,mit=True)
         print(f"Device: {device.name}")
         output_iface_crc = device.parse('show interfaces')
         output_device = device.parse('show platform')
@@ -73,7 +96,27 @@ def proc_iface_crc_xr(device,counter):
                     writer = csv.writer(csvfile)  
                     writer.writerow([counter,device.name, devPID,iface,crc,input_errors,output_errors])
     except Exception as e:
-        print(f"Error connecting to device {device.name}: {e}")
+        logger.error(f"Error connecting to device {device.name}: {e}")
+
+def proc_iface_crc_nx(device,counter):
+    try:
+        device.connect(learn_hostname = True, learn_os = True, log_stdout=False,mit=True)
+        logger.info(f"Device: {device.name}")
+        output_iface_crc = device.parse('show interface')
+        output_device = device.parse('show inventory')
+        devPID = output_device['name']['Chassis']['pid']
+        for iface in output_iface_crc:
+            if 'Ethernet' in iface:
+                crc = output_iface_crc[iface]['counters']['in_crc_errors']
+                input_errors = output_iface_crc[iface]['counters']['in_errors']
+                output_errors = output_iface_crc[iface]['counters']['out_errors']
+                with open(
+                f"output/show_int_crc_{timestamp}.csv", "a", newline=""
+                ) as csvfile:
+                    writer = csv.writer(csvfile)  
+                    writer.writerow([counter,device.name, devPID,iface,crc,input_errors,output_errors])
+    except Exception as e:
+        logger.error(f"Error connecting to device {device.name}: {e}")
 
 def interfaceCRC(testbedFile):
     testbed= loader.load(testbedFile)
@@ -88,14 +131,20 @@ def interfaceCRC(testbedFile):
     with concurrent.futures.ThreadPoolExecutor() as executor:
         for device in testbed:
             if device.type == 'iosxe':
-                futures.append(executor.submit(proc_iface_crc, device, counter))
+                futures.append(executor.submit(proc_iface_crc_xe, device, counter))
                 counter += 1
-                logger.info(f"getting CRC information from Device: {device.name}")
                 sleep(0.1)
             elif device.type == 'iosxr':
                 futures.append(executor.submit(proc_iface_crc_xr, device, counter))
                 counter += 1
-                logger.info(f"getting CRC information from Device: {device.name}")
+                sleep(0.1)
+            elif device.type == 'nxos':
+                futures.append(executor.submit(proc_iface_crc_nx, device, counter))
+                counter += 1
+                sleep(0.1)
+            elif device.type == 'ios':
+                futures.append(executor.submit(proc_iface_crc_ios, device, counter))
+                counter += 1
                 sleep(0.1)
         # Wait for all futures to complete
     for future in concurrent.futures.as_completed(futures):
@@ -104,5 +153,5 @@ def interfaceCRC(testbedFile):
         except Exception as exc:
             logger.info(f"{exc} occurred while processing device {device.name}")
 
-    logger.info("Get Interface CRC -  execution completed successfully.")
+    logger.info("Script execution completed successfully.")
 

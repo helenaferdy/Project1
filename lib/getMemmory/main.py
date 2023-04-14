@@ -47,7 +47,7 @@ def get_iosxe_memory_info(device, counter):
         output = device.parse("show processes memory")
 
         used = round(output['processor_pool']['used']/1024/1000, 2)
-        total = round(output['processor_pool']['used']/1024/1000, 2)
+        total = round(output['processor_pool']['total']/1024/1000, 2)
         percentage = round(used / total * 100, 2)
 
         # Categorize percentage based on certain ranges
@@ -120,7 +120,7 @@ def get_ios_memory_info(device, counter):
         output = device.parse("show processes memory")
 
         used = round(output['processor_pool']['used']/1024/1000, 2)
-        total = round(output['processor_pool']['used']/1024/1000, 2)
+        total = round(output['processor_pool']['total']/1024/1000, 2)
         percentage = round(used / total * 100, 2)
 
         # Categorize percentage based on certain ranges
@@ -155,8 +155,8 @@ def get_nxos_memory_info(device, counter):
 
         output = device.parse("show system resources")
 
-        used = round(output["memory"]["used"]/1024, 2)
-        total = round(output["memory"]["total"]/1024, 2)
+        used = round(output["memory_usage"]["memory_usage_used_kb"]/1024, 2)
+        total = round(output["memory_usage"]["memory_usage_total_kb"]/1024, 2)
         percentage = round(used / total * 100, 2)
 
         # Categorize percentage based on certain ranges
@@ -209,10 +209,6 @@ def getMemmoryUtils(testbedFile):
                 sleep(0.1)
             elif device.type == 'nxos':
                 futures.append(executor.submit(get_nxos_memory_info, device, counter))
-                counter += 1
-                sleep(0.1)
-            else:
-                futures.append(executor.submit(get_ios_memory_info, device, counter))
                 counter += 1
                 sleep(0.1)
         # Wait for all futures to complete
