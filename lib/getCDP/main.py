@@ -35,23 +35,77 @@ timestamp = datetime.datetime.now().strftime('%Y-%m-%d %H-%M-%S')
 if not os.path.exists("out/CDP"):
     os.makedirs("out/CDP")
 
-def proc_cdp(deviceX,counter):
+def proc_cdp_ios(device,counter):
     try:
-        deviceX.connect(learn_hostname = True, learn_os = True, mit=True, log_stdout=False)
-        logger.info(f"Connecting to Device: {deviceX.name}")
-        output = deviceX.parse('show cdp neighbors')
-        output_device = deviceX.parse('show inventory')
+        device.connect(learn_hostname = True, learn_os = True, mit=True, log_stdout=False)
+        output = device.parse('show cdp neighbors')
+        output_device = device.parse('show inventory')
+        logger.info(f"Device: {device.name}")
         for pid in output_device['main']['chassis']:
             devPID = pid
             
         for data in output['cdp']['index'].values():
-            with open(f'out/CDP/show_cdp_neigh_{timestamp}.csv', 'a', newline='') as file:
-                writer = csv.writer(file)
-                writer.writerow([deviceX.name, data['local_interface'],devPID,data['device_id'],data['port_id'],data['platform']])
+            with open(
+            f"output/show_cdp_neigh_{timestamp}.csv", "a", newline=""
+            ) as csvfile:
+                writer = csv.writer(csvfile)  
+                writer.writerow([counter,device.name, data['local_interface'],devPID,data['device_id'],data['port_id'],data['platform']])
+        return counter
     except Exception as e:
-        print(f"Error connecting to device {deviceX.name}: {e}")
+        logger.error(f"Error connecting to device {device.name}: {e}")
+
+def proc_cdp_xe(device,counter):
+    try:
+        device.connect(learn_hostname = True, learn_os = True, mit=True, log_stdout=False)
+        output = device.parse('show cdp neighbors')
+        output_device = device.parse('show inventory')
+        logger.info(f"Device: {device.name}")
+        for pid in output_device['main']['chassis']:
+            devPID = pid
+            
+        for data in output['cdp']['index'].values():
+            with open(
+            f"output/show_cdp_neigh_{timestamp}.csv", "a", newline=""
+            ) as csvfile:
+                writer = csv.writer(csvfile)  
+                writer.writerow([counter,device.name, data['local_interface'],devPID,data['device_id'],data['port_id'],data['platform']])
+        return counter
+    except Exception as e:
+        logger.error(f"Error connecting to device {device.name}: {e}")
      
-    return counter   
+def proc_cdp_xr(device,counter):
+    try:
+        device.connect(learn_hostname = True, learn_os = True, mit=True, log_stdout=False)
+        output = device.parse('show cdp neighbors')
+        output_device = device.parse('show inventory')
+        devPID=output_device['slot']['lc']['0/0']['name'] 
+        logger.info(f"Device: {device.name}")
+        for data in output['cdp']['index'].values():
+            with open(
+            f"output/show_cdp_neigh_{timestamp}.csv", "a", newline=""
+            ) as csvfile:
+                writer = csv.writer(csvfile)  
+                writer.writerow([counter,device.name, data['local_interface'],devPID,data['device_id'],data['port_id'],data['platform']])
+        return counter
+    except Exception as e:
+        logger.error(f"Error connecting to device {device.name}: {e}")
+     
+def proc_cdp_nx(device,counter):
+    try:
+        device.connect(learn_hostname = True, learn_os = True, mit=True, log_stdout=False)
+        output = device.parse('show cdp neighbors')
+        output_device = device.parse('show inventory')
+        devPID = output_device['name']['Chassis']['pid']
+        logger.info(f"Device: {device.name}")
+        for data in output['cdp']['index'].values():
+            with open(
+            f"output/show_cdp_neigh_{timestamp}.csv", "a", newline=""
+            ) as csvfile:
+                writer = csv.writer(csvfile)  
+                writer.writerow([counter,device.name, data['local_interface'],devPID,data['device_id'],data['port_id'],data['platform']])
+        return counter
+    except Exception as e:
+        logger.error(f"Error connecting to device {device.name}: {e}")
 
 def getCDP(testbedFile):
     testbed= loader.load(testbedFile)
@@ -69,19 +123,26 @@ def getCDP(testbedFile):
     with concurrent.futures.ThreadPoolExecutor() as executor:
         for device in testbed:
             if device.type == 'iosxe':
-                futures.append(executor.submit(proc_cdp, device, counter))
+                futures.append(executor.submit(proc_cdp_xe, device, counter))
                 counter += 1
-                logger.info(f"getting CDP neighbours information from Device: {device.name}")
                 sleep(0.1)
-            # elif device.type == 'iosxr':
-            #     futures.append(executor.submit(get_iosxr_memory_info, device, counter))
-            #     counter += 1
-            #     sleep(0.1)
+            elif device.type == 'iosxr':
+                futures.append(executor.submit(proc_cdp_xr, device, counter))
+                counter += 1
+                sleep(0.1)
+            elif device.type == 'nxos':
+                futures.append(executor.submit(proc_cdp_nx, device, counter))
+                counter += 1
+                sleep(0.1)
+            elif device.type == 'ios':
+                futures.append(executor.submit(proc_cdp_ios, device, counter))
+                counter += 1
+                sleep(0.1)
         # Wait for all futures to complete
     for future in concurrent.futures.as_completed(futures):
         try:
             future.result()
         except Exception as exc:
-            print(f"{exc} occurred while processing device {device.name}")
+            logger.error(f"{exc} occurred while processing device {device.name}")
 
-    print("Script execution completed successfully.")
+    logger.info("Script execution completed successfully.")
