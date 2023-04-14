@@ -68,6 +68,7 @@ class Routers:
             "username": self.username,
             "password": self.password,
             "secret": self.secret,
+            "conn_timeout": 30,
         }
         
         self.logging_info(f"{self.hostname} : Connecting ")
@@ -77,7 +78,7 @@ class Routers:
                 logging.warning(f"{self.hostname} : Retrying connection ")
             try:
                 self.connection = ConnectHandler(**device)
-                logging.info(f"{self.hostname} : Connected ")
+                logging.warning(f"{self.hostname} : Connected ")
                 retry = 2
                 try:
                     self.connection.enable()
@@ -123,7 +124,7 @@ class Routers:
             self.output = self.connection.send_command(self.command)
             logging.info(f"{self.hostname} : Command '{self.command}' sent")
         except Exception as e:
-            err = (f"{self.hostname} : Failed to parse command '{self.command}'")
+            err = (f"{self.hostname} : Failed to send command '{self.command}'")
             logging.error(err)
             self.logging_error(err, e)
     
