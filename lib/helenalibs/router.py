@@ -68,7 +68,7 @@ class Routers:
             "username": self.username,
             "password": self.password,
             "secret": self.secret,
-            "conn_timeout": 30,
+            "conn_timeout": 20,
         }
         
         self.logging_info(f"{self.hostname} : Connecting ")
@@ -124,7 +124,7 @@ class Routers:
             self.output = self.connection.send_command(self.command)
             logging.info(f"{self.hostname} : Command '{self.command}' sent")
         except Exception as e:
-            err = (f"{self.hostname} : Failed to send command '{self.command}'")
+            err = (f"{self.hostname} : Failed sending command '{self.command}'")
             logging.error(err)
             self.logging_error(err, e)
     
@@ -135,7 +135,7 @@ class Routers:
                 err = (f"{self.hostname} : Parsed return empty for command '{self.command}'")
                 logging.error(err)
                 self.logging_error(err)
-                return False
+                return self.parse_old()
             else:
                 logging.info(f"{self.hostname} : Command '{self.command}' parsed")
                 return True
@@ -143,6 +143,29 @@ class Routers:
             err = (f"{self.hostname} : Failed to parse command '{self.command}'")
             logging.error(err)
             self.logging_error(err, e)
+            self.parse_old()
+            return self.parse_old()
+        
+    def parse_old(self):
+        if self.ios_os == "nxos" and self.command == "show processes cpu":
+            logging.warning(f"{self.hostname} : Passing to [OLD] parser '{self.command}'")
+            try:
+                self.parsed_output = parse_output(platform=self.ios_os, command=self.command+" old", data=self.output)
+                if self.parsed_output == []:
+                    err = (f"{self.hostname} : [OLD] Parsed return empty for command '{self.command}'")
+                    logging.error(err)
+                    self.logging_error(err)
+                    return False
+                else:
+                    logging.info(f"{self.hostname} : [OLD] Command '{self.command}' parsed")
+                    return True
+            except Exception as e:
+                err = (f"{self.hostname} : [old] Failed to parse command '{self.command}'")
+                logging.error(err)
+                self.logging_error(err, e)
+                return False
+        else:
+            return False
 
     def export_csv(self):
         try:
@@ -230,7 +253,7 @@ class Routers:
                 csvwriter.writerow(final)
                 logging.info(f"{self.hostname} : Output appended to {self.date_path}{self.command}_summary_{TIMESTAMP}.csv")
         except Exception as e:
-            err = (f"{self.hostname} : Failed appending for {self.date_path}{self.command}_summary_{TIMESTAMP}.csv")
+            err = (f"{self.hostname} : Failed appending to {self.date_path}{self.command}_summary_{TIMESTAMP}.csv")
             logging.error(err)
             self.logging_error(err, e)
 
