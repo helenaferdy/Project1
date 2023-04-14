@@ -105,7 +105,13 @@ cisco_ios_dir.textfsm,  .*, iosxe, dir
 
 
 ## NXOS
+
+cisco_nxos_show_environment.textfsm, .*, nxos, sh[[ow]] env[[ironment]] #needs fixing
+
+#done
 cisco_ios_show_inventory.textfsm, .*, nxos, sh[[ow]] inv[[entory]]
+cisco_nxos_show_processes_cpu_old.textfsm, .*, nxos, sh[[ow]] proc[[esses]] c[[pu]] old
+cisco_nxos_show_processes_cpu.textfsm, .*, nxos, sh[[ow]] proc[[esses]] c[[pu]]
 
 cisco_nxos_show_l2rib_internal_permanently-frozen-list.textfsm, .*, nxos, sh[[ow]] l2ri[[b]] i[[nternal]] pe[[rmanently-frozen-list]]
 cisco_nxos_show_configuration_session_summary.textfsm, .*, nxos, sh[[ow]] configu[[ration]] s[[ession]] su[[mmary]]
@@ -140,12 +146,10 @@ cisco_nxos_show_lldp_neighbors.textfsm, .*, nxos, sh[[ow]] ll[[dp]] nei[[ghbors]
 cisco_nxos_show_cdp_neighbors.textfsm, .*, nxos, sh[[ow]] cd[[p]] neig[[hbors]]
 cisco_nxos_show_ip_arp_detail.textfsm, .*, nxos, sh[[ow]] i[[p]] a[[rp]] det[[ail]]
 cisco_nxos_show_license_usage.textfsm, .*, nxos, sh[[ow]] lic[[ense]] us[[age]]
-cisco_nxos_show_processes_cpu.textfsm, .*, nxos, sh[[ow]] proc[[esses]] c[[pu]]
 cisco_nxos_show_vrf_interface.textfsm, .*, nxos, sh[[ow]] vrf int[[erface]]
 cisco_nxos_show_access-lists.textfsm, .*, nxos, sh[[ow]] acc[[ess-lists]]
 cisco_nxos_show_ip_adjacency.textfsm, .*, nxos, sh[[ow]] ip ad[[jacency]]
 cisco_nxos_show_ip_interface.textfsm, .*, nxos, sh[[ow]] ip int[[erface]]
-cisco_nxos_show_environment.textfsm, .*, nxos, sh[[ow]] env[[ironment]]
 cisco_nxos_show_interface.textfsm, .*, nxos, sh[[ow]] inte[[rface]]
 # cisco_nxos_show_inventory.textfsm, .*, nxos, sh[[ow]] inv[[entory]]
 cisco_nxos_show_route-map.textfsm, .*, nxos, sh[[ow]] route-m[[ap]]
