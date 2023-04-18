@@ -42,9 +42,6 @@ def proc_iface_crc_ios(device,counter):
         device.connect(learn_hostname = True, learn_os = True, log_stdout=False,mit=True)
         logger.info(f"Device: {device.name}")
         output_iface_crc = device.parse('show interfaces')
-        output_device = device.parse('show inventory')
-        for pid in output_device['main']['chassis']:
-            devPID = pid
         for iface in output_iface_crc:
             if "Ethernet" in iface:
                 crc = output_iface_crc[iface]['counters']['in_crc_errors']
@@ -54,7 +51,7 @@ def proc_iface_crc_ios(device,counter):
                 f"out/InterfaceCRC/show_int_crc_{timestamp}.csv", "a", newline=""
                 ) as csvfile:
                     writer = csv.writer(csvfile)  
-                    writer.writerow([counter,device.name, devPID,iface,crc,input_errors,output_errors])
+                    writer.writerow([counter,device.name,iface,crc,input_errors,output_errors])
    
     except Exception as e:
         logger.error(f"Error connecting to device {device.name}: {e}")
@@ -65,9 +62,6 @@ def proc_iface_crc_xe(device,counter):
         device.connect(learn_hostname = True, learn_os = True, log_stdout=False,mit=True)
         logger.info(f"Device: {device.name}")
         output_iface_crc = device.parse('show interfaces')
-        output_device = device.parse('show inventory')
-        for pid in output_device['main']['chassis']:
-            devPID = pid
         for iface in output_iface_crc:
             crc = output_iface_crc[iface]['counters']['in_crc_errors']
             input_errors = output_iface_crc[iface]['counters']['in_errors']
@@ -76,7 +70,7 @@ def proc_iface_crc_xe(device,counter):
             f"out/InterfaceCRC/show_int_crc_{timestamp}.csv", "a", newline=""
             ) as csvfile:
                 writer = csv.writer(csvfile)  
-                writer.writerow([counter,device.name, devPID,iface,crc,input_errors,output_errors])
+                writer.writerow([counter,device.name,iface,crc,input_errors,output_errors])
    
     except Exception as e:
         logger.error(f"Error connecting to device {device.name}: {e}")
@@ -86,8 +80,6 @@ def proc_iface_crc_xr(device,counter):
         device.connect(learn_hostname = True, learn_os = True, log_stdout=False,mit=True)
         print(f"Device: {device.name}")
         output_iface_crc = device.parse('show interfaces')
-        output_device = device.parse('show platform')
-        devPID=output_device['slot']['lc']['0/0']['name']
         for iface in output_iface_crc:
             if iface == 'Null0':
                 print('Iface Null')
@@ -99,7 +91,7 @@ def proc_iface_crc_xr(device,counter):
                 f"out/InterfaceCRC/show_int_crc_{timestamp}.csv", "a", newline=""
                 ) as csvfile:
                     writer = csv.writer(csvfile)  
-                    writer.writerow([counter,device.name, devPID,iface,crc,input_errors,output_errors])
+                    writer.writerow([counter,device.name,iface,crc,input_errors,output_errors])
     except Exception as e:
         logger.error(f"Error connecting to device {device.name}: {e}")
 
@@ -108,8 +100,6 @@ def proc_iface_crc_nx(device,counter):
         device.connect(learn_hostname = True, learn_os = True, log_stdout=False,mit=True)
         logger.info(f"Device: {device.name}")
         output_iface_crc = device.parse('show interface')
-        output_device = device.parse('show inventory')
-        devPID = output_device['name']['Chassis']['pid']
         for iface in output_iface_crc:
             if 'Ethernet' in iface:
                 crc = output_iface_crc[iface]['counters']['in_crc_errors']
@@ -119,7 +109,7 @@ def proc_iface_crc_nx(device,counter):
                 f"out/InterfaceCRC/show_int_crc_{timestamp}.csv", "a", newline=""
                 ) as csvfile:
                     writer = csv.writer(csvfile)  
-                    writer.writerow([counter,device.name, devPID,iface,crc,input_errors,output_errors])
+                    writer.writerow([counter,device.name,iface,crc,input_errors,output_errors])
     except Exception as e:
         logger.error(f"Error connecting to device {device.name}: {e}")
 

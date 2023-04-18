@@ -39,17 +39,13 @@ def proc_cdp_ios(device,counter):
     try:
         device.connect(learn_hostname = True, learn_os = True, mit=True, log_stdout=False)
         output = device.parse('show cdp neighbors')
-        output_device = device.parse('show inventory')
         logger.info(f"Device: {device.name}")
-        for pid in output_device['main']['chassis']:
-            devPID = pid
-            
         for data in output['cdp']['index'].values():
             with open(
             f"output/show_cdp_neigh_{timestamp}.csv", "a", newline=""
             ) as csvfile:
                 writer = csv.writer(csvfile)  
-                writer.writerow([counter,device.name, data['local_interface'],devPID,data['device_id'],data['port_id'],data['platform']])
+                writer.writerow([counter,device.name, data['local_interface'],data['device_id'],data['port_id'],data['platform']])
         return counter
     except Exception as e:
         logger.error(f"Error connecting to device {device.name}: {e}")
@@ -58,17 +54,13 @@ def proc_cdp_xe(device,counter):
     try:
         device.connect(learn_hostname = True, learn_os = True, mit=True, log_stdout=False)
         output = device.parse('show cdp neighbors')
-        output_device = device.parse('show inventory')
         logger.info(f"Device: {device.name}")
-        for pid in output_device['main']['chassis']:
-            devPID = pid
-            
         for data in output['cdp']['index'].values():
             with open(
             f"output/show_cdp_neigh_{timestamp}.csv", "a", newline=""
             ) as csvfile:
                 writer = csv.writer(csvfile)  
-                writer.writerow([counter,device.name, data['local_interface'],devPID,data['device_id'],data['port_id'],data['platform']])
+                writer.writerow([counter,device.name, data['local_interface'],data['device_id'],data['port_id'],data['platform']])
         return counter
     except Exception as e:
         logger.error(f"Error connecting to device {device.name}: {e}")
@@ -77,15 +69,13 @@ def proc_cdp_xr(device,counter):
     try:
         device.connect(learn_hostname = True, learn_os = True, mit=True, log_stdout=False)
         output = device.parse('show cdp neighbors')
-        output_device = device.parse('show inventory')
-        devPID=output_device['slot']['lc']['0/0']['name'] 
         logger.info(f"Device: {device.name}")
         for data in output['cdp']['index'].values():
             with open(
             f"output/show_cdp_neigh_{timestamp}.csv", "a", newline=""
             ) as csvfile:
                 writer = csv.writer(csvfile)  
-                writer.writerow([counter,device.name, data['local_interface'],devPID,data['device_id'],data['port_id'],data['platform']])
+                writer.writerow([counter,device.name, data['local_interface'],data['device_id'],data['port_id'],data['platform']])
         return counter
     except Exception as e:
         logger.error(f"Error connecting to device {device.name}: {e}")
@@ -94,15 +84,13 @@ def proc_cdp_nx(device,counter):
     try:
         device.connect(learn_hostname = True, learn_os = True, mit=True, log_stdout=False)
         output = device.parse('show cdp neighbors')
-        output_device = device.parse('show inventory')
-        devPID = output_device['name']['Chassis']['pid']
         logger.info(f"Device: {device.name}")
         for data in output['cdp']['index'].values():
             with open(
             f"output/show_cdp_neigh_{timestamp}.csv", "a", newline=""
             ) as csvfile:
                 writer = csv.writer(csvfile)  
-                writer.writerow([counter,device.name, data['local_interface'],devPID,data['device_id'],data['port_id'],data['platform']])
+                writer.writerow([counter,device.name, data['local_interface'],data['device_id'],data['port_id'],data['platform']])
         return counter
     except Exception as e:
         logger.error(f"Error connecting to device {device.name}: {e}")
