@@ -52,6 +52,12 @@ def proc_iface_crc_ios(device,counter):
                 ) as csvfile:
                     writer = csv.writer(csvfile)  
                     writer.writerow([counter,device.name,iface,crc,input_errors,output_errors])
+                if crc > 0 or input_errors > 0 or output_errors > 0:
+                    with open(
+                    f"out/InterfaceCRC/found_int_crc_{timestamp}.csv", "a", newline=""
+                    ) as csvfile:
+                        writer = csv.writer(csvfile)  
+                        writer.writerow([counter,device.name,iface,crc,input_errors,output_errors])
    
     except Exception as e:
         logger.error(f"Error connecting to device {device.name}: {e}")
@@ -71,7 +77,12 @@ def proc_iface_crc_xe(device,counter):
             ) as csvfile:
                 writer = csv.writer(csvfile)  
                 writer.writerow([counter,device.name,iface,crc,input_errors,output_errors])
-   
+            if crc > 0 or input_errors > 0 or output_errors > 0:
+                    with open(
+                    f"out/InterfaceCRC/found_int_crc_{timestamp}.csv", "a", newline=""
+                    ) as csvfile:
+                        writer = csv.writer(csvfile)  
+                        writer.writerow([counter,device.name,iface,crc,input_errors,output_errors])  
     except Exception as e:
         logger.error(f"Error connecting to device {device.name}: {e}")
 
@@ -92,6 +103,13 @@ def proc_iface_crc_xr(device,counter):
                 ) as csvfile:
                     writer = csv.writer(csvfile)  
                     writer.writerow([counter,device.name,iface,crc,input_errors,output_errors])
+                if crc > 0 or input_errors > 0 or output_errors > 0:
+                        with open(
+                        f"out/InterfaceCRC/found_int_crc_{timestamp}.csv", "a", newline=""
+                        ) as csvfile:
+                            writer = csv.writer(csvfile)  
+                            writer.writerow([counter,device.name,iface,crc,input_errors,output_errors])  
+                
     except Exception as e:
         logger.error(f"Error connecting to device {device.name}: {e}")
 
@@ -110,6 +128,13 @@ def proc_iface_crc_nx(device,counter):
                 ) as csvfile:
                     writer = csv.writer(csvfile)  
                     writer.writerow([counter,device.name,iface,crc,input_errors,output_errors])
+                if crc > 0 or input_errors > 0 or output_errors > 0:
+                        with open(
+                        f"out/InterfaceCRC/found_int_crc_{timestamp}.csv", "a", newline=""
+                        ) as csvfile:
+                            writer = csv.writer(csvfile)  
+                            writer.writerow([counter,device.name,iface,crc,input_errors,output_errors])  
+
     except Exception as e:
         logger.error(f"Error connecting to device {device.name}: {e}")
 
@@ -117,7 +142,7 @@ def interfaceCRC(testbedFile):
     testbed= loader.load(testbedFile)
     with open(f'out/InterfaceCRC/show_int_crc_{timestamp}.csv', 'a', newline='') as file:
         writer = csv.writer(file)
-        writer.writerow(['No','Hostname','Platform','Interface', 'CRC', 'Input Errors', 'Output Errors'])
+        writer.writerow(['No','Hostname','Interface', 'CRC', 'Input Errors', 'Output Errors'])
 
                 
     futures = []
