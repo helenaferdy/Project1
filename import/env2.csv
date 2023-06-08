@@ -1,2 +1,0 @@
-hostname,ip,username,password,enable_password,protocol,os
-BMDC-ACCSVR-N9K-RAKC1,10.1.73.81,Vendor02,MayapadaMSI,mayapada,ssh,nxos
