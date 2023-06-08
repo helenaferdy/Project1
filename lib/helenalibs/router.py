@@ -25,6 +25,7 @@ class Routers:
         self.password = password
         self.secret = secret
         self.ios_os = ios_os
+        self.old2 = False
 
         self.out_path = out
         self.date_path = out+DATE+"/"
@@ -108,7 +109,10 @@ class Routers:
             if self.command == "show environment":
                 self.parse_environment_summary()
             elif self.command == "show processes cpu":
-                self.parse_cpu_summary()
+                if self.old2:
+                    self.parse_cpu_summary_old2()
+                else:
+                    self.parse_cpu_summary()
                 #cpu history
                 if not os.path.exists(self.cpu_history_path):
                     os.makedirs(self.cpu_history_path)
@@ -146,11 +150,29 @@ class Routers:
             self.parse_old()
             return self.parse_old()
         
+    #CPU OLD NXOS
     def parse_old(self):
-        if self.ios_os == "nxos" and self.command == "show processes cpu":
+        if self.command == "show processes cpu":
             logging.warning(f"{self.hostname} : Passing to [OLD] parser '{self.command}'")
             try:
                 self.parsed_output = parse_output(platform=self.ios_os, command=self.command+" old", data=self.output)
+                if self.parsed_output == []:
+                    err = (f"{self.hostname} : [OLD] Parsed return empty for command '{self.command}'")
+                    logging.error(err)
+                    self.logging_error(err)
+                    return self.parse_old_2()
+                else:
+                    logging.info(f"{self.hostname} : [OLD] Command '{self.command}' parsed")
+                    return True
+            except Exception as e:
+                err = (f"{self.hostname} : [OLD] Failed to parse command '{self.command}'")
+                logging.error(err)
+                self.logging_error(err, e)
+                return False
+        elif self.ios_os == "ios" and self.command == "show environment":
+            logging.warning(f"{self.hostname} : Passing to [OLD] parser '{self.command}'")
+            try:
+                self.parsed_output = parse_output(platform=self.ios_os, command="show env all", data=self.output)
                 if self.parsed_output == []:
                     err = (f"{self.hostname} : [OLD] Parsed return empty for command '{self.command}'")
                     logging.error(err)
@@ -159,13 +181,33 @@ class Routers:
                 else:
                     logging.info(f"{self.hostname} : [OLD] Command '{self.command}' parsed")
                     return True
+            except:
+                pass
+        else:
+            return False
+
+    def parse_old_2(self):
+        if self.command == "show processes cpu":
+            logging.warning(f"{self.hostname} : Passing to [OLD 2] parser '{self.command}'")
+            try:
+                self.parsed_output = parse_output(platform=self.ios_os, command=self.command+" old 2", data=self.output)
+                if self.parsed_output == []:
+                    err = (f"{self.hostname} : [OLD 2] Parsed return empty for command '{self.command}'")
+                    logging.error(err)
+                    self.logging_error(err)
+                    return False
+                else:
+                    logging.info(f"{self.hostname} : [OLD 2] Command '{self.command}' parsed")
+                    self.old2 = True
+                    return True
             except Exception as e:
-                err = (f"{self.hostname} : [old] Failed to parse command '{self.command}'")
+                err = (f"{self.hostname} : [OLD 2] Failed to parse command '{self.command}'")
                 logging.error(err)
                 self.logging_error(err, e)
                 return False
         else:
             return False
+
 
     def export_csv(self):
         try:
@@ -225,6 +267,26 @@ class Routers:
         final_cpu = [self.i, self.hostname, cpu_load, free_load, category]
         self.export_csv_bonus(final_cpu)
 
+    def parse_cpu_summary_old2(self):
+        for p in self.parsed_output:
+            cpu_load = float(p['user']) + float(p['kernel'])
+            free_load = float(p['user'])
+
+        if cpu_load <= 40:
+            category = 'LOW'
+        elif cpu_load <= 70:
+            category = 'MEDIUM'
+        elif cpu_load <= 85:
+            category = 'HIGH'
+        else:
+            category = 'CRITICAL'
+
+        free_load = p['user']+'%'
+        cpu_load = str(round(cpu_load,2)) + '%'
+        
+        final_cpu = [self.i, self.hostname, cpu_load, free_load, category]
+        self.export_csv_bonus(final_cpu)
+
     def parse_cpu_history(self):
         try:
             with open(f"{self.cpu_history_path}{self.hostname}_{self.command}_{TIMESTAMP}.txt", mode="w", newline="") as txtfile:
@@ -242,7 +304,7 @@ class Routers:
             pid = p['pid']
             sn = p['sn']
 
-            final_inventory = [i, self.hostname, name, pid, sn]
+            final_inventory = [self.i, self.hostname, i, name, pid, sn]
             self.export_csv_bonus(final_inventory)
             i +=1
             

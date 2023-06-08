@@ -42,7 +42,7 @@ def proc_cdp_ios(device,counter):
         logger.info(f"Device: {device.name}")
         for data in output['cdp']['index'].values():
             with open(
-            f"output/show_cdp_neigh_{timestamp}.csv", "a", newline=""
+            f"out/CDP/show_cdp_neigh_{timestamp}.csv", "a", newline=""
             ) as csvfile:
                 writer = csv.writer(csvfile)  
                 writer.writerow([counter,device.name, data['local_interface'],data['device_id'],data['port_id'],data['platform']])
@@ -57,7 +57,7 @@ def proc_cdp_xe(device,counter):
         logger.info(f"Device: {device.name}")
         for data in output['cdp']['index'].values():
             with open(
-            f"output/show_cdp_neigh_{timestamp}.csv", "a", newline=""
+            f"out/CDP/show_cdp_neigh_{timestamp}.csv", "a", newline=""
             ) as csvfile:
                 writer = csv.writer(csvfile)  
                 writer.writerow([counter,device.name, data['local_interface'],data['device_id'],data['port_id'],data['platform']])
@@ -72,7 +72,7 @@ def proc_cdp_xr(device,counter):
         logger.info(f"Device: {device.name}")
         for data in output['cdp']['index'].values():
             with open(
-            f"output/show_cdp_neigh_{timestamp}.csv", "a", newline=""
+            f"out/CDP/show_cdp_neigh_{timestamp}.csv", "a", newline=""
             ) as csvfile:
                 writer = csv.writer(csvfile)  
                 writer.writerow([counter,device.name, data['local_interface'],data['device_id'],data['port_id'],data['platform']])
@@ -87,7 +87,7 @@ def proc_cdp_nx(device,counter):
         logger.info(f"Device: {device.name}")
         for data in output['cdp']['index'].values():
             with open(
-            f"output/show_cdp_neigh_{timestamp}.csv", "a", newline=""
+            f"out/CDP/show_cdp_neigh_{timestamp}.csv", "a", newline=""
             ) as csvfile:
                 writer = csv.writer(csvfile)  
                 writer.writerow([counter,device.name, data['local_interface'],data['device_id'],data['port_id'],data['platform']])
