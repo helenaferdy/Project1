@@ -35,7 +35,7 @@ def read_testbed(out, log_path):
 def helenamain(command, out, log_path):
     date_path = out+DATE+"/"
     if not os.path.exists(date_path):
-            os.makedirs(date_path)
+        os.makedirs(date_path)
 
     read_testbed(out, log_path)
         
@@ -46,7 +46,7 @@ def helenamain(command, out, log_path):
         headers = ['No', 'Device', 'CPU Used', 'CPU Free', 'Category']
         export_headers(headers, command, date_path)
     elif command == "show inventory":
-        headers = ['No', 'Hostname', 'Name', 'PID', 'SN']
+        headers = ['No_Hostname', 'Hostname', 'No_Inventory', 'Name', 'PID', 'SN']
         export_headers(headers, command, date_path)
     
     threads = []
@@ -69,7 +69,7 @@ def export_headers(headers, command, date_path):
 def helenacustom(out, log_path):
     date_path = out+DATE+"/"
     if not os.path.exists(date_path):
-            os.makedirs(date_path)
+        os.makedirs(date_path)
 
     read_testbed(out, log_path)
 

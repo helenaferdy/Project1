@@ -80,8 +80,13 @@ def get_iosxe_memory_info(device, counter):
                 writer.writerow([f"{counter}", f"{device.name}", used, total, percentage, category])
         except:
             logger.info("gagal dengan function utama iosxe")
+
             # Convert the device to Netmiko format
             netmiko_device = convert_to_netmiko(device)
+
+            # rubah device type sesuai netmiko
+
+            netmiko_device['device_type'] = "cisco_xe"
 
             # Print the converted device details
             logger.info(netmiko_device)
@@ -95,7 +100,7 @@ def get_iosxe_memory_info(device, counter):
             command = "show processes memory"
             output = connection.send_command(command)
 
-            with open('ios_xe_switch.template') as template:
+            with open('lib/getMemmory/ios_xe_switch.template') as template:
                 template = textfsm.TextFSM(template)
 
             # Parse the command output using the template
@@ -251,7 +256,8 @@ def get_nxos_memory_info(device, counter):
             logger.info("gagal dengan function utama nxos")
             # Convert the device to Netmiko format
             netmiko_device = convert_to_netmiko(device)
-
+            # update sesuai template
+            netmiko_device['device_type'] = "cisco_nxos"
             # Print the converted device details
             logger.info(netmiko_device)
 
@@ -264,7 +270,7 @@ def get_nxos_memory_info(device, counter):
             command = "show processes memory"
             output = connection.send_command(command)
 
-            with open('nxos.template') as template:
+            with open('lib/getMemmory/nxos.template') as template:
                 template = textfsm.TextFSM(template)
 
             # Parse the command output using the template

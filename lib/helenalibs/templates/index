@@ -3,6 +3,11 @@ Template, Hostname, Platform, Command
 cisco_ios_helena_memory.textfsm, .*, iosxe, show processes memory
 
 ## IOSXE
+
+#OLD CPU
+cisco_nxos_show_processes_cpu_old_2.textfsm, .*, iosxe, sh[[ow]] proc[[esses]] c[[pu]] old 2
+cisco_nxos_show_processes_cpu_old.textfsm, .*, iosxe, sh[[ow]] proc[[esses]] c[[pu]] old
+
 cisco_ios_helena_environment.textfsm, .*, iosxe, show environment
 cisco_ios_show_module.textfsm:cisco_ios_show_module_status.textfsm:cisco_ios_show_module_submodule.textfsm:cisco_ios_show_module_online_diag.textfsm, .*, iosxe, sh[[ow]] mod[[ule]]
 cisco_ios_show_switch_detail.textfsm:cisco_ios_show_switch_detail_stack_ports.textfsm, .*, iosxe, sh[[ow]] sw[[itch]] d[[etail]]
@@ -106,10 +111,11 @@ cisco_ios_dir.textfsm,  .*, iosxe, dir
 
 ## NXOS
 
-cisco_nxos_show_environment.textfsm, .*, nxos, sh[[ow]] env[[ironment]] #needs fixing
+cisco_nxos_show_environment.textfsm, .*, nxos, sh[[ow]] env[[ironment]]
 
 #done
 cisco_ios_show_inventory.textfsm, .*, nxos, sh[[ow]] inv[[entory]]
+cisco_nxos_show_processes_cpu_old_2.textfsm, .*, nxos, sh[[ow]] proc[[esses]] c[[pu]] old 2
 cisco_nxos_show_processes_cpu_old.textfsm, .*, nxos, sh[[ow]] proc[[esses]] c[[pu]] old
 cisco_nxos_show_processes_cpu.textfsm, .*, nxos, sh[[ow]] proc[[esses]] c[[pu]]
 
