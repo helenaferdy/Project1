@@ -40,7 +40,7 @@ timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H-%M-%S")
 
 def convert_to_netmiko(device):
     netmiko_device = {}
-    netmiko_device['device_type'] = device.type
+    netmiko_device['device_type'] = "cisco_ios"
     netmiko_device['host'] = str(device.connections.cli.ip)
     netmiko_device['username'] = device.credentials.default.username
     netmiko_device['password'] = to_plaintext(device.credentials.default.password)
@@ -86,10 +86,10 @@ def get_iosxe_memory_info(device, counter):
 
             # rubah device type sesuai netmiko
 
-            netmiko_device['device_type'] = "cisco_xe"
+            # netmiko_device['device_type'] = "cisco_xe"
 
             # Print the converted device details
-            logger.info(netmiko_device)
+            # logger.info(netmiko_device)
 
             # Establish the Netmiko connection
             logger.info("Establishing Netmiko connection...")
@@ -257,9 +257,9 @@ def get_nxos_memory_info(device, counter):
             # Convert the device to Netmiko format
             netmiko_device = convert_to_netmiko(device)
             # update sesuai template
-            netmiko_device['device_type'] = "cisco_nxos"
+            # netmiko_device['device_type'] = "cisco_nxos"
             # Print the converted device details
-            logger.info(netmiko_device)
+            # logger.info(netmiko_device)
 
             # Establish the Netmiko connection
             logger.info("Establishing Netmiko connection...")
@@ -267,8 +267,9 @@ def get_nxos_memory_info(device, counter):
             logger.info("Connection established successfully.")
 
             # Send a command and retrieve the output
-            command = "show processes memory"
+            command = "show system resources"
             output = connection.send_command(command)
+            print(output)
 
             with open('lib/getMemmory/nxos.template') as template:
                 template = textfsm.TextFSM(template)
