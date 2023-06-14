@@ -1,8 +1,0 @@
-Value MEMORY_TOTAL (\d+)
-Value MEMORY_USED (\d+)
-Value MEMORY_FREE (\d+)
-
-Start
-  ^Processor\s+Pool\s+Total:\s+${MEMORY_TOTAL}\s+Used:\s+${MEMORY_USED}\s+Free:\s+${MEMORY_FREE}
-  ^\s*lsmpi_io\s+Pool
-  ^\s*PID\s+TTY\s+Allocated\s+Freed\s+Holding\s+Getbufs\s+Retbufs\s+Process\s*$$ 
