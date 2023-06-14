@@ -1,0 +1,9 @@
+INFO 2023-06-14 20:47:14,969 [Apps.py:init:88] ---Starting the Application---
+INFO 2023-06-14 20:47:14,975 [Apps.py:init:91] ---Initialize testbed file---
+WARNING 2023-06-14 20:47:14,977 [Apps.py:init:93] ---System can't find testbed file---
+INFO 2023-06-14 20:47:21,465 [Apps.py:create:70] Importing file...env.csv
+INFO 2023-06-14 20:47:22,705 [Apps.py:create:74] Success: Semicolons replaced with commas in file: import/env.csv
+Testbed file generated: 
+import/env.csv -> testbed/device.yaml
+INFO 2023-06-14 20:47:22,708 [Apps.py:create:75] ---testbed file ready---
+INFO 2023-06-14 20:47:30,139 [Apps.py:inputMenu:173] ---Get CDP Neighbours ---
