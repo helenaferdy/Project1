@@ -11,13 +11,13 @@ from lib.log import myLog
 from datetime import datetime
 from lib.getConfig.main import captureConfig
 from lib.getMemmory.main import getMemmoryUtils
-from lib.getCPU.main import getCPUUtils
+from lib.getCPU.main import main as getCPUUtils
 from lib.getLogging.main import captureLog
 from lib.getCRC.main import interfaceCRC
-from lib.getInven.main import getInven
-from lib.getCDP.main import getCDP
-from lib.getEnvi.main import getEnvi
-from lib.getCustom.main import getCustom
+from lib.getInven.main import main as getInven
+from lib.getCDP.main import main as  getCDP
+from lib.getEnvi.main import main as  getEnvi
+from lib.getCustom.main import main as  getCustom
 import logging
 from rich.logging import RichHandler
 import concurrent.futures

@@ -1,136 +1,142 @@
-from pyats.topology import loader
-import os
+from lib.getCustom.device import Routers, TIMESTAMP, ERROR_COMMAND
 import csv
-import datetime
-import concurrent.futures
-from time import sleep
-import logging
-from rich.logging import RichHandler
-from rich.console import Console
+import threading
+import os
+import yaml
 
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
-# the handler determines where the logs go: stdout/file
-shell_handler = RichHandler()
-file_handler = logging.FileHandler('log/CDP-Neighbours.log')
-shell_handler.setLevel(logging.DEBUG)
-file_handler.setLevel(logging.DEBUG)
-# the formatter determines what our logs will look like
-fmt_shell = '%(message)s'
-fmt_file = '%(levelname)s %(asctime)s [%(filename)s:%(funcName)s:%(lineno)d] %(message)s'
+TITLE = "getCDP"
+COMMAND1 = "show cdp neighbors"
+COMMAND2 = "show cdp neighbor"
+COMMAND_PLATFORM = "show platform"
+HEADERS = ['No', 'Local Hostname', 'Local Interface', 'Local Platform', 'Remote Hostname', 'Remote Interface', 'Remote Platform', 'Capability']
+TESTBED =  "testbed/device.yaml"
+TEMPLATE_NUMBERS = 1
+TEMPLATE_NUMBERS_PLATFORM = 2
+devices = []
+success_counter = []
+fail_counter = []
 
-shell_formatter = logging.Formatter(fmt_shell)
-file_formatter = logging.Formatter(fmt_file)
+def main(testbed):
+    read_testbed()
+    export_headers()
+    i = 1
+    threads = []
+    for device in devices:
+        t = threading.Thread(target=process_device, args=(device, i))
+        t.start()
+        threads.append(t)
+        i += 1
 
-# here we hook everything together
-shell_handler.setFormatter(shell_formatter)
-file_handler.setFormatter(file_formatter)
-logger.addHandler(shell_handler)
-logger.addHandler(file_handler)
+    for t in threads:
+        t.join()
 
-timestamp = datetime.datetime.now().strftime('%Y-%m-%d %H-%M-%S')
+    end_summary()
 
+def process_device(device, i):
+    parsed = ""
+    platform = ""
+    parsed_platform = ""
+    num_try = 0
+    num_try_p = 0
+    device.command_template = COMMAND1
+    device.out_path = f"out/{TITLE}/"
+    device.log_path = f"log/{TITLE}.log"
+    device.errorlog = f"log/error/{TITLE}-error.log"
+    device.create_folder()
+    if device.connect(i):
+        command = COMMAND1
+        output = "Function exception"
+        while output == "Function exception" and device.exception_counter < 3:
+            output = device.connect_command(command)
 
-# Check if output folder is available, create it if not
-if not os.path.exists("out/CDP"):
-    os.makedirs("out/CDP")
-
-def proc_cdp_ios(device,counter):
-    try:
-        device.connect(learn_hostname = True, learn_os = True, mit=True, log_stdout=False)
-        output = device.parse('show cdp neighbors')
-        logger.info(f"Device: {device.name}")
-        for data in output['cdp']['index'].values():
-            with open(
-            f"out/CDP/show_cdp_neigh_{timestamp}.csv", "a", newline=""
-            ) as csvfile:
-                writer = csv.writer(csvfile)  
-                writer.writerow([counter,device.name, data['local_interface'],data['device_id'],data['port_id'],data['platform']])
-        return counter
-    except Exception as e:
-        logger.error(f"Error connecting to device {device.name}: {e}")
-
-def proc_cdp_xe(device,counter):
-    try:
-        device.connect(learn_hostname = True, learn_os = True, mit=True, log_stdout=False)
-        output = device.parse('show cdp neighbors')
-        logger.info(f"Device: {device.name}")
-        for data in output['cdp']['index'].values():
-            with open(
-            f"out/CDP/show_cdp_neigh_{timestamp}.csv", "a", newline=""
-            ) as csvfile:
-                writer = csv.writer(csvfile)  
-                writer.writerow([counter,device.name, data['local_interface'],data['device_id'],data['port_id'],data['platform']])
-        return counter
-    except Exception as e:
-        logger.error(f"Error connecting to device {device.name}: {e}")
-     
-def proc_cdp_xr(device,counter):
-    try:
-        device.connect(learn_hostname = True, learn_os = True, mit=True, log_stdout=False)
-        output = device.parse('show cdp neighbors')
-        logger.info(f"Device: {device.name}")
-        for data in output['cdp']['index'].values():
-            with open(
-            f"out/CDP/show_cdp_neigh_{timestamp}.csv", "a", newline=""
-            ) as csvfile:
-                writer = csv.writer(csvfile)  
-                writer.writerow([counter,device.name, data['local_interface'],data['device_id'],data['port_id'],data['platform']])
-        return counter
-    except Exception as e:
-        logger.error(f"Error connecting to device {device.name}: {e}")
-     
-def proc_cdp_nx(device,counter):
-    try:
-        device.connect(learn_hostname = True, learn_os = True, mit=True, log_stdout=False)
-        output = device.parse('show cdp neighbors')
-        logger.info(f"Device: {device.name}")
-        for data in output['cdp']['index'].values():
-            with open(
-            f"out/CDP/show_cdp_neigh_{timestamp}.csv", "a", newline=""
-            ) as csvfile:
-                writer = csv.writer(csvfile)  
-                writer.writerow([counter,device.name, data['local_interface'],data['device_id'],data['port_id'],data['platform']])
-        return counter
-    except Exception as e:
-        logger.error(f"Error connecting to device {device.name}: {e}")
-
-def getCDP(testbedFile):
-    testbed= loader.load(testbedFile)
-    with open(f'out/CDP/show_cdp_neigh_{timestamp}.csv', 'a', newline='') as file:
-        writer = csv.writer(file)
-        writer.writerow(['NE Hostname','NE Interface', 'NE Platform', 'FE Hostname', 'FE Interface', 'FE Platform'])
+        #try other command
+        if [c for c in ERROR_COMMAND if c in output]:
+            device.logging_error(f"{device.hostname} : Command [{command}] Failed, trying [{COMMAND2}]")
+            command = COMMAND2
+            output = device.connect_command(command)
         
+        #final check output
+        if [c for c in ERROR_COMMAND if c in output]:
+            device.logging_error(f"{device.hostname} : Output return empty for command [{command}]")
+        else:
+            while parsed == "" and num_try < TEMPLATE_NUMBERS:
+                num_try += 1
+                parsed = device.parse(COMMAND1, output, num_try)
+        
+        ## GET PLATFORM
+        output_platform = device.connect_command(COMMAND_PLATFORM)
+        if [c for c in ERROR_COMMAND if c in output_platform]:
+            device.logging_error(f"{device.hostname} : Output return empty for command [{COMMAND_PLATFORM}]")
+        else:
+            while parsed_platform == "" and num_try_p < TEMPLATE_NUMBERS_PLATFORM:
+                num_try_p += 1
+                parsed_platform = device.parse(COMMAND_PLATFORM, output_platform, num_try_p)
+        if parsed_platform != "":
+            platform = parsed_platform[0]['chassis']
+    
 
-        # for device in testbed:
-        #     print(f"===== processing {device.name} =====") 
-        #     final = proc_cdp(device)
-            
-    futures = []
-    counter = 1
-    with concurrent.futures.ThreadPoolExecutor() as executor:
-        for device in testbed:
-            if device.type == 'iosxe':
-                futures.append(executor.submit(proc_cdp_xe, device, counter))
-                counter += 1
-                sleep(0.1)
-            elif device.type == 'iosxr':
-                futures.append(executor.submit(proc_cdp_xr, device, counter))
-                counter += 1
-                sleep(0.1)
-            elif device.type == 'nxos':
-                futures.append(executor.submit(proc_cdp_nx, device, counter))
-                counter += 1
-                sleep(0.1)
-            elif device.type == 'ios':
-                futures.append(executor.submit(proc_cdp_ios, device, counter))
-                counter += 1
-                sleep(0.1)
-        # Wait for all futures to complete
-    for future in concurrent.futures.as_completed(futures):
-        try:
-            future.result()
-        except Exception as exc:
-            logger.error(f"{exc} occurred while processing device {device.name}")
+        #special templates
+        if parsed != "":
+            final = export_csv(parsed, i, device.hostname, platform)
+            device.export_data(final, "cdp")
+            success_counter.append(0)
+        else:
+            device.logging_error(f"{device.hostname} : Parsing failed after [{num_try}] tries.")
+            fail_counter.append(f'{device.ip} - {device.ios_os} - {device.hostname}')
 
-    logger.info("Script execution completed successfully.")
+        device.disconnect()
+    else:
+        fail_counter.append(f'{device.ip} - {device.ios_os} - {device.hostname}')
+
+def export_headers():
+    outpath = f'out/{TITLE}/'
+    if not os.path.exists(outpath):
+        os.makedirs(outpath)
+
+    with open(f"{outpath}{COMMAND1}_{TIMESTAMP}.csv", 'w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(HEADERS)
+
+def read_testbed():
+    with open(TESTBED) as f:
+        device = yaml.safe_load(f)['devices']
+        for d in device:
+            the_ip = device[d]['connections']['cli']['ip']
+            the_protocol = device[d]['connections']['cli']['protocol']
+            the_username = device[d]['credentials']['default']['username']
+            the_password = device[d]['credentials']['default']['password']
+            the_enable = device[d]['credentials']['enable']['password']
+            the_ios_os = device[d]['os']
+
+            new_device = Routers(
+                d,
+                the_ip,
+                the_username,
+                the_password,
+                the_enable,
+                the_ios_os,
+                the_protocol
+            )
+            devices.append(new_device)
+
+def end_summary():
+    print(f'\n=> Success : [{len(success_counter)}/{len(devices)}]\n')
+    if len(fail_counter) > 0:
+        print(f'=> Failed  :')
+        for idx, fc in enumerate(fail_counter):
+            print(f'   {idx+1}. {fc}')
+        print('')
+
+    #universal template
+def export_csv(parsed, i, hostname, platform):
+    finals = []
+    for p in parsed:
+        local_int = p['local_interface']
+        remote_hostname = p['neighbor']
+        remote_platform = p['platform']
+        remote_int = p['neighbor_interface']
+        capability = p['capability']
+
+        final = [i, hostname, local_int, platform, remote_hostname, remote_int, remote_platform, capability]
+        finals.append(final)
+    return finals
