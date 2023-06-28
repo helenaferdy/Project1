@@ -51,7 +51,7 @@ def get_iosxe_memory_info(device, counter):
     try:
         try:
              # Connect to the device
-            device.connect(mit=True, log_stdout=False)
+            device.connect(mit=True, log_stdout=False, timeout=200)
 
             # Print the output
             logger.info(f"Device: {device.name}")
@@ -98,7 +98,7 @@ def get_iosxe_memory_info(device, counter):
 
             # Send a command and retrieve the output
             command = "show processes memory"
-            output = connection.send_command(command)
+            output = connection.send_command(command,read_timeout=200)
 
             with open('lib/getMemmory/ios_xe_switch.template') as template:
                 template = textfsm.TextFSM(template)
@@ -149,7 +149,7 @@ def get_iosxe_memory_info(device, counter):
 def get_iosxr_memory_info(device, counter):
     try:
         # Connect to the device
-        device.connect(mit=True, log_stdout=False)
+        device.connect(mit=True, log_stdout=False, timeout= 200)
 
         # Print the output
         logger.info(f"Device: {device.name}")
@@ -186,7 +186,7 @@ def get_iosxr_memory_info(device, counter):
 def get_ios_memory_info(device, counter):
     try:
         # Connect to the device
-        device.connect(mit=True, log_stdout=False)
+        device.connect(mit=True, log_stdout=False, timeout = 200)
 
         # Print the output
         logger.info(f"Device: {device.name}")
@@ -218,6 +218,61 @@ def get_ios_memory_info(device, counter):
 
     except Exception as e:
         logger.error(f"Error connecting to device {device.name}: {e}")
+        logger.info(f"Error while connecting, Reconnecting... {device.name}")
+
+        # Convert the device to Netmiko format
+        netmiko_device = convert_to_netmiko(device)
+
+        # rubah device type sesuai netmiko
+
+        # netmiko_device['device_type'] = "cisco_xe"
+
+        # Print the converted device details
+        # logger.info(netmiko_device)
+
+        # Establish the Netmiko connection
+        logger.info("Establishing Netmiko connection...")
+        connection = ConnectHandler(**netmiko_device)
+        logger.info("Connection established successfully.")
+
+        # Send a command and retrieve the output
+        command = "show processes memory"
+        output = connection.send_command(command)
+
+        with open('lib/getMemmory/ios_router.template') as template:
+            template = textfsm.TextFSM(template)
+
+        parsed_output = template.ParseText(output)
+
+        # logger.info(parsed_output)
+
+        header = template.header
+        # logger.info(header)
+        used_index = header.index('MEMORY_USED')
+        total_index = header.index('MEMORY_TOTAL')
+        # free_index = header.index('free')
+        
+        used = round(int(parsed_output[0][used_index])/1024/1000,2)
+        total = round(int(parsed_output[0][total_index])/1024/1000, 2)
+        percentage = round(used / total * 100, 2)
+
+        # Categorize percentage based on certain ranges
+        if percentage <= 40:
+            category = "low"
+        elif percentage <= 70:
+            category = "medium"
+        elif percentage <= 85:
+            category = "high"
+        else:
+            category = "critical"
+        
+
+        # Write the output to the CSV file
+        with open(
+            f"out/MemmoryUtils/summary_show_memory_{timestamp}.csv", "a", newline=""
+        ) as csvfile:
+            writer = csv.writer(csvfile)
+            writer.writerow([f"{counter}", f"{device.name}", used, total, percentage, category])
 
 def get_nxos_memory_info(device, counter):
     try:
