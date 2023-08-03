@@ -74,7 +74,7 @@ def process_device(device, i):
             device.logging_error(f"{device.hostname} : Parsing failed after [{num_try}] tries.")
             final = export_desperate(i, device.hostname)
             device.export_data(final)
-            # fail_counter.append(f'{device.ip} - {device.ios_os} - {device.hostname}')
+            fail_counter.append(f'{device.ip} - {device.ios_os} - {device.hostname}')
 
         device.disconnect()
     else:

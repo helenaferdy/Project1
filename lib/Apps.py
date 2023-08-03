@@ -18,6 +18,7 @@ from lib.getInven.main import main as getInven
 from lib.getCDP.main import main as  getCDP
 from lib.getEnvi.main import main as  getEnvi
 from lib.getCustom.main import main as  getCustom
+from lib.NetworkTopology.main import main as  NetworkTopology
 import logging
 from rich.logging import RichHandler
 import concurrent.futures
@@ -47,7 +48,7 @@ logger.addHandler(shell_handler)
 logger.addHandler(file_handler)
 
 
-Menu = ['Get Configuration Device','Get Inventory Device','Get Memory Utils','Get CPU Utils','Get Logging Device','Get Interface CRC','Get CDP Neighbours','Get Environtment','Get Custom Commands','Exit']
+Menu = ['Get Configuration Device','Get Inventory Device','Get Memory Utils','Get CPU Utils','Get Logging Device','Get Interface CRC','Get CDP Neighbours','Get Environtment','Get Custom Commands', 'Create Network Topology' ,'Exit']
 
 testbedFile = 'testbed/device.yaml'
 
@@ -187,7 +188,13 @@ def inputMenu(value):
         #### function get Logging device ####
         getCustom(testbedFile)
         
-    elif(value==Menu[10] or value=='10'):
+    elif(value==Menu[9] or value=='10'):
+        logger.info("---Create Network Topology ---")
+        
+        #### function get Logging device ####
+        NetworkTopology()
+
+    elif(value==Menu[10] or value=='11'):
         logger.info("---Closing Application---")
         time.sleep(1)
         sys.exit()

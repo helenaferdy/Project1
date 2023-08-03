@@ -1,0 +1,6 @@
+Value total (\d+)
+Value used (\d+)
+Value free (\d+)
+
+Start
+  ^System+\s+memory\s+:\s+${total}+K+\s+total+,+\s+${used}+K+\s+used+,+\s+${free}

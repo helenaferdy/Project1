@@ -18,10 +18,10 @@ class Routers:
         self.password = password
         self.secret = secret
         self.ios_os = ios_os
-        if protocol == "ssh":
-            self.port = "22"
-        elif protocol == "telnet":
-            self.port = "23"
+        if protocol == "telnet":
+            self.port = 23
+        else:
+            self.port = 22
         self.exception_counter = 0
         
         self.command_template = ""
@@ -68,13 +68,19 @@ class Routers:
 
     def connect(self, i):
         self.i = i
+
+        if self.port == 23:
+            device_type = "cisco_ios_telnet"
+        else:
+            device_type = "cisco_ios"
+
         device = {
-            "device_type": "cisco_ios",
+            "device_type": device_type,
             "ip": self.ip,
             "username": self.username,
             "password": self.password,
             "secret": self.secret,
-            "conn_timeout": 20,
+            "conn_timeout": 15,
             "port": self.port
         }
         
