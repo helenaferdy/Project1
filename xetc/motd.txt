@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Clear the MOTD
+cat /dev/null > /etc/motd
+
+# Add your custom message to the MOTD
+cat << EOF > /etc/motd
+
+
+**************************************************************
+                   Welcome to ProjectOne
+**************************************************************
+
+* type "run" to execute the application
+* type "update" to update the application
+
+* place your csv file inside the directory 'Project1/import/'
+* all your output will be saved in 'Project1/out/'
+
+**************************************************************
+
+
+EOF

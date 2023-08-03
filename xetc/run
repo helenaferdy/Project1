@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd ~/Project1
+python3 Main.py

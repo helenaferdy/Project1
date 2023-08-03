@@ -1,0 +1,10 @@
+Value POWER ([A-Za-z]+)
+Value FAN ([A-Za-z]+)
+Value TEMP ([A-Za-z]+)
+
+Start
+ ^\s+[A-Za-z]+:\s+fan\d\s+[A-Za-z0-9]+\s+${FAN} 
+ ^\s+Fan\s+\d\s+${FAN} 
+ ^\s+Temp:\s+[A-Za-z]+\s+[A-Za-z0-9]+\s+${TEMP} 
+ ^\s+[A-Za-z]+:\s+pwr\s+[A-Za-z0-9]+\s+${POWER} 
+
