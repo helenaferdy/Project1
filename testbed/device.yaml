@@ -1,8 +1,203 @@
 devices:
+  ios1:
+    connections:
+      cli:
+        ip: 198.18.3.131
+        protocol: ssh
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: ios
+    type: ios
+  ios11:
+    connections:
+      cli:
+        ip: 198.18.3.131
+        protocol: ssh
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: ios
+    type: ios
+  ios12:
+    connections:
+      cli:
+        ip: 198.18.3.132
+        protocol: ssh
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: ios
+    type: ios
+  ios13:
+    connections:
+      cli:
+        ip: 198.18.3.133
+        protocol: ssh
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: ios
+    type: ios
+  ios2:
+    connections:
+      cli:
+        ip: 198.18.3.132
+        protocol: ssh
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: ios
+    type: ios
+  ios3:
+    connections:
+      cli:
+        ip: 198.18.3.133
+        protocol: ssh
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: ios
+    type: ios
+  nsox1:
+    connections:
+      cli:
+        ip: 198.18.3.131
+        protocol: ssh
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: nxos
+    type: nxos
+  nsox11:
+    connections:
+      cli:
+        ip: 198.18.3.131
+        protocol: ssh
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: nxos
+    type: nxos
+  nsox12:
+    connections:
+      cli:
+        ip: 198.18.3.132
+        protocol: ssh
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: nxos
+    type: nxos
+  nsox13:
+    connections:
+      cli:
+        ip: 198.18.3.133
+        protocol: ssh
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: nxos
+    type: nxos
+  nsox2:
+    connections:
+      cli:
+        ip: 198.18.3.132
+        protocol: ssh
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: nxos
+    type: nxos
+  nsox3:
+    connections:
+      cli:
+        ip: 198.18.3.133
+        protocol: ssh
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: nxos
+    type: nxos
   xe1:
     connections:
       cli:
         ip: 198.18.0.121
+        protocol: ssh
+    credentials:
+      default:
+        password: helena
+        username: helena
+      enable:
+        password: helena
+    os: iosxe
+    type: iosxe
+  xe11:
+    connections:
+      cli:
+        ip: 198.18.0.121
+        protocol: ssh
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: iosxe
+    type: iosxe
+  xe12:
+    connections:
+      cli:
+        ip: 198.18.0.122
+        protocol: ssh
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: iosxe
+    type: iosxe
+  xe13:
+    connections:
+      cli:
+        ip: 198.18.0.123
         protocol: ssh
     credentials:
       default:
@@ -25,3 +220,94 @@ devices:
         password: cisco
     os: iosxe
     type: iosxe
+  xe3:
+    connections:
+      cli:
+        ip: 198.18.0.123
+        protocol: ssh
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: iosxe
+    type: iosxe
+  xr1:
+    connections:
+      cli:
+        ip: 198.18.0.131
+        protocol: ssh
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: iosxr
+    type: iosxr
+  xr11:
+    connections:
+      cli:
+        ip: 198.18.0.131
+        protocol: ssh
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: iosxr
+    type: iosxr
+  xr12:
+    connections:
+      cli:
+        ip: 198.18.0.132
+        protocol: ssh
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: iosxr
+    type: iosxr
+  xr13:
+    connections:
+      cli:
+        ip: 198.18.3.133
+        protocol: ssh
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: iosxr
+    type: iosxr
+  xr2:
+    connections:
+      cli:
+        ip: 198.18.0.132
+        protocol: ssh
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: iosxr
+    type: iosxr
+  xr3:
+    connections:
+      cli:
+        ip: 198.18.3.133
+        protocol: ssh
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: iosxr
+    type: iosxr
