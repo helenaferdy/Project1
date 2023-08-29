@@ -37,7 +37,6 @@ if not os.path.exists("out/CaptureConfig"):
 
 
 def captureConfigX(device):
-    # Load the testbed file
     # Send a command to the device
     try:
         attempt = 1
