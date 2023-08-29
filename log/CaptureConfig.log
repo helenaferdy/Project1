@@ -1,0 +1,321 @@
+INFO 2023-08-22 17:08:55,716 [main.py:captureConfig:68] Connecting to device ios1
+INFO 2023-08-22 17:08:55,823 [main.py:captureConfig:68] Connecting to device ios11
+INFO 2023-08-22 17:08:55,927 [main.py:captureConfig:68] Connecting to device ios12
+INFO 2023-08-22 17:08:56,044 [main.py:captureConfig:68] Connecting to device ios13
+INFO 2023-08-22 17:08:56,160 [main.py:captureConfig:68] Connecting to device ios2
+INFO 2023-08-22 17:08:56,264 [main.py:captureConfig:68] Connecting to device ios3
+INFO 2023-08-22 17:08:56,368 [main.py:captureConfig:68] Connecting to device nsox1
+INFO 2023-08-22 17:08:56,471 [main.py:captureConfig:68] Connecting to device nsox11
+INFO 2023-08-22 17:08:56,574 [main.py:captureConfig:68] Connecting to device nsox12
+INFO 2023-08-22 17:08:56,676 [main.py:captureConfig:68] Connecting to device nsox13
+INFO 2023-08-22 17:08:56,779 [main.py:captureConfig:68] Connecting to device nsox2
+INFO 2023-08-22 17:08:56,882 [main.py:captureConfig:68] Connecting to device nsox3
+INFO 2023-08-22 17:08:56,984 [main.py:captureConfig:68] Connecting to device xe1
+INFO 2023-08-22 17:08:57,086 [main.py:captureConfig:68] Connecting to device xe11
+INFO 2023-08-22 17:08:57,188 [main.py:captureConfig:68] Connecting to device xe12
+INFO 2023-08-22 17:08:57,290 [main.py:captureConfig:68] Connecting to device xe13
+INFO 2023-08-22 17:08:57,392 [main.py:captureConfig:68] Connecting to device xe2
+INFO 2023-08-22 17:08:57,495 [main.py:captureConfig:68] Connecting to device xe3
+INFO 2023-08-22 17:08:57,598 [main.py:captureConfig:68] Connecting to device xr1
+INFO 2023-08-22 17:08:57,700 [main.py:captureConfig:68] Connecting to device xr11
+INFO 2023-08-22 17:08:57,803 [main.py:captureConfig:68] Connecting to device xr12
+INFO 2023-08-22 17:08:57,906 [main.py:captureConfig:68] Connecting to device xr13
+INFO 2023-08-22 17:08:58,009 [main.py:captureConfig:68] Connecting to device xr2
+INFO 2023-08-22 17:08:58,111 [main.py:captureConfig:68] Connecting to device xr3
+INFO 2023-08-22 17:09:18,178 [main.py:captureConfig:68] Connecting to device xe1
+ERROR 2023-08-22 17:09:29,387 [main.py:captureConfigX:59] Error connecting to device xe1: failed to connect to xe1
+Failed while bringing device to "any" state
+INFO 2023-08-22 17:09:29,389 [main.py:captureConfig:77] Get Config -  execution completed successfully.
+INFO 2023-08-22 17:10:53,259 [main.py:captureConfig:68] Connecting to device xe1
+INFO 2023-08-22 17:10:55,435 [main.py:captureConfigX:45] ---getting capture config from device xe1---
+INFO 2023-08-22 17:10:55,909 [main.py:captureConfigX:51] xe1_22-08-23_17_10_55.txt
+INFO 2023-08-22 17:10:55,911 [main.py:captureConfig:77] Get Config -  execution completed successfully.
+INFO 2023-08-22 17:13:59,031 [main.py:captureConfig:68] Connecting to device xe1
+INFO 2023-08-22 17:13:59,972 [main.py:captureConfigX:45] ---getting capture config from device xe1---
+INFO 2023-08-22 17:14:00,738 [main.py:captureConfigX:51] xe1_22-08-23_17_13_59.txt
+INFO 2023-08-22 17:14:00,740 [main.py:captureConfig:77] Get Config -  execution completed successfully.
+INFO 2023-08-22 17:15:05,883 [main.py:captureConfig:68] Connecting to device xe1
+INFO 2023-08-22 17:15:06,720 [main.py:captureConfigX:45] ---getting capture config from device xe1---
+INFO 2023-08-22 17:15:07,467 [main.py:captureConfigX:51] xe1_22-08-23_17_15_06.txt
+INFO 2023-08-22 17:15:07,469 [main.py:captureConfig:77] Get Config -  execution completed successfully.
+INFO 2023-08-22 17:15:59,774 [main.py:captureConfig:68] Connecting to device xe1
+INFO 2023-08-22 17:16:01,929 [main.py:captureConfigX:45] ---getting capture config from device xe1---
+INFO 2023-08-22 17:16:02,421 [main.py:captureConfigX:51] xe1_22-08-23_17_16_01.txt
+INFO 2023-08-22 17:16:02,423 [main.py:captureConfig:77] Get Config -  execution completed successfully.
+INFO 2023-08-29 11:31:46,498 [main.py:captureConfig:85] Connecting to device xe1
+ERROR 2023-08-29 11:32:00,599 [main.py:captureConfigX:54] Connection attempt 1/3 failed for xe1 (198.18.0.121): failed to connect to xe1
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:32:00,605 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:32:16,698 [main.py:captureConfigX:54] Connection attempt 2/3 failed for xe1 (198.18.0.121): failed to connect to xe1
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:32:16,702 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:32:32,788 [main.py:captureConfigX:58] Failed to establish connection to xe1 (198.18.0.121) after 3 attempts.
+INFO 2023-08-29 11:32:32,791 [main.py:captureConfigX:62] ---getting capture config from device xe1---
+ERROR 2023-08-29 11:32:46,867 [main.py:captureConfigX:76] Error connecting to device xe1: failed to connect to xe1
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:32:46,869 [main.py:captureConfig:94] Get Config -  execution completed successfully.
+INFO 2023-08-29 11:33:15,097 [main.py:captureConfig:85] Connecting to device ios1
+INFO 2023-08-29 11:33:15,206 [main.py:captureConfig:85] Connecting to device ios11
+INFO 2023-08-29 11:33:15,312 [main.py:captureConfig:85] Connecting to device ios12
+INFO 2023-08-29 11:33:15,418 [main.py:captureConfig:85] Connecting to device ios13
+INFO 2023-08-29 11:33:15,525 [main.py:captureConfig:85] Connecting to device ios2
+INFO 2023-08-29 11:33:15,629 [main.py:captureConfig:85] Connecting to device ios3
+INFO 2023-08-29 11:33:15,733 [main.py:captureConfig:85] Connecting to device nsox1
+INFO 2023-08-29 11:33:15,837 [main.py:captureConfig:85] Connecting to device nsox11
+INFO 2023-08-29 11:33:15,940 [main.py:captureConfig:85] Connecting to device nsox12
+INFO 2023-08-29 11:33:16,042 [main.py:captureConfig:85] Connecting to device nsox13
+INFO 2023-08-29 11:33:16,145 [main.py:captureConfig:85] Connecting to device nsox2
+INFO 2023-08-29 11:33:16,247 [main.py:captureConfig:85] Connecting to device nsox3
+INFO 2023-08-29 11:33:16,350 [main.py:captureConfig:85] Connecting to device xe1
+INFO 2023-08-29 11:33:16,452 [main.py:captureConfig:85] Connecting to device xe11
+INFO 2023-08-29 11:33:16,556 [main.py:captureConfig:85] Connecting to device xe12
+INFO 2023-08-29 11:33:16,658 [main.py:captureConfig:85] Connecting to device xe13
+INFO 2023-08-29 11:33:16,761 [main.py:captureConfig:85] Connecting to device xe2
+INFO 2023-08-29 11:33:16,863 [main.py:captureConfig:85] Connecting to device xe3
+INFO 2023-08-29 11:33:16,967 [main.py:captureConfig:85] Connecting to device xr1
+INFO 2023-08-29 11:33:17,069 [main.py:captureConfig:85] Connecting to device xr11
+INFO 2023-08-29 11:33:17,173 [main.py:captureConfig:85] Connecting to device xr12
+INFO 2023-08-29 11:33:17,274 [main.py:captureConfig:85] Connecting to device xr13
+INFO 2023-08-29 11:33:17,376 [main.py:captureConfig:85] Connecting to device xr2
+INFO 2023-08-29 11:33:17,478 [main.py:captureConfig:85] Connecting to device xr3
+ERROR 2023-08-29 11:33:29,174 [main.py:captureConfigX:54] Connection attempt 1/3 failed for ios1 (198.18.3.131): failed to connect to ios1
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:33:29,177 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:33:29,287 [main.py:captureConfigX:54] Connection attempt 1/3 failed for ios11 (198.18.3.131): failed to connect to ios11
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:33:29,289 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:33:29,391 [main.py:captureConfigX:54] Connection attempt 1/3 failed for ios12 (198.18.3.132): failed to connect to ios12
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:33:29,393 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:33:29,489 [main.py:captureConfigX:54] Connection attempt 1/3 failed for ios13 (198.18.3.133): failed to connect to ios13
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:33:29,491 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:33:29,609 [main.py:captureConfigX:54] Connection attempt 1/3 failed for ios2 (198.18.3.132): failed to connect to ios2
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:33:29,611 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:33:29,715 [main.py:captureConfigX:54] Connection attempt 1/3 failed for ios3 (198.18.3.133): failed to connect to ios3
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:33:29,717 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:33:45,261 [main.py:captureConfigX:54] Connection attempt 2/3 failed for ios1 (198.18.3.131): failed to connect to ios1
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:33:45,264 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:33:45,369 [main.py:captureConfigX:54] Connection attempt 2/3 failed for ios11 (198.18.3.131): failed to connect to ios11
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:33:45,370 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:33:45,467 [main.py:captureConfigX:54] Connection attempt 2/3 failed for ios12 (198.18.3.132): failed to connect to ios12
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:33:45,470 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:33:45,577 [main.py:captureConfigX:54] Connection attempt 2/3 failed for ios13 (198.18.3.133): failed to connect to ios13
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:33:45,580 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:33:45,691 [main.py:captureConfigX:54] Connection attempt 2/3 failed for ios2 (198.18.3.132): failed to connect to ios2
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:33:45,693 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:33:45,793 [main.py:captureConfigX:54] Connection attempt 2/3 failed for ios3 (198.18.3.133): failed to connect to ios3
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:33:45,795 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:34:01,341 [main.py:captureConfigX:58] Failed to establish connection to ios1 (198.18.3.131) after 3 attempts.
+INFO 2023-08-29 11:34:01,344 [main.py:captureConfigX:62] ---getting capture config from device ios1---
+ERROR 2023-08-29 11:34:01,447 [main.py:captureConfigX:58] Failed to establish connection to ios11 (198.18.3.131) after 3 attempts.
+INFO 2023-08-29 11:34:01,450 [main.py:captureConfigX:62] ---getting capture config from device ios11---
+ERROR 2023-08-29 11:34:01,564 [main.py:captureConfigX:58] Failed to establish connection to ios12 (198.18.3.132) after 3 attempts.
+INFO 2023-08-29 11:34:01,567 [main.py:captureConfigX:62] ---getting capture config from device ios12---
+ERROR 2023-08-29 11:34:01,665 [main.py:captureConfigX:58] Failed to establish connection to ios13 (198.18.3.133) after 3 attempts.
+INFO 2023-08-29 11:34:01,667 [main.py:captureConfigX:62] ---getting capture config from device ios13---
+ERROR 2023-08-29 11:34:01,771 [main.py:captureConfigX:58] Failed to establish connection to ios2 (198.18.3.132) after 3 attempts.
+INFO 2023-08-29 11:34:01,774 [main.py:captureConfigX:62] ---getting capture config from device ios2---
+ERROR 2023-08-29 11:34:01,874 [main.py:captureConfigX:58] Failed to establish connection to ios3 (198.18.3.133) after 3 attempts.
+INFO 2023-08-29 11:34:01,877 [main.py:captureConfigX:62] ---getting capture config from device ios3---
+ERROR 2023-08-29 11:34:15,432 [main.py:captureConfigX:76] Error connecting to device ios1: failed to connect to ios1
+Failed while bringing device to "any" state
+ERROR 2023-08-29 11:34:15,532 [main.py:captureConfigX:76] Error connecting to device ios11: failed to connect to ios11
+Failed while bringing device to "any" state
+ERROR 2023-08-29 11:34:15,667 [main.py:captureConfigX:76] Error connecting to device ios12: failed to connect to ios12
+Failed while bringing device to "any" state
+ERROR 2023-08-29 11:34:15,765 [main.py:captureConfigX:76] Error connecting to device ios13: failed to connect to ios13
+Failed while bringing device to "any" state
+ERROR 2023-08-29 11:34:15,854 [main.py:captureConfigX:76] Error connecting to device ios2: failed to connect to ios2
+Failed while bringing device to "any" state
+ERROR 2023-08-29 11:34:15,953 [main.py:captureConfigX:76] Error connecting to device ios3: failed to connect to ios3
+Failed while bringing device to "any" state
+ERROR 2023-08-29 11:34:29,516 [main.py:captureConfigX:54] Connection attempt 1/3 failed for nsox1 (198.18.3.131): failed to connect to nsox1
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:34:29,519 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:34:29,616 [main.py:captureConfigX:54] Connection attempt 1/3 failed for nsox11 (198.18.3.131): failed to connect to nsox11
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:34:29,617 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:34:29,754 [main.py:captureConfigX:54] Connection attempt 1/3 failed for nsox12 (198.18.3.132): failed to connect to nsox12
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:34:29,756 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:34:29,857 [main.py:captureConfigX:54] Connection attempt 1/3 failed for nsox13 (198.18.3.133): failed to connect to nsox13
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:34:29,858 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:34:29,932 [main.py:captureConfigX:54] Connection attempt 1/3 failed for nsox2 (198.18.3.132): failed to connect to nsox2
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:34:29,938 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:34:30,039 [main.py:captureConfigX:54] Connection attempt 1/3 failed for nsox3 (198.18.3.133): failed to connect to nsox3
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:34:30,041 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:34:45,598 [main.py:captureConfigX:54] Connection attempt 2/3 failed for nsox1 (198.18.3.131): failed to connect to nsox1
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:34:45,601 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:34:45,778 [main.py:captureConfigX:54] Connection attempt 2/3 failed for nsox11 (198.18.3.131): failed to connect to nsox11
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:34:45,780 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:34:45,840 [main.py:captureConfigX:54] Connection attempt 2/3 failed for nsox12 (198.18.3.132): failed to connect to nsox12
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:34:45,842 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:34:45,937 [main.py:captureConfigX:54] Connection attempt 2/3 failed for nsox13 (198.18.3.133): failed to connect to nsox13
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:34:45,939 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:34:46,015 [main.py:captureConfigX:54] Connection attempt 2/3 failed for nsox2 (198.18.3.132): failed to connect to nsox2
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:34:46,019 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:34:46,123 [main.py:captureConfigX:54] Connection attempt 2/3 failed for nsox3 (198.18.3.133): failed to connect to nsox3
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:34:46,125 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:35:01,676 [main.py:captureConfigX:58] Failed to establish connection to nsox1 (198.18.3.131) after 3 attempts.
+INFO 2023-08-29 11:35:01,678 [main.py:captureConfigX:62] ---getting capture config from device nsox1---
+ERROR 2023-08-29 11:35:01,861 [main.py:captureConfigX:58] Failed to establish connection to nsox11 (198.18.3.131) after 3 attempts.
+INFO 2023-08-29 11:35:01,863 [main.py:captureConfigX:62] ---getting capture config from device nsox11---
+ERROR 2023-08-29 11:35:01,933 [main.py:captureConfigX:58] Failed to establish connection to nsox12 (198.18.3.132) after 3 attempts.
+INFO 2023-08-29 11:35:01,936 [main.py:captureConfigX:62] ---getting capture config from device nsox12---
+ERROR 2023-08-29 11:35:02,023 [main.py:captureConfigX:58] Failed to establish connection to nsox13 (198.18.3.133) after 3 attempts.
+INFO 2023-08-29 11:35:02,026 [main.py:captureConfigX:62] ---getting capture config from device nsox13---
+ERROR 2023-08-29 11:35:02,099 [main.py:captureConfigX:58] Failed to establish connection to nsox2 (198.18.3.132) after 3 attempts.
+INFO 2023-08-29 11:35:02,102 [main.py:captureConfigX:62] ---getting capture config from device nsox2---
+ERROR 2023-08-29 11:35:02,204 [main.py:captureConfigX:58] Failed to establish connection to nsox3 (198.18.3.133) after 3 attempts.
+INFO 2023-08-29 11:35:02,207 [main.py:captureConfigX:62] ---getting capture config from device nsox3---
+ERROR 2023-08-29 11:35:15,754 [main.py:captureConfigX:76] Error connecting to device nsox1: failed to connect to nsox1
+Failed while bringing device to "any" state
+ERROR 2023-08-29 11:35:15,951 [main.py:captureConfigX:76] Error connecting to device nsox11: failed to connect to nsox11
+Failed while bringing device to "any" state
+ERROR 2023-08-29 11:35:16,015 [main.py:captureConfigX:76] Error connecting to device nsox12: failed to connect to nsox12
+Failed while bringing device to "any" state
+ERROR 2023-08-29 11:35:16,118 [main.py:captureConfigX:76] Error connecting to device nsox13: failed to connect to nsox13
+Failed while bringing device to "any" state
+ERROR 2023-08-29 11:35:16,183 [main.py:captureConfigX:76] Error connecting to device nsox2: failed to connect to nsox2
+Failed while bringing device to "any" state
+ERROR 2023-08-29 11:35:16,279 [main.py:captureConfigX:76] Error connecting to device nsox3: failed to connect to nsox3
+Failed while bringing device to "any" state
+ERROR 2023-08-29 11:35:29,842 [main.py:captureConfigX:54] Connection attempt 1/3 failed for xe1 (198.18.0.121): failed to connect to xe1
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:35:29,847 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:35:30,043 [main.py:captureConfigX:54] Connection attempt 1/3 failed for xe11 (198.18.0.121): failed to connect to xe11
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:35:30,045 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:35:30,108 [main.py:captureConfigX:54] Connection attempt 1/3 failed for xe12 (198.18.0.122): failed to connect to xe12
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:35:30,109 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:35:30,210 [main.py:captureConfigX:54] Connection attempt 1/3 failed for xe13 (198.18.0.123): failed to connect to xe13
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:35:30,214 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:35:30,271 [main.py:captureConfigX:54] Connection attempt 1/3 failed for xe2 (198.18.0.122): failed to connect to xe2
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:35:30,272 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:35:30,378 [main.py:captureConfigX:54] Connection attempt 1/3 failed for xe3 (198.18.0.123): failed to connect to xe3
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:35:30,380 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:35:45,920 [main.py:captureConfigX:54] Connection attempt 2/3 failed for xe1 (198.18.0.121): failed to connect to xe1
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:35:45,922 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:35:46,126 [main.py:captureConfigX:54] Connection attempt 2/3 failed for xe11 (198.18.0.121): failed to connect to xe11
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:35:46,128 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:35:46,198 [main.py:captureConfigX:54] Connection attempt 2/3 failed for xe12 (198.18.0.122): failed to connect to xe12
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:35:46,200 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:35:46,303 [main.py:captureConfigX:54] Connection attempt 2/3 failed for xe13 (198.18.0.123): failed to connect to xe13
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:35:46,305 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:35:46,359 [main.py:captureConfigX:54] Connection attempt 2/3 failed for xe2 (198.18.0.122): failed to connect to xe2
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:35:46,360 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:35:46,458 [main.py:captureConfigX:54] Connection attempt 2/3 failed for xe3 (198.18.0.123): failed to connect to xe3
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:35:46,460 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:36:02,003 [main.py:captureConfigX:58] Failed to establish connection to xe1 (198.18.0.121) after 3 attempts.
+INFO 2023-08-29 11:36:02,005 [main.py:captureConfigX:62] ---getting capture config from device xe1---
+ERROR 2023-08-29 11:36:02,207 [main.py:captureConfigX:58] Failed to establish connection to xe11 (198.18.0.121) after 3 attempts.
+INFO 2023-08-29 11:36:02,209 [main.py:captureConfigX:62] ---getting capture config from device xe11---
+ERROR 2023-08-29 11:36:02,283 [main.py:captureConfigX:58] Failed to establish connection to xe12 (198.18.0.122) after 3 attempts.
+INFO 2023-08-29 11:36:02,287 [main.py:captureConfigX:62] ---getting capture config from device xe12---
+ERROR 2023-08-29 11:36:02,386 [main.py:captureConfigX:58] Failed to establish connection to xe13 (198.18.0.123) after 3 attempts.
+INFO 2023-08-29 11:36:02,389 [main.py:captureConfigX:62] ---getting capture config from device xe13---
+ERROR 2023-08-29 11:36:02,448 [main.py:captureConfigX:58] Failed to establish connection to xe2 (198.18.0.122) after 3 attempts.
+INFO 2023-08-29 11:36:02,451 [main.py:captureConfigX:62] ---getting capture config from device xe2---
+ERROR 2023-08-29 11:36:02,543 [main.py:captureConfigX:58] Failed to establish connection to xe3 (198.18.0.123) after 3 attempts.
+INFO 2023-08-29 11:36:02,545 [main.py:captureConfigX:62] ---getting capture config from device xe3---
+ERROR 2023-08-29 11:36:16,082 [main.py:captureConfigX:76] Error connecting to device xe1: failed to connect to xe1
+Failed while bringing device to "any" state
+ERROR 2023-08-29 11:36:16,300 [main.py:captureConfigX:76] Error connecting to device xe11: failed to connect to xe11
+Failed while bringing device to "any" state
+ERROR 2023-08-29 11:36:16,370 [main.py:captureConfigX:76] Error connecting to device xe12: failed to connect to xe12
+Failed while bringing device to "any" state
+ERROR 2023-08-29 11:36:16,473 [main.py:captureConfigX:76] Error connecting to device xe13: failed to connect to xe13
+Failed while bringing device to "any" state
+ERROR 2023-08-29 11:36:16,535 [main.py:captureConfigX:76] Error connecting to device xe2: failed to connect to xe2
+Failed while bringing device to "any" state
+ERROR 2023-08-29 11:36:16,635 [main.py:captureConfigX:76] Error connecting to device xe3: failed to connect to xe3
+Failed while bringing device to "any" state
+ERROR 2023-08-29 11:36:30,164 [main.py:captureConfigX:54] Connection attempt 1/3 failed for xr1 (198.18.0.131): failed to connect to xr1
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:36:30,167 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:36:30,398 [main.py:captureConfigX:54] Connection attempt 1/3 failed for xr11 (198.18.0.131): failed to connect to xr11
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:36:30,401 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:36:30,462 [main.py:captureConfigX:54] Connection attempt 1/3 failed for xr12 (198.18.0.132): failed to connect to xr12
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:36:30,465 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:36:30,562 [main.py:captureConfigX:54] Connection attempt 1/3 failed for xr13 (198.18.3.133): failed to connect to xr13
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:36:30,564 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:36:30,623 [main.py:captureConfigX:54] Connection attempt 1/3 failed for xr2 (198.18.0.132): failed to connect to xr2
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:36:30,625 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:36:30,735 [main.py:captureConfigX:54] Connection attempt 1/3 failed for xr3 (198.18.3.133): failed to connect to xr3
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:36:30,737 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:36:46,252 [main.py:captureConfigX:54] Connection attempt 2/3 failed for xr1 (198.18.0.131): failed to connect to xr1
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:36:46,256 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:36:46,484 [main.py:captureConfigX:54] Connection attempt 2/3 failed for xr11 (198.18.0.131): failed to connect to xr11
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:36:46,486 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:36:46,539 [main.py:captureConfigX:54] Connection attempt 2/3 failed for xr12 (198.18.0.132): failed to connect to xr12
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:36:46,542 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:36:46,643 [main.py:captureConfigX:54] Connection attempt 2/3 failed for xr13 (198.18.3.133): failed to connect to xr13
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:36:46,646 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:36:46,698 [main.py:captureConfigX:54] Connection attempt 2/3 failed for xr2 (198.18.0.132): failed to connect to xr2
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:36:46,700 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:36:46,822 [main.py:captureConfigX:54] Connection attempt 2/3 failed for xr3 (198.18.3.133): failed to connect to xr3
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:36:46,824 [main.py:captureConfigX:55] Retrying in 2 seconds...
+ERROR 2023-08-29 11:37:02,346 [main.py:captureConfigX:58] Failed to establish connection to xr1 (198.18.0.131) after 3 attempts.
+INFO 2023-08-29 11:37:02,349 [main.py:captureConfigX:62] ---getting capture config from device xr1---
+ERROR 2023-08-29 11:37:02,575 [main.py:captureConfigX:58] Failed to establish connection to xr11 (198.18.0.131) after 3 attempts.
+INFO 2023-08-29 11:37:02,578 [main.py:captureConfigX:62] ---getting capture config from device xr11---
+ERROR 2023-08-29 11:37:02,631 [main.py:captureConfigX:58] Failed to establish connection to xr12 (198.18.0.132) after 3 attempts.
+INFO 2023-08-29 11:37:02,634 [main.py:captureConfigX:62] ---getting capture config from device xr12---
+ERROR 2023-08-29 11:37:02,727 [main.py:captureConfigX:58] Failed to establish connection to xr13 (198.18.3.133) after 3 attempts.
+INFO 2023-08-29 11:37:02,729 [main.py:captureConfigX:62] ---getting capture config from device xr13---
+ERROR 2023-08-29 11:37:02,783 [main.py:captureConfigX:58] Failed to establish connection to xr2 (198.18.0.132) after 3 attempts.
+INFO 2023-08-29 11:37:02,786 [main.py:captureConfigX:62] ---getting capture config from device xr2---
+ERROR 2023-08-29 11:37:02,903 [main.py:captureConfigX:58] Failed to establish connection to xr3 (198.18.3.133) after 3 attempts.
+INFO 2023-08-29 11:37:02,908 [main.py:captureConfigX:62] ---getting capture config from device xr3---
+ERROR 2023-08-29 11:37:16,433 [main.py:captureConfigX:76] Error connecting to device xr1: failed to connect to xr1
+Failed while bringing device to "any" state
+ERROR 2023-08-29 11:37:16,667 [main.py:captureConfigX:76] Error connecting to device xr11: failed to connect to xr11
+Failed while bringing device to "any" state
+ERROR 2023-08-29 11:37:16,719 [main.py:captureConfigX:76] Error connecting to device xr12: failed to connect to xr12
+Failed while bringing device to "any" state
+ERROR 2023-08-29 11:37:16,811 [main.py:captureConfigX:76] Error connecting to device xr13: failed to connect to xr13
+Failed while bringing device to "any" state
+ERROR 2023-08-29 11:37:16,874 [main.py:captureConfigX:76] Error connecting to device xr2: failed to connect to xr2
+Failed while bringing device to "any" state
+ERROR 2023-08-29 11:37:17,003 [main.py:captureConfigX:76] Error connecting to device xr3: failed to connect to xr3
+Failed while bringing device to "any" state
+INFO 2023-08-29 11:37:17,007 [main.py:captureConfig:94] Get Config -  execution completed successfully.

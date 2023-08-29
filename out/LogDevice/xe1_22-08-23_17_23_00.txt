@@ -1,0 +1,170 @@
+Syslog logging: enabled (0 messages dropped, 3 messages rate-limited, 0 flushes, 0 overruns, xml disabled, filtering disabled)
+
+No Active Message Discriminator.
+
+
+
+No Inactive Message Discriminator.
+
+
+    Console logging: disabled
+    Monitor logging: level debugging, 0 messages logged, xml disabled,
+                     filtering disabled
+    Buffer logging:  level debugging, 134 messages logged, xml disabled,
+                    filtering disabled
+    Exception Logging: size (4096 bytes)
+    Count and timestamp logging messages: disabled
+    Persistent logging: disabled
+
+No active filter modules.
+
+    Trap logging: level informational, 134 message lines logged
+        Logging Source-Interface:       VRF Name:
+    TLS Profiles: 
+
+Log Buffer (131072 bytes):
+
+*Aug 21 10:56:52.395: %VUDI-6-EVENT: [serial number: 99QQK0GW1PC], [vUDI: ], vUDI is successfully retrieved from license file
+*Aug 21 10:56:52.651: %SMART_LIC-6-EXPORT_CONTROLLED: Usage of export controlled features is not allowed
+*Aug 21 10:56:53.684: %IOSXE_RP_NV-3-NV_ACCESS_FAIL: Initial read of NVRAM contents failed
+*Aug 21 10:56:53.711: VXE-CSL-DBG:Unable to open the postFR backup file/file not present 
+
+*Aug 21 10:56:54.342: %SMART_LIC-6-AGENT_READY: Smart Agent for Licensing is initialized
+*Aug 21 10:56:54.343: %SMART_LIC-6-AGENT_ENABLED: Smart Agent for Licensing is enabled 
+*Aug 21 10:56:54.345: %SMART_LIC-6-EXPORT_CONTROLLED: Usage of export controlled features is not allowed
+*Aug 21 10:56:54.437: %VXE_THROUGHPUT-6-LEVEL: Throughput level has been set to 1000 kbps
+*Aug 21 10:56:57.392: %VUDI-6-EVENT: [serial number: 99QQK0GW1PC], [vUDI: CSR1000V:99QQK0GW1PC], vUDI initialization is now complete
+*Aug 21 10:56:57.632: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1, changed state to down
+*Aug 21 10:56:57.671: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet2, changed state to down
+*Aug 21 10:56:57.711: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet3, changed state to down
+*Aug 21 10:56:57.751: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet7, changed state to down
+*Aug 21 10:56:57.791: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet4, changed state to down
+*Aug 21 10:56:57.834: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet6, changed state to down
+*Aug 21 10:56:57.873: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet5, changed state to down
+*Aug 21 10:56:58.244: BFD: brace register success
+*Aug 21 10:57:04.242: %SPANTREE-5-EXTENDED_SYSID: Extended SysId enabled for type vlan
+*Aug 21 10:57:04.623: %CRYPTO_ENGINE-4-CSDL_COMPLIANCE_DISABLED: Cisco PSB security compliance has been disabled
+*Aug 21 10:57:04.800: %CUBE-3-LICENSING:  SIP trunking (CUBE) licensing is now based on dynamic sessions counting, static license capacity configuration through 'mode border-element license capacity' would be ignored.
+*Aug 21 10:57:04.807: %SIP-5-LICENSING: CUBE license reporting period has been set to the minimum value of 8 hours.
+*Aug 21 10:57:04.810: %VOICE_HA-7-STATUS: CUBE HA-supported platform detected.
+*Aug 21 10:57:06.550: %LINK-3-UPDOWN: Interface Lsmpi0, changed state to up
+*Aug 21 10:57:08.730: %PNP-6-PNP_DISCOVERY_STARTED: PnP Discovery started
+*Aug 21 10:57:08.748: %PNP-6-PNP_GOOD_UDI_UPDATE: Good UDI [PID:CSR1000V,VID:,SN:99QQK0GW1PC] identified via (platform-registry)
+*Aug 21 10:57:08.750: %PNP-6-PNP_CDP_UPDATE: Device UDI [PID:CSR1000V,VID:,SN:99QQK0GW1PC] identified for CDP
+*Aug 21 10:55:23.655: %BOOT-5-OPMODE_LOG: R0/0: binos: System booted in AUTONOMOUS mode
+*Aug 21 10:57:09.150: %SMART_LIC-6-HA_ROLE_CHANGED: Smart Agent HA role changed to Active.
+*Aug 21 10:57:14.372: %LINK-3-UPDOWN: Interface EOBC0, changed state to up
+*Aug 21 10:57:14.394: %LINEPROTO-5-UPDOWN: Line protocol on Interface LI-Null0, changed state to up
+*Aug 21 10:57:14.411: %LINEPROTO-5-UPDOWN: Line protocol on Interface VoIP-Null0, changed state to up
+*Aug 21 10:57:14.434: %LINK-3-UPDOWN: Interface LIIN0, changed state to up
+*Aug 21 10:57:14.452: %LINK-3-UPDOWN: Interface GigabitEthernet1, changed state to down
+*Aug 21 10:57:14.533: %LINK-3-UPDOWN: Interface GigabitEthernet2, changed state to down
+*Aug 21 10:57:14.586: %LINK-3-UPDOWN: Interface GigabitEthernet3, changed state to down
+*Aug 21 10:57:14.634: %LINK-3-UPDOWN: Interface GigabitEthernet7, changed state to down
+*Aug 21 10:57:14.691: %LINK-3-UPDOWN: Interface GigabitEthernet4, changed state to down
+*Aug 21 10:57:14.744: %LINK-3-UPDOWN: Interface GigabitEthernet6, changed state to down
+*Aug 21 10:57:14.789: %LINK-3-UPDOWN: Interface GigabitEthernet5, changed state to down
+*Aug 21 10:57:14.875: %LINEPROTO-5-UPDOWN: Line protocol on Interface Lsmpi0, changed state to up
+*Aug 21 10:57:16.338: %LINEPROTO-5-UPDOWN: Line protocol on Interface EOBC0, changed state to up
+*Aug 21 10:57:16.340: %LINEPROTO-5-UPDOWN: Line protocol on Interface LIIN0, changed state to up
+*Aug 21 10:57:16.341: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1, changed state to up
+*Aug 21 10:57:16.342: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet2, changed state to up
+*Aug 21 10:57:16.344: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet3, changed state to up
+*Aug 21 10:57:16.348: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet7, changed state to up
+*Aug 21 10:57:16.348: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet4, changed state to up
+*Aug 21 10:57:16.349: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet6, changed state to up
+*Aug 21 10:57:16.351: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet5, changed state to up
+*Aug 21 10:57:17.892: %CVAC-4-PROPERTY_IGNORED: Property (key 'enable-sdwan.1', value 'False') ignored: unrecognized key
+*Aug 21 10:57:17.903: %CVAC-5-XML_PARSED: 9 line(s) of configuration generated from file varied:/ovf-env.xml
+*Aug 21 10:57:17.904: %CVAC-4-FILE_IGNORED: Configuration file cdrom1:/ovf-env.xml is ignored: already found varied:/ovf-env.xml earlier
+*Aug 21 10:57:17.908: %SYS-7-NVRAM_INIT_WAIT_TIME: Waited 0 seconds for NVRAM to be available
+*Aug 21 10:57:18.833: %IOSXE_OIR-6-INSCARD: Card (fp) inserted in slot F0
+*Aug 21 10:57:18.834: %IOSXE_OIR-6-ONLINECARD: Card (fp) online in slot F0
+*Aug 21 10:57:19.159: %LINK-5-CHANGED: Interface GigabitEthernet7, changed state to administratively down
+*Aug 21 10:57:19.167: %LINK-5-CHANGED: Interface GigabitEthernet6, changed state to administratively down
+*Aug 21 10:57:19.173: %LINK-5-CHANGED: Interface GigabitEthernet3, changed state to administratively down
+*Aug 21 10:57:19.178: %LINK-5-CHANGED: Interface GigabitEthernet2, changed state to administratively down
+*Aug 21 10:57:19.184: %LINK-5-CHANGED: Interface GigabitEthernet5, changed state to administratively down
+*Aug 21 10:57:19.189: %LINK-5-CHANGED: Interface GigabitEthernet4, changed state to administratively down
+*Aug 21 10:57:19.194: %LINK-5-CHANGED: Interface GigabitEthernet1, changed state to administratively down
+*Aug 21 10:57:19.852: %SYS-5-RESTART: System restarted --
+Cisco IOS Software [Amsterdam], Virtual XE Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 17.3.5, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2022 by Cisco Systems, Inc.
+Compiled Wed 09-Feb-22 10:35 by mcpre
+*Aug 21 10:57:20.197: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet7, changed state to down
+*Aug 21 10:57:20.198: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet6, changed state to down
+*Aug 21 10:57:20.199: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet3, changed state to down
+*Aug 21 10:57:20.200: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet2, changed state to down
+*Aug 21 10:57:20.201: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet5, changed state to down
+*Aug 21 10:57:20.202: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet4, changed state to down
+*Aug 21 10:57:20.202: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1, changed state to down
+*Aug 21 10:57:21.724: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is OFF
+*Aug 21 10:57:21.727: %CRYPTO-6-GDOI_ON_OFF: GDOI is OFF
+*Aug 21 10:57:22.176: %SYS-6-BOOTTIME: Time taken to reboot after reload =  226 seconds
+*Aug 21 10:57:22.232: %PNP-6-PNP_BEST_UDI_UPDATE: Best UDI [PID:CSR1000V,VID:V00,SN:99QQK0GW1PC] identified via (entity-mibs)
+*Aug 21 10:57:22.665: %IOXN_APP-6-PRE_INIT_DAY0_GS_INFO: Day0 Guestshell pre-initilization API is being invoked
+
+*Aug 21 10:57:23.661: %ONEP_BASE-6-SS_ENABLED: ONEP: Service set Base was enabled by Default
+*Aug 21 10:57:23.873: %UICFGEXP-6-SERVER_NOTIFIED_START: R0/0: psd: Server iox has been notified to start
+*Aug 21 10:57:26.618: %PKI-2-NON_AUTHORITATIVE_CLOCK: PKI functions can not be initialized until an authoritative time source, like NTP, can be obtained.
+*Aug 21 10:57:38.273: %IOXN_APP-6-PRE_INIT_DAY0_GS_INFO: Day0 Guestshell de-initilization API is being invoked
+
+*Aug 21 10:57:51.123: %PKI-6-TRUSTPOINT_CREATE: Trustpoint: SLA-TrustPoint created succesfully
+*Aug 21 10:57:51.276: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Aug 21 10:57:51.332: %SMART_LIC-6-EXPORT_CONTROLLED: Usage of export controlled features is not allowed
+*Aug 21 10:57:51.668: %CALL_HOME-6-CALL_HOME_ENABLED: Call-home is enabled by Smart Agent for Licensing.
+*Aug 21 10:57:57.814: %IOXN_APP-6-PRE_INIT_DAY0_GS_INFO: Day0 Guestshell de-initilization API is being invoked
+
+*Aug 21 10:58:05.771: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named ssh-key has been generated or imported by crypto-engine
+*Aug 21 10:58:05.804: %SSH-5-ENABLED: SSH 1.99 has been enabled
+*Aug 21 10:58:06.155: %SSH-5-DISABLED: SSH 2.0 has been disabled
+*Aug 21 10:58:06.236: %SSH-5-ENABLED: SSH 2.0 has been enabled
+*Aug 21 10:58:06.240: %PKI-6-TRUSTPOINT_CREATE: Trustpoint: TP-self-signed-3392182368 created succesfully
+*Aug 21 10:58:11.660: %WSMAN-3-INVALID_TRUSTPOINT: Trustpoint associated with HTTP is either invalid or does not exist
+*Aug 21 10:58:13.920: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named ssh-key.server has been generated or imported by crypto-engine
+*Aug 21 10:58:15.356: %CRYPTO_ENGINE-5-KEY_REPLACE: A key named ssh-key.server has been replaced by crypto-engine with new key data 
+*Aug 21 10:58:17.525: %IOXN_APP-6-PRE_INIT_DAY0_GS_INFO: Day0 Guestshell de-initilization API is being invoked
+
+*Aug 21 10:58:17.932: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named TP-self-signed-3392182368 has been generated or imported by crypto-engine
+*Aug 21 10:58:18.163: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+*Aug 21 10:58:18.181: %SYS-5-CONFIG_P: Configured programmatically by process CVAC Process from console as vty1
+*Aug 21 10:58:22.595: %PNP-6-PNP_DISCOVERY_STOPPED: PnP Discovery stopped (Startup Config Present)
+*Aug 21 10:58:22.868: %CVAC-4-CONFIG_DONE: Configuration generated from file varied:/ovf-env.xml was applied and saved to NVRAM. See bootflash:/cvac.log for more details.
+*Aug 21 10:58:54.083: %IM-6-IOX_ENABLEMENT: R0/0: ioxman: IOX is ready.
+*Aug 21 10:58:57.018: %IOXN_APP-6-PRE_INIT_DAY0_GS_INFO: Day0 Guestshell destroyed
+
+*Aug 21 10:58:57.804: %UICFGEXP-6-SERVER_NOTIFIED_STOP: R0/0: psd: Server iox has been notified to stop
+*Aug 21 11:02:28.716: %LINK-3-UPDOWN: Interface GigabitEthernet1, changed state to up
+*Aug 21 11:02:29.717: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1, changed state to up
+*Aug 21 11:03:09.555: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named xe1.helena.gg has been generated or imported by crypto-engine
+*Aug 21 11:03:36.617: %SYS-5-CONFIG_I: Configured from console by console
+*Aug 21 11:03:57.248: %SYS-5-CONFIG_I: Configured from console by console
+*Aug 21 11:04:03.591: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: helena] [Source: 10.16.36.103] [localport: 22] at 11:04:03 UTC Mon Aug 21 2023
+*Aug 21 11:04:06.943: %SYS-6-LOGOUT: User helena has exited tty session 1(10.16.36.103)
+*Aug 21 11:14:10.776: %SYS-6-TTY_EXPIRE_TIMER: (exec timer expired, tty 0 (0.0.0.0)), user 
+*Aug 22 09:55:54.789: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: helena] [Source: 10.16.36.104] [localport: 22] at 09:55:54 UTC Tue Aug 22 2023
+*Aug 22 09:56:59.616: %SYS-5-CONFIG_I: Configured from console by helena on vty0 (10.16.36.104)
+*Aug 22 09:57:36.394: %SYS-6-TTY_EXPIRE_TIMER: (exec timer expired, tty 1 (10.16.36.104)), user helena
+*Aug 22 09:57:36.395: %SYS-6-LOGOUT: User helena has exited tty session 1(10.16.36.104)
+*Aug 22 09:59:16.826: %SSH-4-SSH2_UNEXPECTED_MSG: Unexpected message type has arrived. Terminating the connection from 10.16.36.104
+*Aug 22 09:59:51.274: %SSH-4-SSH2_UNEXPECTED_MSG: Unexpected message type has arrived. Terminating the connection from 10.16.36.104
+*Aug 22 10:00:52.417: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: helena] [Source: 10.16.36.104] [localport: 22] at 10:00:52 UTC Tue Aug 22 2023
+*Aug 22 10:00:53.480: %SYS-5-LOG_CONFIG_CHANGE: Console logging disabled
+*Aug 22 10:00:53.794: %SYS-5-CONFIG_I: Configured from console by helena on vty0 (10.16.36.104)
+*Aug 22 10:00:54.650: %SYS-6-LOGOUT: User helena has exited tty session 1(10.16.36.104)
+*Aug 22 10:01:08.273: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: helena] [Source: 10.16.36.104] [localport: 22] at 10:01:08 UTC Tue Aug 22 2023
+*Aug 22 10:03:35.977: %SYS-5-CONFIG_I: Configured from console by helena on vty0 (10.16.36.104)
+*Aug 22 10:03:58.261: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: helena] [Source: 10.16.36.104] [localport: 22] at 10:03:58 UTC Tue Aug 22 2023
+*Aug 22 10:03:59.494: %SYS-6-LOGOUT: User helena has exited tty session 2(10.16.36.104)
+*Aug 22 10:05:05.023: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: helena] [Source: 10.16.36.104] [localport: 22] at 10:05:05 UTC Tue Aug 22 2023
+*Aug 22 10:05:06.206: %SYS-6-LOGOUT: User helena has exited tty session 2(10.16.36.104)
+*Aug 22 10:05:58.909: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: helena] [Source: 10.16.36.104] [localport: 22] at 10:05:58 UTC Tue Aug 22 2023
+*Aug 22 10:06:00.284: %SYS-5-CONFIG_I: Configured from console by helena on vty1 (10.16.36.104)
+*Aug 22 10:06:01.206: %SYS-6-LOGOUT: User helena has exited tty session 2(10.16.36.104)
+*Aug 22 10:06:34.261: %SYS-5-CONFIG_I: Configured from console by helena on vty0 (10.16.36.104)
+*Aug 22 10:06:56.521: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: helena] [Source: 10.16.36.104] [localport: 22] at 10:06:56 UTC Tue Aug 22 2023
+*Aug 22 10:06:57.801: %SYS-5-CONFIG_I: Configured from console by helena on vty1 (10.16.36.104)
+*Aug 22 10:06:58.493: %SYS-6-LOGOUT: User helena has exited tty session 2(10.16.36.104)
+*Aug 22 10:11:39.106: %SYS-5-CONFIG_I: Configured from console by helena on vty0 (10.16.36.104)
+*Aug 22 10:12:57.783: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: helena] [Source: 10.16.36.104] [localport: 22] at 10:12:57 UTC Tue Aug 22 2023

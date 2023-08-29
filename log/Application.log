@@ -58,3 +58,409 @@ INFO 2023-03-15 17:33:47,287 [apps.py:init:85] ---Initialize testbed file---
 INFO 2023-03-15 17:33:47,293 [apps.py:init:93] ---testbed file ready---
 INFO 2023-03-15 17:33:48,851 [apps.py:init:99] ---Opening Main Menu Application---
 INFO 2023-03-15 17:33:51,262 [apps.py:MainMenu:128] ---Get CPU Utilization---
+INFO 2023-08-15 14:48:40,637 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 14:48:40,656 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 14:48:40,658 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 14:48:49,818 [Apps.py:create:71] Importing file...env.csv
+INFO 2023-08-15 14:48:50,911 [Apps.py:create:75] Success: Semicolons replaced with commas in file: import/env.csv
+Testbed file generated: 
+import/env.csv -> testbed/device.yaml
+INFO 2023-08-15 14:48:50,913 [Apps.py:create:76] ---testbed file ready---
+INFO 2023-08-15 14:48:51,416 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 14:48:54,757 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 14:52:45,992 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 14:52:46,003 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 14:52:46,004 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 14:52:47,859 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 14:52:51,639 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 14:54:07,104 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 14:54:07,114 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 14:54:07,115 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 14:54:08,732 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 14:54:11,208 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 14:55:34,521 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 14:55:34,532 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 14:55:34,533 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 14:55:37,012 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 14:55:39,387 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 14:57:08,279 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 14:57:08,289 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 14:57:08,291 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 14:57:09,896 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 14:57:12,352 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 14:57:43,223 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 14:57:43,233 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 14:57:43,235 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 14:57:45,320 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 14:57:49,100 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 15:14:53,587 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 15:14:53,598 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 15:14:53,600 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 15:14:55,615 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 15:14:58,765 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 15:15:17,900 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 15:15:17,910 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 15:15:17,911 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 15:15:24,029 [Apps.py:create:71] Importing file...env.csv
+INFO 2023-08-15 15:15:25,111 [Apps.py:create:75] Success: Semicolons replaced with commas in file: import/env.csv
+Testbed file generated: 
+import/env.csv -> testbed/device.yaml
+INFO 2023-08-15 15:15:25,112 [Apps.py:create:76] ---testbed file ready---
+INFO 2023-08-15 15:15:25,615 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 15:15:28,181 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 15:17:41,253 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 15:17:41,263 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 15:17:41,265 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 15:17:43,716 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 15:17:45,746 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 15:35:31,787 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 15:35:31,801 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 15:35:31,811 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 15:35:34,312 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 15:35:36,260 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 15:37:57,135 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 15:37:57,146 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 15:37:57,147 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 15:38:00,163 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 15:38:04,418 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 15:44:00,205 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 15:44:00,216 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 15:44:00,218 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 15:44:03,491 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 15:44:05,662 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 15:47:06,732 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 15:47:06,742 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 15:47:06,743 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 15:47:13,996 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 15:47:19,565 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 15:48:39,949 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 15:48:39,964 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 15:48:39,965 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 15:48:42,429 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 15:48:52,143 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 15:51:54,012 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 15:51:54,022 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 15:51:54,023 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 15:51:55,898 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 15:52:04,165 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 15:56:28,303 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 15:56:28,314 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 15:56:28,315 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 15:56:31,153 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 15:56:34,795 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 15:58:41,275 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 15:58:41,286 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 15:58:41,288 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 15:58:43,425 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 15:58:45,318 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 15:59:57,283 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 15:59:57,294 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 15:59:57,297 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 15:59:59,377 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 16:00:02,505 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 16:00:42,214 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 16:00:42,224 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 16:00:42,225 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 16:00:45,900 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 16:00:49,428 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 16:07:06,576 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 16:07:06,587 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 16:07:06,589 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 16:07:08,688 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 16:07:11,249 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 16:07:35,037 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 16:07:35,047 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 16:07:35,049 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 16:07:36,836 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 16:07:38,954 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 16:12:05,968 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 16:12:05,979 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 16:12:05,981 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 16:12:13,789 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 16:12:16,775 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 17:02:03,412 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 17:02:03,434 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 17:02:03,435 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 17:02:14,074 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 17:02:16,348 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 17:03:10,611 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 17:03:10,620 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 17:03:10,622 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 17:03:12,229 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 17:03:14,491 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 17:05:06,562 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 17:05:06,571 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 17:05:06,575 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 17:05:08,299 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 17:05:10,876 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 17:08:16,742 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 17:08:16,753 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 17:08:16,755 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 17:08:18,546 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 17:08:20,866 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 17:08:47,454 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 17:08:47,466 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 17:08:47,469 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 17:08:49,097 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 17:08:51,618 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 17:09:58,237 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 17:09:58,247 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 17:09:58,248 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 17:10:00,236 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 17:10:02,246 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 20:38:26,572 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 20:38:26,602 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 20:38:26,604 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 20:38:53,375 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 20:38:56,180 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 20:46:04,534 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 20:46:04,550 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 20:46:04,554 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 20:46:06,303 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 20:46:08,596 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 20:47:54,318 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 20:47:54,335 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 20:47:54,337 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 20:47:56,130 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 20:47:57,992 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 20:49:40,842 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 20:49:40,864 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 20:49:40,867 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 20:49:47,210 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 20:49:49,346 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 20:53:16,670 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 20:53:16,684 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 20:53:16,686 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 20:53:18,677 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 20:53:21,002 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 21:10:23,337 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 21:10:23,357 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 21:10:23,359 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 21:10:32,907 [Apps.py:create:71] Importing file...env.csv
+INFO 2023-08-15 21:10:34,005 [Apps.py:create:75] Success: Semicolons replaced with commas in file: import/env.csv
+Testbed file generated: 
+import/env.csv -> testbed/device.yaml
+INFO 2023-08-15 21:10:34,008 [Apps.py:create:76] ---testbed file ready---
+INFO 2023-08-15 21:10:34,511 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 21:10:37,876 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 21:49:40,654 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 21:49:40,693 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 21:49:40,698 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 21:49:49,936 [Apps.py:create:71] Importing file...env.csv
+INFO 2023-08-15 21:49:51,030 [Apps.py:create:75] Success: Semicolons replaced with commas in file: import/env.csv
+Testbed file generated: 
+import/env.csv -> testbed/device.yaml
+INFO 2023-08-15 21:49:51,032 [Apps.py:create:76] ---testbed file ready---
+INFO 2023-08-15 21:49:51,536 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 21:49:53,737 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 21:51:58,223 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 21:51:58,242 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 21:51:58,245 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 21:52:01,772 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 21:52:04,236 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 21:55:12,735 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 21:55:12,755 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 21:55:12,758 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 21:55:14,604 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 21:55:16,552 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 21:57:09,505 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 21:57:09,523 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 21:57:09,525 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 21:57:14,340 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 21:57:16,512 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 22:01:33,903 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 22:01:33,929 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 22:01:33,933 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 22:01:37,836 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 22:01:41,654 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 22:09:46,751 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 22:09:46,773 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 22:09:46,776 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 22:09:48,931 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 22:09:51,279 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 22:10:59,882 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 22:10:59,906 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 22:10:59,908 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 22:11:01,911 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 22:11:03,959 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 22:14:45,131 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 22:14:45,159 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 22:14:45,163 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 22:14:47,336 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 22:14:49,269 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 22:15:23,039 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 22:15:23,058 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 22:15:23,061 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 22:15:25,832 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 22:15:28,085 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 22:21:53,086 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 22:21:53,110 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 22:21:53,112 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 22:21:55,079 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 22:21:57,133 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 22:24:53,272 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 22:24:53,290 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 22:24:53,293 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 22:24:55,475 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 22:24:57,652 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 22:26:56,851 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 22:26:56,868 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 22:26:56,871 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 22:26:59,253 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 22:27:02,458 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 22:39:39,523 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 22:39:39,543 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 22:39:39,546 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 22:39:41,800 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 22:39:47,808 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 22:42:42,371 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 22:42:42,382 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 22:42:42,383 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 22:42:50,843 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 22:42:54,026 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 22:44:20,102 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 22:44:20,113 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 22:44:20,114 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 22:44:22,020 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 22:44:25,193 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 22:46:15,536 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 22:46:15,547 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 22:46:15,550 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 22:46:22,077 [Apps.py:create:71] Importing file...env.csv
+INFO 2023-08-15 22:46:23,167 [Apps.py:create:75] Success: Semicolons replaced with commas in file: import/env.csv
+Testbed file generated: 
+import/env.csv -> testbed/device.yaml
+INFO 2023-08-15 22:46:23,169 [Apps.py:create:76] ---testbed file ready---
+INFO 2023-08-15 22:46:23,670 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 22:46:26,181 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 22:52:59,507 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 22:52:59,519 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 22:52:59,520 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 22:53:01,513 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 22:53:04,671 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 22:55:58,726 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 22:55:58,738 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 22:55:58,740 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 22:56:02,366 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 22:56:04,500 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 23:12:41,213 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 23:12:41,223 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 23:12:41,224 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 23:12:43,673 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 23:12:46,423 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-15 23:29:19,024 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-15 23:29:19,034 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-15 23:29:19,035 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-15 23:29:26,080 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-15 23:29:29,779 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-16 18:40:15,110 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-16 18:40:15,130 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-16 18:40:15,131 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-16 18:40:17,236 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-16 18:40:27,732 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-16 18:46:35,756 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-16 18:46:35,766 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-16 18:46:35,767 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-16 18:46:43,535 [Apps.py:create:71] Importing file...env.csv
+INFO 2023-08-16 18:46:44,629 [Apps.py:create:75] Success: Semicolons replaced with commas in file: import/env.csv
+Testbed file generated: 
+import/env.csv -> testbed/device.yaml
+INFO 2023-08-16 18:46:44,630 [Apps.py:create:76] ---testbed file ready---
+INFO 2023-08-16 18:46:45,133 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-16 18:46:47,978 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-16 18:48:40,782 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-16 18:48:40,793 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-16 18:48:40,796 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-16 18:48:50,009 [Apps.py:create:71] Importing file...env.csv
+INFO 2023-08-16 18:48:51,099 [Apps.py:create:75] Success: Semicolons replaced with commas in file: import/env.csv
+Testbed file generated: 
+import/env.csv -> testbed/device.yaml
+INFO 2023-08-16 18:48:51,100 [Apps.py:create:76] ---testbed file ready---
+INFO 2023-08-16 18:48:51,602 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-16 18:49:10,619 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-16 18:51:56,570 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-16 18:51:56,580 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-16 18:51:56,581 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-16 18:51:58,313 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-16 18:52:00,487 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-22 17:08:41,784 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-22 17:08:41,806 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-22 17:08:41,808 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-22 17:08:50,059 [Apps.py:create:71] Importing file...env1.csv
+INFO 2023-08-22 17:08:51,152 [Apps.py:create:75] Success: Semicolons replaced with commas in file: import/env1.csv
+Testbed file generated: 
+import/env1.csv -> testbed/device.yaml
+INFO 2023-08-22 17:08:51,154 [Apps.py:create:76] ---testbed file ready---
+INFO 2023-08-22 17:08:51,656 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-22 17:08:55,476 [Apps.py:inputMenu:137] ---Get Configuration Device---
+INFO 2023-08-22 17:09:07,317 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-22 17:09:07,327 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-22 17:09:07,328 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-22 17:09:14,621 [Apps.py:create:71] Importing file...env1.csv
+INFO 2023-08-22 17:09:15,714 [Apps.py:create:75] Success: Semicolons replaced with commas in file: import/env1.csv
+Testbed file generated: 
+import/env1.csv -> testbed/device.yaml
+INFO 2023-08-22 17:09:15,716 [Apps.py:create:76] ---testbed file ready---
+INFO 2023-08-22 17:09:16,217 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-22 17:09:18,063 [Apps.py:inputMenu:137] ---Get Configuration Device---
+INFO 2023-08-22 17:10:49,027 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-22 17:10:49,036 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-22 17:10:49,038 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-22 17:10:51,221 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-22 17:10:53,148 [Apps.py:inputMenu:137] ---Get Configuration Device---
+INFO 2023-08-22 17:13:54,860 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-22 17:13:54,871 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-22 17:13:54,873 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-22 17:13:56,766 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-22 17:13:58,741 [Apps.py:inputMenu:137] ---Get Configuration Device---
+INFO 2023-08-22 17:15:00,388 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-22 17:15:00,400 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-22 17:15:00,401 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-22 17:15:02,642 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-22 17:15:05,763 [Apps.py:inputMenu:137] ---Get Configuration Device---
+INFO 2023-08-22 17:15:55,627 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-22 17:15:55,638 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-22 17:15:55,639 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-22 17:15:57,305 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-22 17:15:59,655 [Apps.py:inputMenu:137] ---Get Configuration Device---
+INFO 2023-08-22 17:16:51,546 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-22 17:16:51,556 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-22 17:16:51,557 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-22 17:16:53,510 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-22 17:16:57,240 [Apps.py:inputMenu:162] ---Get Logging device---
+INFO 2023-08-22 17:22:00,901 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-22 17:22:00,911 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-22 17:22:00,913 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-22 17:22:07,156 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-22 17:22:10,472 [Apps.py:inputMenu:150] ---Get Memmory Utilization---
+INFO 2023-08-22 17:22:25,619 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-22 17:22:25,630 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-22 17:22:25,631 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-22 17:22:27,495 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-22 17:22:40,127 [Apps.py:inputMenu:168] ---Get Interface CRC device---
+INFO 2023-08-22 17:22:54,230 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-22 17:22:54,240 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-22 17:22:54,242 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-22 17:22:55,958 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-22 17:22:58,524 [Apps.py:inputMenu:162] ---Get Logging device---
+INFO 2023-08-29 11:31:31,900 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-29 11:31:31,923 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-29 11:31:31,926 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-29 11:31:38,332 [Apps.py:create:71] Importing file...env,csv
+INFO 2023-08-29 11:31:39,423 [Apps.py:create:75] Success: File not found: env,csv
+INFO 2023-08-29 11:31:39,425 [Apps.py:create:76] ---testbed file ready---
+INFO 2023-08-29 11:31:39,928 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-29 11:31:46,020 [Apps.py:MainMenu:122] Proccesing menu: Get Configuration Device
+INFO 2023-08-29 11:31:46,020 [Apps.py:inputMenu:137] ---Get Configuration Device---
+INFO 2023-08-29 11:31:46,198 [Apps.py:inputMenu:162] ---Get Logging device---
+INFO 2023-08-29 11:31:46,198 [Apps.py:MainMenu:122] Proccesing menu: Get Logging Device
+INFO 2023-08-29 11:32:54,783 [Apps.py:init:89] ---Starting the Application---
+INFO 2023-08-29 11:32:54,795 [Apps.py:init:92] ---Initialize testbed file---
+INFO 2023-08-29 11:32:54,797 [Apps.py:init:100] ---testbed file ready---
+INFO 2023-08-29 11:33:05,115 [Apps.py:create:71] Importing file...env.csv
+INFO 2023-08-29 11:33:06,215 [Apps.py:create:75] Success: Semicolons replaced with commas in file: import/env.csv
+Testbed file generated: 
+import/env.csv -> testbed/device.yaml
+INFO 2023-08-29 11:33:06,217 [Apps.py:create:76] ---testbed file ready---
+INFO 2023-08-29 11:33:06,719 [Apps.py:init:106] ---Opening Main Menu Application---
+INFO 2023-08-29 11:33:14,859 [Apps.py:inputMenu:137] ---Get Configuration Device---
