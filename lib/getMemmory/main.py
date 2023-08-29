@@ -9,6 +9,7 @@ from rich.logging import RichHandler
 from pyats.utils.secret_strings import to_plaintext
 import textfsm
 from netmiko import ConnectHandler
+import time
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
@@ -47,15 +48,49 @@ def convert_to_netmiko(device):
     netmiko_device['secret'] = to_plaintext(device.credentials.enable.password)
     return netmiko_device
 
+#Function to sorted data
+def sort_csv_by_field(input_file, sort_field):
+    data = []
+    
+    # Read the data from the input CSV file
+    with open(input_file, "r", newline="") as csvfile:
+        reader = csv.DictReader(csvfile)
+        data = list(reader)
+
+    # Sort the data based on the specified field
+    sorted_data = sorted(data, key=lambda x: int(x.get(sort_field, 0)))
+
+    # Write the sorted data back to the input CSV file
+    with open(input_file, "w", newline="") as csvfile:
+        fieldnames = sorted_data[0].keys() if sorted_data else []
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(sorted_data)
+
 def get_iosxe_memory_info(device, counter):
     try:
         try:
-             # Connect to the device
-            device.connect(mit=True, log_stdout=False)
-
+            attempt = 1
+            retry = 0
+            mx_retry = 3
+            while retry < mx_retry:
+                try:
+                    logger.info(f"Connecting to Device: {device.name}")
+                    device.connect(learn_hostname = True, learn_os = True, log_stdout=False,mit=True)
+                    logger.info(f"Successfully Connected to Device: {device.name}")
+                    break
+                except Exception as conn_error:
+                        retry += 1
+                        attempt +=1
+                        if retry < mx_retry:
+                            logger.error(f"Connection attempt {retry}/{mx_retry} failed for {device.name} ({device.connections.cli.ip}): {conn_error}")
+                            logger.info(f"Retrying in 1 seconds...")
+                            time.sleep(2)
+                        else:
+                            logger.error(f"Failed to establish connection to {device.name} ({device.connections.cli.ip}) after {mx_retry} attempts.")
+                            break  # Exit the loop after max retries
+                        
             # Print the output
-            logger.info(f"Device: {device.name}")
-            
             output = device.parse("show processes memory")
 
             used = round(output['processor_pool']['used']/1024/1000, 2)
@@ -79,17 +114,10 @@ def get_iosxe_memory_info(device, counter):
                 writer = csv.writer(csvfile)
                 writer.writerow([f"{counter}", f"{device.name}", used, total, percentage, category])
         except:
-            logger.info("gagal dengan function utama iosxe")
+            logger.error("gagal dengan function utama iosxe")
 
             # Convert the device to Netmiko format
             netmiko_device = convert_to_netmiko(device)
-
-            # rubah device type sesuai netmiko
-
-            # netmiko_device['device_type'] = "cisco_xe"
-
-            # Print the converted device details
-            # logger.info(netmiko_device)
 
             # Establish the Netmiko connection
             logger.info("Establishing Netmiko connection...")
@@ -142,17 +170,31 @@ def get_iosxe_memory_info(device, counter):
                         writer = csv.writer(csvfile)
                         writer.writerow([f"{counter}", f"{device.name}", used, total, percentage, category])       
         return counter
-
     except Exception as e:
         logger.error(f"Error connecting to device {device.name}: {e}")
 
 def get_iosxr_memory_info(device, counter):
     try:
         # Connect to the device
-        device.connect(mit=True, log_stdout=False)
-
-        # Print the output
-        logger.info(f"Device: {device.name}")
+        attempt = 1
+        retry = 0
+        mx_retry = 3
+        while retry < mx_retry:
+            try:
+                logger.info(f"Connecting to Device: {device.name}")
+                device.connect(learn_hostname = True, learn_os = True, log_stdout=False,mit=True)
+                logger.info(f"Successfully Connected to Device: {device.name}")
+                break
+            except Exception as conn_error:
+                    retry += 1
+                    attempt +=1
+                    if retry < mx_retry:
+                        logger.error(f"Connection attempt {retry}/{mx_retry} failed for {device.name} ({device.connections.cli.ip}): {conn_error}")
+                        logger.info(f"Retrying in 1 seconds...")
+                        time.sleep(2)
+                    else:
+                        logger.error(f"Failed to establish connection to {device.name} ({device.connections.cli.ip}) after {mx_retry} attempts.")
+                        break  # Exit the loop after max retries
 
         output = device.parse("show watchdog memory-state")
 
@@ -185,13 +227,32 @@ def get_iosxr_memory_info(device, counter):
 
 def get_ios_memory_info(device, counter):
     try:
-        # Connect to the device
-        device.connect(mit=True, log_stdout=False)
-
-        # Print the output
-        logger.info(f"Device: {device.name}")
-
-        output = device.parse("show processes memory")
+        attempt = 1
+        retry = 0
+        mx_retry = 3
+        while retry < mx_retry:
+            try:
+                logger.info(f"Initiate connection to Device {device.name} attempt {attempt}")
+                device.connect(mit=True, log_stdout=False)
+                # Print the output
+                logger.info(f"Device: {device.name} Connected Successfully")
+                #send command
+                try:
+                    output = device.parse("show processes memory")
+                    logger.info(f"Parse Device: {device.name} Data Successfully")
+                except:
+                    logger.info(f"Failed to Parse Device: {device.name}")
+                break  # Exit the loop if connected successfully
+            except Exception as conn_error:
+                retry += 1
+                attempt +=1
+                if retry < mx_retry:
+                    logger.error(f"Connection attempt {retry}/{mx_retry} failed for {device.name} ({device.connections.cli.ip}): {conn_error}")
+                    logger.info(f"Retrying in 2 seconds...")
+                    time.sleep(2)
+                else:
+                    logger.error(f"Failed to establish connection to {device.name} ({device.connections.cli.ip}) after {mx_retry} attempts.")
+                    break  # Exit the loop after max retries
 
         used = round(output['processor_pool']['used']/1024/1000, 2)
         total = round(output['processor_pool']['total']/1024/1000, 2)
@@ -223,10 +284,25 @@ def get_nxos_memory_info(device, counter):
     try:
         try:
             # Connect to the device
-            device.connect(mit=True, log_stdout=False)
-
-            # Print the output
-            logger.info(f"Device: {device.name}")
+            attempt = 1
+            retry = 0
+            mx_retry = 3
+            while retry < mx_retry:
+                try:
+                    logger.info(f"Connecting to Device: {device.name}")
+                    device.connect(learn_hostname = True, learn_os = True, log_stdout=False,mit=True)
+                    logger.info(f"Successfully Connected to Device: {device.name}")
+                    break
+                except Exception as conn_error:
+                        retry += 1
+                        attempt +=1
+                        if retry < mx_retry:
+                            logger.error(f"Connection attempt {retry}/{mx_retry} failed for {device.name} ({device.connections.cli.ip}): {conn_error}")
+                            logger.info(f"Retrying in 1 seconds...")
+                            time.sleep(2)
+                        else:
+                            logger.error(f"Failed to establish connection to {device.name} ({device.connections.cli.ip}) after {mx_retry} attempts.")
+                            break  # Exit the loop after max retries
 
             output = device.parse("show system resources")
 
@@ -256,11 +332,7 @@ def get_nxos_memory_info(device, counter):
             logger.info("gagal dengan function utama nxos")
             # Convert the device to Netmiko format
             netmiko_device = convert_to_netmiko(device)
-            # update sesuai template
-            # netmiko_device['device_type'] = "cisco_nxos"
-            # Print the converted device details
-            # logger.info(netmiko_device)
-
+  
             # Establish the Netmiko connection
             logger.info("Establishing Netmiko connection...")
             connection = ConnectHandler(**netmiko_device)
@@ -324,10 +396,18 @@ def getMemmoryUtils(testbedFile):
         writer = csv.writer(csvfile)
         # Write the header row
         writer.writerow(["No", "Device", "Memory Used in MB", "Memory Total in MB", "Percentage", "Category"])
-
+    # Define csv name for sorted purpose
+    input_csv = (F"out/getMemmoryUtils/summary_show_memory_{timestamp}.csv")
+    sort_field = "No"
     # Create a list of futures for iosxe and iosxr devices
     futures = []
     counter = 1
+    #count device
+    total_device = 0
+    ios_xe_device = 0
+    ios_xr_device = 0
+    nxos_device = 0
+    ios_device = 0
     with concurrent.futures.ThreadPoolExecutor() as executor:
         for device in testbed:
             if device.type == 'iosxe':
@@ -354,3 +434,7 @@ def getMemmoryUtils(testbedFile):
             logger.error(f"{exc} occurred while processing device {device.name}")
 
     logger.info("Get Memmory Utilization - execution completed successfully.")
+    #Sorted the output data
+    sort_csv_by_field(input_csv, sort_field)
+    logger.info("Sort Output Data - execution completed.")
+    logger.info(f"Total Executed Get Memory Device is IOS_XE:{ios_xe_device} IOS_XR:{ios_xr_device} IOS:{ios_device} NXOS:{nxos_device} and Total Device is {total_device}")
