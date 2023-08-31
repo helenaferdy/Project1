@@ -397,7 +397,7 @@ def getMemmoryUtils(testbedFile):
         # Write the header row
         writer.writerow(["No", "Device", "Memory Used in MB", "Memory Total in MB", "Percentage", "Category"])
     # Define csv name for sorted purpose
-    input_csv = (F"out/getMemmoryUtils/summary_show_memory_{timestamp}.csv")
+    input_csv = (F"out/MemmoryUtils/summary_show_memory_{timestamp}.csv")
     sort_field = "No"
     # Create a list of futures for iosxe and iosxr devices
     futures = []
@@ -413,18 +413,26 @@ def getMemmoryUtils(testbedFile):
             if device.type == 'iosxe':
                 futures.append(executor.submit(get_iosxe_memory_info, device, counter))
                 counter += 1
+                ios_xe_device += 1
+                total_device+=1
                 sleep(0.1)
             elif device.type == 'iosxr':
                 futures.append(executor.submit(get_iosxr_memory_info, device, counter))
                 counter += 1
+                ios_xr_device += 1
+                total_device+=1
                 sleep(0.1)
             elif device.type == 'ios':
                 futures.append(executor.submit(get_ios_memory_info, device, counter))
                 counter += 1
+                ios_device += 1
+                total_device+=1
                 sleep(0.1)
             elif device.type == 'nxos':
                 futures.append(executor.submit(get_nxos_memory_info, device, counter))
                 counter += 1
+                nxos_device += 1
+                total_device+=1
                 sleep(0.1)
         # Wait for all futures to complete
     for future in concurrent.futures.as_completed(futures):
