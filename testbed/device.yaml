@@ -25,3 +25,29 @@ devices:
         password: cisco
     os: iosxe
     type: iosxe
+  xe3:
+    connections:
+      cli:
+        ip: 198.18.0.123
+        protocol: ssh
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: iosxe
+    type: iosxe
+  xe4:
+    connections:
+      cli:
+        ip: 198.18.0.124
+        protocol: ssh
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: iosxe
+    type: iosxe

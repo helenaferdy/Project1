@@ -28,6 +28,7 @@ def main(testbed):
     for t in threads:
         t.join()
 
+    sort_csv()
     end_summary()
 
 def process_device(device, i):
@@ -114,14 +115,40 @@ def end_summary():
 #universal template
 def export_csv(parsed, i, hostname):
     finals = []
-    i = 1
+    j = 1
     for p in parsed:
         name = p['descr']
         pid = p['pid']
         sn = p['sn']
 
-        final = [i, hostname, i, name, pid, sn]
+        final = [i, hostname, j, name, pid, sn]
         finals.append(final)
-        i +=1
+        j +=1
     return finals
 
+
+def sort_csv():
+    outpath = f'out/{TITLE}/'
+    sort_field = "No_Hostname"
+    sort_field2 = "No_Inventory"
+    data = []
+    
+    try:
+        # Read the data from the input CSV file
+        with open(f"{outpath}{COMMAND1}_{TIMESTAMP}.csv", "r", newline="") as csvfile:
+            reader = csv.DictReader(csvfile)
+            data = list(reader)
+
+        # Sort the data based on the specified field
+        sorted_data = sorted(data, key=lambda x: int(x.get(sort_field2, 0)))
+        sorted_data = sorted(sorted_data, key=lambda x: int(x.get(sort_field, 0)))
+
+        # Write the sorted data back to the input CSV file
+        with open(f"{outpath}{COMMAND1}_{TIMESTAMP}.csv", "w", newline="") as csvfile:
+            fieldnames = sorted_data[0].keys() if sorted_data else []
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerows(sorted_data)
+
+    except Exception as e:
+        print(f"Failed sorting {e}")

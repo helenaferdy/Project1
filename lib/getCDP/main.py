@@ -30,6 +30,7 @@ def main(testbed):
     for t in threads:
         t.join()
 
+    sort_csv()
     end_summary()
 
 def process_device(device, i):
@@ -140,3 +141,27 @@ def export_csv(parsed, i, hostname, platform):
         final = [i, hostname, local_int, platform, remote_hostname, remote_int, remote_platform, capability]
         finals.append(final)
     return finals
+
+def sort_csv():
+    outpath = f'out/{TITLE}/'
+    sort_field="No"
+    data = []
+    
+    try:
+        # Read the data from the input CSV file
+        with open(f"{outpath}{COMMAND1}_{TIMESTAMP}.csv", "r", newline="") as csvfile:
+            reader = csv.DictReader(csvfile)
+            data = list(reader)
+
+        # Sort the data based on the specified field
+        sorted_data = sorted(data, key=lambda x: int(x.get(sort_field, 0)))
+
+        # Write the sorted data back to the input CSV file
+        with open(f"{outpath}{COMMAND1}_{TIMESTAMP}.csv", "w", newline="") as csvfile:
+            fieldnames = sorted_data[0].keys() if sorted_data else []
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerows(sorted_data)
+
+    except Exception as e:
+        print(f"Failed sorting {e}")

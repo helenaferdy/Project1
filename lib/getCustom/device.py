@@ -5,7 +5,8 @@ import csv
 import logging, sys
 import datetime
 
-CONNECT_RETRY = 2
+CONNECT_RETRY = 4
+CONNECT_TIMEOUT = 20
 ERROR_COMMAND = ['Invalid input', 'No such process', 'Incomplete command', 'Unknown command', 'Ambiguous command', 'list of subcommands', "Function exception"]
 TIMESTAMP = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M')
 os.environ["NTC_TEMPLATES_DIR"] = "lib/getCustom/templates"
@@ -80,7 +81,7 @@ class Routers:
             "username": self.username,
             "password": self.password,
             "secret": self.secret,
-            "conn_timeout": 15,
+            "conn_timeout": CONNECT_TIMEOUT,
             "port": self.port
         }
         

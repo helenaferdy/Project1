@@ -1,0 +1,12 @@
+2023-09-05 18:50:36 [ERROR] xe4 : Command [show environment] Failed, trying [show env all]
+2023-09-05 18:50:37 [ERROR] xe1 : Command [show environment] Failed, trying [show env all]
+2023-09-05 18:50:37 [ERROR] xe4 : Output return empty for command [show env all]
+2023-09-05 18:50:37 [ERROR] xe4 : Parsing failed after [0] tries.
+2023-09-05 18:50:37 [ERROR] xe3 : Command [show environment] Failed, trying [show env all]
+2023-09-05 18:50:37 [ERROR] xe2 : Command [show environment] Failed, trying [show env all]
+2023-09-05 18:50:37 [ERROR] xe1 : Output return empty for command [show env all]
+2023-09-05 18:50:37 [ERROR] xe1 : Parsing failed after [0] tries.
+2023-09-05 18:50:37 [ERROR] xe3 : Output return empty for command [show env all]
+2023-09-05 18:50:37 [ERROR] xe3 : Parsing failed after [0] tries.
+2023-09-05 18:50:37 [ERROR] xe2 : Output return empty for command [show env all]
+2023-09-05 18:50:37 [ERROR] xe2 : Parsing failed after [0] tries.
