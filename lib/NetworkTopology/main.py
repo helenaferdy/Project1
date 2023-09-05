@@ -8,6 +8,7 @@ CDP_PATH = "out/getCDP/"
 CURRENT_PATH = "lib/NetworkTopology/"
 DEVICE_CSV = CURRENT_PATH+"files/topology.csv"
 FINAL_HTML = "out/NetworkTopology/topology.html"
+FILTER_OUT = ["\(", ".BANKMAYAPADA.", ".PRIMACOM."]
 
 def main():
     create_folder()
@@ -53,7 +54,7 @@ def get_cdp():
 
 def extract_cdp(cdp_file):
     columns = ["Local Hostname", "Remote Hostname", "Local Interface"]
-    replace = ["\(", ".BANKMAYAPADA.", ".PRIMACOM."]
+    replace = FILTER_OUT
 
     input_file = f"{CDP_PATH}{cdp_file}"
     output_file = DEVICE_CSV
