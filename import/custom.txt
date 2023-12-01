@@ -1,30 +1,8 @@
-show version
 show clock
-show run
-show interfaces status
-show interfaces description
-show interfaces trunk
-show etherchannel summary
-show port-channel
-show ip interface brief
-show cdp neighbors
-show spanning-tree summary
-show vlan brief
-show vtp status
-show vpc brief
-show inventory
-show ip arp
-dir
-show environment temperature status
-show environment all
-show platform 
-show processes memory statistics
-show processes memory sorted
-show system resources
-show processes cpu sorted 
-show processes cpu 
-show platform software status control-processor brief
-show ip ospf neighbor
-show ip bgp summary
+show running-config
 show ip route
-show logging
+show processes cpu
+show inventory
+show version
+show environment
+show processes memory

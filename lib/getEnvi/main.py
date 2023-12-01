@@ -4,12 +4,13 @@ import threading
 import os
 import yaml
 
+TEMPLATE_NUMBERS = 7
+
 TITLE = "getEnvironment"
 COMMAND1 = "show environment"
 COMMAND2 = "show env all"
 HEADERS = ['No','Hostname', 'Site', 'Power Supply', 'Temperature', 'Fan']
 TESTBED =  "testbed/device.yaml"
-TEMPLATE_NUMBERS = 5
 devices = []
 success_counter = []
 fail_counter = []
@@ -61,13 +62,16 @@ def process_device(device, i):
         
         #special templates
         if parsed != "":
-            if num_try <= 2:
-                final = export_csv(parsed, i, device.hostname)
-                device.export_data(final)
-            elif num_try >= 3 and num_try <= 5:
+            if num_try <= 3:
+                ## special templates 1, 2, 3
                 final = export_csv_3(parsed, i, device.hostname)
                 device.export_data(final)
+            elif num_try > 3 and num_try <= TEMPLATE_NUMBERS:
+                ## regular templates
+                final = export_csv(parsed, i, device.hostname)
+                device.export_data(final)
             else:
+                ## no templates, insert generic values
                 final = export_desperate(i, device.hostname)
                 device.export_data(final)
             success_counter.append(0)
@@ -121,7 +125,7 @@ def end_summary():
         print('')
 
 
-#universal template
+#general template
 def export_csv(parsed, i, hostname):
     power = "OK"
     temp = "OK"
@@ -141,7 +145,7 @@ def export_csv(parsed, i, hostname):
     final = [i, hostname, "DC", power, fan, temp]
     return final
 
-#template no 3, 4, 5
+#template no 1, 2, 3
 def export_csv_3(parsed, i, hostname):
     power = "OK"
     temp = "OK"
@@ -163,8 +167,6 @@ def export_desperate(i, hostname):
 
     final = [i, hostname, "", power, fan, temp]
     return final
-
-
 
 def sort_csv():
     outpath = f'out/{TITLE}/'

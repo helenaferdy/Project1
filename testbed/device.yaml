@@ -1,53 +1,53 @@
 devices:
-  xe1:
+  BPN-VG-RTR:
     connections:
       cli:
-        ip: 198.18.0.121
+        ip: 10.146.56.250
         protocol: ssh
     credentials:
       default:
         password: cisco
         username: cisco
       enable:
-        password: cisco
-    os: iosxe
-    type: iosxe
-  xe2:
+        password: komatsu2011
+    os: ios
+    type: ios
+  IDKI-MO-VG02:
     connections:
       cli:
-        ip: 198.18.0.122
+        ip: 10.146.30.22
+        protocol: ssh
+    credentials:
+      default:
+        password: komatsu2011
+        username: admin
+      enable:
+        password: komatsu2011
+    os: ios
+    type: ios
+  IDKUNR01:
+    connections:
+      cli:
+        ip: 10.146.80.22
         protocol: ssh
     credentials:
       default:
         password: cisco
         username: cisco
       enable:
-        password: cisco
-    os: iosxe
-    type: iosxe
-  xe3:
+        password: komatsu2011
+    os: ios
+    type: ios
+  JKT-VG1-RTR:
     connections:
       cli:
-        ip: 198.18.0.123
+        ip: 10.146.64.38
         protocol: ssh
     credentials:
       default:
         password: cisco
         username: cisco
       enable:
-        password: cisco
-    os: iosxe
-    type: iosxe
-  xe4:
-    connections:
-      cli:
-        ip: 198.18.0.124
-        protocol: ssh
-    credentials:
-      default:
-        password: cisco
-        username: cisco
-      enable:
-        password: cisco
-    os: iosxe
-    type: iosxe
+        password: komatsu2011
+    os: ios
+    type: ios

@@ -1,0 +1,18 @@
+Value MODULE (power-supply\s+\d+|module\s+\d+\s+.*\s+inlet|module\s+\d+\s+inlet|fan-tray\s+\d+\s+)
+Value VALUE (\w+)
+
+Start
+  ^environmental\s+ -> Continue
+  ^fan-tray\s+\d+: -> FAN
+  
+
+FAN
+  ^\s+\s+${MODULE}fan-fail:\s+${VALUE} -> Continue.Record
+  ^power-supply\s+\d+: -> PSU
+
+PSU
+  ^\s+\s+${MODULE}\s+power-output-fail:\s+${VALUE} -> Continue.Record
+  ^module\s+\d+: -> INLET
+
+INLET
+  ^\s+\s+${MODULE}\s+temperature:\s+${VALUE} -> Record
